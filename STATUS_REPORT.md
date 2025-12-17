@@ -86,7 +86,7 @@
 - ✅ Loading states
 - ✅ Success/error messages
 - ✅ Analytics tracking on submission
-- ✅ Source tracking (which page form was submitted from)
+- ✅ Source tracking (which page/form)
 
 #### 3. **Dynamic Interactions**
 - ✅ Animated statistics counter (`components/animated-stats.tsx`)
@@ -452,7 +452,7 @@ Based on typical conversion rates for wedding planning websites:
 ✅ **SEO Optimized** - Structured data, metadata, sitemap  
 ✅ **Mobile Responsive** - Perfect on all devices  
 ✅ **Fast Loading** - Optimized images, lazy loading  
-✅ **Trust Signals** - Escrow protection, verified suppliers  
+✅ **Trust Signals** - Secure payment protection, verified suppliers  
 ✅ **48 Pages** - Comprehensive content coverage  
 ✅ **Analytics Ready** - Google Analytics + Meta Pixel  
 ✅ **Booking System** - 🆕 Professional Calendly integration  

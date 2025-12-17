@@ -43,7 +43,7 @@ The booking system is **fully functional** and integrated into your website. You
 
    What we'll cover:
    - Your wedding vision and cultural elements
-   - Budget discussion and escrow protection
+   - Budget discussion and secure payment protection
    - Timeline and planning roadmap
    - Q&A about our services
 
