@@ -6,18 +6,5 @@
   "framework": "nextjs",
   "env": {
     "NEXT_PUBLIC_GA_ID": "G-X4HC7P2Q6C"
-  },
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.ceremonyverse.com"
-        }
-      ],
-      "destination": "https://ceremonyverse.com/:path*",
-      "permanent": true
-    }
-  ]
+  }
 }

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.ceremonyverse.com"
+  const baseUrl = "https://ceremonyverse.com" // Updated baseUrl from www.ceremonyverse.com to ceremonyverse.com (non-www)
   const currentDate = new Date()
 
   return [
