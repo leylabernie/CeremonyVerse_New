@@ -44,7 +44,7 @@ export default function BlogPage() {
       title: "How to Choose Your Perfect Wedding Venue",
       excerpt:
         "Complete guide to selecting the ideal venue for your Indian-American fusion wedding. Multi-day event considerations, capacity planning, budget tips, questions to ask, and red flags to avoid when booking your dream location.",
-      date: "January 24, 2025",
+      date: "December 24, 2025",
       readTime: "16 min read",
       category: "Planning Guide",
       slug: "choosing-perfect-wedding-venue",
@@ -53,7 +53,7 @@ export default function BlogPage() {
       title: "Complete Honeymoon Planning Guide",
       excerpt:
         "Plan your perfect post-wedding getaway with confidence. Everything from timing and budgeting to destination ideas, booking timeline, and expert tips to make your honeymoon stress-free and unforgettable.",
-      date: "January 23, 2025",
+      date: "December 23, 2025",
       readTime: "14 min read",
       category: "Planning Guide",
       slug: "honeymoon-planning-guide",
@@ -62,7 +62,7 @@ export default function BlogPage() {
       title: "Complete Wedding Planning Checklist & 12-Month Timeline",
       excerpt:
         "The ultimate month-by-month wedding planning guide for Indian-American fusion weddings. Comprehensive task list from engagement to honeymoon with expert tips, cultural considerations, and deadlines for every phase.",
-      date: "January 22, 2025",
+      date: "December 22, 2025",
       readTime: "20 min read",
       category: "Planning Guide",
       slug: "wedding-planning-checklist-timeline",
@@ -71,7 +71,7 @@ export default function BlogPage() {
       title: "Wedding Registry Guide for Indian-American Couples",
       excerpt:
         "Navigate the balance between traditional cash gifts (Shagun) and modern registries. Complete guide to honoring cultural expectations while creating a registry that works for all your guests.",
-      date: "January 21, 2025",
+      date: "December 21, 2025",
       readTime: "12 min read",
       category: "Planning Guide",
       slug: "wedding-registry-guide-indian-american",
@@ -80,7 +80,7 @@ export default function BlogPage() {
       title: "The Ultimate Mehndi Ceremony Guide: Traditions, Planning & Modern Ideas",
       excerpt:
         "Everything you need to create an unforgettable Mehndi night that honors tradition while celebrating your unique style. From decor to artists to aftercare tips.",
-      date: "January 20, 2025",
+      date: "December 20, 2025",
       readTime: "14 min read",
       category: "Cultural Traditions",
       slug: "mehndi-ceremony-guide",
@@ -89,7 +89,7 @@ export default function BlogPage() {
       title: "Finding the Perfect Indian Wedding Planner in USA: Complete Guide 2025",
       excerpt:
         "Everything you need to know about hiring an Indian wedding planner for your fusion celebration in America. Cultural expertise, vendor networks, and what to look for in a specialized planner.",
-      date: "January 18, 2025",
+      date: "December 19, 2025",
       readTime: "15 min read",
       category: "Planning Guide",
       slug: "indian-wedding-planner-usa",
@@ -98,7 +98,7 @@ export default function BlogPage() {
       title: "Indian & Multicultural Fusion Wedding Budget Guide 2025: Complete Cost Breakdown",
       excerpt:
         "Complete budget guide for Indian and multicultural fusion weddings in USA. Average costs, money-saving tips, and detailed breakdown by ceremony to plan your dream wedding within budget.",
-      date: "January 15, 2025",
+      date: "December 18, 2025",
       readTime: "12 min read",
       category: "Financial Planning",
       slug: "south-asian-wedding-budget-guide",
@@ -107,7 +107,7 @@ export default function BlogPage() {
       title: "10 Essential Elements of an Authentic Indian-American Fusion Wedding",
       excerpt:
         "Discover how to seamlessly blend traditional Indian ceremonies with modern American wedding elements. From the Mehendi to the reception, learn what makes a fusion wedding truly special.",
-      date: "January 15, 2025",
+      date: "December 18, 2025",
       readTime: "12 min read",
       category: "Planning Guide",
       slug: "essential-elements-fusion-wedding",
@@ -116,7 +116,7 @@ export default function BlogPage() {
       title: "Complete Guide to Indian Wedding Traditions for Modern Couples",
       excerpt:
         "Understanding the beautiful rituals that make Indian weddings unforgettable. From Mehendi to Vidaai, learn the meaning behind each tradition and how to adapt them for your fusion wedding.",
-      date: "January 14, 2025",
+      date: "December 17, 2025",
       readTime: "15 min read",
       category: "Cultural Traditions",
       slug: "indian-wedding-traditions-guide",
@@ -125,7 +125,7 @@ export default function BlogPage() {
       title: "Virtual Shopping for Indian Wedding Items: Your Complete Guide",
       excerpt:
         "Learn how to shop for authentic Indian wedding items from the US without getting scammed. Complete guide to virtual shopping, quality verification, secure payments, and avoiding common pitfalls.",
-      date: "January 13, 2025",
+      date: "December 17, 2025",
       readTime: "12 min read",
       category: "Shopping Guide",
       slug: "virtual-shopping-india-guide",
@@ -134,7 +134,7 @@ export default function BlogPage() {
       title: "Complete Guide to Vendor Verification for Your Wedding",
       excerpt:
         "Not all wedding vendors are created equal. Learn our comprehensive three-tier verification process, red flags to watch for, and essential questions to ask before committing to any supplier.",
-      date: "January 12, 2025",
+      date: "December 17, 2025",
       readTime: "15 min read",
       category: "Vendor Selection",
       slug: "vendor-verification-guide",
@@ -143,7 +143,7 @@ export default function BlogPage() {
       title: "12-Month Fusion Wedding Planning Timeline",
       excerpt:
         "A complete month-by-month guide to planning your Indian-American fusion wedding. From engagement to honeymoon, learn exactly what to do and when to do it for a stress-free planning experience.",
-      date: "January 8, 2025",
+      date: "December 17, 2025",
       readTime: "14 min read",
       category: "Planning Guide",
       slug: "fusion-wedding-timeline",

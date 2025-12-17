@@ -36,7 +36,7 @@ export default function MehndiCeremonyGuidePage() {
         title="The Ultimate Mehndi Ceremony Guide: Traditions, Planning & Modern Ideas"
         description="Everything you need to create an unforgettable Mehndi night that honors tradition while celebrating your unique style"
         image="https://www.ceremonyverse.com/indian-bride-hands-with-intricate-mehndi-henna-des.jpg"
-        datePublished="2025-01-20"
+        datePublished="2025-12-20"
         url="https://www.ceremonyverse.com/blog/mehndi-ceremony-guide"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
@@ -62,7 +62,7 @@ export default function MehndiCeremonyGuidePage() {
               unique style
             </p>
             <div className="flex items-center gap-4 mt-6 text-sm text-muted-foreground">
-              <time dateTime="2025-01-20">January 20, 2025</time>
+              <time dateTime="2025-12-20">December 20, 2025</time>
               <span>•</span>
               <span>14 min read</span>
             </div>
@@ -285,19 +285,19 @@ export default function MehndiCeremonyGuidePage() {
               <ul className="space-y-3">
                 <li className="flex justify-between items-center pb-3 border-b border-border">
                   <span>30-50 guests</span>
-                  <span className="font-semibold text-primary">2-3 artists</span>
+                  <span className="font-semibold">2-3 artists</span>
                 </li>
                 <li className="flex justify-between items-center pb-3 border-b border-border">
                   <span>50-100 guests</span>
-                  <span className="font-semibold text-primary">4-5 artists</span>
+                  <span className="font-semibold">4-5 artists</span>
                 </li>
                 <li className="flex justify-between items-center pb-3 border-b border-border">
                   <span>100-150 guests</span>
-                  <span className="font-semibold text-primary">6-8 artists</span>
+                  <span className="font-semibold">6-8 artists</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <span>150+ guests</span>
-                  <span className="font-semibold text-primary">8-10+ artists</span>
+                  <span className="font-semibold">8-10+ artists</span>
                 </li>
               </ul>
               <p className="text-sm text-muted-foreground mt-4">
