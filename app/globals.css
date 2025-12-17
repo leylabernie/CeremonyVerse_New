@@ -1,0 +1,455 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* New Color System - Vibrant South Asian Palette per Critique */
+
+  /* Primary Palette - Bold South Asian Colors */
+  --saffron: #ff9933; /* Vibrant saffron/orange - Indian flag inspired */
+  /* Toned down magenta even further to very soft rose */
+  --magenta: #d4739a; /* Very soft rose/pink - much less intense */
+  --maroon: #8b1538; /* Deep maroon - luxury bridal */
+  --burgundy: #6b1f3d; /* Rich burgundy */
+  /* Enhanced teal to be more prominent */
+  --peacock-blue: #0f969c; /* Brighter peacock teal - more vibrant */
+  --deep-teal: #0d7377; /* Medium teal */
+
+  /* Metallic Accents - Indian Jewelry */
+  --gold: #d4af37; /* Rich gold */
+  --antique-gold: #b8860b; /* Antique gold */
+  --rose-gold: #e0cdb1; /* Soft rose gold */
+  --copper: #b87333; /* Copper accent */
+
+  /* Natural Palette */
+  --cream: #faf8f5; /* Warm cream background */
+  --warm-beige: #e8dfd6; /* Soft beige */
+  --sand: #d4c4b0; /* Sandy neutral */
+  --charcoal: #2d2926; /* Warm charcoal */
+  --warm-grey: #5a5550; /* Warm grey */
+
+  /* Accent Colors */
+  --ivory: #fffff0; /* Ivory white */
+  --blush: #f8e7e7; /* Soft blush */
+
+  /* Semantic Tokens - Bold South Asian Theme */
+  /* Updated background from pure white to warm cream to match logo background */
+  --background: #faf8f5; /* Warm cream - matches logo background */
+  --foreground: #2d2926; /* Warm charcoal */
+
+  --card: #fffff0; /* Ivory */
+  --card-foreground: #2d2926; /* Warm charcoal */
+
+  --popover: #fffff0;
+  --popover-foreground: #2d2926;
+
+  /* Changed primary from rose to teal - making teal the main brand color */
+  --primary: #0f969c; /* Brighter teal - new primary color */
+  --primary-foreground: #fffff0; /* Ivory */
+
+  /* Changed secondary to soft rose - demoting pink to secondary accent */
+  --secondary: #d4739a; /* Very soft rose - less prominent */
+  --secondary-foreground: #fffff0; /* Ivory */
+
+  --muted: #e8dfd6; /* Soft beige */
+  --muted-foreground: #5a5550; /* Warm grey */
+
+  --accent: #ff9933; /* Saffron - Vibrant accent */
+  --accent-foreground: #2d2926; /* Warm charcoal */
+
+  --destructive: #dc2626;
+  --destructive-foreground: #fffff0;
+
+  --border: #d4c4b0; /* Sandy neutral */
+  --input: #e8dfd6; /* Soft beige */
+  --ring: #ff9933; /* Saffron ring */
+
+  --radius: 0.25rem; /* Minimal style */
+
+  /* Chart colors - Vibrant South Asian */
+  /* Updated chart colors to prioritize teal and saffron over pink */
+  --chart-1: #0f969c; /* Teal as primary chart color */
+  --chart-2: #ff9933; /* Saffron */
+  --chart-3: #d4af37; /* Gold */
+  --chart-4: #d4739a; /* Soft rose */
+  --chart-5: #8b1538; /* Maroon */
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: #1a1816;
+  --foreground: #faf8f5;
+  --card: #2d2926;
+  --card-foreground: #faf8f5;
+  --popover: #2d2926;
+  --popover-foreground: #faf8f5;
+  --primary: #d4af37;
+  --primary-foreground: #1a1816;
+  --secondary: #e8dfd6;
+  --secondary-foreground: #1a1816;
+  --muted: #3a3632;
+  --muted-foreground: #a8a39a;
+  --accent: #8b1538;
+  --accent-foreground: #faf8f5;
+  --destructive: #dc2626;
+  --destructive-foreground: #faf8f5;
+  --border: #3a3632;
+  --input: #3a3632;
+  --ring: #d4af37;
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Minimal border radius - Boho style */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.5rem;
+
+  /* Typography - Elegant serif + clean sans-serif */
+  --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: var(--font-cormorant), "Playfair Display", Georgia, serif;
+
+  /* Tailwind 4 font family utilities */
+  --font-family-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-serif: var(--font-cormorant), "Playfair Display", Georgia, serif;
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.01em;
+  }
+
+  /* Explicit font-sans class definition */
+  .font-sans {
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  }
+
+  /* Explicit font-serif class definition */
+  .font-serif {
+    font-family: var(--font-cormorant), "Playfair Display", Georgia, serif !important;
+  }
+
+  /* Refined Typography Hierarchy - Kalki + Boho blend */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif font-light text-foreground;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+
+  h1 {
+    font-size: clamp(2.75rem, 6vw, 5.5rem);
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: clamp(2.25rem, 4.5vw, 4rem);
+    font-weight: 300;
+  }
+
+  h3 {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: clamp(1.35rem, 2.5vw, 2rem);
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    font-weight: 500;
+  }
+
+  h6 {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-weight: 500;
+  }
+
+  p {
+    @apply font-sans text-foreground;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  /* Elegant link styling */
+  a {
+    @apply font-sans transition-colors duration-300;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--primary);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  button:focus-visible,
+  a:focus-visible {
+    @apply outline-2 outline-offset-4 outline-accent;
+  }
+
+  /* Smooth transitions everywhere */
+  * {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer utilities {
+  /* Generous spacing - Boho style */
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-36;
+  }
+
+  .section-padding-sm {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .container-padding {
+    @apply px-6 sm:px-8 lg:px-12 xl:px-16;
+  }
+
+  .container-max {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Typography utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Kalki-inspired gradient overlays */
+  .gradient-overlay-dark {
+    background: linear-gradient(180deg, rgba(45, 41, 38, 0) 0%, rgba(45, 41, 38, 0.8) 100%);
+  }
+
+  .gradient-overlay-maroon {
+    background: linear-gradient(135deg, rgba(139, 21, 56, 0.95) 0%, rgba(107, 31, 61, 0.95) 100%);
+  }
+
+  .gradient-overlay-gold {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(184, 134, 11, 0.25) 100%);
+  }
+
+  /* Boho texture backgrounds */
+  .texture-cream {
+    background-color: var(--cream);
+    background-image: radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(139, 21, 56, 0.03) 0%, transparent 50%);
+  }
+
+  .texture-beige {
+    background-color: var(--warm-beige);
+    background-image: linear-gradient(90deg, rgba(255, 255, 240, 0.5) 1px, transparent 1px),
+      linear-gradient(0deg, rgba(255, 255, 240, 0.5) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Card hover effects - Kalki inspired */
+  .card-hover {
+    @apply transition-all duration-500 ease-out;
+    @apply hover:shadow-2xl hover:shadow-primary/10;
+    @apply hover:-translate-y-2;
+  }
+
+  /* Button styles - Elegant and minimal */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-8 py-4 rounded-sm;
+    @apply font-sans text-sm uppercase tracking-wider font-medium;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30;
+    @apply focus:ring-2 focus:ring-accent focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-primary border-2 border-primary px-8 py-4 rounded-sm;
+    @apply font-sans text-sm uppercase tracking-wider font-medium;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:bg-primary hover:text-primary-foreground;
+    @apply focus:ring-2 focus:ring-accent focus:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-accent-foreground px-8 py-4 rounded-sm;
+    @apply font-sans text-sm uppercase tracking-wider font-semibold;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/30;
+  }
+
+  /* Image overlays */
+  .image-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(45, 41, 38, 0.6) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .image-overlay:hover::after {
+    opacity: 1;
+  }
+
+  /* Elegant dividers */
+  .divider-gold {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+    opacity: 0.3;
+  }
+
+  .divider-maroon {
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, var(--maroon) 50%, transparent 100%);
+    opacity: 0.2;
+  }
+
+  /* Gradient text with improved readability */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--maroon) 0%, var(--primary) 40%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 1px rgba(45, 41, 38, 0.1);
+  }
+
+  /* Gradient text with stroke for better contrast */
+  .gradient-text-stroke {
+    background: linear-gradient(135deg, var(--maroon) 0%, var(--primary) 40%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px rgba(45, 41, 38, 0.15);
+    position: relative;
+  }
+
+  /* Make sure gradient text is always readable */
+  @supports not (background-clip: text) {
+    .gradient-text,
+    .gradient-text-stroke {
+      color: var(--primary);
+      -webkit-text-fill-color: var(--primary);
+    }
+  }
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Luxury loading shimmer */
+.shimmer {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0) 0%, rgba(212, 175, 55, 0.2) 50%, rgba(212, 175, 55, 0) 100%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
