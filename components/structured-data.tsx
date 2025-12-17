@@ -157,28 +157,36 @@ export function ServiceSchema({
 export function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://www.ceremonyverse.com/#business",
+    "@type": "EventPlanning",
+    "@id": "https://ceremonyverse.com/#business",
     name: "CeremonyVerse",
-    description:
-      "Premium Indian-American fusion wedding planning services. Specializing in Gujarati, Hindu, Tamil Christian & multicultural weddings.",
+    url: "https://ceremonyverse.com",
     telephone: "+1-215-341-9990",
     email: "hello@ceremonyverse.com",
-    url: "https://www.ceremonyverse.com",
-    priceRange: "$$$",
-    image: "https://www.ceremonyverse.com/og-image.jpg",
+    image: "https://ceremonyverse.com/og-image.jpg",
+    description:
+      "Indian and fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and virtual planning support.",
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       addressCountry: "US",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "39.9526",
-      longitude: "-75.1652",
-    },
     areaServed: [
       { "@type": "Country", name: "United States" },
       { "@type": "Country", name: "Mexico" },
+    ],
+    sameAs: [
+      "https://www.instagram.com/ceremonyverse",
+      "https://www.facebook.com/ceremonyverse",
+      "https://www.pinterest.com/ceremonyverse",
+    ],
+    makesOffer: [
+      { "@type": "Offer", name: "Full Wedding Planning" },
+      { "@type": "Offer", name: "Partial Planning & Coordination" },
+      { "@type": "Offer", name: "Virtual Planning & India Sourcing" },
+      { "@type": "Offer", name: "Destination Wedding Planning" },
+      { "@type": "Offer", name: "Cultural Fusion Wedding Planning" },
+      { "@type": "Offer", name: "Multi-Day Ceremony Coordination" },
     ],
     aggregateRating: {
       "@type": "AggregateRating",
