@@ -95,11 +95,24 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      {
+        url: "/icon-light-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/icon-dark-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
     ],
-    apple: "/favicon.png",
-    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
   category: "Wedding Planning",
   generator: "v0.app",
@@ -116,10 +129,6 @@ export default function RootLayout({
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <head>
         {/* Favicon with cache busting */}
-        <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=2" />
-        <link rel="apple-touch-icon" href="/favicon.png?v=2" />
-
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://connect.facebook.net" />
 
