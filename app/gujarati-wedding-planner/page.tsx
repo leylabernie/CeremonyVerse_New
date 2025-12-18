@@ -49,7 +49,7 @@ export default function GujaratiWeddingPlannerPage() {
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <Link href="/gallery">View Gujarati Weddings</Link>
+                    <Link href="/wedding-journeys">View Wedding Journeys</Link>
                   </Button>
                 </div>
               </div>

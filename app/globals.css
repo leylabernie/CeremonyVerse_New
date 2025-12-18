@@ -4,106 +4,96 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* New Color System - Vibrant South Asian Palette per Critique */
+  /* Applying Option A sage palette by overriding shadcn defaults */
+  /* Base colors - warm neutrals */
+  --background: #fafaf8;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
 
-  /* Primary Palette - Bold South Asian Colors */
-  --saffron: #ff9933; /* Vibrant saffron/orange - Indian flag inspired */
-  /* Toned down magenta even further to very soft rose */
-  --magenta: #d4739a; /* Very soft rose/pink - much less intense */
-  --maroon: #8b1538; /* Deep maroon - luxury bridal */
-  --burgundy: #6b1f3d; /* Rich burgundy */
-  /* Enhanced teal to be more prominent */
-  --peacock-blue: #0f969c; /* Brighter peacock teal - more vibrant */
-  --deep-teal: #0d7377; /* Medium teal */
+  /* Primary = Sage accent */
+  --primary: #3f6d5b;
+  --primary-foreground: #ffffff;
 
-  /* Metallic Accents - Indian Jewelry */
-  --gold: #d4af37; /* Rich gold */
-  --antique-gold: #b8860b; /* Antique gold */
-  --rose-gold: #e0cdb1; /* Soft rose gold */
-  --copper: #b87333; /* Copper accent */
+  /* Secondary = warm gray surface */
+  --secondary: #f3f4f1;
+  --secondary-foreground: #111827;
 
-  /* Natural Palette */
-  --cream: #faf8f5; /* Warm cream background */
-  --warm-beige: #e8dfd6; /* Soft beige */
-  --sand: #d4c4b0; /* Sandy neutral */
-  --charcoal: #2d2926; /* Warm charcoal */
-  --warm-grey: #5a5550; /* Warm grey */
+  /* Muted = light gray surface */
+  --muted: #f3f4f1;
+  --muted-foreground: #4b5563;
 
-  /* Accent Colors */
-  --ivory: #fffff0; /* Ivory white */
-  --blush: #f8e7e7; /* Soft blush */
+  /* Accent = sage (same as primary) */
+  --accent: #3f6d5b;
+  --accent-foreground: #ffffff;
 
-  /* Semantic Tokens - Bold South Asian Theme */
-  /* Updated background from pure white to warm cream to match logo background */
-  --background: #faf8f5; /* Warm cream - matches logo background */
-  --foreground: #2d2926; /* Warm charcoal */
+  /* Destructive = danger red */
+  --destructive: #991b1b;
+  --destructive-foreground: #ffffff;
 
-  --card: #fffff0; /* Ivory */
-  --card-foreground: #2d2926; /* Warm charcoal */
+  /* Borders and inputs */
+  --border: #e6e7e2;
+  --input: #e6e7e2;
+  --ring: #3f6d5b;
 
-  --popover: #fffff0;
-  --popover-foreground: #2d2926;
+  /* Charts - keeping defaults */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
 
-  /* Changed primary from rose to teal - making teal the main brand color */
-  --primary: #0f969c; /* Brighter teal - new primary color */
-  --primary-foreground: #fffff0; /* Ivory */
+  --radius: 0.625rem;
 
-  /* Changed secondary to soft rose - demoting pink to secondary accent */
-  --secondary: #d4739a; /* Very soft rose - less prominent */
-  --secondary-foreground: #fffff0; /* Ivory */
+  /* Sidebar */
+  --sidebar: #fafaf8;
+  --sidebar-foreground: #111827;
+  --sidebar-primary: #3f6d5b;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f3f4f1;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: #e6e7e2;
+  --sidebar-ring: #3f6d5b;
 
-  --muted: #e8dfd6; /* Soft beige */
-  --muted-foreground: #5a5550; /* Warm grey */
-
-  --accent: #ff9933; /* Saffron - Vibrant accent */
-  --accent-foreground: #2d2926; /* Warm charcoal */
-
-  --destructive: #dc2626;
-  --destructive-foreground: #fffff0;
-
-  --border: #d4c4b0; /* Sandy neutral */
-  --input: #e8dfd6; /* Soft beige */
-  --ring: #ff9933; /* Saffron ring */
-
-  --radius: 0.25rem; /* Minimal style */
-
-  /* Chart colors - Vibrant South Asian */
-  /* Updated chart colors to prioritize teal and saffron over pink */
-  --chart-1: #0f969c; /* Teal as primary chart color */
-  --chart-2: #ff9933; /* Saffron */
-  --chart-3: #d4af37; /* Gold */
-  --chart-4: #d4739a; /* Soft rose */
-  --chart-5: #8b1538; /* Maroon */
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Additional Option A tokens for custom components */
+  --bg: #fafaf8;
+  --surface: #ffffff;
+  --surface-2: #f3f4f1;
+  --text: #111827;
+  --accent-hover: #335a4b;
+  --accent-soft: #e7f0eb;
+  --success: #166534;
+  --warning: #92400e;
+  --danger: #991b1b;
 }
 
 .dark {
-  --background: #1a1816;
-  --foreground: #faf8f5;
-  --card: #2d2926;
-  --card-foreground: #faf8f5;
-  --popover: #2d2926;
-  --popover-foreground: #faf8f5;
-  --primary: #d4af37;
-  --primary-foreground: #1a1816;
-  --secondary: #e8dfd6;
-  --secondary-foreground: #1a1816;
-  --muted: #3a3632;
-  --muted-foreground: #a8a39a;
-  --accent: #8b1538;
-  --accent-foreground: #faf8f5;
-  --destructive: #dc2626;
-  --destructive-foreground: #faf8f5;
-  --border: #3a3632;
-  --input: #3a3632;
-  --ring: #d4af37;
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
@@ -115,6 +105,7 @@
 }
 
 @theme inline {
+  /* Shadcn/ui color mappings */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -139,20 +130,10 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-
-  /* Minimal border radius - Boho style */
-  --radius-sm: 0.125rem;
-  --radius-md: 0.25rem;
-  --radius-lg: 0.375rem;
-  --radius-xl: 0.5rem;
-
-  /* Typography - Elegant serif + clean sans-serif */
-  --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif: var(--font-cormorant), "Playfair Display", Georgia, serif;
-
-  /* Tailwind 4 font family utilities */
-  --font-family-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-family-serif: var(--font-cormorant), "Playfair Display", Georgia, serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -161,295 +142,28 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Custom Option A tokens for use in components */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-text: var(--text);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --radius-2xl: 1rem;
+  --default-max-w-page: 1280px;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-
   body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    letter-spacing: 0.01em;
+    @apply bg-background text-foreground min-h-screen antialiased;
   }
-
-  /* Explicit font-sans class definition */
-  .font-sans {
-    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  }
-
-  /* Explicit font-serif class definition */
-  .font-serif {
-    font-family: var(--font-cormorant), "Playfair Display", Georgia, serif !important;
-  }
-
-  /* Refined Typography Hierarchy - Kalki + Boho blend */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-serif font-light text-foreground;
-    line-height: 1.15;
-    letter-spacing: -0.03em;
-  }
-
-  h1 {
-    font-size: clamp(2.75rem, 6vw, 5.5rem);
-    font-weight: 300;
-  }
-
-  h2 {
-    font-size: clamp(2.25rem, 4.5vw, 4rem);
-    font-weight: 300;
-  }
-
-  h3 {
-    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-    font-weight: 400;
-  }
-
-  h4 {
-    font-size: clamp(1.35rem, 2.5vw, 2rem);
-    font-weight: 400;
-  }
-
-  h5 {
-    font-size: clamp(1.15rem, 2vw, 1.5rem);
-    font-weight: 500;
-  }
-
-  h6 {
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
-    font-weight: 500;
-  }
-
-  p {
-    @apply font-sans text-foreground;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-  }
-
-  /* Elegant link styling */
-  a {
-    @apply font-sans transition-colors duration-300;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: var(--primary);
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  button:focus-visible,
-  a:focus-visible {
-    @apply outline-2 outline-offset-4 outline-accent;
-  }
-
-  /* Smooth transitions everywhere */
-  * {
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-  }
-}
-
-@layer utilities {
-  /* Generous spacing - Boho style */
-  .section-padding {
-    @apply py-20 md:py-28 lg:py-36;
-  }
-
-  .section-padding-sm {
-    @apply py-12 md:py-16 lg:py-20;
-  }
-
-  .container-padding {
-    @apply px-6 sm:px-8 lg:px-12 xl:px-16;
-  }
-
-  .container-max {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Typography utilities */
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  .text-pretty {
-    text-wrap: pretty;
-  }
-
-  /* Kalki-inspired gradient overlays */
-  .gradient-overlay-dark {
-    background: linear-gradient(180deg, rgba(45, 41, 38, 0) 0%, rgba(45, 41, 38, 0.8) 100%);
-  }
-
-  .gradient-overlay-maroon {
-    background: linear-gradient(135deg, rgba(139, 21, 56, 0.95) 0%, rgba(107, 31, 61, 0.95) 100%);
-  }
-
-  .gradient-overlay-gold {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(184, 134, 11, 0.25) 100%);
-  }
-
-  /* Boho texture backgrounds */
-  .texture-cream {
-    background-color: var(--cream);
-    background-image: radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(139, 21, 56, 0.03) 0%, transparent 50%);
-  }
-
-  .texture-beige {
-    background-color: var(--warm-beige);
-    background-image: linear-gradient(90deg, rgba(255, 255, 240, 0.5) 1px, transparent 1px),
-      linear-gradient(0deg, rgba(255, 255, 240, 0.5) 1px, transparent 1px);
-    background-size: 60px 60px;
-  }
-
-  /* Card hover effects - Kalki inspired */
-  .card-hover {
-    @apply transition-all duration-500 ease-out;
-    @apply hover:shadow-2xl hover:shadow-primary/10;
-    @apply hover:-translate-y-2;
-  }
-
-  /* Button styles - Elegant and minimal */
-  .btn-primary {
-    @apply bg-primary text-primary-foreground px-8 py-4 rounded-sm;
-    @apply font-sans text-sm uppercase tracking-wider font-medium;
-    @apply transition-all duration-300 ease-out;
-    @apply hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30;
-    @apply focus:ring-2 focus:ring-accent focus:ring-offset-2;
-  }
-
-  .btn-secondary {
-    @apply bg-transparent text-primary border-2 border-primary px-8 py-4 rounded-sm;
-    @apply font-sans text-sm uppercase tracking-wider font-medium;
-    @apply transition-all duration-300 ease-out;
-    @apply hover:bg-primary hover:text-primary-foreground;
-    @apply focus:ring-2 focus:ring-accent focus:ring-offset-2;
-  }
-
-  .btn-accent {
-    @apply bg-accent text-accent-foreground px-8 py-4 rounded-sm;
-    @apply font-sans text-sm uppercase tracking-wider font-semibold;
-    @apply transition-all duration-300 ease-out;
-    @apply hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/30;
-  }
-
-  /* Image overlays */
-  .image-overlay {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .image-overlay::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(45, 41, 38, 0.6) 100%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-
-  .image-overlay:hover::after {
-    opacity: 1;
-  }
-
-  /* Elegant dividers */
-  .divider-gold {
-    height: 1px;
-    background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
-    opacity: 0.3;
-  }
-
-  .divider-maroon {
-    height: 2px;
-    background: linear-gradient(90deg, transparent 0%, var(--maroon) 50%, transparent 100%);
-    opacity: 0.2;
-  }
-
-  /* Gradient text with improved readability */
-  .gradient-text {
-    background: linear-gradient(135deg, var(--maroon) 0%, var(--primary) 40%, var(--gold) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 1px rgba(45, 41, 38, 0.1);
-  }
-
-  /* Gradient text with stroke for better contrast */
-  .gradient-text-stroke {
-    background: linear-gradient(135deg, var(--maroon) 0%, var(--primary) 40%, var(--gold) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px rgba(45, 41, 38, 0.15);
-    position: relative;
-  }
-
-  /* Make sure gradient text is always readable */
-  @supports not (background-clip: text) {
-    .gradient-text,
-    .gradient-text-stroke {
-      color: var(--primary);
-      -webkit-text-fill-color: var(--primary);
-    }
-  }
-}
-
-/* Custom animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -1000px 0;
-  }
-  100% {
-    background-position: 1000px 0;
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
-/* Luxury loading shimmer */
-.shimmer {
-  background: linear-gradient(90deg, rgba(212, 175, 55, 0) 0%, rgba(212, 175, 55, 0.2) 50%, rgba(212, 175, 55, 0) 100%);
-  background-size: 1000px 100%;
-  animation: shimmer 2s infinite;
 }

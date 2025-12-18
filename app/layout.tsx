@@ -1,160 +1,65 @@
 import type React from "react"
-import type { Metadata } from "next"
-import { Cormorant_Garamond, Inter } from "next/font/google"
-import Script from "next/script"
 import "./globals.css"
-import { MobileBottomNav } from "@/components/mobile-bottom-nav"
-import { MetaPixel } from "@/components/analytics"
-import { LazyAIPlanningAssistant } from "@/components/lazy-ai-assistant"
-import { LazyWhatsAppWidget } from "@/components/lazy-whatsapp-widget"
-import { LazyCalendlyWidget } from "@/components/lazy-calendly-widget"
-import { OrganizationSchema, WebsiteSchema, LocalBusinessSchema } from "@/components/structured-data"
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-cormorant",
-  display: "swap",
-})
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-})
-
-const siteUrl = "https://ceremonyverse.com"
+import type { Metadata } from "next"
+import { Navbar } from "@/components/site/navbar"
+import { Footer } from "@/components/site/footer"
+import { cx } from "@/lib/cx"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ceremonyverse.com"),
+  metadataBase: new URL("https://www.ceremonyverse.com"),
   title: {
-    default: "Indian Wedding Planner USA | Gujarati, Hindu & Multicultural Fusion | CeremonyVerse",
-    template: "%s | CeremonyVerse - Indian Wedding Planner",
+    default: "CeremonyVerse | Indian & Fusion Wedding Planning",
+    template: "%s | CeremonyVerse",
   },
   description:
-    "A one-stop premium service suite for Gujarati, Hindu, Tamil Christian & multicultural fusion weddings — planning, outfits, ceremony essentials, and invitations. Looking for an Indian wedding planner in USA? Verified vendors, virtual shopping from India. Serving couples nationwide. Call +1-215-341-9990 for a free consultation.",
-  keywords: [
-    "Indian wedding planner USA",
-    "Indian wedding planner near me",
-    "fusion wedding planning",
-    "Indian American wedding",
-    "Hindu wedding planner",
-    "Gujarati wedding planner",
-    "Indian Christian wedding",
-    "multicultural wedding planner",
-    "desi wedding planner",
-    "luxury Indian wedding",
-    "Indian wedding vendors",
-    "virtual shopping India wedding",
-    "verified wedding suppliers",
-  ],
-  authors: [{ name: "CeremonyVerse", url: siteUrl }],
-  creator: "CeremonyVerse",
-  publisher: "CeremonyVerse",
-  formatDetection: {
-    email: true,
-    telephone: true,
-    address: true,
-  },
+    "Indian & fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and seamless execution.",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "CeremonyVerse | #1 Indian Wedding Planner in USA - Fusion Wedding Experts",
+    title: "CeremonyVerse | Indian & Fusion Wedding Planning",
     description:
-      "Expert Indian-American fusion wedding planning with 200+ verified vendors and virtual shopping from India. Free consultation available.",
-    type: "website",
-    locale: "en_US",
-    url: siteUrl,
+      "Process-led planning for Indian and fusion weddings—timelines, cultural precision, and seamless coordination.",
+    url: "https://www.ceremonyverse.com",
     siteName: "CeremonyVerse",
-    images: [
-      {
-        url: `${siteUrl}/og-image.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "CeremonyVerse - Indian Wedding Planning Services",
-      },
-    ],
+    type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "CeremonyVerse | Indian Wedding Planner USA",
-    description: "Expert Indian-American fusion wedding planning. Verified vendors, virtual shopping from India.",
-    images: [`${siteUrl}/og-image.jpg`],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  alternates: {
-    canonical: "https://ceremonyverse.com",
-  },
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        sizes: "32x32",
-        type: "image/png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        sizes: "32x32",
-        type: "image/png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
-  category: "Wedding Planning",
-  generator: "v0.app",
+    generator: 'v0.app'
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  const email = process.env.NOTIFICATION_EMAIL || "hello@ceremonyverse.com"
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EventPlanning",
+  name: "CeremonyVerse",
+  url: "https://www.ceremonyverse.com",
+  description:
+    "Indian and fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and virtual planning support.",
+  priceRange: "$$",
+  areaServed: [
+    { "@type": "Country", name: "United States" },
+    { "@type": "Country", name: "Mexico" },
+  ],
+  sameAs: [
+    "https://www.instagram.com/ceremonyverse",
+    "https://www.facebook.com/ceremonyverse",
+    "https://www.pinterest.com/ceremonyverse",
+  ],
+  makesOffer: [
+    { "@type": "Offer", name: "Full Wedding Planning" },
+    { "@type": "Offer", name: "Partial Planning & Coordination" },
+    { "@type": "Offer", name: "Virtual Planning & India Sourcing" },
+    { "@type": "Offer", name: "Destination Wedding Planning" },
+  ],
+}
 
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en">
       <head>
-        {/* Favicon with cache busting */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://connect.facebook.net" />
-
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-P49VF9FMV5" strategy="afterInteractive" />
-        <Script id="ga-ceremonyverse" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-P49VF9FMV5');
-          `}
-        </Script>
-
-        <OrganizationSchema />
-        <WebsiteSchema />
-        <LocalBusinessSchema />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </head>
-      <body className="font-sans antialiased pb-16 md:pb-0">
-        <MetaPixel />
-
-        {children}
-
-        <LazyAIPlanningAssistant />
-        <LazyWhatsAppWidget />
-        <LazyCalendlyWidget />
-        <MobileBottomNav />
+      <body className={cx("min-h-screen antialiased bg-cvBg text-cvInk")}>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
