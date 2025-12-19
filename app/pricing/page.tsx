@@ -41,7 +41,7 @@ export default function PricingPage() {
         <div className="grid gap-8 md:grid-cols-2">
           <Card hover>
             <h3 className="text-text mb-2">Planning Intensives</h3>
-            <div className="text-2xl font-semibold text-primary mb-4">Starting at $X</div>
+            <div className="text-2xl font-semibold text-primary mb-4">Starting at $500</div>
             <p className="text-muted-foreground mb-4">For couples who want expert clarity without full planning.</p>
             <p className="text-sm text-muted-foreground">
               Includes: budget review, cultural guidance, vendor shortlists, next-step plan.
@@ -50,7 +50,7 @@ export default function PricingPage() {
 
           <Card hover>
             <h3 className="text-text mb-2">Partial Planning & Coordination</h3>
-            <div className="text-2xl font-semibold text-primary mb-4">Starting at $X</div>
+            <div className="text-2xl font-semibold text-primary mb-4">$2,500 - $5,500</div>
             <p className="text-muted-foreground mb-4">
               For couples managing parts themselves but needing structure and expert support.
             </p>
@@ -61,7 +61,7 @@ export default function PricingPage() {
 
           <Card hover>
             <h3 className="text-text mb-2">Full Wedding Planning</h3>
-            <div className="text-2xl font-semibold text-primary mb-4">Starting at $X</div>
+            <div className="text-2xl font-semibold text-primary mb-4">$6,000 - $15,000+</div>
             <p className="text-muted-foreground mb-4">
               For multi-event Indian or fusion weddings needing end-to-end planning.
             </p>
@@ -72,7 +72,7 @@ export default function PricingPage() {
 
           <Card hover>
             <h3 className="text-text mb-2">Cultural Sourcing Support</h3>
-            <div className="text-2xl font-semibold text-primary mb-4">Starting at $X</div>
+            <div className="text-2xl font-semibold text-primary mb-4">Starting at $750</div>
             <p className="text-muted-foreground mb-4">
               For outfits, jewelry, ceremony essentials, favors, India coordination.
             </p>

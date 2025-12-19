@@ -2,6 +2,7 @@ import type React from "react"
 import { Section } from "@/components/site/section"
 import { Card } from "@/components/site/card"
 import { Button } from "@/components/ui/button"
+import { InternalCTA } from "@/components/internal-cta"
 
 const sections = [
   { id: "why-different", title: "Why Indian weddings are different" },
@@ -109,6 +110,8 @@ export default function PillarPost() {
           </div>
         </div>
       </Section>
+
+      <InternalCTA />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import { Section } from "@/components/site/section"
 import { Card } from "@/components/site/card"
 import { Button } from "@/components/ui/button"
+import { InternalCTA } from "@/components/internal-cta"
 
 export default function ServicesPage() {
   return (
@@ -8,8 +9,9 @@ export default function ServicesPage() {
       <Section>
         <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">Indian & Fusion Wedding Planning Services</h1>
         <p className="mt-4 text-cvMuted max-w-3xl">
-          Thoughtful planning, cultural understanding, and seamless coordination for multi-day Indian weddings. Secure,
-          milestone-based payments via Stripe, PayPal, and Zelle.
+          Planning an Indian or fusion wedding means matching your vision to your budget while honoring cultural
+          traditions. We offer flexible planning support — from one-time strategy sessions to full coordination — so you
+          get the right level of help for your event complexity, timeline, and priorities.
         </p>
 
         <div className="mt-6 flex gap-3">
@@ -77,6 +79,18 @@ export default function ServicesPage() {
           </div>
         </Card>
       </Section>
+
+      <Section variant="warm2">
+        <Card className="md:p-10">
+          <h3 className="text-xl md:text-2xl font-semibold tracking-tight mb-4">Payment & Security</h3>
+          <p className="text-cvMuted">
+            We use secure, milestone-based payments through Stripe, PayPal, and Zelle. Each invoice is tied to specific
+            deliverables and planning checkpoints, giving you transparency and control throughout the process.
+          </p>
+        </Card>
+      </Section>
+
+      <InternalCTA />
     </>
   )
 }
