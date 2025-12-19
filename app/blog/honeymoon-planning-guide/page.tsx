@@ -19,7 +19,10 @@ export default function HoneymoonPlanningGuidePage() {
       <article className="pt-32 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <SocialShare />
+            <SocialShare
+              url="https://www.ceremonyverse.com/blog/honeymoon-planning-guide"
+              title="Complete Honeymoon Planning Guide 2025"
+            />
             <div className="flex items-center gap-3 mb-4">
               <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
                 Planning Guide

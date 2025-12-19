@@ -571,7 +571,13 @@ export default function IndianWeddingPlannerUSAPage() {
         </div>
       </article>
 
-      <SocialShare />
+      {/* Social Sharing */}
+      <div className="mt-12 pt-8 border-t border-border">
+        <SocialShare
+          url="https://www.ceremonyverse.com/blog/indian-wedding-planner-usa"
+          title="How to Find the Best Indian Wedding Planner in the USA"
+        />
+      </div>
     </div>
   )
 }

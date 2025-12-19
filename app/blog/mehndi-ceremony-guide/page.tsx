@@ -617,7 +617,13 @@ export default function MehndiCeremonyGuidePage() {
               </Link>
             </div>
 
-            <SocialShare />
+            {/* Social Sharing */}
+            <div className="mt-12 pt-8 border-t border-border">
+              <SocialShare
+                url="https://www.ceremonyverse.com/blog/mehndi-ceremony-guide"
+                title="Complete Guide to Mehndi Ceremony: Traditions, Tips & Modern Ideas"
+              />
+            </div>
           </div>
         </div>
       </article>
