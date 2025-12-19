@@ -4,6 +4,20 @@ import type { Metadata } from "next"
 import { Navbar } from "@/components/site/navbar"
 import { Footer } from "@/components/site/footer"
 import { cx } from "@/lib/cx"
+import { Fraunces } from "next/font/google"
+import { Inter } from "next/font/google"
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+})
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ceremonyverse.com"),
@@ -52,11 +66,11 @@ const localBusinessJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={cx(fraunces.variable, inter.variable)}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </head>
-      <body className={cx("min-h-screen antialiased bg-cvBg text-cvInk")}>
+      <body className={cx("min-h-screen antialiased bg-cvBg text-cvInk font-sans")}>
         <Navbar />
         <main>{children}</main>
         <Footer />

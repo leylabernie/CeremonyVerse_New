@@ -29,6 +29,10 @@
   --accent: #3f6d5b;
   --accent-foreground: #ffffff;
 
+  /* Adding warm highlight tones */
+  --warm: #e9dfd2;
+  --warm-2: #f6efe6;
+
   /* Destructive = danger red */
   --destructive: #991b1b;
   --destructive-foreground: #ffffff;
@@ -37,6 +41,11 @@
   --border: #e6e7e2;
   --input: #e6e7e2;
   --ring: #3f6d5b;
+
+  /* Adding backwards-compatible color tokens for old code */
+  --charcoal: #111827;
+  --ivory: #fafaf8;
+  --cream: #f6efe6;
 
   /* Charts - keeping defaults */
   --chart-1: oklch(0.646 0.222 41.116);
@@ -57,7 +66,7 @@
   --sidebar-border: #e6e7e2;
   --sidebar-ring: #3f6d5b;
 
-  /* Additional Option A tokens for custom components */
+  /* Additional Option A tokens for custom components with cv prefix */
   --bg: #fafaf8;
   --surface: #ffffff;
   --surface-2: #f3f4f1;
@@ -67,6 +76,17 @@
   --success: #166534;
   --warning: #92400e;
   --danger: #991b1b;
+
+  /* cv-prefixed tokens for new components */
+  --cv-bg: #fafaf8;
+  --cv-surface: #ffffff;
+  --cv-sand: #f3f4f1;
+  --cv-ink: #111827;
+  --cv-muted: #4b5563;
+  --cv-border: #e6e7e2;
+  --cv-accent: #3f6d5b;
+  --cv-accent-hover: #335a4b;
+  --cv-teal: #2e6f6b;
 }
 
 .dark {
@@ -154,6 +174,32 @@
   --color-warning: var(--warning);
   --color-danger: var(--danger);
 
+  /* Adding backwards-compatible color mappings */
+  --color-charcoal: var(--charcoal);
+  --color-ivory: var(--ivory);
+  --color-cream: var(--cream);
+
+  /* Adding warm tones for sections and chips */
+  --color-warm: var(--warm);
+  --color-warm-2: var(--warm-2);
+
+  /* cv-prefixed color mappings for new components */
+  --color-cvBg: var(--cv-bg);
+  --color-cvSurface: var(--cv-surface);
+  --color-cvSand: var(--cv-sand);
+  --color-cvInk: var(--cv-ink);
+  --color-cvMuted: var(--cv-muted);
+  --color-cvBorder: var(--cv-border);
+  --color-cvAccent: var(--cv-accent);
+  --color-cvAccentHover: var(--cv-accent-hover);
+  --color-cvTeal: var(--cv-teal);
+
+  /* Adding premium font family variables */
+  --font-fraunces: var(--font-fraunces);
+  --font-inter: var(--font-inter);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia;
+
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
   --radius-2xl: 1rem;
   --default-max-w-page: 1280px;
@@ -165,5 +211,59 @@
   }
   body {
     @apply bg-background text-foreground min-h-screen antialiased;
+  }
+
+  /* Fixed spacing between utility classes */
+  h1 {
+    font-family: var(--font-serif), ui-serif, Georgia;
+    font-size: 2.125rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  h2 {
+    font-family: var(--font-serif), ui-serif, Georgia;
+    font-size: 2rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.25rem;
+    }
+  }
+
+  h3 {
+    font-family: var(--font-serif), ui-serif, Georgia;
+    font-size: 1.25rem;
+    line-height: 1.375;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    line-height: 1.7;
+    font-size: 1.0625rem;
   }
 }

@@ -29,4 +29,4 @@ Continue building your app on:
 3. Changes are automatically pushed to this repository
 4. Vercel deploys the latest version from this repository
 
-<!-- Sync trigger: 2025-01-18 22:30 UTC - Clean version without escrow language -->
+<!-- Sync trigger: 2025-12-18 23:45 UTC - Fixed Button component props in HomeHero -->

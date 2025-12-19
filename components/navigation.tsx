@@ -19,20 +19,20 @@ export function Navigation() {
   const linkStyles = (href: string) =>
     `font-sans px-3 xl:px-4 py-2.5 text-[15px] font-medium rounded-sm transition-all ${
       isActive(href)
-        ? "text-primary bg-primary/10 border-b-2 border-primary"
-        : "text-charcoal hover:text-primary hover:bg-warm-beige/30"
+        ? "text-cvAccent bg-cvAccent/10 border-b-2 border-cvAccent"
+        : "text-cvInk hover:text-cvAccent hover:bg-warm-beige/30"
     }`
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/98 backdrop-blur-md border-b border-warm-beige/40">
-      <div className="hidden lg:block bg-primary text-white py-1.5">
+      <div className="hidden lg:block bg-cvAccent text-white py-1.5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between text-sm">
           <span className="font-light">Your Heritage, Your Harmony - Personalized Wedding Planning</span>
           <div className="flex items-center gap-4">
             <a
               href="tel:+12153419990"
               rel="noopener"
-              className="flex items-center gap-2 font-medium hover:text-accent transition-colors"
+              className="flex items-center gap-2 font-medium hover:text-cvAccentHover transition-colors"
             >
               <Phone className="h-4 w-4" />
               <span>+1-215-341-9990</span>
@@ -83,8 +83,8 @@ export function Navigation() {
                   isActive("/shopping-from-india") ||
                   isActive("/forms") ||
                   isActive("/free-resources")
-                    ? "text-primary bg-primary/10 border-b-2 border-primary"
-                    : "text-charcoal hover:text-primary hover:bg-warm-beige/30"
+                    ? "text-cvAccent bg-cvAccent/10 border-b-2 border-cvAccent"
+                    : "text-cvInk hover:text-cvAccent hover:bg-warm-beige/30"
                 }`}
               >
                 Resources
@@ -94,14 +94,14 @@ export function Navigation() {
                 <div className="absolute top-full left-0 mt-1 w-64 bg-white shadow-lg rounded-sm border border-warm-beige/40 py-2 z-50">
                   <Link
                     href="/heritage-harmony-guide"
-                    className="block px-4 py-2 text-sm text-charcoal hover:bg-warm-beige/30 hover:text-primary transition-colors"
+                    className="block px-4 py-2 text-sm text-cvInk hover:bg-warm-beige/30 hover:text-cvAccent transition-colors"
                     onClick={() => setResourcesOpen(false)}
                   >
                     Heritage & Harmony Guide
                   </Link>
                   <Link
                     href="/shopping-from-india"
-                    className="block px-4 py-2 text-sm text-charcoal hover:bg-warm-beige/30 hover:text-primary transition-colors"
+                    className="block px-4 py-2 text-sm text-cvInk hover:bg-warm-beige/30 hover:text-cvAccent transition-colors"
                     onClick={() => setResourcesOpen(false)}
                   >
                     India Shopping Lookbook
@@ -109,21 +109,21 @@ export function Navigation() {
                   <div className="border-t border-warm-beige/40 my-2" />
                   <Link
                     href="/forms/new-client-intake"
-                    className="block px-4 py-2 text-sm text-charcoal hover:bg-warm-beige/30 hover:text-primary transition-colors"
+                    className="block px-4 py-2 text-sm text-cvInk hover:bg-warm-beige/30 hover:text-cvAccent transition-colors"
                     onClick={() => setResourcesOpen(false)}
                   >
                     New Client Intake Form
                   </Link>
                   <Link
                     href="/forms/virtual-shopping"
-                    className="block px-4 py-2 text-sm text-charcoal hover:bg-warm-beige/30 hover:text-primary transition-colors"
+                    className="block px-4 py-2 text-sm text-cvInk hover:bg-warm-beige/30 hover:text-cvAccent transition-colors"
                     onClick={() => setResourcesOpen(false)}
                   >
                     Virtual Shopping Form
                   </Link>
                   <Link
                     href="/forms/mexico-pre-consult"
-                    className="block px-4 py-2 text-sm text-charcoal hover:bg-warm-beige/30 hover:text-primary transition-colors"
+                    className="block px-4 py-2 text-sm text-cvInk hover:bg-warm-beige/30 hover:text-cvAccent transition-colors"
                     onClick={() => setResourcesOpen(false)}
                   >
                     Mexico Pre-Consult Form
@@ -131,7 +131,7 @@ export function Navigation() {
                   <div className="border-t border-warm-beige/40 my-2" />
                   <Link
                     href="/free-resources"
-                    className="block px-4 py-2 text-sm text-charcoal hover:bg-warm-beige/30 hover:text-primary transition-colors"
+                    className="block px-4 py-2 text-sm text-cvInk hover:bg-warm-beige/30 hover:text-cvAccent transition-colors"
                     onClick={() => setResourcesOpen(false)}
                   >
                     Free Resources
@@ -143,7 +143,7 @@ export function Navigation() {
             <div className="flex items-center gap-3 ml-3 pl-3 border-l border-warm-beige/40">
               <Link
                 href="/book-consultation"
-                className="inline-flex items-center justify-center bg-primary text-white hover:bg-accent hover:text-charcoal shadow-md text-base font-sans font-semibold px-6 py-2.5 rounded-md transition-colors"
+                className="inline-flex items-center justify-center bg-cvAccent text-white hover:bg-cvAccentHover hover:text-white shadow-md text-base font-sans font-semibold px-6 py-2.5 rounded-md transition-colors"
               >
                 Schedule a Free Consultation
               </Link>
@@ -155,13 +155,13 @@ export function Navigation() {
             <a
               href="tel:+12153419990"
               rel="noopener"
-              className="p-2 hover:bg-warm-beige/30 rounded-sm transition-colors text-primary"
+              className="p-2 hover:bg-warm-beige/30 rounded-sm transition-colors text-cvAccent"
               aria-label="Call us"
             >
               <Phone className="h-5 w-5" />
             </a>
             <button
-              className="p-2 hover:bg-warm-beige/30 rounded-sm transition-colors text-charcoal"
+              className="p-2 hover:bg-warm-beige/30 rounded-sm transition-colors text-cvInk"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -178,8 +178,8 @@ export function Navigation() {
                 href="/"
                 className={`font-sans px-4 py-3 text-[15px] font-medium rounded-sm transition-all ${
                   isActive("/")
-                    ? "text-primary bg-primary/10"
-                    : "text-charcoal hover:text-primary hover:bg-warm-beige/30"
+                    ? "text-cvAccent bg-cvAccent/10"
+                    : "text-cvInk hover:text-cvAccent hover:bg-warm-beige/30"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -189,8 +189,8 @@ export function Navigation() {
                 href="/services"
                 className={`font-sans px-4 py-3 text-[15px] font-medium rounded-sm transition-all ${
                   isActive("/services")
-                    ? "text-primary bg-primary/10"
-                    : "text-charcoal hover:text-primary hover:bg-warm-beige/30"
+                    ? "text-cvAccent bg-cvAccent/10"
+                    : "text-cvInk hover:text-cvAccent hover:bg-warm-beige/30"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -200,8 +200,8 @@ export function Navigation() {
                 href="/heritage-harmony"
                 className={`font-sans px-4 py-3 text-[15px] font-medium rounded-sm transition-all ${
                   isActive("/heritage-harmony")
-                    ? "text-primary bg-primary/10"
-                    : "text-charcoal hover:text-primary hover:bg-warm-beige/30"
+                    ? "text-cvAccent bg-cvAccent/10"
+                    : "text-cvInk hover:text-cvAccent hover:bg-warm-beige/30"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -211,8 +211,8 @@ export function Navigation() {
                 href="/portfolio"
                 className={`font-sans px-4 py-3 text-[15px] font-medium rounded-sm transition-all ${
                   isActive("/portfolio")
-                    ? "text-primary bg-primary/10"
-                    : "text-charcoal hover:text-primary hover:bg-warm-beige/30"
+                    ? "text-cvAccent bg-cvAccent/10"
+                    : "text-cvInk hover:text-cvAccent hover:bg-warm-beige/30"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -222,8 +222,8 @@ export function Navigation() {
                 href="/blog"
                 className={`font-sans px-4 py-3 text-[15px] font-medium rounded-sm transition-all ${
                   isActive("/blog")
-                    ? "text-primary bg-primary/10"
-                    : "text-charcoal hover:text-primary hover:bg-warm-beige/30"
+                    ? "text-cvAccent bg-cvAccent/10"
+                    : "text-cvInk hover:text-cvAccent hover:bg-warm-beige/30"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -233,8 +233,8 @@ export function Navigation() {
                 href="/free-resources"
                 className={`font-sans px-4 py-3 text-[15px] font-medium rounded-sm transition-all ${
                   isActive("/free-resources")
-                    ? "text-primary bg-primary/10"
-                    : "text-charcoal hover:text-primary hover:bg-warm-beige/30"
+                    ? "text-cvAccent bg-cvAccent/10"
+                    : "text-cvInk hover:text-cvAccent hover:bg-warm-beige/30"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -244,42 +244,42 @@ export function Navigation() {
                 <div className="space-y-2">
                   <Link
                     href="/heritage-harmony-guide"
-                    className="block font-sans text-sm text-charcoal/80 hover:text-primary transition-colors"
+                    className="block font-sans text-sm text-cvMuted hover:text-cvAccent transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Heritage & Harmony Guide
                   </Link>
                   <Link
                     href="/shopping-from-india"
-                    className="block font-sans text-sm text-charcoal/80 hover:text-primary transition-colors"
+                    className="block font-sans text-sm text-cvMuted hover:text-cvAccent transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     India Shopping Lookbook
                   </Link>
                   <Link
                     href="/forms/new-client-intake"
-                    className="block font-sans text-sm text-charcoal/80 hover:text-primary transition-colors"
+                    className="block font-sans text-sm text-cvMuted hover:text-cvAccent transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     New Client Intake Form
                   </Link>
                   <Link
                     href="/forms/virtual-shopping"
-                    className="block font-sans text-sm text-charcoal/80 hover:text-primary transition-colors"
+                    className="block font-sans text-sm text-cvMuted hover:text-cvAccent transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Virtual Shopping Form
                   </Link>
                   <Link
                     href="/forms/mexico-pre-consult"
-                    className="block font-sans text-sm text-charcoal/80 hover:text-primary transition-colors"
+                    className="block font-sans text-sm text-cvMuted hover:text-cvAccent transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Mexico Pre-Consult Form
                   </Link>
                   <Link
                     href="/free-resources"
-                    className="block font-sans text-sm text-charcoal/80 hover:text-primary transition-colors"
+                    className="block font-sans text-sm text-cvMuted hover:text-cvAccent transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Free Resources
@@ -291,14 +291,14 @@ export function Navigation() {
                 <a
                   href="tel:+12153419990"
                   rel="noopener"
-                  className="font-sans flex items-center gap-2 px-4 py-3 text-[15px] font-semibold text-primary hover:text-accent transition-colors"
+                  className="font-sans flex items-center gap-2 px-4 py-3 text-[15px] font-semibold text-cvAccent hover:text-cvAccentHover transition-colors"
                 >
                   <Phone className="h-5 w-5" />
                   <span>+1-215-341-9990</span>
                 </a>
                 <Link
                   href="/book-consultation"
-                  className="block w-full text-center bg-primary text-white hover:bg-accent hover:text-charcoal font-sans font-semibold py-3 px-6 rounded-md transition-colors"
+                  className="block w-full text-center bg-cvAccent text-white hover:bg-cvAccentHover hover:text-white font-sans font-semibold py-3 px-6 rounded-md transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Schedule a Free Consultation
