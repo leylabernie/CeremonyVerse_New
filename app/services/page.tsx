@@ -20,7 +20,7 @@ export default function ServicesPage() {
         </div>
       </Section>
 
-      <Section alt>
+      <Section variant="warm">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Core Services</h2>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           <Card>
