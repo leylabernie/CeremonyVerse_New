@@ -31,7 +31,7 @@ export default function PillarPost() {
         </div>
       </Section>
 
-      <Section alt>
+      <Section variant="warm">
         <div className="grid gap-6 md:grid-cols-[320px_1fr]">
           <Card className="h-fit md:sticky md:top-24">
             <div className="font-medium">Table of contents</div>
