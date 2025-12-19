@@ -3,6 +3,7 @@ import Link from "next/link"
 import type { Metadata } from "next"
 import { Calendar, ArrowRight } from "@/components/icons"
 import { BreadcrumbSchema } from "@/components/structured-data"
+import { Card } from "@/components/site/card"
 
 export const metadata: Metadata = {
   title: "Indian Wedding Planning Blog | Expert Tips & Cultural Guides 2025",
@@ -28,6 +29,10 @@ export const metadata: Metadata = {
       "Expert guides and tips for planning your perfect Indian-American fusion wedding. Cultural traditions, budgeting, and vendor selection.",
     type: "website",
     url: "https://www.ceremonyverse.com/blog",
+  },
+  twitter: {
+    title: "Indian Wedding Planning Blog | CeremonyVerse",
+    description: "Expert guides and tips for planning your perfect Indian-American fusion wedding.",
   },
 }
 
@@ -190,6 +195,55 @@ export default function BlogPage() {
               </Button>
             </div>
           </Link>
+        </div>
+      </section>
+
+      {/* Blog Pillar Categories Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-serif text-3xl font-bold text-foreground mb-8 text-center">Browse by Topic</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link href="/blog/category/budget">
+              <Card hover className="text-center">
+                <h3 className="text-text mb-2">Budget & Cost Planning</h3>
+                <p className="text-sm text-muted-foreground">
+                  Learn how to plan your wedding within budget without compromising on your vision.
+                </p>
+              </Card>
+            </Link>
+            <Link href="/blog/category/family-culture">
+              <Card hover className="text-center">
+                <h3 className="text-text mb-2">Family & Culture Navigation</h3>
+                <p className="text-sm text-muted-foreground">
+                  Navigate family expectations and blend cultural traditions seamlessly.
+                </p>
+              </Card>
+            </Link>
+            <Link href="/blog/category/sourcing">
+              <Card hover className="text-center">
+                <h3 className="text-text mb-2">Shopping & Sourcing from India</h3>
+                <p className="text-sm text-muted-foreground">
+                  Expert guidance on sourcing authentic Indian wedding items and outfits.
+                </p>
+              </Card>
+            </Link>
+            <Link href="/blog/category/planning">
+              <Card hover className="text-center">
+                <h3 className="text-text mb-2">Planning Education</h3>
+                <p className="text-sm text-muted-foreground">
+                  Essential wedding planning tips, timelines, and checklists for Indian weddings.
+                </p>
+              </Card>
+            </Link>
+            <Link href="/blog/category/locations">
+              <Card hover className="text-center">
+                <h3 className="text-text mb-2">Location Guides</h3>
+                <p className="text-sm text-muted-foreground">
+                  Venue recommendations and location-specific wedding planning guides.
+                </p>
+              </Card>
+            </Link>
+          </div>
         </div>
       </section>
 

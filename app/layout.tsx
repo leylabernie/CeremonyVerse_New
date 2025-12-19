@@ -41,26 +41,24 @@ export const metadata: Metadata = {
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "EventPlanning",
+  "@type": "LocalBusiness",
   name: "CeremonyVerse",
   url: "https://www.ceremonyverse.com",
+  telephone: "+1-215-341-9990",
   description:
     "Indian and fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and virtual planning support.",
   priceRange: "$$",
+  serviceArea: ["PA", "NJ", "DE", "MD"],
   areaServed: [
-    { "@type": "Country", name: "United States" },
-    { "@type": "Country", name: "Mexico" },
+    { "@type": "State", name: "Pennsylvania" },
+    { "@type": "State", name: "New Jersey" },
+    { "@type": "State", name: "Delaware" },
+    { "@type": "State", name: "Maryland" },
   ],
   sameAs: [
     "https://www.instagram.com/ceremonyverse",
     "https://www.facebook.com/ceremonyverse",
     "https://www.pinterest.com/ceremonyverse",
-  ],
-  makesOffer: [
-    { "@type": "Offer", name: "Full Wedding Planning" },
-    { "@type": "Offer", name: "Partial Planning & Coordination" },
-    { "@type": "Offer", name: "Virtual Planning & India Sourcing" },
-    { "@type": "Offer", name: "Destination Wedding Planning" },
   ],
 }
 
