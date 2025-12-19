@@ -4,10 +4,9 @@ import type React from "react"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import Footer from "@/components/footer"
 import { Check } from "lucide-react"
 
-export default function VirtualShoppingForm() {
+export default function VirtualShoppingPage() {
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -37,7 +36,6 @@ export default function VirtualShoppingForm() {
             </Button>
           </div>
         </div>
-        <Footer />
       </main>
     )
   }
@@ -399,7 +397,6 @@ export default function VirtualShoppingForm() {
           </form>
         </div>
       </div>
-      <Footer />
     </main>
   )
 }

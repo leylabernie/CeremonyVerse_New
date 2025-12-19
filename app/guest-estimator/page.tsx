@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Users, Plus, Minus } from "@/components/icons"
 
@@ -40,8 +38,6 @@ export default function GuestEstimatorPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <main className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -147,8 +143,6 @@ export default function GuestEstimatorPage() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }

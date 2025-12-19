@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Heart, Sparkles, Users, Globe } from "lucide-react"
-import Footer from "@/components/footer"
 import Navigation from "@/components/navigation"
 import Breadcrumbs from "@/components/breadcrumbs"
 
@@ -401,8 +400,6 @@ export default function FusionWeddingPlannerPage() {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }

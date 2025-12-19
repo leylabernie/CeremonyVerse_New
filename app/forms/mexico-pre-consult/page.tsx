@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import Footer from "@/components/footer"
+import Link from "next/link"
 import { Check } from "lucide-react"
 
 export default function MexicoPreConsultForm() {
@@ -34,11 +34,10 @@ export default function MexicoPreConsultForm() {
               destination celebration.
             </p>
             <Button asChild>
-              <a href="/">Return to Homepage</a>
+              <Link href="/">Return to Homepage</Link>
             </Button>
           </div>
         </div>
-        <Footer />
       </main>
     )
   }
@@ -406,7 +405,6 @@ export default function MexicoPreConsultForm() {
           </form>
         </div>
       </div>
-      <Footer />
     </main>
   )
 }

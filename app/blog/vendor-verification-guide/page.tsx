@@ -1,8 +1,6 @@
-import Navigation from "@/components/navigation"
 import Link from "next/link"
 import type { Metadata } from "next"
 import SocialShare from "@/components/social-share"
-import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Complete Guide to Wedding Vendor Verification | CeremonyVerse",
@@ -12,12 +10,10 @@ export const metadata: Metadata = {
     "wedding vendor verification, verified wedding suppliers, Indian wedding vendors, fusion wedding planning, vendor background check, wedding vendor scams",
 }
 
-export default function VendorVerificationGuide() {
+export default function VendorVerificationGuidePage() {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <>
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 bg-background">
         {/* Breadcrumb */}
         <nav className="text-sm text-charcoal/60 mb-8">
           <Link href="/" className="hover:text-primary transition-colors">
@@ -441,8 +437,6 @@ export default function VendorVerificationGuide() {
           </div>
         </div>
       </article>
-
-      <Footer />
-    </div>
+    </>
   )
 }

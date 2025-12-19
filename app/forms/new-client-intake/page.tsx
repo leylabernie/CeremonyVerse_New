@@ -4,10 +4,9 @@ import type React from "react"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import Footer from "@/components/footer"
 import { Check } from "lucide-react"
 
-export default function NewClientIntakeForm() {
+export default function NewClientIntakePage() {
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -40,7 +39,6 @@ export default function NewClientIntakeForm() {
             </Button>
           </div>
         </div>
-        <Footer />
       </main>
     )
   }
@@ -500,7 +498,6 @@ export default function NewClientIntakeForm() {
           </form>
         </div>
       </div>
-      <Footer />
     </main>
   )
 }

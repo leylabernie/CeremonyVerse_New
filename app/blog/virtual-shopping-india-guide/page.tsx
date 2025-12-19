@@ -1,5 +1,3 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import SocialShare from "@/components/social-share"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -12,11 +10,10 @@ export const metadata: Metadata = {
     "virtual shopping India, buy Indian wedding items USA, online Indian wedding shopping, lehenga shopping online, Indian jewelry USA, authentic Indian wedding items",
 }
 
-export default function VirtualShoppingIndiaGuide() {
+export default function VirtualShoppingIndiaGuidePage() {
   return (
     <>
-      <Navigation />
-      <main className="min-h-screen bg-background">
+      <article className="min-h-screen bg-background">
         {/* Hero Section */}
         <section className="pt-32 pb-16 px-6">
           <div className="max-w-4xl mx-auto">
@@ -582,8 +579,7 @@ export default function VirtualShoppingIndiaGuide() {
             </article>
           </div>
         </section>
-      </main>
-      <Footer />
+      </article>
     </>
   )
 }

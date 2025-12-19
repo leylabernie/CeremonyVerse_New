@@ -3,8 +3,6 @@
 import type React from "react"
 
 import { useState } from "react"
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Check } from "lucide-react"
 import Link from "next/link"
@@ -25,7 +23,6 @@ export default function IndiaBuyingTripInterestPage() {
   if (submitted) {
     return (
       <div className="min-h-screen bg-background">
-        <Navigation />
         <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -46,15 +43,12 @@ export default function IndiaBuyingTripInterestPage() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     )
   }
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           {/* Header */}
@@ -297,8 +291,6 @@ export default function IndiaBuyingTripInterestPage() {
           </form>
         </div>
       </div>
-
-      <Footer />
     </div>
   )
 }

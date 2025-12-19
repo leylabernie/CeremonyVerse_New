@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Check, Phone, Calendar, Users, Video, Shield, Star } from "lucide-react"
-import Footer from "@/components/footer"
 
 export const metadata = {
   title: "Heritage & Harmony Plan - Indian & Multicultural Fusion Wedding Planning | CeremonyVerse",
@@ -362,8 +361,6 @@ export default function HeritageHarmonyGuidePage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }

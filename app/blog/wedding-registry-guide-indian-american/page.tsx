@@ -1,6 +1,3 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { Calendar, Gift, Heart, DollarSign, Shield, Check, AlertCircle, Star } from "lucide-react"
@@ -13,13 +10,10 @@ export const metadata: Metadata = {
     "Indian wedding registry, Indian wedding gifts, cash registry, honeymoon fund, wedding registry guide, Indian American wedding registry, cultural gift giving",
 }
 
-export default function WeddingRegistryGuidePage() {
+export default function WeddingRegistryGuideIndianAmericanPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-
-      {/* Hero Section */}
-      <article className="pt-32 pb-16">
+    <>
+      <article className="min-h-screen bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <Link
@@ -572,23 +566,22 @@ export default function WeddingRegistryGuidePage() {
               weddings.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary text-white hover:bg-primary/90" asChild>
-                <Link href="/contact">Schedule Free Consultation</Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary/10 bg-transparent"
-                asChild
+              <Link
+                href="/contact"
+                className="bg-primary text-white hover:bg-primary/90 px-6 py-3 rounded-lg text-sm font-medium"
               >
-                <Link href="/blog">Read More Planning Guides</Link>
-              </Button>
+                Schedule Free Consultation
+              </Link>
+              <Link
+                href="/blog"
+                className="border-primary text-primary hover:bg-primary/10 bg-transparent px-6 py-3 rounded-lg text-sm font-medium"
+              >
+                Read More Planning Guides
+              </Link>
             </div>
           </div>
         </div>
       </article>
-
-      <Footer />
-    </div>
+    </>
   )
 }

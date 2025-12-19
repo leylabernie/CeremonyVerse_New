@@ -1,13 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import Navigation from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
 import { Download, Calculator, TrendingDown, CheckCircle, Phone } from "@/components/icons"
-import { Footer } from "@/components/footer"
 
 export default function BudgetPlannerPage() {
   const [totalBudget, setTotalBudget] = useState<number>(75000)
@@ -45,7 +43,6 @@ export default function BudgetPlannerPage() {
 
   return (
     <>
-      <Navigation />
       <main className="min-h-screen bg-background pt-20">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-b from-primary/5 to-background">
@@ -206,9 +203,7 @@ export default function BudgetPlannerPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full bg-transparent" variant="outline">
-                  <a href="/contact">
-                    Download Template
-                  </a>
+                  <a href="/contact">Download Template</a>
                 </Button>
               </Card>
 
@@ -269,9 +264,7 @@ export default function BudgetPlannerPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full bg-transparent" variant="outline">
-                  <a href="/contact">
-                    Download Template
-                  </a>
+                  <a href="/contact">Download Template</a>
                 </Button>
               </Card>
             </div>
@@ -387,8 +380,6 @@ export default function BudgetPlannerPage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </>
   )
 }

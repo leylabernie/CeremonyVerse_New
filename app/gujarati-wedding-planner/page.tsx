@@ -1,5 +1,3 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight, Check, Heart, Sparkles } from "@/components/icons"
@@ -22,8 +20,6 @@ export const metadata: Metadata = {
 export default function GujaratiWeddingPlannerPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <main className="pt-32 pb-20">
         {/* Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 mb-20">
@@ -159,8 +155,6 @@ export default function GujaratiWeddingPlannerPage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   )
 }

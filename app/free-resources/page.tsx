@@ -1,5 +1,3 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight, Calendar, Calculator, FileText, Download, Check, Star, BookOpen } from "@/components/icons"
@@ -79,8 +77,6 @@ const checklistItems = [
 export default function FreeResourcesPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-cream to-background">
         <div className="max-w-4xl mx-auto text-center">
@@ -390,7 +386,7 @@ export default function FreeResourcesPage() {
               </h2>
               <p className="text-charcoal/60 font-light max-w-2xl mx-auto">
                 Hindu Shubh Muhurat dates according to the Panchang calendar. Consult with your pandit for specific
-                timings.
+                auspicious dates.
               </p>
             </div>
           </FadeInSection>
@@ -446,8 +442,6 @@ export default function FreeResourcesPage() {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }
