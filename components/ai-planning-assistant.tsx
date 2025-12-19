@@ -286,7 +286,7 @@ export default function AIPlanningAssistant() {
                   placeholder="Ask about budgets, traditions, dates..."
                   className="flex-1 px-4 py-2 border border-gray-200 rounded-full text-sm focus:outline-none focus:border-primary"
                 />
-                <Button size="icon" onClick={handleSend} disabled={!input.trim()} className="rounded-full">
+                <Button size="sm" onClick={handleSend} disabled={!input.trim()} className="rounded-full h-10 w-10 p-0">
                   <Send className="h-4 w-4" />
                 </Button>
               </div>

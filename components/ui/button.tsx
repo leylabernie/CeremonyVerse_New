@@ -5,7 +5,7 @@ import Link from "next/link"
 import { cx } from "@/lib/cx"
 
 type ButtonVariant = "primary" | "secondary" | "outline" | "default" | "ghost"
-type ButtonSize = "sm" | "default" | "lg"
+type ButtonSize = "sm" | "default" | "lg" | "icon"
 
 type ButtonProps = {
   href?: string
@@ -34,6 +34,7 @@ export function Button({
     sm: "h-9 px-4 py-2 text-sm",
     default: "h-11 px-6 py-3.5 text-sm",
     lg: "h-14 px-10 py-4 text-base",
+    icon: "h-10 w-10 p-0",
   }
 
   const base = cx(
