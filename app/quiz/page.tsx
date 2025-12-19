@@ -188,7 +188,7 @@ export default function WeddingStyleQuizPage() {
 
             <div className="mt-8 text-center">
               <Button
-                variant="ghost"
+                variant="outline"
                 onClick={() => {
                   setShowResults(false)
                   setCurrentQuestion(0)
