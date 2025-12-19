@@ -1,5 +1,3 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import SocialShare from "@/components/social-share"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -17,8 +15,6 @@ export const metadata: Metadata = {
 export default function FusionWeddingGuidePage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <article className="pt-40 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Back Button */}
@@ -290,9 +286,6 @@ export default function FusionWeddingGuidePage() {
           </div>
         </div>
       </article>
-
-      {/* Footer */}
-      <Footer />
     </div>
   )
 }

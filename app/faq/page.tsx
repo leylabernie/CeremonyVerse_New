@@ -1,6 +1,4 @@
 import type { Metadata } from "next"
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import { Phone } from "@/components/icons"
 import Link from "next/link"
 import { FAQSchema, BreadcrumbSchema } from "@/components/structured-data"
@@ -91,8 +89,6 @@ export default function FAQPage() {
       <FAQSchema faqs={allFaqs} />
       <BreadcrumbSchema items={breadcrumbItems} />
 
-      <Navigation />
-
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -167,8 +163,6 @@ export default function FAQPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }

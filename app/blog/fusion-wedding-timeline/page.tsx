@@ -1,8 +1,6 @@
-import Navigation from "@/components/navigation"
 import Link from "next/link"
 import type { Metadata } from "next"
 import SocialShare from "@/components/social-share"
-import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "12-Month Fusion Wedding Planning Timeline | CeremonyVerse",
@@ -15,7 +13,7 @@ export const metadata: Metadata = {
 export default function FusionWeddingTimeline() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      {/* Layout handles Navigation and Footer */}
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         {/* Breadcrumb */}
@@ -680,7 +678,7 @@ export default function FusionWeddingTimeline() {
         </div>
       </article>
 
-      <Footer />
+      {/* Layout handles Footer */}
     </div>
   )
 }

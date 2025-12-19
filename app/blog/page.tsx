@@ -1,5 +1,3 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -153,7 +151,6 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-background">
       <BreadcrumbSchema items={breadcrumbItems} />
-      <Navigation />
 
       {/* Hero Section */}
       <section className="pt-40 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -272,9 +269,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <Footer />
     </div>
   )
 }

@@ -1,6 +1,4 @@
 import type { Metadata } from "next"
-import Footer from "@/components/footer"
-import Navigation from "@/components/navigation"
 import CalendlyEmbed from "@/components/calendly-embed"
 
 export const metadata: Metadata = {
@@ -14,8 +12,6 @@ export const metadata: Metadata = {
 export default function BookConsultationPage() {
   return (
     <main className="min-h-screen">
-      <Navigation />
-
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-warm-beige/30 via-cream to-warm-beige/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -23,7 +19,7 @@ export default function BookConsultationPage() {
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-extralight text-charcoal mb-6 leading-tight">
               Book Your Free <span className="text-primary">Consultation</span>
             </h1>
-            <p className="text-xl md:text-2xl font-light text-charcoal/80 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl font-light text-charcoal mb-8 leading-relaxed">
               Let's discuss your wedding vision in a relaxed, no-pressure conversation
             </p>
           </div>
@@ -212,8 +208,6 @@ export default function BookConsultationPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }

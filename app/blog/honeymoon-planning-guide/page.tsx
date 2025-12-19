@@ -1,9 +1,8 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import SocialShare from "@/components/social-share"
+import { Button } from "@/components/ui/button"
 import type { Metadata } from "next"
-import { Calendar, Plane, DollarSign, Check, AlertCircle, Star, Globe, Heart } from "lucide-react"
+import { Calendar, DollarSign, Check, AlertCircle, Star, Globe } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Complete Honeymoon Planning Guide 2025 | CeremonyVerse",
@@ -16,18 +15,11 @@ export const metadata: Metadata = {
 export default function HoneymoonPlanningGuidePage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       {/* Hero Section */}
       <article className="pt-32 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <Link
-              href="/blog"
-              className="text-primary hover:text-primary/80 text-sm font-medium flex items-center gap-2 mb-6"
-            >
-              ← Back to Blog
-            </Link>
+            <SocialShare />
             <div className="flex items-center gap-3 mb-4">
               <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
                 Planning Guide
@@ -38,8 +30,8 @@ export default function HoneymoonPlanningGuidePage() {
               Complete Honeymoon Planning Guide
             </h1>
             <p className="text-xl text-foreground/70 leading-relaxed mb-6">
-              After months of wedding planning, you deserve an unforgettable honeymoon. Here's everything you need to plan
-              the perfect post-wedding getaway—from budgeting to booking to making it stress-free.
+              After months of wedding planning, you deserve an unforgettable honeymoon. Here's everything you need to
+              plan the perfect post-wedding getaway—from budgeting to booking to making it stress-free.
             </p>
             <div className="flex items-center gap-6 text-sm text-foreground/60 pb-8 border-b border-border">
               <div className="flex items-center gap-2">
@@ -71,8 +63,8 @@ export default function HoneymoonPlanningGuidePage() {
                   <h3 className="font-semibold text-foreground mb-2">Start Early (But Not Too Early)</h3>
                   <p className="text-sm text-foreground/70">
                     Begin honeymoon planning 6-8 months before your wedding. This gives you time to research, save, and
-                    book without the last-minute stress—but not so early that you're locked into plans that might need to
-                    change.
+                    book without the last-minute stress—but not so early that you're locked into plans that might need
+                    to change.
                   </p>
                 </div>
               </div>
@@ -80,7 +72,9 @@ export default function HoneymoonPlanningGuidePage() {
 
             {/* When to Take Your Honeymoon */}
             <section className="mb-12">
-              <h2 className="font-serif text-3xl font-bold text-foreground mb-6">When Should You Take Your Honeymoon?</h2>
+              <h2 className="font-serif text-3xl font-bold text-foreground mb-6">
+                When Should You Take Your Honeymoon?
+              </h2>
 
               <div className="space-y-6">
                 <div className="bg-background border border-border rounded-xl p-6">
@@ -102,7 +96,8 @@ export default function HoneymoonPlanningGuidePage() {
                           affect wedding timeline
                         </p>
                         <p className="text-sm text-foreground/70">
-                          <strong>Best for:</strong> Couples who want to extend the celebration, shorter trips (4-7 days)
+                          <strong>Best for:</strong> Couples who want to extend the celebration, shorter trips (4-7
+                          days)
                         </p>
                       </div>
                     </div>
@@ -111,16 +106,16 @@ export default function HoneymoonPlanningGuidePage() {
                       <h4 className="font-semibold text-foreground mb-2">1-2 Weeks After the Wedding</h4>
                       <div className="bg-accent/5 rounded-lg p-4">
                         <p className="text-sm text-foreground/70 mb-2">
-                          <strong>Pros:</strong> Time to recover, handle post-wedding tasks, pack properly, actually enjoy
-                          the trip
+                          <strong>Pros:</strong> Time to recover, handle post-wedding tasks, pack properly, actually
+                          enjoy the trip
                         </p>
                         <p className="text-sm text-foreground/70 mb-2">
                           <strong>Cons:</strong> Anticipation can feel anti-climactic, might need to take extra time off
                           work
                         </p>
                         <p className="text-sm text-foreground/70">
-                          <strong>Best for:</strong> Multi-day weddings where you need recovery time, longer international
-                          trips
+                          <strong>Best for:</strong> Multi-day weddings where you need recovery time, longer
+                          international trips
                         </p>
                       </div>
                     </div>
@@ -137,8 +132,8 @@ export default function HoneymoonPlanningGuidePage() {
                           weather/off-season
                         </p>
                         <p className="text-sm text-foreground/70 mb-2">
-                          <strong>Cons:</strong> Two trips to plan, wedding excitement fades, need to coordinate more time
-                          off
+                          <strong>Cons:</strong> Two trips to plan, wedding excitement fades, need to coordinate more
+                          time off
                         </p>
                         <p className="text-sm text-foreground/70">
                           <strong>Best for:</strong> Budget-conscious couples, those getting married during bad travel
@@ -155,7 +150,8 @@ export default function HoneymoonPlanningGuidePage() {
                     </h4>
                     <ul className="space-y-2 ml-4">
                       <li className="text-sm text-foreground/70">
-                        • <strong>Passport validity:</strong> Many countries require 6 months validity beyond travel dates
+                        • <strong>Passport validity:</strong> Many countries require 6 months validity beyond travel
+                        dates
                       </li>
                       <li className="text-sm text-foreground/70">
                         • <strong>Visa processing:</strong> Can take 4-8 weeks for some countries
@@ -209,8 +205,8 @@ export default function HoneymoonPlanningGuidePage() {
                       <div className="bg-cream rounded-lg p-4">
                         <strong className="text-foreground">Luxury Honeymoon ($8,000-$15,000+):</strong>
                         <p className="text-sm text-foreground/70 mt-1">
-                          Maldives, Bora Bora, African safari, multi-country Europe. 10-14+ days, 5-star resorts, premium
-                          experiences, business class flights.
+                          Maldives, Bora Bora, African safari, multi-country Europe. 10-14+ days, 5-star resorts,
+                          premium experiences, business class flights.
                         </p>
                       </div>
                     </div>
@@ -406,7 +402,8 @@ export default function HoneymoonPlanningGuidePage() {
                         <div className="bg-cream rounded-lg p-4">
                           <strong className="text-foreground">Iceland</strong>
                           <p className="text-sm text-foreground/70 mt-1">
-                            Northern lights, waterfalls, hot springs. Best Jun-Aug (summer), Sep-Mar (lights). Budget: $$
+                            Northern lights, waterfalls, hot springs. Best Jun-Aug (summer), Sep-Mar (lights). Budget:
+                            $$
                           </p>
                         </div>
                         <div className="bg-cream rounded-lg p-4">
@@ -464,16 +461,12 @@ export default function HoneymoonPlanningGuidePage() {
                       6-8 Months Before Wedding
                     </h3>
                     <ul className="space-y-2 ml-4">
-                      <li className="text-sm text-foreground/70">
-                        • Decide on honeymoon style and budget
-                      </li>
+                      <li className="text-sm text-foreground/70">• Decide on honeymoon style and budget</li>
                       <li className="text-sm text-foreground/70">• Research destinations and create shortlist</li>
                       <li className="text-sm text-foreground/70">
                         • Check passport expiration dates (renew if needed)
                       </li>
-                      <li className="text-sm text-foreground/70">
-                        • Create honeymoon registry if using one
-                      </li>
+                      <li className="text-sm text-foreground/70">• Create honeymoon registry if using one</li>
                     </ul>
                   </div>
 
@@ -562,9 +555,7 @@ export default function HoneymoonPlanningGuidePage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-secondary mt-1 flex-shrink-0" />
-                      <span className="text-sm text-foreground/70">
-                        Take photos, but also be present in moments
-                      </span>
+                      <span className="text-sm text-foreground/70">Take photos, but also be present in moments</span>
                     </li>
                   </ul>
                 </div>
@@ -612,14 +603,14 @@ export default function HoneymoonPlanningGuidePage() {
               <h2 className="font-serif text-3xl font-bold mb-6">The Most Important Thing About Your Honeymoon</h2>
               <div className="space-y-4 text-white/90">
                 <p className="leading-relaxed">
-                  Your honeymoon doesn't have to be perfect, exotic, or expensive. It just needs to be what YOU want as a
-                  couple. Don't let Instagram, family expectations, or wedding magazines pressure you into a honeymoon that
-                  doesn't feel right.
+                  Your honeymoon doesn't have to be perfect, exotic, or expensive. It just needs to be what YOU want as
+                  a couple. Don't let Instagram, family expectations, or wedding magazines pressure you into a honeymoon
+                  that doesn't feel right.
                 </p>
                 <p className="leading-relaxed">
-                  Whether you're camping in national parks, exploring European cities, lounging on a beach, or staying home
-                  and taking day trips—the point is to spend quality time together as newlyweds, away from wedding stress
-                  and daily responsibilities.
+                  Whether you're camping in national parks, exploring European cities, lounging on a beach, or staying
+                  home and taking day trips—the point is to spend quality time together as newlyweds, away from wedding
+                  stress and daily responsibilities.
                 </p>
                 <p className="leading-relaxed">
                   Plan what excites YOU both. That's what will make it memorable—not how much you spent or how far you
@@ -641,15 +632,18 @@ export default function HoneymoonPlanningGuidePage() {
               <Button size="lg" className="bg-primary text-white hover:bg-primary/90" asChild>
                 <Link href="/contact">Schedule Free Consultation</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10" asChild>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary/10 bg-transparent"
+                asChild
+              >
                 <Link href="/blog">Read More Planning Guides</Link>
               </Button>
             </div>
           </div>
         </div>
       </article>
-
-      <Footer />
     </div>
   )
 }

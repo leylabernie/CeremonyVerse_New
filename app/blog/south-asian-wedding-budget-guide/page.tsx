@@ -1,5 +1,3 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft } from "@/components/icons"
@@ -22,7 +20,7 @@ export const metadata: Metadata = {
 export default function SouthAsianWeddingBudgetGuidePage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      {/* Layout handles Navigation and Footer */}
 
       <article className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -469,8 +467,6 @@ export default function SouthAsianWeddingBudgetGuidePage() {
           </div>
         </div>
       </article>
-
-      <Footer />
     </div>
   )
 }

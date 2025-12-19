@@ -1,5 +1,3 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Check, Video, Shield, Package, Star, Calendar } from "lucide-react"
 import Link from "next/link"
@@ -67,8 +65,6 @@ export default function HowItWorksPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
@@ -175,9 +171,6 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <Footer />
     </div>
   )
 }

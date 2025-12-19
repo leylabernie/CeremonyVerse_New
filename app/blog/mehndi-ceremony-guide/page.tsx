@@ -1,10 +1,9 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
+import { ArticleSchema, BreadcrumbSchema } from "@/components/structured-data"
+import SocialShare from "@/components/social-share"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft } from "@/components/icons"
 import type { Metadata } from "next"
-import { ArticleSchema, BreadcrumbSchema } from "@/components/structured-data"
 
 export const metadata: Metadata = {
   title: "Mehndi Ceremony Guide | Planning the Perfect Mehndi Night 2025",
@@ -40,8 +39,6 @@ export default function MehndiCeremonyGuidePage() {
         url="https://www.ceremonyverse.com/blog/mehndi-ceremony-guide"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
-
-      <Navigation />
 
       <article className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -619,11 +616,11 @@ export default function MehndiCeremonyGuidePage() {
                 Schedule Free Consultation
               </Link>
             </div>
+
+            <SocialShare />
           </div>
         </div>
       </article>
-
-      <Footer />
     </div>
   )
 }

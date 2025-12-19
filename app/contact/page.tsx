@@ -1,7 +1,5 @@
 import type { Metadata } from "next"
 import { Phone, Mail, MapPin, Clock } from "@/components/icons"
-import Footer from "@/components/footer"
-import Navigation from "@/components/navigation"
 import ContactForm from "@/components/contact-form"
 import Breadcrumbs from "@/components/breadcrumbs"
 
@@ -35,7 +33,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="min-h-screen">
-      <Navigation />
       <div className="pt-32 lg:pt-36">
         <Breadcrumbs />
       </div>
@@ -178,42 +175,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      {/* FAQ for SEO */}
-      <section className="py-20 bg-gradient-to-br from-muted/50 to-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-4xl text-foreground mb-12 text-center">Common Questions</h2>
-            <div className="space-y-6">
-              {[
-                {
-                  q: "How quickly will you respond to my inquiry?",
-                  a: "We respond to all inquiries within 24 hours, typically much sooner. For urgent matters, call us directly at +1-215-341-9990 during business hours.",
-                },
-                {
-                  q: "Is the consultation really free?",
-                  a: "Yes! Your initial consultation is completely free with no obligation. We'll discuss your vision, answer questions, and explain how our services work—no pressure, just honest conversation.",
-                },
-                {
-                  q: "Do you plan weddings outside of major cities?",
-                  a: "We plan fusion weddings throughout the USA and Mexico, regardless of location. We coordinate with local vendors while sourcing authentic items from India.",
-                },
-                {
-                  q: "What if I'm just starting to plan and don't have all the details yet?",
-                  a: "That's perfectly fine! Most couples contact us early in their planning journey. We'll help you figure out timelines, budgets, and priorities during your consultation.",
-                },
-              ].map((faq, index) => (
-                <div key={index} className="bg-card p-6 rounded-xl shadow-sm border border-border">
-                  <h3 className="font-serif text-xl text-foreground mb-3">{faq.q}</h3>
-                  <p className="text-muted-foreground">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
     </main>
   )
 }

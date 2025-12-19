@@ -1,5 +1,4 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
+import { SocialShare } from "@/components/social-share"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, MapPin, Heart, Shield, Sparkles } from "@/components/icons"
@@ -22,8 +21,6 @@ export const metadata: Metadata = {
 export default function IndianWeddingPlannerUSAPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <article className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <Link
@@ -574,7 +571,7 @@ export default function IndianWeddingPlannerUSAPage() {
         </div>
       </article>
 
-      <Footer />
+      <SocialShare />
     </div>
   )
 }
