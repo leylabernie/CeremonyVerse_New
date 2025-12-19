@@ -52,7 +52,7 @@ export default function BudgetToolPage() {
         </div>
       </Section>
 
-      <Section alt>
+      <Section variant="warm">
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Card>
             <h2 className="text-xl font-semibold mb-4">Your Budget</h2>

@@ -77,7 +77,7 @@ export default function WeddingJourneysPage() {
         </div>
       </Section>
 
-      <Section alt>
+      <Section variant="warm">
         <Accordion items={items} />
       </Section>
 

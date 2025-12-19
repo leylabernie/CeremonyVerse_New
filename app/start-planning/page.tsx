@@ -131,7 +131,7 @@ export default function StartPlanningPage() {
         </p>
       </Section>
 
-      <Section alt>
+      <Section variant="warm">
         <Card className="md:p-10">
           <div className="text-xs text-muted">Step {step} of 4</div>
 

@@ -4,7 +4,7 @@ import type React from "react"
 import Link from "next/link"
 import { cx } from "@/lib/cx"
 
-type ButtonVariant = "primary" | "secondary" | "outline" | "default"
+type ButtonVariant = "primary" | "secondary" | "outline" | "default" | "ghost"
 type ButtonSize = "sm" | "default" | "lg"
 
 type ButtonProps = {
@@ -48,6 +48,7 @@ export function Button({
       "bg-cvAccent text-white border-cvAccent hover:bg-cvAccentHover shadow-[0_2px_8px_rgba(63,109,91,0.25)] hover:shadow-[0_4px_12px_rgba(63,109,91,0.35)]",
     secondary: "bg-transparent text-cvInk border-cvBorder hover:bg-cvWarm shadow-sm",
     outline: "bg-transparent text-cvInk border-cvBorder hover:bg-cvWarm shadow-sm",
+    ghost: "bg-transparent border-transparent text-cvInk hover:bg-cvSurface2",
   }
 
   const cls = cx(base, variantStyles[variant], disabled && "opacity-60 pointer-events-none", className)
