@@ -1,7 +1,5 @@
-import Navigation from "@/components/navigation"
 import Link from "next/link"
 import { Shield, Lock, Eye, FileText } from "lucide-react"
-import Footer from "@/components/footer"
 
 export const metadata = {
   title: "Privacy Policy | CeremonyVerse - Your Data Protection",
@@ -12,8 +10,6 @@ export const metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -236,7 +232,6 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

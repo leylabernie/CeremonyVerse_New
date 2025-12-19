@@ -1,5 +1,3 @@
-import { Navigation } from "@/components/navigation"
-import Footer from "@/components/footer"
 import Link from "next/link"
 import type { Metadata } from "next"
 
@@ -14,8 +12,6 @@ export const metadata: Metadata = {
 export default function OutfitCoordinator() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         {/* Header */}
         <div className="text-center mb-12">
@@ -157,8 +153,6 @@ export default function OutfitCoordinator() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }

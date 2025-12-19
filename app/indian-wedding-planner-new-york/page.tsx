@@ -2,9 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Check } from "@/components/icons"
-import Navigation from "@/components/navigation"
 import Breadcrumbs from "@/components/breadcrumbs"
-import Footer from "@/components/footer"
 import { BreadcrumbSchema } from "@/components/structured-data"
 
 export const metadata: Metadata = {
@@ -32,7 +30,6 @@ export default function IndianWeddingPlannerNewYork() {
   return (
     <main className="min-h-screen">
       <BreadcrumbSchema items={breadcrumbItems} />
-      <Navigation />
       <div className="pt-32 lg:pt-36">
         <Breadcrumbs />
       </div>
@@ -156,8 +153,6 @@ export default function IndianWeddingPlannerNewYork() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }

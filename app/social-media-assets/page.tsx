@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Social Media Assets | CeremonyVerse",
@@ -519,9 +518,6 @@ Visit us at ceremonyverse.com
           </div>
         </section>
       </div>
-
-      {/* Footer */}
-      <Footer />
     </div>
   )
 }

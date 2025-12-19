@@ -1,6 +1,4 @@
-import Navigation from "@/components/navigation"
 import { AlertTriangle, Shield, Info } from "lucide-react"
-import Footer from "@/components/footer"
 
 export const metadata = {
   title: "Sourcing Disclaimer | CeremonyVerse",
@@ -11,7 +9,7 @@ export const metadata = {
 export default function SourcingDisclaimerPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      {/* <Navigation /> */}
 
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -215,7 +213,7 @@ export default function SourcingDisclaimerPage() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

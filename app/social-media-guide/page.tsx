@@ -1,5 +1,3 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Instagram, Facebook, Paintbrush as Pinterest, Youtube, Linkedin, CheckCircle2 } from "lucide-react"
@@ -14,8 +12,6 @@ export const metadata: Metadata = {
 export default function SocialMediaGuidePage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#E8B4B8]/5 to-background">
         <div className="max-w-4xl mx-auto text-center">
@@ -287,8 +283,6 @@ export default function SocialMediaGuidePage() {
           </Link>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }

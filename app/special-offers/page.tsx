@@ -1,7 +1,5 @@
-import Navigation from "@/components/navigation"
 import { Sparkles, Clock, Gift, Star, CheckCircle2, Calendar } from "lucide-react"
 import Link from "next/link"
-import Footer from "@/components/footer"
 
 export const metadata = {
   title: "Special Offers & Promotions | CeremonyVerse",
@@ -12,8 +10,6 @@ export const metadata = {
 export default function SpecialOffersPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -256,9 +252,6 @@ export default function SpecialOffersPage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <Footer />
     </div>
   )
 }

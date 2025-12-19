@@ -2,9 +2,6 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Check, Eye, Lock } from "@/components/icons"
-import Footer from "@/components/footer"
-import Navigation from "@/components/navigation"
-import Breadcrumbs from "@/components/breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Wedding Invitation Preview Suite | Interactive Digital Preview | CeremonyVerse",
@@ -31,11 +28,6 @@ export const metadata: Metadata = {
 export default function InvitationSuitePage() {
   return (
     <main className="min-h-screen">
-      <Navigation />
-      <div className="pt-32 lg:pt-36">
-        <Breadcrumbs />
-      </div>
-
       {/* Hero Section */}
       <section className="relative pt-40 pb-24 bg-gradient-to-br from-accent/10 via-background to-secondary/5">
         <div className="container mx-auto px-6 max-w-5xl text-center">
@@ -260,8 +252,6 @@ export default function InvitationSuitePage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }

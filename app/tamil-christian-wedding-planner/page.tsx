@@ -2,9 +2,6 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Heart, Church, Sparkles, Users } from "lucide-react"
-import Footer from "@/components/footer"
-import Navigation from "@/components/navigation"
-import Breadcrumbs from "@/components/breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Tamil Christian Wedding Planner in USA | Church to Manthrakodi Saree Specialists – CeremonyVerse",
@@ -33,11 +30,6 @@ export const metadata: Metadata = {
 export default function TamilChristianWeddingPlannerPage() {
   return (
     <main className="min-h-screen bg-background">
-      <Navigation />
-      <div className="pt-32 lg:pt-36">
-        <Breadcrumbs />
-      </div>
-
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-accent/10 via-background to-secondary/5 py-20 md:py-32">
         <div className="container mx-auto px-6 max-w-5xl text-center">
@@ -424,8 +416,6 @@ export default function TamilChristianWeddingPlannerPage() {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }

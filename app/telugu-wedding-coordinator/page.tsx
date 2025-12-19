@@ -1,5 +1,4 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
+import { Navigation, Footer } from "@/components"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, Heart, Users, Calendar } from "@/components/icons"

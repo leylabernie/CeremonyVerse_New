@@ -1,8 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import Footer from "@/components/footer"
-import Navigation from "@/components/navigation"
 import Breadcrumbs from "@/components/breadcrumbs"
 import { Check } from "@/components/icons"
 
@@ -31,7 +29,6 @@ export const metadata: Metadata = {
 export default function OurStoryPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
       <div className="pt-32 lg:pt-36">
         <Breadcrumbs />
       </div>
@@ -178,8 +175,6 @@ export default function OurStoryPage() {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }

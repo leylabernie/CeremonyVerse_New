@@ -1,4 +1,3 @@
-import Navigation from "@/components/navigation"
 import { Download, CheckCircle2, Heart, Calendar, DollarSign, MapPin, Sparkles, Shield } from "lucide-react"
 import Link from "next/link"
 
@@ -11,8 +10,6 @@ export const metadata = {
 export default function GuidePage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">

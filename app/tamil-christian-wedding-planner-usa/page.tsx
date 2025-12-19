@@ -1,9 +1,5 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import Footer from "@/components/footer"
-import Navigation from "@/components/navigation"
-import Breadcrumbs from "@/components/breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Tamil Christian Wedding Planner in USA | Church & Reception Fusion",
@@ -29,11 +25,6 @@ export const metadata: Metadata = {
 export default function TamilChristianWeddingPlannerPage() {
   return (
     <main className="min-h-screen bg-background">
-      <Navigation />
-      <div className="pt-32 lg:pt-36">
-        <Breadcrumbs />
-      </div>
-
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-accent/10 via-background to-secondary/5 py-20 md:py-32">
         <div className="container mx-auto px-6 max-w-5xl text-center">
@@ -46,16 +37,12 @@ export default function TamilChristianWeddingPlannerPage() {
             the process simple and respectful for everyone involved.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              asChild
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 text-lg"
-            >
-              <Link href="/contact">Schedule Consultation</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="px-10 py-6 text-lg bg-transparent">
-              <Link href="/services">View Services</Link>
-            </Button>
+            <Link href="/contact" className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 text-lg">
+              Schedule Consultation
+            </Link>
+            <Link href="/services" className="bg-transparent border px-10 py-6 text-lg text-accent-foreground">
+              View Services
+            </Link>
           </div>
         </div>
       </section>
@@ -251,13 +238,11 @@ export default function TamilChristianWeddingPlannerPage() {
           <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
             Tell us about your church, your family's traditions and your dream reception.
           </p>
-          <Button asChild size="lg" className="bg-white text-accent hover:bg-white/90 px-10 py-6 text-lg">
-            <Link href="/contact">Schedule Free Consultation</Link>
-          </Button>
+          <Link href="/contact" className="bg-white text-accent hover:bg-white/90 px-10 py-6 text-lg">
+            Schedule Free Consultation
+          </Link>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }

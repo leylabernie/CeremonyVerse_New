@@ -3,8 +3,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle2, ExternalLink, AlertCircle } from "lucide-react"
-import Footer from "@/components/footer"
-import Navigation from "@/components/navigation"
 
 export const metadata: Metadata = {
   title: "Website Launch Guide | CeremonyVerse",
@@ -15,7 +13,6 @@ export const metadata: Metadata = {
 export default function LaunchGuidePage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
       {/* Header */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
@@ -424,20 +421,13 @@ export default function LaunchGuidePage() {
           <h2 className="font-serif text-4xl text-rose-900 mb-6">Ready to Launch?</h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
             Follow this guide step-by-step to successfully launch your website and start generating qualified leads for
-            your luxury wedding planning service.
+            your luxury wedding planning business.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-rose-600 hover:bg-rose-700">
-              <Link href="/contact">Get Launch Support</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="/social-media-guide">View Social Media Guide</Link>
-            </Button>
-          </div>
+          <Button asChild className="bg-rose-600 hover:bg-rose-700 text-white px-12 py-6 text-lg">
+            <Link href="/contact">Get Launch Support</Link>
+          </Button>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }

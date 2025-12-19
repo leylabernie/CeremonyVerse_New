@@ -1,6 +1,4 @@
 import type { Metadata } from "next"
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Phone, Mail, Package, Sparkles, Heart, Gift } from "lucide-react"
 import Link from "next/link"
@@ -17,7 +15,8 @@ export const metadata: Metadata = {
 export default function CeremonyEssentialsPage() {
   return (
     <main className="min-h-screen bg-background">
-      <Navigation />
+      {/* Navigation component should be imported and used here if needed */}
+      {/* <Navigation /> */}
 
       <section className="relative bg-gradient-to-br from-cream via-background to-white py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -305,7 +304,8 @@ export default function CeremonyEssentialsPage() {
         </div>
       </section>
 
-      <Footer />
+      {/* Footer component should be imported and used here if needed */}
+      {/* <Footer /> */}
     </main>
   )
 }

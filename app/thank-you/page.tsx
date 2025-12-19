@@ -1,7 +1,7 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import { CheckCircle2, Download, Gift, Sparkles, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 
 export const metadata = {
   title: "Thank You | CeremonyVerse",

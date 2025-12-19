@@ -1,7 +1,5 @@
 "use client"
 
-import Navigation from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import Image from "next/image"
 import { useState } from "react"
 
@@ -31,8 +29,6 @@ export default function ImageLibraryPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <section className="pt-40 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -93,8 +89,6 @@ export default function ImageLibraryPage() {
           </div>
         </div>
       )}
-
-      <Footer />
     </div>
   )
 }

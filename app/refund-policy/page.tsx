@@ -1,8 +1,6 @@
-import Navigation from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Shield, CheckCircle, XCircle } from "lucide-react"
 import Link from "next/link"
-import Footer from "@/components/footer"
 
 export const metadata = {
   title: "Refund & Deposit Policy | CeremonyVerse",
@@ -13,7 +11,7 @@ export const metadata = {
 export default function RefundPolicyPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      {/* Navigation component should be imported and used here if needed */}
 
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -172,7 +170,7 @@ export default function RefundPolicyPage() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* Footer component should be imported and used here if needed */}
     </div>
   )
 }

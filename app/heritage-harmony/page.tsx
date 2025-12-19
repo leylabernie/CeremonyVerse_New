@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { Check, Shield, Video, Calendar, Users, Star, Phone, Mail, Sparkles, Package } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Navigation from "@/components/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/structured-data"
@@ -78,7 +77,6 @@ export default function HeritageHarmonyPage() {
       <BreadcrumbSchema items={breadcrumbItems} />
       <FAQSchema faqs={pageFaqs} />
 
-      <Navigation />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[var(--cream)] via-white to-[var(--background)] py-20 md:py-32">
         <div className="container mx-auto px-4">

@@ -1,5 +1,3 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Check, MapPin, Users, Calendar, Heart, Sparkles, Palmtree } from "lucide-react"
 import Link from "next/link"
@@ -25,8 +23,6 @@ export const metadata: Metadata = {
 export default function MexicoDestinationWeddingsPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="max-w-7xl mx-auto">
@@ -290,8 +286,6 @@ export default function MexicoDestinationWeddingsPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }

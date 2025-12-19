@@ -1,7 +1,5 @@
 "use client"
 
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Calendar, Star, Sun, Moon } from "@/components/icons"
 import { useState } from "react"
@@ -23,8 +21,6 @@ export default function MuhuratPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <main className="pt-36 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
@@ -110,8 +106,6 @@ export default function MuhuratPage() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }

@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { UtensilsCrossed, Check } from "@/components/icons"
 
@@ -35,8 +33,6 @@ export default function MenuPlannerPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <main className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -146,8 +142,6 @@ export default function MenuPlannerPage() {
           )}
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }

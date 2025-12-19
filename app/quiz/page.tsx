@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Navigation from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ArrowRight, ArrowLeft, CheckCircle } from "@/components/icons"
@@ -141,8 +139,6 @@ export default function WeddingStyleQuizPage() {
 
     return (
       <div className="min-h-screen bg-background">
-        <Navigation />
-
         <section className="pt-40 pb-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
@@ -200,16 +196,12 @@ export default function WeddingStyleQuizPage() {
             </div>
           </div>
         </section>
-
-        <Footer />
       </div>
     )
   }
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-
       <section className="pt-40 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
@@ -289,8 +281,6 @@ export default function WeddingStyleQuizPage() {
           </Card>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }
