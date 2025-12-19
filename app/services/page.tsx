@@ -63,6 +63,48 @@ export default function ServicesPage() {
         </div>
       </Section>
 
+      <Section variant="warm2">
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-4">Pricing & Scope for This Service</h2>
+        <p className="text-cvMuted max-w-3xl mb-6">
+          CeremonyVerse works with couples and families across a range of wedding budgets, depending on priorities,
+          guest size, and event structure.
+        </p>
+        <p className="text-cvMuted max-w-3xl mb-6">
+          Pricing for this service is based on the scope of planning support and cultural coordination involved. All
+          services begin with a clearly defined scope — no pressure, no unnecessary upsells.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
+          <Card>
+            <h3 className="font-medium mb-3">Minimum included:</h3>
+            <ul className="space-y-2 text-sm text-cvMuted">
+              <li>• Core planning support specific to this service</li>
+              <li>• Cultural guidance relevant to your ceremonies</li>
+              <li>• Budget-aligned recommendations</li>
+              <li>• Clear planning structure and next steps</li>
+            </ul>
+          </Card>
+
+          <Card>
+            <h3 className="font-medium mb-3">May increase depending on:</h3>
+            <ul className="space-y-2 text-sm text-cvMuted">
+              <li>• Number of events</li>
+              <li>• Guest count and logistics</li>
+              <li>• Vendor complexity</li>
+              <li>• Sourcing or travel coordination</li>
+            </ul>
+          </Card>
+        </div>
+
+        <div className="mt-8 flex gap-3">
+          <Button href="/pricing">View Full Pricing</Button>
+          <Button href="/start-planning" variant="secondary">
+            Start with Budget + Vision Form
+          </Button>
+        </div>
+      </Section>
+      {/* </CHANGE> */}
+
       <Section>
         <Card className="md:p-10">
           <h3 className="text-xl md:text-2xl font-semibold tracking-tight">
