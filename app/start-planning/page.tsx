@@ -103,10 +103,10 @@ export default function StartPlanningPage() {
       <Section>
         <Card className="md:p-10">
           <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">Thank you!</h1>
-          <p className="mt-3 text-muted">
+          <p className="mt-3 text-muted-foreground">
             Based on what you shared, we recommend: <b>{done.recommendation}</b>.
           </p>
-          <p className="mt-2 text-muted">
+          <p className="mt-2 text-muted-foreground">
             Next step: schedule a consultation so we can confirm scope, timeline, and what's realistic within your
             budget.
           </p>
@@ -125,7 +125,7 @@ export default function StartPlanningPage() {
     <>
       <Section>
         <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">Start Planning</h1>
-        <p className="mt-4 text-muted max-w-3xl">
+        <p className="mt-4 text-muted-foreground max-w-3xl">
           Share your budget, events, and location. We'll recommend the right level of support—so you get help without
           overpaying or underplanning.
         </p>
@@ -133,7 +133,7 @@ export default function StartPlanningPage() {
 
       <Section variant="warm">
         <Card className="md:p-10">
-          <div className="text-xs text-muted">Step {step} of 4</div>
+          <div className="text-xs text-muted-foreground">Step {step} of 4</div>
 
           {step === 1 && (
             <div className="mt-4 grid gap-4 md:grid-cols-2">
@@ -251,7 +251,7 @@ export default function StartPlanningPage() {
                 ]}
               />
 
-              <div className="md:col-span-2 rounded-2xl border border-border bg-sand p-4 text-sm text-muted">
+              <div className="md:col-span-2 rounded-2xl border border-border bg-sand p-4 text-sm text-muted-foreground">
                 Recommended path (based on budget): <b>{recommendation.recommendation}</b>
               </div>
             </div>
@@ -267,7 +267,7 @@ export default function StartPlanningPage() {
                 />
               </Field>
 
-              <label className="flex items-start gap-3 text-sm text-muted">
+              <label className="flex items-start gap-3 text-sm text-muted-foreground">
                 <input
                   type="checkbox"
                   className="mt-1"

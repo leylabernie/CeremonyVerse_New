@@ -48,7 +48,9 @@ export default function BudgetToolPage() {
       <Section>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">Indian Wedding Budget Calculator</h1>
-          <p className="text-lg text-muted">This tool helps you estimate a realistic allocation. It's not a quote.</p>
+          <p className="text-lg text-muted-foreground">
+            This tool helps you estimate a realistic allocation. It's not a quote.
+          </p>
         </div>
       </Section>
 
@@ -78,7 +80,7 @@ export default function BudgetToolPage() {
             />
 
             <div className="mt-6 p-4 bg-accent-soft rounded-lg">
-              <div className="text-sm text-muted">Cost Per Guest</div>
+              <div className="text-sm text-muted-foreground">Cost Per Guest</div>
               <div className="text-2xl font-bold text-accent">${perPerson.toLocaleString()}</div>
             </div>
           </Card>
@@ -107,7 +109,9 @@ export default function BudgetToolPage() {
           {!submitted ? (
             <form onSubmit={handleSubmit} className="text-center">
               <h3 className="text-xl font-semibold mb-4">Get Your Detailed Breakdown</h3>
-              <p className="text-muted mb-4">Enter your email to receive the full budget breakdown and tips.</p>
+              <p className="text-muted-foreground mb-4">
+                Enter your email to receive the full budget breakdown and tips.
+              </p>
               <input
                 type="email"
                 value={email}
@@ -122,7 +126,7 @@ export default function BudgetToolPage() {
             <div className="text-center">
               <div className="text-2xl mb-2">✓</div>
               <h3 className="text-xl font-semibold mb-2">Check Your Email!</h3>
-              <p className="text-muted">We've sent your detailed budget breakdown and planning tips.</p>
+              <p className="text-muted-foreground">We've sent your detailed budget breakdown and planning tips.</p>
             </div>
           )}
         </Card>

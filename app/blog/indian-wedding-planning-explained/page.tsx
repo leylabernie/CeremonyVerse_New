@@ -19,7 +19,7 @@ export default function PillarPost() {
     <>
       <Section>
         <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">Indian Wedding Planning Explained</h1>
-        <p className="mt-4 text-muted max-w-3xl">
+        <p className="mt-4 text-muted-foreground max-w-3xl">
           A complete, practical guide to planning Indian and fusion weddings: events, timelines, budgeting, vendors,
           logistics, and what to do first.
         </p>
@@ -35,7 +35,7 @@ export default function PillarPost() {
         <div className="grid gap-6 md:grid-cols-[320px_1fr]">
           <Card className="h-fit md:sticky md:top-24">
             <div className="font-medium">Table of contents</div>
-            <ul className="mt-3 space-y-2 text-sm text-muted">
+            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               {sections.map((s) => (
                 <li key={s.id}>
                   <a className="hover:text-ink" href={`#${s.id}`}>
@@ -96,7 +96,7 @@ export default function PillarPost() {
 
             <Card className="md:p-10">
               <h2 className="text-2xl font-semibold tracking-tight">Want help matching your vision to your budget?</h2>
-              <p className="mt-3 text-muted">
+              <p className="mt-3 text-muted-foreground">
                 Start with a high-intent intake so we can recommend the right level of planning support.
               </p>
               <div className="mt-6 flex gap-3">
@@ -119,7 +119,7 @@ function ArticleSection({ id, title, children }: { id: string; title: string; ch
       <h2 id={id} className="text-xl md:text-2xl font-semibold tracking-tight scroll-mt-24">
         {title}
       </h2>
-      <p className="mt-3 text-muted">{children}</p>
+      <p className="mt-3 text-muted-foreground">{children}</p>
     </Card>
   )
 }
@@ -128,7 +128,7 @@ function Callout() {
   return (
     <div className="rounded-2xl border border-border bg-sand p-6">
       <div className="text-sm font-medium">Timeline tip</div>
-      <p className="mt-2 text-sm text-muted">
+      <p className="mt-2 text-sm text-muted-foreground">
         The biggest budget saver for multi-day weddings is a clear event sequence and timeline. It prevents last-minute
         vendor changes and duplicated costs.
       </p>

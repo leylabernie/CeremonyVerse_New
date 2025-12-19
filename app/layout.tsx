@@ -2,7 +2,7 @@ import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Navbar } from "@/components/site/navbar"
-import { Footer } from "@/components/footer" // Import the comprehensive footer instead of simple footer
+import { Footer } from "@/components/site/footer" // Import the comprehensive footer instead of simple footer
 import { cx } from "@/lib/cx"
 import { Fraunces } from "next/font/google"
 import { Inter } from "next/font/google"

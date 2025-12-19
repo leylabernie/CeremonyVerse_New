@@ -12,7 +12,7 @@ export default function BookPage() {
     <Section>
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">Book a 15-Minute Fit Call</h1>
-        <p className="text-lg text-muted mb-8">
+        <p className="text-lg text-muted-foreground mb-8">
           This is for planning + cultural sourcing support to confirm the right next step.
         </p>
 
@@ -28,7 +28,7 @@ export default function BookPage() {
           </div>
         </Card>
 
-        <p className="mt-6 text-sm text-muted">
+        <p className="mt-6 text-sm text-muted-foreground">
           Prefer to call? Reach us at{" "}
           <a href="tel:+12153419990" className="text-accent hover:underline">
             +1-215-341-9990
