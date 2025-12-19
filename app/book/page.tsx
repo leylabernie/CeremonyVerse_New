@@ -8,6 +8,8 @@ export const metadata: Metadata = {
 }
 
 export default function BookPage() {
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || ""
+
   return (
     <Section>
       <div className="max-w-3xl mx-auto text-center">
@@ -16,17 +18,33 @@ export default function BookPage() {
           This is for planning + cultural sourcing support to confirm the right next step.
         </p>
 
-        <Card className="p-8">
-          <div className="aspect-[3/4] md:aspect-video w-full">
-            <iframe
-              src="https://calendly.com/ceremonyverse/15min"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              title="Book a consultation with CeremonyVerse"
-            />
-          </div>
-        </Card>
+        {calendlyUrl ? (
+          <Card className="p-8">
+            <div className="aspect-[3/4] md:aspect-video w-full">
+              <iframe
+                src={calendlyUrl}
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                title="Book a consultation with CeremonyVerse"
+              />
+            </div>
+          </Card>
+        ) : (
+          <Card className="p-8">
+            <div className="text-center space-y-4">
+              <p className="text-muted-foreground">
+                Online booking is currently being set up. Please contact us directly to schedule your consultation.
+              </p>
+              <a
+                href="tel:+12153419990"
+                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+              >
+                Call +1-215-341-9990
+              </a>
+            </div>
+          </Card>
+        )}
 
         <p className="mt-6 text-sm text-muted-foreground">
           Prefer to call? Reach us at{" "}

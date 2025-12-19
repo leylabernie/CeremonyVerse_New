@@ -11,11 +11,11 @@ import { useEffect } from "react"
  * 1. Create a free Calendly account at https://calendly.com/signup
  * 2. Set up your event type (e.g., "Free Wedding Consultation - 30 min")
  * 3. Get your Calendly URL (e.g., https://calendly.com/yourusername/30min)
- * 4. Replace the calendlyUrl below with your actual Calendly URL
+ * 4. Add NEXT_PUBLIC_CALENDLY_URL environment variable with your URL
  * 5. Customize your availability in Calendly dashboard
- * https://calendly.com/newglamour25/new-meeting
+ *
  * TEMPORARY DEMO:
- * Currently using a demo Calendly link. You MUST replace this with your real account.
+ * Currently using environment variable. Set NEXT_PUBLIC_CALENDLY_URL in your Vercel project.
  */
 
 export default function CalendlyEmbed() {
@@ -37,11 +37,7 @@ export default function CalendlyEmbed() {
     }
   }, [])
 
-  // IMPORTANT: Replace this URL with your actual Calendly account URL
-  // Example: "https://calendly.com/ceremonyverse/consultation"
-  // Until Calendly is set up, we'll show a contact form fallback
-  const calendlyUrl =
-    "https://calendly.com/newglamour25/new-meeting?hide_gdpr_banner=1&background_color=ffffff&text_color=333333&primary_color=8b2346" // Set to empty until you create your Calendly account
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || ""
 
   // Show fallback if no Calendly URL is configured
   if (!calendlyUrl) {
@@ -119,8 +115,8 @@ export default function CalendlyEmbed() {
               </li>
               <li>2. Set up "Free Wedding Consultation - 30 min" event</li>
               <li>
-                3. Update <code className="bg-foreground/10 px-2 py-1 rounded text-xs">calendlyUrl</code> in{" "}
-                <code className="bg-foreground/10 px-2 py-1 rounded text-xs">components/calendly-embed.tsx</code>
+                3. Add <code className="bg-foreground/10 px-2 py-1 rounded text-xs">NEXT_PUBLIC_CALENDLY_URL</code>{" "}
+                environment variable in Vercel
               </li>
             </ol>
           </div>

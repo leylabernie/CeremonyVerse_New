@@ -17,8 +17,11 @@ export function CalendlyWidget() {
     }
   }, [isOpen])
 
-  const calendlyUrl =
-    "https://calendly.com/newglamour25/new-meeting?hide_gdpr_banner=1&background_color=ffffff&text_color=333333&primary_color=8b2346"
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || ""
+
+  if (!calendlyUrl) {
+    return null
+  }
 
   return (
     <>
