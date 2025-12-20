@@ -28,6 +28,14 @@ type FormState = {
 const weddingTypes = ["Gujarati", "South Indian", "Punjabi", "Jain", "Fusion", "Other"]
 const eventsList = ["Mehendi", "Haldi", "Sangeet", "Wedding Ceremony", "Reception", "Other"]
 
+const INPUT_CLASS =
+  "w-full rounded-2xl border border-gray-300 bg-white px-4 py-3 text-sm text-foreground " +
+  "placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
+
+const SELECT_CLASS =
+  "mt-2 w-full rounded-2xl border border-gray-300 bg-white px-4 py-3 text-sm text-foreground " +
+  "focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
+
 export default function StartPlanningPage() {
   const [step, setStep] = useState(1)
   const [submitting, setSubmitting] = useState(false)
@@ -101,7 +109,7 @@ export default function StartPlanningPage() {
   if (done) {
     return (
       <Section>
-        <Card className="md:p-10">
+        <Card className="md:p-10 border border-gray-200 shadow-sm">
           <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">Thank you!</h1>
           <p className="mt-3 text-muted-foreground">
             Based on what you shared, we recommend: <b>{done.recommendation}</b>.
@@ -132,35 +140,35 @@ export default function StartPlanningPage() {
       </Section>
 
       <Section variant="warm">
-        <Card className="md:p-10">
+        <Card className="md:p-10 border border-gray-200 shadow-sm">
           <div className="text-xs text-muted-foreground">Step {step} of 4</div>
 
           {step === 1 && (
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               <Field label="Full name *">
                 <input
-                  className="w-full rounded-2xl border border-border bg-bg px-4 py-3"
+                  className={INPUT_CLASS}
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                 />
               </Field>
               <Field label="Email *">
                 <input
-                  className="w-full rounded-2xl border border-border bg-bg px-4 py-3"
+                  className={INPUT_CLASS}
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                 />
               </Field>
               <Field label="Phone (optional)">
                 <input
-                  className="w-full rounded-2xl border border-border bg-bg px-4 py-3"
+                  className={INPUT_CLASS}
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 />
               </Field>
               <Field label="Your location (city/state)">
                 <input
-                  className="w-full rounded-2xl border border-border bg-bg px-4 py-3"
+                  className={INPUT_CLASS}
                   value={form.location}
                   onChange={(e) => setForm({ ...form, location: e.target.value })}
                 />
@@ -172,14 +180,14 @@ export default function StartPlanningPage() {
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               <Field label="Wedding date (or approximate)">
                 <input
-                  className="w-full rounded-2xl border border-border bg-bg px-4 py-3"
+                  className={INPUT_CLASS}
                   value={form.weddingDate}
                   onChange={(e) => setForm({ ...form, weddingDate: e.target.value })}
                 />
               </Field>
               <Field label="Wedding location (city/state/country)">
                 <input
-                  className="w-full rounded-2xl border border-border bg-bg px-4 py-3"
+                  className={INPUT_CLASS}
                   value={form.weddingLocation}
                   onChange={(e) => setForm({ ...form, weddingLocation: e.target.value })}
                 />
@@ -261,7 +269,7 @@ export default function StartPlanningPage() {
             <div className="mt-4 grid gap-4">
               <Field label="Notes (optional)">
                 <textarea
-                  className="w-full rounded-2xl border border-border bg-bg px-4 py-3 min-h-[140px]"
+                  className={INPUT_CLASS + " min-h-[140px]"}
                   value={form.notes}
                   onChange={(e) => setForm({ ...form, notes: e.target.value })}
                 />
@@ -327,11 +335,7 @@ function SelectField({
   return (
     <div>
       <div className="text-sm font-medium">{label}</div>
-      <select
-        className="mt-2 w-full rounded-2xl border border-border bg-bg px-4 py-3 text-sm"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-      >
+      <select className={SELECT_CLASS} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map((o) => (
           <option key={o} value={o}>
             {o}
@@ -349,7 +353,10 @@ function Tag({ active, onClick, children }: { active: boolean; onClick: () => vo
       onClick={onClick}
       className={[
         "rounded-full border px-3 py-1 text-xs transition",
-        active ? "border-accent bg-accent text-white" : "border-border bg-bg text-muted hover:bg-sand",
+        "focus:outline-none focus:ring-2 focus:ring-primary/20",
+        active
+          ? "border-primary bg-primary text-primary-foreground"
+          : "border-gray-300 bg-white text-foreground hover:bg-secondary",
       ].join(" ")}
     >
       {children}

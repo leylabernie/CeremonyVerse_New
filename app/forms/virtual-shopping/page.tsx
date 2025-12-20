@@ -52,9 +52,9 @@ export default function VirtualShoppingPage() {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-10">
-            {/* Basic Context */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
-              <h2 className="font-serif text-2xl text-foreground mb-6">Basic Context</h2>
+            {/* Basic Information */}
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+              <h2 className="font-serif text-2xl text-foreground mb-6">Basic Information</h2>
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -101,12 +101,12 @@ export default function VirtualShoppingPage() {
                     {["Bride", "Groom", "Parents", "Siblings / wedding party"].map((person) => (
                       <label key={person} className="flex items-center gap-2">
                         <input type="checkbox" name="outfitsFor" value={person} className="text-primary" />
-                        <span className="text-muted-foreground">{person}</span>
+                        <span className="text-foreground">{person}</span>
                       </label>
                     ))}
                     <label className="flex items-center gap-2">
                       <input type="checkbox" name="outfitsFor" value="other" className="text-primary" />
-                      <span className="text-muted-foreground">Other (specify)</span>
+                      <span className="text-foreground">Other (specify)</span>
                     </label>
                   </fieldset>
                   <input
@@ -119,9 +119,9 @@ export default function VirtualShoppingPage() {
               </div>
             </section>
 
-            {/* Events & Outfit Needs */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
-              <h2 className="font-serif text-2xl text-foreground mb-6">Events & Outfit Needs</h2>
+            {/* Wedding Event Details */}
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+              <h2 className="font-serif text-2xl text-foreground mb-6">Wedding Event Details</h2>
               <div className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-3">
@@ -142,11 +142,11 @@ export default function VirtualShoppingPage() {
                           <div className="flex gap-4">
                             <label className="flex items-center gap-2">
                               <input type="radio" name={`hasOutfit_${event}`} value="yes" className="text-primary" />
-                              <span className="text-sm text-muted-foreground">Yes</span>
+                              <span className="text-sm text-foreground">Yes</span>
                             </label>
                             <label className="flex items-center gap-2">
                               <input type="radio" name={`hasOutfit_${event}`} value="no" className="text-primary" />
-                              <span className="text-sm text-muted-foreground">No</span>
+                              <span className="text-sm text-foreground">No</span>
                             </label>
                             <label className="flex items-center gap-2">
                               <input
@@ -155,7 +155,7 @@ export default function VirtualShoppingPage() {
                                 value="notsure"
                                 className="text-primary"
                               />
-                              <span className="text-sm text-muted-foreground">Not sure</span>
+                              <span className="text-sm text-foreground">Not sure</span>
                             </label>
                           </div>
                           <input
@@ -172,9 +172,9 @@ export default function VirtualShoppingPage() {
               </div>
             </section>
 
-            {/* Style Preferences */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
-              <h2 className="font-serif text-2xl text-foreground mb-6">Style Preferences</h2>
+            {/* Shopping Preferences */}
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+              <h2 className="font-serif text-2xl text-foreground mb-6">Shopping Preferences</h2>
               <div className="space-y-6">
                 <div>
                   <label htmlFor="designers" className="block text-sm font-medium text-foreground mb-2">
@@ -215,9 +215,43 @@ export default function VirtualShoppingPage() {
               </div>
             </section>
 
-            {/* Budget */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
-              <h2 className="font-serif text-2xl text-foreground mb-6">Budget</h2>
+            {/* Sizing & Measurements */}
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+              <h2 className="font-serif text-2xl text-foreground mb-6">Sizing & Measurements</h2>
+              <div className="space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Will you provide detailed measurements later via our measurement form?
+                  </label>
+                  <div className="space-y-2">
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="provideMeasurements" value="yes" className="text-primary" />
+                      <span className="text-foreground">Yes</span>
+                    </label>
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="provideMeasurements" value="no" className="text-primary" />
+                      <span className="text-foreground">No</span>
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <label htmlFor="fitConcerns" className="block text-sm font-medium text-foreground mb-2">
+                    Any fit concerns we should know?
+                  </label>
+                  <textarea
+                    id="fitConcerns"
+                    name="fitConcerns"
+                    rows={3}
+                    placeholder="e.g., broad shoulders, petite, plus size, etc."
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+              </div>
+            </section>
+
+            {/* Budget & Timeline */}
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+              <h2 className="font-serif text-2xl text-foreground mb-6">Budget & Timeline</h2>
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -252,137 +286,35 @@ export default function VirtualShoppingPage() {
                   <div className="space-y-2">
                     <label className="flex items-center gap-2">
                       <input type="radio" name="totalBudget" value="under10k" className="text-primary" />
-                      <span className="text-muted-foreground">Under $10k</span>
+                      <span className="text-foreground">Under $10k</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="totalBudget" value="10k-20k" className="text-primary" />
-                      <span className="text-muted-foreground">$10k - $20k</span>
+                      <span className="text-foreground">$10k - $20k</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="totalBudget" value="20k-plus" className="text-primary" />
-                      <span className="text-muted-foreground">Over $20k</span>
+                      <span className="text-foreground">Over $20k</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="totalBudget" value="need-guidance" className="text-primary" />
-                      <span className="text-muted-foreground">Need guidance</span>
+                      <span className="text-foreground">Need guidance</span>
                     </label>
                   </div>
                 </div>
               </div>
             </section>
 
-            {/* Measurements & Fit */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
-              <h2 className="font-serif text-2xl text-foreground mb-6">Measurements & Fit</h2>
-              <div className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Will you provide detailed measurements later via our measurement form?
-                  </label>
-                  <div className="space-y-2">
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="provideMeasurements" value="yes" className="text-primary" />
-                      <span className="text-muted-foreground">Yes</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="provideMeasurements" value="no" className="text-primary" />
-                      <span className="text-muted-foreground">No</span>
-                    </label>
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="fitConcerns" className="block text-sm font-medium text-foreground mb-2">
-                    Any fit concerns we should know?
-                  </label>
-                  <textarea
-                    id="fitConcerns"
-                    name="fitConcerns"
-                    rows={3}
-                    placeholder="e.g., broad shoulders, petite, plus size, etc."
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
-              </div>
+            {/* Additional Details */}
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+              <h2 className="font-serif text-2xl text-foreground mb-6">Additional Details</h2>
+              <div className="space-y-6">{/* Additional fields can be added here */}</div>
             </section>
 
-            {/* Shipping & Logistics */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
-              <h2 className="font-serif text-2xl text-foreground mb-6">Shipping & Logistics</h2>
-              <div className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="shippingCountry" className="block text-sm font-medium text-foreground mb-2">
-                      Shipping destination country <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="shippingCountry"
-                      name="shippingCountry"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="shippingCity" className="block text-sm font-medium text-foreground mb-2">
-                      Shipping destination city <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="shippingCity"
-                      name="shippingCity"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Are you open to:</label>
-                  <div className="space-y-2">
-                    <label className="flex items-center gap-2">
-                      <input type="checkbox" name="shippingPreferences" value="separate" className="text-primary" />
-                      <span className="text-muted-foreground">Separate shipments per vendor</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input type="checkbox" name="shippingPreferences" value="combined" className="text-primary" />
-                      <span className="text-muted-foreground">
-                        Combined shipments when possible (to reduce customs complexity)
-                      </span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Legal/Policy Acknowledgement */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
-              <h2 className="font-serif text-2xl text-foreground mb-6">Important Acknowledgements</h2>
-              <div className="space-y-4">
-                <label className="flex items-start gap-3">
-                  <input type="checkbox" name="acknowledge1" required className="text-primary mt-1" />
-                  <span className="text-sm text-muted-foreground">
-                    I understand CeremonyVerse coordinates shopping and sourcing and is not the manufacturer or
-                    retailer.
-                  </span>
-                </label>
-                <label className="flex items-start gap-3">
-                  <input type="checkbox" name="acknowledge2" required className="text-primary mt-1" />
-                  <span className="text-sm text-muted-foreground">
-                    I understand most Indian designers and boutiques have limited or no returns.
-                  </span>
-                </label>
-                <label className="flex items-start gap-3">
-                  <input type="checkbox" name="acknowledge3" required className="text-primary mt-1" />
-                  <span className="text-sm text-muted-foreground">
-                    I understand the service fee is separate from product costs.
-                  </span>
-                </label>
-                <label className="flex items-start gap-3">
-                  <input type="checkbox" name="acknowledge4" required className="text-primary mt-1" />
-                  <span className="text-sm text-muted-foreground">
-                    I understand I fund all product purchases in advance and customs duties/taxes are my responsibility.
-                  </span>
-                </label>
-              </div>
+            {/* Consultation Preferences */}
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+              <h2 className="font-serif text-2xl text-foreground mb-6">Consultation Preferences</h2>
+              <div className="space-y-6">{/* Additional fields can be added here */}</div>
             </section>
 
             {/* Submit Button */}

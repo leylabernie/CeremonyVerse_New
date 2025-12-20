@@ -58,7 +58,7 @@ export default function MexicoPreConsultForm() {
 
           <form onSubmit={handleSubmit} className="space-y-10">
             {/* Basic Details */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Basic Details</h2>
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -116,15 +116,15 @@ export default function MexicoPreConsultForm() {
                     <div className="flex gap-4 mt-3">
                       <label className="flex items-center gap-2">
                         <input type="radio" name="datesFlexible" value="yes" className="text-primary" />
-                        <span className="text-muted-foreground">Yes</span>
+                        <span className="text-foreground">Yes</span>
                       </label>
                       <label className="flex items-center gap-2">
                         <input type="radio" name="datesFlexible" value="somewhat" className="text-primary" />
-                        <span className="text-muted-foreground">Somewhat</span>
+                        <span className="text-foreground">Somewhat</span>
                       </label>
                       <label className="flex items-center gap-2">
                         <input type="radio" name="datesFlexible" value="no" className="text-primary" />
-                        <span className="text-muted-foreground">No</span>
+                        <span className="text-foreground">No</span>
                       </label>
                     </div>
                   </div>
@@ -133,7 +133,7 @@ export default function MexicoPreConsultForm() {
             </section>
 
             {/* Destination Preferences */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Destination Preferences</h2>
               <div className="space-y-6">
                 <div>
@@ -143,19 +143,19 @@ export default function MexicoPreConsultForm() {
                   <div className="space-y-2">
                     <label className="flex items-center gap-2">
                       <input type="checkbox" name="regions" value="cancun-riviera" className="text-primary" />
-                      <span className="text-muted-foreground">Cancún / Riviera Maya</span>
+                      <span className="text-foreground">Cancún / Riviera Maya</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="checkbox" name="regions" value="los-cabos" className="text-primary" />
-                      <span className="text-muted-foreground">Los Cabos</span>
+                      <span className="text-foreground">Los Cabos</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="checkbox" name="regions" value="puerto-vallarta" className="text-primary" />
-                      <span className="text-muted-foreground">Puerto Vallarta / Nayarit</span>
+                      <span className="text-foreground">Puerto Vallarta / Nayarit</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="checkbox" name="regions" value="not-sure" className="text-primary" />
-                      <span className="text-muted-foreground">Not sure yet</span>
+                      <span className="text-foreground">Not sure yet</span>
                     </label>
                   </div>
                 </div>
@@ -166,19 +166,19 @@ export default function MexicoPreConsultForm() {
                   <div className="space-y-2">
                     <label className="flex items-center gap-2">
                       <input type="radio" name="resortType" value="family-inclusive" className="text-primary" />
-                      <span className="text-muted-foreground">Family-friendly all-inclusive</span>
+                      <span className="text-foreground">Family-friendly all-inclusive</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="resortType" value="adults-only" className="text-primary" />
-                      <span className="text-muted-foreground">Adults-only all-inclusive</span>
+                      <span className="text-foreground">Adults-only all-inclusive</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="resortType" value="luxury-boutique" className="text-primary" />
-                      <span className="text-muted-foreground">Luxury boutique</span>
+                      <span className="text-foreground">Luxury boutique</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="resortType" value="not-sure" className="text-primary" />
-                      <span className="text-muted-foreground">Not sure yet</span>
+                      <span className="text-foreground">Not sure yet</span>
                     </label>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ export default function MexicoPreConsultForm() {
             </section>
 
             {/* Guest & Travel Info */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Guest & Travel Info</h2>
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -234,15 +234,15 @@ export default function MexicoPreConsultForm() {
                   <div className="flex gap-4">
                     <label className="flex items-center gap-2">
                       <input type="radio" name="visaSupport" value="yes" className="text-primary" />
-                      <span className="text-muted-foreground">Yes</span>
+                      <span className="text-foreground">Yes</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="visaSupport" value="no" className="text-primary" />
-                      <span className="text-muted-foreground">No</span>
+                      <span className="text-foreground">No</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="visaSupport" value="notsure" className="text-primary" />
-                      <span className="text-muted-foreground">Not sure</span>
+                      <span className="text-foreground">Not sure</span>
                     </label>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ export default function MexicoPreConsultForm() {
             </section>
 
             {/* Events You Want in Mexico */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Events You Want in Mexico</h2>
               <div className="space-y-6">
                 <div>
@@ -272,7 +272,7 @@ export default function MexicoPreConsultForm() {
                     ].map((event) => (
                       <label key={event} className="flex items-center gap-2">
                         <input type="checkbox" name="events" value={event} className="text-primary" />
-                        <span className="text-muted-foreground">{event}</span>
+                        <span className="text-foreground">{event}</span>
                       </label>
                     ))}
                   </fieldset>
@@ -293,7 +293,7 @@ export default function MexicoPreConsultForm() {
             </section>
 
             {/* Priorities & Concerns */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Priorities & Concerns</h2>
               <div className="space-y-6">
                 <div>
@@ -312,12 +312,12 @@ export default function MexicoPreConsultForm() {
                     ].map((priority) => (
                       <label key={priority} className="flex items-center gap-2">
                         <input type="checkbox" name="priorities" value={priority} className="text-primary" />
-                        <span className="text-muted-foreground">{priority}</span>
+                        <span className="text-foreground">{priority}</span>
                       </label>
                     ))}
                     <label className="flex items-center gap-2">
                       <input type="checkbox" name="priorities" value="other" className="text-primary" />
-                      <span className="text-muted-foreground">Other (specify below)</span>
+                      <span className="text-foreground">Other (specify below)</span>
                     </label>
                   </fieldset>
                   <input
@@ -343,7 +343,7 @@ export default function MexicoPreConsultForm() {
             </section>
 
             {/* Travel & Team */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Travel & Team</h2>
               <div className="space-y-6">
                 <div>
@@ -353,11 +353,11 @@ export default function MexicoPreConsultForm() {
                   <div className="flex gap-4">
                     <label className="flex items-center gap-2">
                       <input type="radio" name="hasTravelAdvisor" value="yes" className="text-primary" />
-                      <span className="text-muted-foreground">Yes</span>
+                      <span className="text-foreground">Yes</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="hasTravelAdvisor" value="no" className="text-primary" />
-                      <span className="text-muted-foreground">No</span>
+                      <span className="text-foreground">No</span>
                     </label>
                   </div>
                 </div>
@@ -377,7 +377,7 @@ export default function MexicoPreConsultForm() {
             </section>
 
             {/* How You Want Help */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">How You Want Help</h2>
               <div>
                 <label htmlFor="helpNeeded" className="block text-sm font-medium text-foreground mb-2">
@@ -390,6 +390,44 @@ export default function MexicoPreConsultForm() {
                   placeholder="e.g., planning, rituals, décor, coordination, vendor sourcing, etc."
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
+              </div>
+            </section>
+
+            {/* How You Heard About Us */}
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+              <h2 className="font-serif text-2xl text-foreground mb-6">How You Heard About Us</h2>
+              <div className="space-y-6">
+                <div>
+                  <label htmlFor="heardAboutUs" className="block text-sm font-medium text-foreground mb-2">
+                    How did you hear about CeremonyVerse?
+                  </label>
+                  <input
+                    type="text"
+                    id="heardAboutUs"
+                    name="heardAboutUs"
+                    placeholder="e.g., friend, social media, website"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+              </div>
+            </section>
+
+            {/* Additional Notes */}
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
+              <h2 className="font-serif text-2xl text-foreground mb-6">Additional Notes</h2>
+              <div className="space-y-6">
+                <div>
+                  <label htmlFor="additionalNotes" className="block text-sm font-medium text-foreground mb-2">
+                    Any additional notes or preferences?
+                  </label>
+                  <textarea
+                    id="additionalNotes"
+                    name="additionalNotes"
+                    rows={4}
+                    placeholder="Feel free to share any other details"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
               </div>
             </section>
 

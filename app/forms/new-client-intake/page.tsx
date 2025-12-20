@@ -56,7 +56,7 @@ export default function NewClientIntakePage() {
 
           <form onSubmit={handleSubmit} className="space-y-10">
             {/* Basic Info */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Basic Information</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -141,7 +141,7 @@ export default function NewClientIntakePage() {
             </section>
 
             {/* Wedding Basics */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Wedding Basics</h2>
               <div className="space-y-6">
                 <div>
@@ -174,15 +174,15 @@ export default function NewClientIntakePage() {
                   <div className="space-y-2">
                     <label className="flex items-center gap-2">
                       <input type="radio" name="mexicoWedding" value="yes" className="text-primary" />
-                      <span className="text-muted-foreground">Yes</span>
+                      <span className="text-foreground">Yes</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="mexicoWedding" value="no" className="text-primary" />
-                      <span className="text-muted-foreground">No</span>
+                      <span className="text-foreground">No</span>
                     </label>
                     <label className="flex items-center gap-2">
-                      <input type="radio" name="mexicoWedding" value="notsure" className="text-primary" />
-                      <span className="text-muted-foreground">Not sure yet</span>
+                      <input type="radio" name="mexicoWedding" value="not-sure" className="text-primary" />
+                      <span className="text-foreground">Not sure yet</span>
                     </label>
                   </div>
                 </div>
@@ -212,11 +212,115 @@ export default function NewClientIntakePage() {
                     />
                   </div>
                 </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Which description fits your wedding best? <span className="text-red-500">*</span>
+                  </label>
+                  <div className="space-y-2">
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="weddingType" value="gujarati" required className="text-primary" />
+                      <span className="text-foreground">Gujarati Hindu</span>
+                    </label>
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="weddingType" value="tamil-christian" className="text-primary" />
+                      <span className="text-foreground">Tamil Christian</span>
+                    </label>
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="weddingType" value="hindu-regional" className="text-primary" />
+                      <span className="text-foreground">Hindu wedding with other regional customs</span>
+                    </label>
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="weddingType" value="fusion" className="text-primary" />
+                      <span className="text-foreground">Indian + non-Indian fusion</span>
+                    </label>
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="weddingType" value="other" className="text-primary" />
+                      <span className="text-foreground">Other (please specify below)</span>
+                    </label>
+                  </div>
+                  <input
+                    type="text"
+                    name="weddingTypeOther"
+                    placeholder="If other, please describe"
+                    className="w-full mt-2 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Are parents/elders strongly involved in decisions?
+                  </label>
+                  <div className="space-y-2">
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="eldersInvolved" value="yes" className="text-primary" />
+                      <span className="text-foreground">Yes</span>
+                    </label>
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="eldersInvolved" value="somewhat" className="text-primary" />
+                      <span className="text-foreground">Somewhat</span>
+                    </label>
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="eldersInvolved" value="no" className="text-primary" />
+                      <span className="text-foreground">No / minimal</span>
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Which events are you planning? (select all that apply)
+                  </label>
+                  <fieldset className="space-y-2">
+                    <legend className="sr-only">Event selection</legend>
+                    {[
+                      "Mehndi",
+                      "Pithi/Haldi",
+                      "Garba/Sangeet",
+                      "Grah Shanti",
+                      "Hindu ceremony",
+                      "Church ceremony",
+                      "Civil ceremony",
+                      "Reception",
+                      "Brunch / post-wedding lunch",
+                    ].map((event) => (
+                      <label key={event} className="flex items-center gap-2">
+                        <input type="checkbox" name="events" value={event} className="text-primary" />
+                        <span className="text-foreground">{event}</span>
+                      </label>
+                    ))}
+                    <label className="flex items-center gap-2">
+                      <input type="checkbox" name="events" value="other" className="text-primary" />
+                      <span className="text-foreground">Other (specify below)</span>
+                    </label>
+                  </fieldset>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Any must-have service needs? (select all that apply)
+                  </label>
+                  <fieldset className="space-y-2">
+                    <legend className="sr-only">Priority selection</legend>
+                    {[
+                      "Ceremony design & cultural rituals",
+                      "Vendor sourcing & contracts",
+                      "Timeline & run-of-show",
+                      "Budget guidance",
+                      "Outfit shopping from India",
+                    ].map((priority) => (
+                      <label key={priority} className="flex items-center gap-2">
+                        <input type="checkbox" name="priorities" value={priority} className="text-primary" />
+                        <span className="text-foreground">{priority}</span>
+                      </label>
+                    ))}
+                    <label className="flex items-center gap-2">
+                      <input type="checkbox" name="priorities" value="other" className="text-primary" />
+                      <span className="text-foreground">Something else</span>
+                    </label>
+                  </fieldset>
+                </div>
               </div>
             </section>
 
             {/* Background & Culture */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Background & Culture</h2>
               <div className="space-y-6">
                 <div>
@@ -244,58 +348,6 @@ export default function NewClientIntakePage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Which description fits your wedding best? <span className="text-red-500">*</span>
-                  </label>
-                  <div className="space-y-2">
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="weddingType" value="gujarati" required className="text-primary" />
-                      <span className="text-muted-foreground">Gujarati Hindu</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="weddingType" value="tamil-christian" className="text-primary" />
-                      <span className="text-muted-foreground">Tamil Christian</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="weddingType" value="hindu-regional" className="text-primary" />
-                      <span className="text-muted-foreground">Hindu wedding with other regional customs</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="weddingType" value="fusion" className="text-primary" />
-                      <span className="text-muted-foreground">Indian + non-Indian fusion</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="weddingType" value="other" className="text-primary" />
-                      <span className="text-muted-foreground">Other (please specify below)</span>
-                    </label>
-                  </div>
-                  <input
-                    type="text"
-                    name="weddingTypeOther"
-                    placeholder="If other, please describe"
-                    className="w-full mt-2 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Are parents/elders strongly involved in decisions?
-                  </label>
-                  <div className="space-y-2">
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="eldersInvolved" value="yes" className="text-primary" />
-                      <span className="text-muted-foreground">Yes</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="eldersInvolved" value="somewhat" className="text-primary" />
-                      <span className="text-muted-foreground">Somewhat</span>
-                    </label>
-                    <label className="flex items-center gap-2">
-                      <input type="radio" name="eldersInvolved" value="no" className="text-primary" />
-                      <span className="text-muted-foreground">No</span>
-                    </label>
-                  </div>
-                </div>
-                <div>
                   <label htmlFor="nonNegotiableRituals" className="block text-sm font-medium text-foreground mb-2">
                     Are there any non-negotiable rituals for your families?
                   </label>
@@ -310,43 +362,9 @@ export default function NewClientIntakePage() {
             </section>
 
             {/* Events & Rituals */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Events & Rituals</h2>
               <div className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-3">
-                    Which events do you want to include? (Check all that apply)
-                  </label>
-                  <fieldset className="space-y-2">
-                    <legend className="sr-only">Event selection</legend>
-                    {[
-                      "Mehndi",
-                      "Pithi/Haldi",
-                      "Garba/Sangeet",
-                      "Grah Shanti",
-                      "Hindu ceremony",
-                      "Church ceremony",
-                      "Civil ceremony",
-                      "Reception",
-                      "Brunch / post-wedding lunch",
-                    ].map((event) => (
-                      <label key={event} className="flex items-center gap-2">
-                        <input type="checkbox" name="events" value={event} className="text-primary" />
-                        <span className="text-muted-foreground">{event}</span>
-                      </label>
-                    ))}
-                    <label className="flex items-center gap-2">
-                      <input type="checkbox" name="events" value="other" className="text-primary" />
-                      <span className="text-muted-foreground">Other (specify below)</span>
-                    </label>
-                  </fieldset>
-                  <input
-                    type="text"
-                    name="eventsOther"
-                    placeholder="Other events"
-                    className="w-full mt-2 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
                 <div>
                   <label htmlFor="ritualsDoNotWant" className="block text-sm font-medium text-foreground mb-2">
                     Are there any rituals you definitely do NOT want?
@@ -374,7 +392,7 @@ export default function NewClientIntakePage() {
             </section>
 
             {/* Budget & Priorities */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">Budget & Priorities</h2>
               <div className="space-y-6">
                 <div>
@@ -384,57 +402,25 @@ export default function NewClientIntakePage() {
                   <div className="space-y-2">
                     <label className="flex items-center gap-2">
                       <input type="radio" name="budgetRange" value="under50k" className="text-primary" />
-                      <span className="text-muted-foreground">Under $50k</span>
+                      <span className="text-foreground">Under $50k</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="budgetRange" value="50k-100k" className="text-primary" />
-                      <span className="text-muted-foreground">$50k - $100k</span>
+                      <span className="text-foreground">$50k - $100k</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="budgetRange" value="100k-200k" className="text-primary" />
-                      <span className="text-muted-foreground">$100k - $200k</span>
+                      <span className="text-foreground">$100k - $200k</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="budgetRange" value="200k-plus" className="text-primary" />
-                      <span className="text-muted-foreground">$200k+</span>
+                      <span className="text-foreground">$200k+</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input type="radio" name="budgetRange" value="prefer-not-say" className="text-primary" />
-                      <span className="text-muted-foreground">Prefer not to say yet</span>
+                      <span className="text-foreground">Prefer not to say yet</span>
                     </label>
                   </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-3">
-                    What are your top 3 priorities? (Select up to 3)
-                  </label>
-                  <fieldset className="space-y-2">
-                    <legend className="sr-only">Priority selection</legend>
-                    {[
-                      "Guest experience",
-                      "Décor & design",
-                      "Food & catering",
-                      "Smooth logistics (no chaos)",
-                      "Making elders happy",
-                      "Photography/video",
-                      "Respecting both cultures equally",
-                    ].map((priority) => (
-                      <label key={priority} className="flex items-center gap-2">
-                        <input type="checkbox" name="priorities" value={priority} className="text-primary" />
-                        <span className="text-muted-foreground">{priority}</span>
-                      </label>
-                    ))}
-                    <label className="flex items-center gap-2">
-                      <input type="checkbox" name="priorities" value="other" className="text-primary" />
-                      <span className="text-muted-foreground">Other (specify below)</span>
-                    </label>
-                  </fieldset>
-                  <input
-                    type="text"
-                    name="prioritiesOther"
-                    placeholder="Other priorities"
-                    className="w-full mt-2 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
                 </div>
                 <div>
                   <label htmlFor="biggestWorries" className="block text-sm font-medium text-foreground mb-2">
@@ -451,30 +437,30 @@ export default function NewClientIntakePage() {
             </section>
 
             {/* How You Found CeremonyVerse */}
-            <section className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-primary/10">
+            <section className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-gray-200">
               <h2 className="font-serif text-2xl text-foreground mb-6">How You Found CeremonyVerse</h2>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">How did you hear about us?</label>
                 <div className="space-y-2">
                   <label className="flex items-center gap-2">
                     <input type="radio" name="howFoundUs" value="google" className="text-primary" />
-                    <span className="text-muted-foreground">Google search</span>
+                    <span className="text-foreground">Google search</span>
                   </label>
                   <label className="flex items-center gap-2">
                     <input type="radio" name="howFoundUs" value="instagram" className="text-primary" />
-                    <span className="text-muted-foreground">Instagram</span>
+                    <span className="text-foreground">Instagram</span>
                   </label>
                   <label className="flex items-center gap-2">
                     <input type="radio" name="howFoundUs" value="friend" className="text-primary" />
-                    <span className="text-muted-foreground">Friend referral</span>
+                    <span className="text-foreground">Friend referral</span>
                   </label>
                   <label className="flex items-center gap-2">
                     <input type="radio" name="howFoundUs" value="vendor" className="text-primary" />
-                    <span className="text-muted-foreground">Vendor referral</span>
+                    <span className="text-foreground">Vendor referral</span>
                   </label>
                   <label className="flex items-center gap-2">
                     <input type="radio" name="howFoundUs" value="other" className="text-primary" />
-                    <span className="text-muted-foreground">Other (specify below)</span>
+                    <span className="text-foreground">Other (specify below)</span>
                   </label>
                 </div>
                 <input
