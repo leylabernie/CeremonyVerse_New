@@ -14,6 +14,9 @@ const nav = [
 export function Navbar() {
   return (
     <header className="sticky top-0 z-40 bg-cvBg/95 backdrop-blur border-b border-cvBorder">
+      <div className="bg-red-600 text-white text-center py-1 text-xs font-bold">
+        VERSION 9.9 - DEPLOYMENT TEST ACTIVE
+      </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-6">
         {/* Centered logo */}
         <div className="flex justify-center mb-6">

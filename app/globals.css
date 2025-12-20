@@ -194,7 +194,6 @@
   --color-cvAccentHover: var(--cv-accent-hover);
   --color-cvTeal: var(--cv-teal);
 
-  /* Removed circular font variable declarations and added proper mappings */
   /* Font tokens (Tailwind utilities) mapped to next/font variables */
   --font-serif: var(--font-cv-serif);
   --font-sans: var(--font-cv-sans);
@@ -209,24 +208,8 @@
     @apply border-border outline-ring/50;
   }
 
-  /* Use --font-cv-sans directly instead of --font-sans to avoid circular token issues */
-  html,
-  body {
-    font-family: var(--font-cv-sans) !important;
-  }
-
   body {
     @apply bg-background text-foreground min-h-screen antialiased;
-  }
-
-  /* Use --font-cv-serif directly instead of --font-serif to avoid circular token issues */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-cv-serif) !important;
   }
 
   h1 {
@@ -291,17 +274,6 @@
     line-height: 1.7;
     font-size: 1.0625rem;
   }
-
-  /* Use --font-cv-serif directly for navigation to match reference design */
-  nav a,
-  nav button {
-    font-family: var(--font-cv-serif) !important;
-  }
-
-  /* Adding deployment proof test - red outline to verify CSS is loading */
-  body {
-    outline: 6px solid red !important;
-  }
 }
 
 /* Adding form contrast fixes for white-on-white issues */
@@ -321,4 +293,29 @@
   button:disabled {
     opacity: 0.6;
   }
+}
+
+/* =========================
+   GLOBAL FONT ENFORCEMENT (ROOT)
+   ========================= */
+
+html,
+body {
+  font-family: var(--font-cv-sans), "Inter", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Headings use serif globally */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-cv-serif), "Cormorant Garamond", Georgia, serif !important;
+}
+
+/* Navbar links/buttons stay serif */
+nav a,
+nav button {
+  font-family: var(--font-cv-serif), "Cormorant Garamond", Georgia, serif !important;
 }

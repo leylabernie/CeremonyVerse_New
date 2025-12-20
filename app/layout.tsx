@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
-        <meta name="font-version" content="2.0" />
+        <meta name="font-version" content="9.9" />
       </head>
       <body className="min-h-screen antialiased bg-cvBg text-cvInk font-sans">
         <Navbar />
