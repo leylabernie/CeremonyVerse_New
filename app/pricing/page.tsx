@@ -1,6 +1,7 @@
 import { Section } from "@/components/site/section"
 import { Card } from "@/components/site/card"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -86,6 +87,25 @@ export default function PricingPage() {
       </Section>
 
       <Section variant="surface">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-text mb-4">Who This Pricing Serves</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Our services are designed for couples and families planning Indian or multicultural fusion weddings who want
+            expert guidance without rigid package requirements. We work best with those who value cultural authenticity,
+            budget clarity, and personalized coordination.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Whether you're managing a single-day celebration or a multi-event weekend, we help you plan with confidence
+            and avoid common pitfalls. Learn more about our{" "}
+            <Link href="/services" className="text-primary hover:underline">
+              complete range of services
+            </Link>
+            .
+          </p>
+        </div>
+      </Section>
+
+      <Section variant="warm2">
         <div className="grid gap-8 md:grid-cols-2">
           <Card hover>
             <h3 className="text-text mb-2">Planning Intensives</h3>
@@ -330,14 +350,65 @@ export default function PricingPage() {
               </p>
             </div>
           </div>
+
+          <div className="mt-12 p-6 bg-surface/50 rounded-lg border border-border">
+            <h3 className="font-semibold text-lg text-text mb-4">Learn More</h3>
+            <div className="grid gap-3 sm:grid-cols-2">
+              <Link
+                href="/services"
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>View All Planning Services</span>
+              </Link>
+              <Link
+                href="/start-planning"
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>Start with Budget + Vision Form</span>
+              </Link>
+              <Link
+                href="/blog/category/budget"
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>Budget Planning Resources</span>
+              </Link>
+              <Link
+                href="/fusion-wedding-planner"
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>Fusion Wedding Planning Services</span>
+              </Link>
+              <Link
+                href="/shopping-from-india"
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>Cultural Sourcing Support</span>
+              </Link>
+              <Link
+                href="/service-area"
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>Service Areas & Availability</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </Section>
 
       <Section variant="warm">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-text mb-4">Ready to Get Started?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground mb-6">
             Start with our Budget + Vision Form or schedule a free consultation to discuss your wedding vision.
+          </p>
+          <p className="text-sm text-muted-foreground italic mb-8">
+            We focus on clarity and cultural accuracy — not selling unnecessary services.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button href="/start-planning">Start with Budget + Vision Form</Button>
