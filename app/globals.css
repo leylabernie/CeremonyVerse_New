@@ -194,17 +194,14 @@
   --color-cvAccentHover: var(--cv-accent-hover);
   --color-cvTeal: var(--cv-teal);
 
-  /* Updated font family variables to use Cormorant Garamond and Inter */
-  --font-serif: var(--font-serif);
-  --font-sans: var(--font-sans);
+  /* Removed circular font variable declarations and added proper mappings */
+  /* Font tokens (Tailwind utilities) mapped to next/font variables */
+  --font-serif: var(--font-cv-serif);
+  --font-sans: var(--font-cv-sans);
 
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
   --radius-2xl: 1rem;
   --default-max-w-page: 1280px;
-
-  /* Updated font family variables to use Cormorant Garamond for serif */
-  --font-serif: var(--font-serif);
-  --font-sans: var(--font-sans);
 }
 
 @layer base {
@@ -212,24 +209,24 @@
     @apply border-border outline-ring/50;
   }
 
-  /* Force Inter as default font for html and body */
+  /* Use --font-cv-sans directly instead of --font-sans to avoid circular token issues */
   html,
   body {
-    font-family: var(--font-sans) !important;
+    font-family: var(--font-cv-sans) !important;
   }
 
   body {
     @apply bg-background text-foreground min-h-screen antialiased;
   }
 
-  /* Force Cormorant Garamond for all headings */
+  /* Use --font-cv-serif directly instead of --font-serif to avoid circular token issues */
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: var(--font-serif) !important;
+    font-family: var(--font-cv-serif) !important;
   }
 
   h1 {
@@ -295,9 +292,9 @@
     font-size: 1.0625rem;
   }
 
-  /* Force Cormorant Garamond for navigation to match reference design */
+  /* Use --font-cv-serif directly for navigation to match reference design */
   nav a,
   nav button {
-    font-family: var(--font-serif) !important;
+    font-family: var(--font-cv-serif) !important;
   }
 }

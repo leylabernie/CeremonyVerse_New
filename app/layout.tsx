@@ -8,13 +8,13 @@ import { Cormorant_Garamond, Inter } from "next/font/google"
 const serif = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
-  variable: "--font-serif",
+  variable: "--font-cv-serif",
   display: "swap",
 })
 
 const sans = Inter({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-cv-sans",
   display: "swap",
 })
 
@@ -66,6 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+        <meta name="font-version" content="2.0" />
       </head>
       <body className="min-h-screen antialiased bg-cvBg text-cvInk font-sans">
         <Navbar />
