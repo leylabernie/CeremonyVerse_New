@@ -152,6 +152,32 @@ export default function OutfitCoordinator() {
             </div>
           </div>
         </div>
+
+        {/* Pricing & Scope Section */}
+        <div className="bg-gradient-to-br from-primary/10 to-sage/10 rounded-2xl p-12 border border-primary/20 mt-12">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-serif text-3xl text-charcoal mb-4">Outfit Coordination Pricing</h2>
+            <p className="text-charcoal/80 leading-relaxed mb-8">
+              Outfit coordination services are included as part of our full planning packages. Pricing depends on the
+              number of events, size of wedding party, and whether you're sourcing outfits from India through our
+              virtual shopping service.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/pricing"
+                className="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors font-semibold"
+              >
+                View Full Pricing
+              </Link>
+              <Link
+                href="/start-planning"
+                className="inline-block bg-white text-charcoal border-2 border-charcoal px-8 py-3 rounded-full hover:bg-charcoal hover:text-white transition-colors font-semibold"
+              >
+                Start Planning
+              </Link>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   )

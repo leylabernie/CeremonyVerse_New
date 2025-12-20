@@ -126,6 +126,60 @@ export default function IndianWeddingPlannerCalifornia() {
         </div>
       </section>
 
+      {/* Pricing & Scope Section */}
+      <section className="py-20 bg-gradient-to-b from-background to-secondary/5">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl text-foreground mb-4">Pricing & Scope for California Indian Weddings</h2>
+            <p className="text-lg text-muted-foreground">
+              We work within your budget while delivering authentic Indian wedding coordination.
+            </p>
+          </div>
+
+          <div className="bg-background rounded-xl p-8 border border-border mb-8">
+            <h3 className="text-xl font-medium mb-4">Budget Flexibility</h3>
+            <p className="text-muted-foreground mb-6">
+              California Indian weddings range from intimate temple ceremonies to grand hotel celebrations. Your
+              investment depends on guest count, number of events, and level of service needed.
+            </p>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-medium mb-2">Minimum Included:</h4>
+                <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                  <li>Complete wedding timeline and vendor coordination</li>
+                  <li>Cultural guidance and ceremony coordination</li>
+                  <li>Month-of coordination and day-of management</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2">May Increase Depending On:</h4>
+                <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                  <li>Number of pre-wedding and post-wedding events</li>
+                  <li>Guest count and venue complexity</li>
+                  <li>Full design and decor coordination</li>
+                  <li>Virtual shopping from India</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/pricing"
+              className="inline-block bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-3 rounded-md text-center"
+            >
+              View Full Pricing
+            </Link>
+            <Link
+              href="/start-planning"
+              className="inline-block bg-transparent border border-border hover:bg-muted px-8 py-3 rounded-md text-center"
+            >
+              Start Planning
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-gradient-to-br from-accent/10 via-background to-secondary/10">
         <div className="container mx-auto px-6 max-w-3xl text-center">

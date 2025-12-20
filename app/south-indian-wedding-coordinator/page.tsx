@@ -141,6 +141,57 @@ export default function SouthIndianWeddingCoordinatorPage() {
           </div>
         </section>
 
+        {/* Pricing & Scope Section */}
+        <section className="px-4 sm:px-6 lg:px-8 py-20 bg-muted/30">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-light text-foreground mb-4">
+                Pricing & Scope for South Indian Wedding Coordination
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                We work within your budget while honoring every sacred tradition of your South Indian wedding.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl p-8 border border-border mb-8">
+              <h3 className="text-xl font-medium mb-4">Budget Flexibility</h3>
+              <p className="text-muted-foreground mb-6">
+                South Indian weddings involve detailed Vedic rituals and cultural ceremonies. Your investment depends on
+                the number of pre-wedding events, complexity of rituals, and whether you're incorporating regional
+                variations (Tamil, Telugu, Kannada, Malayalam).
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-medium mb-2">Minimum Included:</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>Complete Vedic ceremony coordination and timeline</li>
+                    <li>Priest coordination and ritual guidance</li>
+                    <li>Vendor management and month-of coordination</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-2">May Increase Depending On:</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>Number of pre-wedding rituals (Panda Kaal, Mangala Snanam, etc.)</li>
+                    <li>Regional customization (Iyer, Iyengar, Reddy, Nair traditions)</li>
+                    <li>Traditional Kanjivaram sourcing from India</li>
+                    <li>Full mandap design and traditional decor</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild>
+                <Link href="/pricing">View Full Pricing</Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/start-planning">Start Planning</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-br from-secondary/10 to-primary/10">
           <div className="max-w-4xl mx-auto text-center">

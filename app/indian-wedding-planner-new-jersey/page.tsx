@@ -203,6 +203,56 @@ export default function IndianWeddingPlannerNewJerseyPage() {
         </div>
       </section>
 
+      {/* Pricing & Scope Section */}
+      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-muted/30">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl sm:text-4xl font-light text-foreground mb-4">
+              Pricing & Scope for New Jersey Indian Weddings
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              We customize our services to fit your budget and wedding vision in New Jersey.
+            </p>
+          </div>
+
+          <div className="bg-card rounded-xl p-8 border border-border mb-8">
+            <h3 className="text-xl font-medium mb-4">Budget Flexibility</h3>
+            <p className="text-muted-foreground mb-6">
+              New Jersey Indian weddings vary greatly in scale and cultural requirements. Your investment depends on the
+              number of events, guest count, and whether you're incorporating traditions from multiple regions.
+            </p>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-medium mb-2">Minimum Included:</h4>
+                <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                  <li>Complete NJ venue coordination and timeline</li>
+                  <li>Vendor management and cultural guidance</li>
+                  <li>Month-of coordination for all events</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2">May Increase Depending On:</h4>
+                <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                  <li>Number of ceremonies and pre-wedding events</li>
+                  <li>Guest count and multi-venue coordination</li>
+                  <li>Full design and decor services</li>
+                  <li>Virtual shopping from India</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild>
+              <Link href="/pricing">View Full Pricing</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/start-planning">Start Planning</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-br from-accent/10 to-primary/10">
         <div className="max-w-4xl mx-auto text-center">

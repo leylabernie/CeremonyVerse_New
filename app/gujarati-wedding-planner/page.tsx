@@ -137,6 +137,57 @@ export default function GujaratiWeddingPlannerPage() {
           </div>
         </section>
 
+        {/* Pricing & Scope Section */}
+        <section className="px-4 sm:px-6 lg:px-8 py-20 bg-muted/30">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-light text-foreground mb-4">
+                Pricing & Scope for Gujarati Wedding Planning
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Every Gujarati wedding is unique. We work within your budget and scale services to fit your vision.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl p-8 border border-border mb-8">
+              <h3 className="text-xl font-medium mb-4">Budget Flexibility</h3>
+              <p className="text-muted-foreground mb-6">
+                We coordinate Gujarati weddings of all sizes—from intimate family ceremonies to grand 500-guest
+                celebrations. Your investment depends on how many events you're hosting, what level of coordination you
+                need, and whether you're sourcing items from India.
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-medium mb-2">Minimum Included:</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>Detailed Gujarati wedding timeline and cultural guidance</li>
+                    <li>Vendor recommendations and coordination</li>
+                    <li>Month-of coordination for all events</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-2">May Increase Depending On:</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>Number of pre-wedding events (Garba, Pithi, etc.)</li>
+                    <li>Guest count and venue complexity</li>
+                    <li>Virtual shopping and sourcing from India</li>
+                    <li>Full design and decor coordination</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild>
+                <Link href="/pricing">View Full Pricing</Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/start-planning">Start Planning</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-br from-accent/10 to-primary/10">
           <div className="max-w-4xl mx-auto text-center">

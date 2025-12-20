@@ -229,6 +229,63 @@ export default function TamilChristianWeddingPlannerPage() {
         </div>
       </section>
 
+      {/* Pricing & Scope Section */}
+      <section className="py-20 bg-gradient-to-br from-secondary/5 to-muted/10">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">
+              Pricing & Scope for Tamil Christian Weddings
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              We work within your budget to create a beautiful blend of church traditions and Tamil culture.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-sm mb-8">
+            <h3 className="text-2xl font-serif mb-4">Budget Flexibility</h3>
+            <p className="text-muted-foreground mb-6">
+              Tamil Christian weddings require coordination between church ceremonies and cultural receptions. Your
+              investment depends on how many events you're hosting, level of cultural integration, and sourcing needs.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-medium mb-3">Minimum Included:</h4>
+                <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                  <li>Church ceremony and reception coordination</li>
+                  <li>Cultural tradition integration (thali, manthrakodi)</li>
+                  <li>Vendor management for both church and reception</li>
+                  <li>Month-of coordination</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium mb-3">May Increase Depending On:</h4>
+                <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                  <li>Number of pre-wedding and cultural events</li>
+                  <li>Virtual shopping from India for sarees and jewelry</li>
+                  <li>Full design and cultural decor coordination</li>
+                  <li>Mixed-background family coordination complexity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/pricing"
+              className="inline-block bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-3 rounded-md text-center"
+            >
+              View Full Pricing
+            </Link>
+            <Link
+              href="/start-planning"
+              className="inline-block bg-transparent border border-border hover:bg-muted px-8 py-3 rounded-md text-center"
+            >
+              Start Planning
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-accent to-accent/80">
         <div className="container mx-auto px-6 max-w-4xl text-center">

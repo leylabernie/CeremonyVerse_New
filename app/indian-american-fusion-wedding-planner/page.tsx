@@ -212,6 +212,64 @@ export default function FusionWeddingPlannerPage() {
         </div>
       </section>
 
+      {/* Pricing & Scope Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">
+              Pricing & Scope for Fusion Wedding Planning
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Every fusion wedding has unique cultural requirements. We customize our services to fit your budget and
+              vision.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-accent/5 to-secondary/5 rounded-xl p-8 mb-8">
+            <h3 className="text-2xl font-serif mb-4">Budget Flexibility</h3>
+            <p className="text-muted-foreground mb-6">
+              Fusion weddings typically involve multiple events and cultural coordination. Pricing depends on how many
+              traditions you're blending, the number of ceremonies, and level of family coordination needed.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-medium mb-3">Minimum Included:</h4>
+                <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                  <li>Multi-cultural timeline and ceremony coordination</li>
+                  <li>Vendor recommendations experienced in fusion weddings</li>
+                  <li>Family communication and cultural guidance</li>
+                  <li>Month-of coordination for all events</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium mb-3">May Increase Depending On:</h4>
+                <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                  <li>Number of ceremonies and cultural traditions included</li>
+                  <li>Complexity of blending multiple faiths or cultures</li>
+                  <li>Virtual shopping and international sourcing</li>
+                  <li>Full design coordination across multiple events</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/pricing"
+              className="inline-block bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-3 rounded-md text-center"
+            >
+              View Full Pricing
+            </Link>
+            <Link
+              href="/start-planning"
+              className="inline-block bg-transparent border border-border hover:bg-muted px-8 py-3 rounded-md text-center"
+            >
+              Start Planning
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-accent to-accent/80">
         <div className="container mx-auto px-6 max-w-4xl text-center">

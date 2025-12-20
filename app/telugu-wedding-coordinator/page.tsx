@@ -206,6 +206,62 @@ export default function TeluguWeddingCoordinator() {
           </div>
         </section>
 
+        {/* Pricing & Scope Section */}
+        <section className="py-20 px-6 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="font-serif text-4xl text-charcoal mb-4">
+                Pricing & Scope for Telugu Wedding Coordination
+              </h2>
+              <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+                We work within your budget to honor every Telugu tradition authentically.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-xl p-8 border border-charcoal/10 mb-8">
+              <h3 className="text-2xl font-serif mb-4">Budget Flexibility</h3>
+              <p className="text-charcoal/70 mb-6">
+                Telugu weddings involve multiple pre-wedding rituals and sacred ceremonies. Your investment depends on
+                the number of events, complexity of traditional rituals, and whether you're incorporating regional
+                customs (Andhra vs. Telangana traditions).
+              </p>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-medium mb-3">Minimum Included:</h4>
+                  <ul className="list-disc list-inside text-charcoal/70 space-y-2">
+                    <li>Complete Pellikuthuru and wedding ceremony coordination</li>
+                    <li>Priest coordination and ritual guidance</li>
+                    <li>Vendor management and timeline coordination</li>
+                    <li>Month-of coordination</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-3">May Increase Depending On:</h4>
+                  <ul className="list-disc list-inside text-charcoal/70 space-y-2">
+                    <li>Number of pre-wedding rituals (Mangala Snanam, Ganesh Puja, etc.)</li>
+                    <li>Regional customization (Reddy, Kamma, Brahmin traditions)</li>
+                    <li>Traditional Kanjivaram silk sourcing from India</li>
+                    <li>Full mandap design and cultural decor</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/pricing">
+                <Button size="lg" className="bg-[var(--accent)] hover:bg-[var(--accent)] text-white">
+                  View Full Pricing
+                </Button>
+              </Link>
+              <Link href="/start-planning">
+                <Button size="lg" variant="outline">
+                  Start Planning
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-sage/20">
           <div className="max-w-4xl mx-auto text-center">

@@ -386,6 +386,57 @@ export default function FusionWeddingPlannerPage() {
         </div>
       </section>
 
+      {/* Pricing & Scope Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-cream to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6 text-center">
+              Pricing & Scope for This Service
+            </h2>
+
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              CeremonyVerse works with couples and families across a range of wedding budgets, depending on priorities,
+              guest size, and event structure.
+            </p>
+            <p className="text-muted-foreground mb-8 leading-relaxed">
+              Pricing for this service is based on the scope of planning support and cultural coordination involved. All
+              services begin with a clearly defined scope — no pressure, no unnecessary upsells.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-primary/10">
+                <h3 className="font-semibold text-lg text-foreground mb-4">Minimum included:</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Core planning support specific to this service</li>
+                  <li>• Cultural guidance relevant to your ceremonies</li>
+                  <li>• Budget-aligned recommendations</li>
+                  <li>• Clear planning structure and next steps</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-primary/10">
+                <h3 className="font-semibold text-lg text-foreground mb-4">May increase depending on:</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Number of events</li>
+                  <li>• Guest count and logistics</li>
+                  <li>• Vendor complexity</li>
+                  <li>• Sourcing or travel coordination</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg">
+                <Link href="/pricing">View Full Pricing</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link href="/start-planning">Start with Budget + Vision Form</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-accent to-accent/80">
         <div className="container mx-auto px-6 max-w-4xl text-center">
