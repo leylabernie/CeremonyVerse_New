@@ -1,0 +1,10 @@
+<svg width="384" height="112" viewBox="0 0 384 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Adding new CeremonyVerse logo with monogram and wordmark -->
+  <g id="monogram">
+    <path d="M192 15 C192 15 182 8 175 15 C168 22 165 30 165 38 C165 38 165 45 175 45 C185 45 192 38 192 38 M192 15 C192 15 202 8 209 15 C216 22 219 30 219 38 C219 38 219 45 209 45 C199 45 192 38 192 38" fill="none" stroke="#3f6d5b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M175 45 L175 50 C175 50 180 52 192 52 C204 52 209 50 209 50 L209 45" fill="none" stroke="#3f6d5b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <text x="50" y="88" font-family="Fraunces, serif" font-size="32" font-weight="500" fill="#111827">CeremonyVerse</text>
+  <text x="78" y="102" font-family="Inter, sans-serif" font-size="9" font-weight="400" letter-spacing="1.5" fill="#3f6d5b">WEDDING PLANNING & CULTURAL SOURCING</text>
+</svg>

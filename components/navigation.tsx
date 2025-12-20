@@ -45,7 +45,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-28 py-2">
           <Link href="/" className="flex items-center group transition-all">
             <div className="flex items-center gap-3">
-              <Logo className="w-80 h-24 group-hover:scale-105 transition-transform duration-300" />
+              <Logo className="w-96 h-28 group-hover:scale-105 transition-transform duration-300" />
             </div>
           </Link>
 

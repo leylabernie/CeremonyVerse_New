@@ -194,28 +194,45 @@
   --color-cvAccentHover: var(--cv-accent-hover);
   --color-cvTeal: var(--cv-teal);
 
-  /* Adding premium font family variables */
-  --font-fraunces: var(--font-fraunces);
-  --font-inter: var(--font-inter);
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
-  --font-serif: var(--font-fraunces), ui-serif, Georgia;
+  /* Updated font family variables to use Cormorant Garamond and Inter */
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
 
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
   --radius-2xl: 1rem;
   --default-max-w-page: 1280px;
+
+  /* Updated font family variables to use Cormorant Garamond for serif */
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
+  /* Force Inter as default font for html and body */
+  html,
+  body {
+    font-family: var(--font-sans) !important;
+  }
+
   body {
     @apply bg-background text-foreground min-h-screen antialiased;
   }
 
-  /* Fixed spacing between utility classes */
+  /* Force Cormorant Garamond for all headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif) !important;
+  }
+
   h1 {
-    font-family: var(--font-serif), ui-serif, Georgia;
     font-size: 2.125rem;
     line-height: 1.1;
     letter-spacing: -0.02em;
@@ -235,7 +252,6 @@
   }
 
   h2 {
-    font-family: var(--font-serif), ui-serif, Georgia;
     font-size: 2rem;
     line-height: 1.15;
     letter-spacing: -0.02em;
@@ -249,7 +265,6 @@
   }
 
   h3 {
-    font-family: var(--font-serif), ui-serif, Georgia;
     font-size: 1.25rem;
     line-height: 1.375;
     letter-spacing: -0.02em;
@@ -262,8 +277,27 @@
     }
   }
 
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  h5,
+  h6 {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 600;
+  }
+
   p {
     line-height: 1.7;
     font-size: 1.0625rem;
+  }
+
+  /* Force Cormorant Garamond for navigation to match reference design */
+  nav a,
+  nav button {
+    font-family: var(--font-serif) !important;
   }
 }

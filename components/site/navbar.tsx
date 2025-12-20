@@ -13,25 +13,57 @@ const nav = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-40 bg-[#F7F2EA]/95 backdrop-blur border-b border-black/5">
-      <div className="mx-auto max-w-page px-5 md:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="CeremonyVerse" width={160} height={40} className="h-10 w-auto" priority />
-        </Link>
+    <header className="sticky top-0 z-40 bg-cvBg/95 backdrop-blur border-b border-cvBorder">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-6">
+        {/* Centered logo */}
+        <div className="flex justify-center mb-6">
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.svg"
+              alt="CeremonyVerse"
+              width={600}
+              height={300}
+              className="h-[48px] w-auto md:h-[52px]"
+              priority
+            />
+          </Link>
+        </div>
 
-        <nav className="hidden md:flex items-center gap-6 text-sm text-cvInk/80">
-          {nav.map((n) => (
-            <Link key={n.href} href={n.href} className="hover:text-cvInk font-medium transition-colors">
-              {n.label}
-            </Link>
+        <nav className="hidden lg:flex items-center justify-center gap-1">
+          {nav.map((item, index) => (
+            <div key={item.href} className="flex items-center">
+              <Link
+                href={item.href}
+                className="font-serif text-[13px] uppercase tracking-[0.22em] font-medium text-foreground/80 hover:text-foreground transition px-4 py-1"
+              >
+                {item.label}
+              </Link>
+              {index < nav.length - 1 && <span className="text-foreground/30">|</span>}
+            </div>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <Link href="/book" className="hidden md:inline text-sm text-cvInk/80 hover:text-cvInk font-medium">
-            Book a Call
-          </Link>
-          <Button href="/start-planning" variant="default">
+        {/* Mobile menu - simplified */}
+        <div className="lg:hidden flex flex-col items-center gap-4">
+          <nav className="flex flex-wrap items-center justify-center gap-4 text-[14px] font-medium text-cvInk">
+            {nav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="font-serif uppercase tracking-[0.15em] hover:text-cvAccent transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+          <Button href="/start-planning" variant="default" size="sm">
+            Start Planning
+          </Button>
+        </div>
+
+        {/* Desktop CTA below menu */}
+        <div className="hidden lg:flex justify-center mt-5">
+          <Button href="/start-planning" variant="default" size="lg">
             Start Planning
           </Button>
         </div>

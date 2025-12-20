@@ -3,19 +3,18 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Navbar } from "@/components/site/navbar"
 import { Footer } from "@/components/site/footer" // Import the comprehensive footer instead of simple footer
-import { cx } from "@/lib/cx"
-import { Fraunces } from "next/font/google"
-import { Inter } from "next/font/google"
+import { Cormorant_Garamond, Inter } from "next/font/google"
 
-const fraunces = Fraunces({
+const serif = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  weight: ["400", "500", "600"],
+  variable: "--font-serif",
   display: "swap",
 })
 
-const inter = Inter({
+const sans = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
   display: "swap",
 })
 
@@ -64,11 +63,11 @@ const localBusinessJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={cx(fraunces.variable, inter.variable)}>
+    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </head>
-      <body className={cx("min-h-screen antialiased bg-cvBg text-cvInk font-sans")}>
+      <body className="min-h-screen antialiased bg-cvBg text-cvInk font-sans">
         <Navbar />
         <main>{children}</main>
         <Footer />
