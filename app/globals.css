@@ -297,4 +297,28 @@
   nav button {
     font-family: var(--font-cv-serif) !important;
   }
+
+  /* Adding deployment proof test - red outline to verify CSS is loading */
+  body {
+    outline: 6px solid red !important;
+  }
+}
+
+/* Adding form contrast fixes for white-on-white issues */
+@layer components {
+  /* Fix low-contrast form placeholders */
+  input::placeholder,
+  textarea::placeholder {
+    color: rgba(17, 24, 39, 0.55);
+  }
+
+  /* Fix pill/chip buttons that look disabled */
+  button[aria-pressed="false"],
+  .chip {
+    color: var(--foreground);
+  }
+
+  button:disabled {
+    opacity: 0.6;
+  }
 }

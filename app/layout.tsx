@@ -2,7 +2,7 @@ import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Navbar } from "@/components/site/navbar"
-import { Footer } from "@/components/site/footer" // Import the comprehensive footer instead of simple footer
+import { Footer } from "@/components/site/footer"
 import { Cormorant_Garamond, Inter } from "next/font/google"
 
 const serif = Cormorant_Garamond({
