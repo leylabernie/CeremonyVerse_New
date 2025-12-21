@@ -331,3 +331,20 @@ nav a,
 nav button {
   font-family: var(--font-cv-serif), "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
+/* =========================
+   FINAL FONT ENFORCEMENT
+   ========================= */
+
+html,
+body {
+  font-family: var(--font-cv-sans) !important;
+}
+
+body :where(p, span, li, a, div, input, textarea, button, label) {
+  font-family: var(--font-cv-sans) !important;
+}
+
+:where(h1, h2, h3, h4, h5, h6),
+nav :where(a, button) {
+  font-family: var(--font-cv-serif) !important;
+}
