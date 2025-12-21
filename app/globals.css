@@ -198,9 +198,9 @@
   --color-cvAccentHover: var(--cv-accent-hover);
   --color-cvTeal: var(--cv-teal);
 
-  /* Font tokens reference Next.js font loader variables */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+  /* Font tokens now reference --font-cv-sans and --font-cv-serif */
+  --font-sans: var(--font-cv-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cv-serif), ui-serif, Georgia, serif;
 
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
   --radius-2xl: 1rem;
@@ -312,11 +312,12 @@
 /* =========================
    HARD FONT ENFORCEMENT (FINAL)
    ========================= */
+/* Using --font-cv-sans and --font-cv-serif which are set by Next.js font loader */
 
 html,
 body {
-  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif !important;
+  font-family: var(--font-cv-sans), "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif !important;
 }
 
 h1,
@@ -328,5 +329,5 @@ h6,
 nav,
 nav a,
 nav button {
-  font-family: var(--font-cormorant), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: var(--font-cv-serif), "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
 }

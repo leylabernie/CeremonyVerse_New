@@ -8,14 +8,14 @@ import { Cormorant_Garamond, Inter } from "next/font/google"
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-cv-sans",
 })
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-cormorant",
+  variable: "--font-cv-serif",
 })
 
 export const metadata: Metadata = {
@@ -63,14 +63,7 @@ const localBusinessJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${cormorant.variable}`}
-      style={{
-        ["--font-inter" as any]: inter.style.fontFamily,
-        ["--font-cormorant" as any]: cormorant.style.fontFamily,
-      }}
-    >
+    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </head>
@@ -78,6 +71,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <div className="fixed bottom-2 left-2 z-[9999] rounded-lg bg-black/70 px-3 py-2 text-xs text-white">
+          <div className="font-sans">PROOF: font-sans (Inter)</div>
+          <div className="font-serif">PROOF: font-serif (Cormorant Garamond)</div>
+        </div>
       </body>
     </html>
   )
