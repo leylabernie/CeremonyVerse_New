@@ -8,14 +8,14 @@ import { Cormorant_Garamond, Inter } from "next/font/google"
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-cv-sans",
+  variable: "--font-sans", // Use --font-sans directly so Tailwind's font-sans class works
 })
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-cv-serif",
+  variable: "--font-serif", // Use --font-serif directly so Tailwind's font-serif class works
 })
 
 export const metadata: Metadata = {
@@ -63,23 +63,11 @@ const localBusinessJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${cormorant.variable}`}
-      // Hard-bind the variables so they exist even if something weird happens with class injection
-      style={{
-        ["--font-cv-sans" as any]: inter.style.fontFamily,
-        ["--font-cv-serif" as any]: cormorant.style.fontFamily,
-      }}
-    >
+    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </head>
-
-      <body className="min-h-screen antialiased bg-background text-foreground">
+      <body className={`${inter.className} min-h-screen antialiased bg-background text-foreground font-sans`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

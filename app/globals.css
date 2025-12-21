@@ -198,9 +198,7 @@
   --color-cvAccentHover: var(--cv-accent-hover);
   --color-cvTeal: var(--cv-teal);
 
-  /* Font tokens now reference --font-cv-sans and --font-cv-serif */
-  --font-sans: var(--font-cv-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-cv-serif), ui-serif, Georgia, serif;
+  /* Removed hardcoded font definitions - Next.js injects --font-sans and --font-serif via variable prop */
 
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
   --radius-2xl: 1rem;
@@ -312,39 +310,33 @@
 /* =========================
    HARD FONT ENFORCEMENT (FINAL)
    ========================= */
-/* Using --font-cv-sans and --font-cv-serif which are set by Next.js font loader */
-
-html,
-body {
-  font-family: var(--font-cv-sans), "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif !important;
-}
+/* Updated to use --font-serif (from Next.js) instead of --font-cv-serif */
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: var(--font-serif), "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+}
+
 nav,
 nav a,
 nav button {
-  font-family: var(--font-cv-serif), "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
-}
-/* =========================
-   FINAL FONT ENFORCEMENT
-   ========================= */
-
-html,
-body {
-  font-family: var(--font-cv-sans) !important;
+  font-family: var(--font-serif), "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 
-body :where(p, span, li, a, div, input, textarea, button, label) {
-  font-family: var(--font-cv-sans) !important;
-}
-
-:where(h1, h2, h3, h4, h5, h6),
-nav :where(a, button) {
-  font-family: var(--font-cv-serif) !important;
+/* Add body/paragraph font enforcement for Inter */
+body,
+p,
+span,
+li,
+a:not(nav a),
+button:not(nav button),
+input,
+textarea,
+label {
+  font-family: var(--font-sans), "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
 }
