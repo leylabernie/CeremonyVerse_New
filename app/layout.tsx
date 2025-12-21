@@ -8,14 +8,14 @@ import { Cormorant_Garamond, Inter } from "next/font/google"
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-sans", // Use --font-sans directly so Tailwind's font-sans class works
+  variable: "--font-cv-sans",
 })
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-serif", // Use --font-serif directly so Tailwind's font-serif class works
+  variable: "--font-cv-serif",
 })
 
 export const metadata: Metadata = {
@@ -63,11 +63,41 @@ const localBusinessJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${cormorant.variable}`}
+      // Guarantee the vars exist even if something weird happens with class injection
+      style={{
+        ["--font-cv-sans" as any]: inter.style.fontFamily,
+        ["--font-cv-serif" as any]: cormorant.style.fontFamily,
+      }}
+    >
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
+
+        {/* FINAL BOSS: Force fonts from the root, overriding any CSS */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              html, body {
+                font-family: var(--font-cv-sans) !important;
+              }
+              body * {
+                font-family: var(--font-cv-sans) !important;
+              }
+              h1, h2, h3, h4, h5, h6,
+              nav, nav a, nav button {
+                font-family: var(--font-cv-serif) !important;
+              }
+            `,
+          }}
+        />
       </head>
-      <body className={`${inter.className} min-h-screen antialiased bg-background text-foreground font-sans`}>
+
+      <body className="min-h-screen antialiased bg-background text-foreground">
         <Navbar />
         <main>{children}</main>
         <Footer />
