@@ -63,18 +63,26 @@ const localBusinessJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${cormorant.variable}`}
+      // Hard-bind the variables so they exist even if something weird happens with class injection
+      style={{
+        ["--font-cv-sans" as any]: inter.style.fontFamily,
+        ["--font-cv-serif" as any]: cormorant.style.fontFamily,
+      }}
+    >
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
       </head>
-      <body className={`font-sans min-h-screen antialiased bg-background text-foreground`}>
+
+      <body className="min-h-screen antialiased bg-background text-foreground">
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <div className="fixed bottom-2 left-2 z-[9999] rounded-lg bg-black/70 px-3 py-2 text-xs text-white">
-          <div className="font-sans">PROOF: font-sans (Inter)</div>
-          <div className="font-serif">PROOF: font-serif (Cormorant Garamond)</div>
-        </div>
       </body>
     </html>
   )
