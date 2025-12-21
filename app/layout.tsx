@@ -8,14 +8,14 @@ import { Cormorant_Garamond, Inter } from "next/font/google"
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-sans", // Use --font-sans directly so Tailwind's font-sans class works
+  variable: "--font-sans",
 })
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-serif", // Use --font-serif directly so Tailwind's font-serif class works
+  variable: "--font-serif",
 })
 
 export const metadata: Metadata = {
@@ -63,11 +63,24 @@ const localBusinessJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${cormorant.variable}`}
+      style={
+        {
+          // @ts-ignore - Next.js font style object
+          "--font-sans": inter.style.fontFamily,
+          "--font-serif": cormorant.style.fontFamily,
+        } as React.CSSProperties
+      }
+    >
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </head>
-      <body className={`${inter.className} min-h-screen antialiased bg-background text-foreground font-sans`}>
+      <body
+        className="min-h-screen antialiased bg-background text-foreground"
+        style={{ fontFamily: cormorant.style.fontFamily }}
+      >
         <Navbar />
         <main>{children}</main>
         <Footer />

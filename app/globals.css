@@ -198,8 +198,6 @@
   --color-cvAccentHover: var(--cv-accent-hover);
   --color-cvTeal: var(--cv-teal);
 
-  /* Removed hardcoded font definitions - Next.js injects --font-sans and --font-serif via variable prop */
-
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
   --radius-2xl: 1rem;
   --default-max-w-page: 1280px;
@@ -221,7 +219,7 @@
   h4,
   h5,
   h6 {
-    @apply font-serif;
+    font-family: var(--font-serif), "Cormorant Garamond", ui-serif, Georgia, serif;
   }
 
   h1 {
@@ -307,36 +305,4 @@
   }
 }
 
-/* =========================
-   HARD FONT ENFORCEMENT (FINAL)
-   ========================= */
-/* Updated to use --font-serif (from Next.js) instead of --font-cv-serif */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-serif), "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
-}
-
-nav,
-nav a,
-nav button {
-  font-family: var(--font-serif), "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
-}
-
-/* Add body/paragraph font enforcement for Inter */
-body,
-p,
-span,
-li,
-a:not(nav a),
-button:not(nav button),
-input,
-textarea,
-label {
-  font-family: var(--font-sans), "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, sans-serif !important;
-}
+/* REMOVED all hard font enforcement - using only inline style in layout.tsx for this test */
