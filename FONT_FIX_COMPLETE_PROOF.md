@@ -23,7 +23,7 @@
 
 ## Font System Flow
 
-```
+\`\`\`
 Next.js Font Loading:
   ↓
 --font-cv-serif (Cormorant Garamond)
@@ -39,7 +39,7 @@ Global CSS Rules:
 - Body text: font-sans (Inter)
 - Headings: font-serif (Cormorant Garamond)
 - Navigation: font-serif (Cormorant Garamond)
-```
+\`\`\`
 
 ## Expected Results
 
@@ -54,13 +54,13 @@ After deployment:
 ## No More Circular References
 
 **Before (broken):**
-```css
+\`\`\`css
 --font-serif: var(--font-serif); /* circular */
-```
+\`\`\`
 
 **After (working):**
-```css
+\`\`\`css
 --font-serif: var(--font-cv-serif); /* maps to loaded font */
-```
+\`\`\`
 
 This separates next/font variables from Tailwind utility tokens, eliminating the circular dependency issue.

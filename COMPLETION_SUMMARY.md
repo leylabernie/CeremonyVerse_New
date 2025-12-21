@@ -111,9 +111,9 @@
 ### Immediate Next Steps:
 
 1. **Push to GitHub**
-   ```bash
+   \`\`\`bash
    git push origin main
-   ```
+   \`\`\`
 
 2. **Deploy to Vercel**
    - Go to vercel.com

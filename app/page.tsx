@@ -70,7 +70,7 @@ export default function HomePage() {
 
           <Card hover className="overflow-hidden p-0 aspect-[4/5] border-none">
             <Image
-              src="/images/chatgpt-20image-20dec-2018-2c-202025-2c-2008-25-03-20pm.png"
+              src="/images/hero-couple.png"
               alt="Elegant Indian wedding couple in traditional attire"
               width={640}
               height={800}

@@ -58,7 +58,7 @@ The `!important` declarations will override any cached styles. After deploy:
 
 ### How to Verify
 
-```bash
+\`\`\`bash
 # After deploy, open browser DevTools on homepage
 # Select the H1 element
 # In Computed tab, check font-family
@@ -67,7 +67,7 @@ The `!important` declarations will override any cached styles. After deploy:
 # Select a paragraph element
 # In Computed tab, check font-family  
 # Should show: Inter
-```
+\`\`\`
 
 ---
 

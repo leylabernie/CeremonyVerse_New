@@ -7,14 +7,14 @@ The v0→GitHub sync is not working. The files in v0 are CORRECT, but GitHub has
 **File:** `app/start-planning/page.tsx`
 
 **Line 134** currently says:
-```tsx
+\`\`\`tsx
 <Section alt>
-```
+\`\`\`
 
 **Change it to:**
-```tsx
+\`\`\`tsx
 <Section variant="warm">
-```
+\`\`\`
 
 ## Why This Fix is Needed
 
@@ -38,9 +38,9 @@ The `Section` component does not accept an `alt` prop. It only accepts:
 ## Verification
 
 After committing, the build should succeed. The error was:
-```
+\`\`\`
 Type '{ children: Element; alt: true; }' is not assignable to type 'IntrinsicAttributes & { children: ReactNode; className?: string | undefined; variant?: "default" | "surface" | "surface2" | "warm" | "warm2" | undefined; }'
-```
+\`\`\`
 
 This will be resolved once `alt` is replaced with `variant="warm"`.
 

@@ -12,18 +12,18 @@
 5. Click "Deploy"
 
 **Option B: Deploy via CLI**
-```bash
+\`\`\`bash
 npm install -g vercel
 cd /path/to/ceremonyverse
 vercel
-```
+\`\`\`
 
 ### 2. Set Up Environment Variables
 
 Go to Vercel Dashboard → Your Project → Settings → Environment Variables
 
 **Required Variables:**
-```env
+\`\`\`env
 # Analytics (Get from Google Analytics)
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 
@@ -37,17 +37,17 @@ NOTIFICATION_EMAIL=hello@ceremonyverse.com
 
 # Site URL
 NEXT_PUBLIC_SITE_URL=https://ceremonyverse.com
-```
+\`\`\`
 
 **Optional but Recommended:**
-```env
+\`\`\`env
 # Meta Pixel for Facebook/Instagram Ads
 NEXT_PUBLIC_META_PIXEL_ID=123456789
 
 # Vercel KV for Lead Storage (Creates automatically in Vercel)
 KV_REST_API_URL=https://xxx.kv.vercel-storage.com
 KV_REST_API_TOKEN=xxx
-```
+\`\`\`
 
 ### 3. Connect Your GoDaddy Domain
 
@@ -56,7 +56,7 @@ KV_REST_API_TOKEN=xxx
 3. Copy the DNS records Vercel provides
 4. Go to GoDaddy DNS Management
 5. Add these DNS records:
-   ```
+   \`\`\`
    Type: CNAME
    Name: www
    Value: cname.vercel-dns.com
@@ -64,7 +64,7 @@ KV_REST_API_TOKEN=xxx
    Type: A
    Name: @
    Value: 76.76.21.21
-   ```
+   \`\`\`
 6. Wait 24-48 hours for propagation (usually faster)
 
 ## 📧 Email Setup Options
@@ -75,9 +75,9 @@ KV_REST_API_TOKEN=xxx
 2. Sign up for free account (100 emails/day free)
 3. Create API key
 4. Add to Vercel environment variables:
-   ```env
+   \`\`\`env
    RESEND_API_KEY=re_xxxxxxxxxxxx
-   ```
+   \`\`\`
 5. Verify your domain (optional, but recommended)
 
 ### Option 2: SendGrid
@@ -86,9 +86,9 @@ KV_REST_API_TOKEN=xxx
 2. Sign up for free account (100 emails/day free)
 3. Create API key
 4. Add to Vercel environment variables:
-   ```env
+   \`\`\`env
    SENDGRID_API_KEY=SG.xxxxxxxxxxxx
-   ```
+   \`\`\`
 
 ## 📊 Analytics Setup
 
@@ -98,9 +98,9 @@ KV_REST_API_TOKEN=xxx
 2. Create a new GA4 property
 3. Get your Measurement ID (G-XXXXXXXXXX)
 4. Add to Vercel environment variables:
-   ```env
+   \`\`\`env
    NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-   ```
+   \`\`\`
 
 ### Meta Pixel (Facebook/Instagram)
 
@@ -109,9 +109,9 @@ KV_REST_API_TOKEN=xxx
 3. Create a Pixel
 4. Get your Pixel ID
 5. Add to Vercel environment variables:
-   ```env
+   \`\`\`env
    NEXT_PUBLIC_META_PIXEL_ID=123456789
-   ```
+   \`\`\`
 
 ## 💾 Database Setup (Lead Storage)
 

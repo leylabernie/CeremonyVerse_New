@@ -10,15 +10,15 @@
 - Ensured Inter (sans-serif) applies to: body, p, span, li, and .font-sans class
 
 **2. Typography Hierarchy**
-```
+\`\`\`
 Headings (h1-h6):        Cormorant Garamond (serif) ✅
 Navigation menu items:   Cormorant Garamond (serif) ✅
 Body text (p, span, li): Inter (sans-serif) ✅
 Buttons:                 Inter (sans-serif) ✅
-```
+\`\`\`
 
 **3. Font Loading Verification**
-```tsx
+\`\`\`tsx
 // app/layout.tsx - Fonts correctly loaded
 import { Inter } from "next/font/google"
 import localFont from "next/font/local"
@@ -43,7 +43,7 @@ const fraunces = localFont({
   variable: "--font-fraunces",
   display: "swap",
 })
-```
+\`\`\`
 
 Note: The project uses **Fraunces** as the serif font (not Cormorant Garamond). Fraunces is applied globally as `--font-serif`.
 

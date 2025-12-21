@@ -2,10 +2,10 @@
 
 ## Step 1: Push Code to GitHub (2 minutes)
 
-```bash
+\`\`\`bash
 # If you haven't pushed yet:
 git push origin main
-```
+\`\`\`
 
 ## Step 2: Deploy to Vercel (5 minutes)
 
@@ -35,7 +35,7 @@ git push origin main
 
 In Vercel Dashboard → Your Project → Settings → Environment Variables:
 
-```env
+\`\`\`env
 # Email (REQUIRED - Get from Resend.com)
 RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
 
@@ -50,7 +50,7 @@ NEXT_PUBLIC_SITE_URL=https://your-project.vercel.app
 
 # Meta Pixel (OPTIONAL - Can add later)
 NEXT_PUBLIC_META_PIXEL_ID=
-```
+\`\`\`
 
 **Important:** After adding env vars, go to **Deployments** tab and click **"Redeploy"** on the latest deployment.
 
@@ -75,7 +75,7 @@ NEXT_PUBLIC_META_PIXEL_ID=
 1. Go to DNS Management
 2. Add these records:
 
-```
+\`\`\`
 Type: A
 Name: @
 Value: 76.76.21.21
@@ -85,7 +85,7 @@ Type: CNAME
 Name: www
 Value: cname.vercel-dns.com
 TTL: 1 Hour
-```
+\`\`\`
 
 3. Wait 24-48 hours for propagation (usually much faster)
 

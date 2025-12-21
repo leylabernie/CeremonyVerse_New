@@ -206,13 +206,13 @@
 ## 🎨 Design Implementation
 
 ### Color Palette (Kalki Fashion + Boho Studio)
-```css
+\`\`\`css
 --maroon: #8B1538      /* Deep maroon - primary */
 --gold: #D4AF37        /* Rich gold - accent */
 --cream: #FAF8F5       /* Warm cream - background */
 --warm-beige: #E8DFD6  /* Warm beige - borders */
 --charcoal: #2D2926    /* Warm charcoal - text */
-```
+\`\`\`
 
 ### Typography
 - **Headings**: Playfair Display (serif, font-extralight/font-light)
@@ -271,7 +271,7 @@
 
 ### For Production Deployment
 
-```env
+\`\`\`env
 # Email Services (Choose ONE or use both for fallback)
 RESEND_API_KEY=re_your_key_here
 SENDGRID_API_KEY=SG.your_key_here
@@ -286,7 +286,7 @@ NEXT_PUBLIC_META_PIXEL_ID=1234567890123456
 
 # Business Contact
 ADMIN_EMAIL=hello@ceremonyverse.com
-```
+\`\`\`
 
 ### How to Set Up
 

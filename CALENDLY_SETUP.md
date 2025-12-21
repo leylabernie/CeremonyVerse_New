@@ -38,7 +38,7 @@ The booking system is **fully functional** and integrated into your website. You
    - **Location**: `Zoom` or `Google Meet` (Calendly auto-generates links)
 
    **Description Template:**
-   ```
+   \`\`\`
    Let's discuss your Indian-American fusion wedding vision! This 30-minute consultation is completely free with no obligation.
 
    What we'll cover:
@@ -48,7 +48,7 @@ The booking system is **fully functional** and integrated into your website. You
    - Q&A about our services
 
    No pressure, just honest conversation about creating your perfect day.
-   ```
+   \`\`\`
 
    **Availability:**
    - Set your working hours (Mon-Fri 9am-7pm EST, Sat 10am-4pm EST)
@@ -81,13 +81,13 @@ The booking system is **fully functional** and integrated into your website. You
 5. The change will automatically appear on your live website (hot reload)
 
 **Example:**
-```typescript
+\`\`\`typescript
 // BEFORE (Demo)
 const calendlyUrl = "https://calendly.com/demo-account/30min"
 
 // AFTER (Your Account)
 const calendlyUrl = "https://calendly.com/ceremonyverse/free-wedding-consultation"
-```
+\`\`\`
 
 ### Step 5: Test Your Booking System
 

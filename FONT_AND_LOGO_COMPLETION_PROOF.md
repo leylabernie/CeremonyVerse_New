@@ -16,7 +16,7 @@
 ## ✅ PART 2: Header/Menu Bar Layout
 
 ### Current Layout
-```
+\`\`\`
 ┌─────────────────────────────────────┐
 │                                     │
 │          [LOGO CENTERED]            │
@@ -31,7 +31,7 @@
 │      [Start Planning Button]        │
 │                                     │
 └─────────────────────────────────────┘
-```
+\`\`\`
 
 - **Logo**: ✅ Centered horizontally
 - **Menu items**: ✅ Single row with vertical dividers (|)
@@ -64,7 +64,7 @@
 
 ### Font Definitions
 **Location**: `app/layout.tsx`
-```typescript
+\`\`\`typescript
 import { Fraunces } from "next/font/google"
 import { Inter } from "next/font/google"
 
@@ -79,14 +79,14 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 })
-```
+\`\`\`
 
 ### Global Font Application
 **Location**: `app/globals.css`
-```css
+\`\`\`css
 --font-sans: var(--font-inter), ui-sans-serif, system-ui;
 --font-serif: var(--font-fraunces), ui-serif, Georgia;
-```
+\`\`\`
 
 ### Font Usage Rules
 - ✅ **Body font**: Inter (`font-sans`)
@@ -134,17 +134,17 @@ These pages need old Navigation/Footer imports removed:
 
 ### Action Required
 Remove these import lines from all 13 pages:
-```typescript
+\`\`\`typescript
 import { Navigation, Footer } from "@/components"
 import { Navigation } from "@/components/navigation"
 import Navigation from "@/components/navigation"
-```
+\`\`\`
 
 And remove the JSX:
-```typescript
+\`\`\`typescript
 <Navigation />
 <Footer />
-```
+\`\`\`
 
 ## ✅ Acceptance Checklist
 

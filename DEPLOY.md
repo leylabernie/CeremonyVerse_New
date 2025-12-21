@@ -28,13 +28,13 @@ Your website is **100% ready to deploy!** All code is built, tested, and pushed 
 5. **Vercel auto-detects everything!** Just add environment variables:
 
    Click "Environment Variables" and add:
-   ```
+   \`\`\`
    NEXT_PUBLIC_GA_ID = G-X4HC7P2Q6C
    RESEND_API_KEY = re_9DVy82De_HfCaYVtDYHg1B6TtHPVmVLX4
    NOTIFICATION_EMAIL = hello@ceremonyverse.com
    NEXT_PUBLIC_CALENDLY_URL = https://calendly.com/ceremonyverse/consultation
    NEXT_PUBLIC_WHATSAPP_NUMBER = 12153419990
-   ```
+   \`\`\`
 
 6. **Click "Deploy"**
 
@@ -93,13 +93,13 @@ Your website is **100% ready to deploy!** All code is built, tested, and pushed 
 
 **Copy and paste these into your hosting platform:**
 
-```env
+\`\`\`env
 NEXT_PUBLIC_GA_ID=G-X4HC7P2Q6C
 RESEND_API_KEY=re_9DVy82De_HfCaYVtDYHg1B6TtHPVmVLX4
 NOTIFICATION_EMAIL=hello@ceremonyverse.com
 NEXT_PUBLIC_CALENDLY_URL=https://calendly.com/ceremonyverse/consultation
 NEXT_PUBLIC_WHATSAPP_NUMBER=12153419990
-```
+\`\`\`
 
 ---
 
@@ -115,7 +115,7 @@ NEXT_PUBLIC_WHATSAPP_NUMBER=12153419990
 2. **Update DNS records** (at your domain registrar):
    
    **For Vercel:**
-   ```
+   \`\`\`
    Type: A
    Name: @
    Value: 76.76.21.21
@@ -123,10 +123,10 @@ NEXT_PUBLIC_WHATSAPP_NUMBER=12153419990
    Type: CNAME
    Name: www
    Value: cname.vercel-dns.com
-   ```
+   \`\`\`
 
    **For Netlify:**
-   ```
+   \`\`\`
    Type: A
    Name: @
    Value: 75.2.60.5
@@ -134,7 +134,7 @@ NEXT_PUBLIC_WHATSAPP_NUMBER=12153419990
    Type: CNAME  
    Name: www
    Value: [your-site-name].netlify.app
-   ```
+   \`\`\`
 
    **For Cloudflare Pages:**
    - Cloudflare will guide you through the DNS setup

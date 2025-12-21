@@ -3,7 +3,7 @@
 ## ✅ COMPLETED: Typography System
 
 ### 1. Font Loading (layout.tsx)
-```typescript
+\`\`\`typescript
 import { Cormorant_Garamond, Inter } from "next/font/google"
 
 const serif = Cormorant_Garamond({
@@ -18,7 +18,7 @@ const sans = Inter({
   variable: "--font-sans",
   display: "swap",
 })
-```
+\`\`\`
 - ✅ Cormorant Garamond loaded with weights 400, 500, 600
 - ✅ Inter loaded for all body text
 - ✅ CSS variables created: `--font-serif` and `--font-sans`
@@ -27,33 +27,33 @@ const sans = Inter({
 ### 2. Global CSS Application (globals.css)
 
 **HTML/Body:**
-```css
+\`\`\`css
 html, body {
   font-family: var(--font-sans); /* Inter */
 }
-```
+\`\`\`
 
 **All Headings:**
-```css
+\`\`\`css
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif); /* Cormorant Garamond */
 }
-```
+\`\`\`
 
 **Navigation:**
-```css
+\`\`\`css
 nav a {
   font-family: var(--font-serif); /* Cormorant Garamond */
 }
-```
+\`\`\`
 
 ### 3. Tailwind Configuration
-```css
+\`\`\`css
 @theme inline {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui;
   --font-serif: var(--font-fraunces), ui-serif, Georgia;
 }
-```
+\`\`\`
 - ✅ `font-sans` class applies Inter
 - ✅ `font-serif` class applies Cormorant Garamond
 - ✅ Fallback fonts included

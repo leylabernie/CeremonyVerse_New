@@ -1,10 +1,10 @@
 # ✅ RUNTIME ERROR FIXED!
 
 ## Error That Occurred
-```
+\`\`\`
 Error: Cannot find module './4447.js'
 Runtime Error in webpack
-```
+\`\`\`
 
 ## Root Cause
 This is a common Next.js webpack chunk loading error that occurs when:
@@ -13,7 +13,7 @@ This is a common Next.js webpack chunk loading error that occurs when:
 3. Webpack cannot find dynamically imported chunks
 
 ## Solution Applied
-```bash
+\`\`\`bash
 # 1. Killed the running dev server
 # 2. Cleared the build cache
 rm -rf .next
@@ -23,7 +23,7 @@ npm run build
 
 # 4. Started fresh dev server
 npm run dev
-```
+\`\`\`
 
 ## Result
 ✅ **All 48 routes built successfully**  
@@ -41,7 +41,7 @@ The server automatically moved to port 3007 because:
 - We cleaned up the old ports after starting
 
 ## Verification
-```bash
+\`\`\`bash
 # Homepage test
 curl https://3007-i37mtb1y97h5nx37mrc3m-02b9cc79.sandbox.novita.ai
 # Response: HTTP 200 ✅
@@ -49,16 +49,16 @@ curl https://3007-i37mtb1y97h5nx37mrc3m-02b9cc79.sandbox.novita.ai
 # Booking page test
 curl https://3007-i37mtb1y97h5nx37mrc3m-02b9cc79.sandbox.novita.ai/book-consultation
 # Response: HTTP 200 ✅
-```
+\`\`\`
 
 ## Dev Server Logs
-```
+\`\`\`
 ✓ Compiled /book-consultation in 5.8s (936 modules)
 GET /book-consultation 200 in 6344ms
 
 ✓ Compiled / in 932ms (981 modules)
 GET / 200 in 1351ms
-```
+\`\`\`
 
 ## Status
 🎉 **EVERYTHING IS WORKING NOW!**

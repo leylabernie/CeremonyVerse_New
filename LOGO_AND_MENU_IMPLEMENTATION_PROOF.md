@@ -27,9 +27,9 @@
 **File:** `components/site/navbar.tsx`
 
 **Current Layout:**
-```
+\`\`\`
 [Services] [Wedding Journeys] [Resources]  |  [LOGO]  |  [Blog] [Pricing] [About] [Start Planning →]
-```
+\`\`\`
 
 **Desktop Layout (≥1024px):**
 - **Left Navigation:** Services, Wedding Journeys, Resources

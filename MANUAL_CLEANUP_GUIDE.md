@@ -39,21 +39,21 @@ If you can't run the automated scripts, follow this manual process:
 ## For Each File, Do This:
 
 ### 1. Remove These Lines (top of file):
-```tsx
+\`\`\`tsx
 import Navigation from "@/components/navigation"
 import { Navigation } from "@/components/navigation"
 import Footer from "@/components/footer"
 import { Footer } from "@/components/footer"
-```
+\`\`\`
 
 ### 2. Remove These JSX Lines (in the return statement):
-```tsx
+\`\`\`tsx
 <Navigation />
 <Footer />
-```
+\`\`\`
 
 ### 3. Replace All Instances:
-```tsx
+\`\`\`tsx
 // FIND:
 text-muted
 
@@ -61,12 +61,12 @@ text-muted
 text-muted-foreground
 
 // But DO NOT change bg-muted to bg-muted-foreground
-```
+\`\`\`
 
 ## Example Before/After
 
 **BEFORE:**
-```tsx
+\`\`\`tsx
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import { Card } from "@/components/ui/card"
@@ -83,10 +83,10 @@ export default function Page() {
     </>
   )
 }
-```
+\`\`\`
 
 **AFTER:**
-```tsx
+\`\`\`tsx
 import { Card } from "@/components/ui/card"
 
 export default function Page() {
@@ -97,6 +97,6 @@ export default function Page() {
     </div>
   )
 }
-```
+\`\`\`
 
 Note: No need to add Navbar/Footer - the layout handles it globally!

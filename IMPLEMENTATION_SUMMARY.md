@@ -101,13 +101,13 @@
 ## Technical Details
 
 ### Color Tokens
-```css
+\`\`\`css
 --peacock-blue: #1a4d6d (Primary)
 --turquoise: #0891b2 (Secondary)
 --gold: #d4a574 (Accent)
 --rust: #c97a5f (Accent 2)
 --off-white: #fefefe (Background)
-```
+\`\`\`
 
 ### Typography
 - **Headings**: Cormorant Garamond (Serif, Light)

@@ -18,7 +18,7 @@
 - All blog post pages follow same pattern
 
 **QA Check:**
-```
+\`\`\`
 ✓ / - Uses global layout (Navbar + Footer from components/site)
 ✓ /pricing - Uses global layout
 ✓ /resources - Uses global layout
@@ -26,7 +26,7 @@
 ✓ /blog/[slug] - Uses global layout
 → No duplicate footers detected
 → Identical header/footer across all pages
-```
+\`\`\`
 
 ---
 
@@ -42,7 +42,7 @@
 - Route is publicly accessible
 
 **File Content:**
-```tsx
+\`\`\`tsx
 // app/services/page.tsx
 export default function ServicesPage() {
   return (
@@ -55,7 +55,7 @@ export default function ServicesPage() {
     </>
   )
 }
-```
+\`\`\`
 
 **Result:** Page renders successfully, returns 200, fully crawlable
 
@@ -74,7 +74,7 @@ export default function ServicesPage() {
 - Grid responsive: 1 column mobile, 2 columns tablet, 3 columns desktop
 
 **Current Implementation:**
-```tsx
+\`\`\`tsx
 // app/resources/page.tsx
 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
   {resources.map((resource) => (
@@ -86,7 +86,7 @@ export default function ServicesPage() {
     </Link>
   ))}
 </div>
-```
+\`\`\`
 
 **Resources Listed:**
 1. Budget Planner
@@ -106,7 +106,7 @@ All clearly formatted, one per card, highly readable.
 **Verification:** All key pages have proper SEO metadata
 
 ### Homepage (/)
-```tsx
+\`\`\`tsx
 export const metadata: Metadata = {
   title: "Indian & Fusion Wedding Planning — Thoughtfully Designed to Fit Your Real Budget",
   description: "CeremonyVerse helps Indian and multicultural couples...",
@@ -121,10 +121,10 @@ export const metadata: Metadata = {
   },
   twitter: { ... }
 }
-```
+\`\`\`
 
 ### Pricing Page (/pricing)
-```tsx
+\`\`\`tsx
 export const metadata: Metadata = {
   title: "Pricing & Planning Support",
   description: "Wedding planning support should feel clear...",
@@ -134,10 +134,10 @@ export const metadata: Metadata = {
   openGraph: { ... },
   twitter: { ... }
 }
-```
+\`\`\`
 
 ### Resources Page (/resources)
-```tsx
+\`\`\`tsx
 export const metadata: Metadata = {
   title: "Resources & Tools",
   description: "Free wedding planning tools...",
@@ -147,10 +147,10 @@ export const metadata: Metadata = {
   openGraph: { ... },
   twitter: { ... }
 }
-```
+\`\`\`
 
 ### Blog (/blog)
-```tsx
+\`\`\`tsx
 export const metadata: Metadata = {
   title: "Indian Wedding Planning Blog | Expert Tips & Cultural Guides 2025",
   description: "Expert wedding planning guides...",
@@ -160,7 +160,7 @@ export const metadata: Metadata = {
   openGraph: { ... },
   twitter: { ... }
 }
-```
+\`\`\`
 
 **Result:** All pages have:
 - ✓ Canonical URL

@@ -4,7 +4,7 @@
 
 Run these in your terminal and include output in PR description:
 
-```bash
+\`\`\`bash
 # 1. Build succeeds
 pnpm build
 # Expected: "Compiled successfully"
@@ -28,7 +28,7 @@ grep -r "<Footer" app | wc -l
 # 6. No standalone text-muted (only text-muted-foreground allowed)
 grep -r "text-muted\b" app components | grep -v "text-muted-foreground" | grep -v "bg-muted" | wc -l
 # Expected: 0 (or very few justified cases)
-```
+\`\`\`
 
 ## Required Screenshots
 
@@ -67,7 +67,7 @@ Take screenshots showing:
 
 ## Commit Message Template
 
-```
+\`\`\`
 cleanup: standardize layout system and fix text contrast
 
 - Remove old Navigation/Footer imports from 131 app pages

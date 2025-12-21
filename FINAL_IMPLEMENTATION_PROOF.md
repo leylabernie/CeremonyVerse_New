@@ -5,7 +5,7 @@
 ### 1. Logo Placement - CENTERED ✓
 **File:** `components/site/navbar.tsx` (Lines 27-36)
 
-```tsx
+\`\`\`tsx
 {/* Center logo */}
 <Link href="/" className="flex items-center">
   <Image
@@ -17,7 +17,7 @@
     priority
   />
 </Link>
-```
+\`\`\`
 
 **Status:** Logo is positioned in the center of the header between left menu and right menu using flexbox with `justify-between`.
 
@@ -43,7 +43,7 @@
 ### 3. Font Consolidation - COMPLETE ✓
 **File:** `app/layout.tsx` (Lines 7-17)
 
-```tsx
+\`\`\`tsx
 import { Fraunces } from "next/font/google"
 import { Inter } from "next/font/google"
 
@@ -58,16 +58,16 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 })
-```
+\`\`\`
 
 **File:** `app/globals.css` (Lines 238-240)
 
-```css
+\`\`\`css
 --font-fraunces: var(--font-fraunces);
 --font-inter: var(--font-inter);
 --font-sans: var(--font-inter), ui-sans-serif, system-ui;
 --font-serif: var(--font-fraunces), ui-serif, Georgia;
-```
+\`\`\`
 
 **Status:** Only two fonts in use sitewide:
 - **Inter** - Body text (paragraphs, nav links, UI elements)
@@ -96,7 +96,7 @@ Contains the official CeremonyVerse overlapping CV monogram with:
 
 ## VISUAL STRUCTURE
 
-```
+\`\`\`
 ┌─────────────────────────────────────────────────────────────────┐
 │                          HEADER                                  │
 ├─────────────────────────────────────────────────────────────────┤
@@ -104,7 +104,7 @@ Contains the official CeremonyVerse overlapping CV monogram with:
 │  [Services] [Wedding Journeys] [Resources]   🏛 LOGO   [Blog] [Pricing] [About] [Start Planning]  │
 │                                                                   │
 └─────────────────────────────────────────────────────────────────┘
-```
+\`\`\`
 
 ## FILES MODIFIED
 

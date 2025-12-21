@@ -22,14 +22,14 @@ All service pages include the required "Pricing & Scope for This Service" sectio
 - ✅ `/outfit-coordinator` - Has "Outfit Coordination Pricing" section with links
 
 **Required Content (verified in multiple pages):**
-```
+\`\`\`
 CeremonyVerse works with couples and families across a range of wedding budgets, 
 depending on priorities, guest size, and event structure.
 
 Pricing for this service is based on the scope of planning support and cultural 
 coordination involved. All services begin with a clearly defined scope — no pressure, 
 no unnecessary upsells.
-```
+\`\`\`
 
 **Required Links:**
 - ✅ Text link to /pricing

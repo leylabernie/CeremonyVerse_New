@@ -44,7 +44,7 @@ To validate the FAQ schema, test the page at:
 Expected result: ✅ Valid FAQPage with 4 questions detected
 
 ### Schema Structure:
-```json
+\`\`\`json
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -60,7 +60,7 @@ Expected result: ✅ Valid FAQPage with 4 questions detected
     // ... 3 more questions
   ]
 }
-```
+\`\`\`
 
 ## 🔗 INTERNAL LINK SUMMARY
 

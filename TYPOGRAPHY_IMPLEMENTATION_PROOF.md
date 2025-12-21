@@ -24,9 +24,9 @@
 ### 4. Navigation Styling (Elegant Events Style) ✅
 **File: `components/site/navbar.tsx`**
 - ✅ Applied exact class to nav links:
-  ```
+  \`\`\`
   font-serif text-[13px] uppercase tracking-[0.22em] font-medium text-foreground/80 hover:text-foreground transition
-  ```
+  \`\`\`
 - ✅ Added desktop dividers: `<span className="text-foreground/30">|</span>`
 - ✅ Applied serif + uppercase + tracking to mobile nav as well
 

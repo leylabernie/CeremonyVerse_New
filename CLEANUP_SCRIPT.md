@@ -7,7 +7,7 @@ This document provides the exact commands to clean up all old Navigation/Footer 
 
 Run these commands in your repository root:
 
-```bash
+\`\`\`bash
 # Remove old Navigation imports
 find app -name "*.tsx" -type f -exec perl -i -pe 's/^import\s+(?:Navigation|\{?\s*Navigation\s*\}?)\s+from\s+"@\/components\/navigation"\s*;?\s*\n//g' {} \;
 
@@ -19,28 +19,28 @@ find app -name "*.tsx" -type f -exec perl -i -pe 's/^\s*<Navigation\s*\/>\s*\n//
 
 # Remove <Footer /> JSX
 find app -name "*.tsx" -type f -exec perl -i -pe 's/^\s*<Footer\s*\/>\s*\n//g' {} \;
-```
+\`\`\`
 
 ## Step 2: Fix text-muted → text-muted-foreground (200+ instances)
 
-```bash
+\`\`\`bash
 # Replace text-muted with text-muted-foreground globally
 find app components -name "*.tsx" -type f -exec perl -i -pe 's/\btext-muted\b(?!-foreground)/text-muted-foreground/g' {} \;
-```
+\`\`\`
 
 ## Step 3: Remove Spacing Hacks
 
-```bash
+\`\`\`bash
 # Remove pt-20 from budget-planner
 perl -i -pe 's/pt-20//g' app/budget-planner/page.tsx
 
 # Remove pt-20 from homepage (if className="pt-12 md:pt-20" exists)
 perl -i -pe 's/pt-12 md:pt-20/pt-12/g' app/page.tsx
-```
+\`\`\`
 
 ## Step 4: Deprecate Old Components
 
-```bash
+\`\`\`bash
 # Create deprecated directory
 mkdir -p components/_deprecated
 
@@ -61,11 +61,11 @@ These components are no longer used. DO NOT import them in new code.
 
 All pages should rely on the global layout for header/footer.
 EOF
-```
+\`\`\`
 
 ## Step 5: Verify Cleanup
 
-```bash
+\`\`\`bash
 # Verify no old imports remain
 echo "Checking for old Navigation imports..."
 grep -r "@/components/navigation" app || echo "✅ Clean"
@@ -81,11 +81,11 @@ grep -r "<Navigation" app || echo "✅ Clean"
 
 echo "Checking for <Footer /> JSX..."
 grep -r "<Footer" app || echo "✅ Clean"
-```
+\`\`\`
 
 ## Step 6: Build and Deploy
 
-```bash
+\`\`\`bash
 # Install dependencies
 pnpm install
 
@@ -96,7 +96,7 @@ pnpm build
 git add .
 git commit -m "cleanup: standardize layout, fix text colors, deprecate old components"
 git push origin main
-```
+\`\`\`
 
 ## Vercel Configuration
 

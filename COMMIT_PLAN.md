@@ -30,10 +30,10 @@ The following issues exist in GitHub but not in v0 workspace:
 **What to do:**
 
 For each of the 90+ pages that have these imports:
-```tsx
+\`\`\`tsx
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
-```
+\`\`\`
 
 Remove:
 1. The import statements
@@ -43,7 +43,7 @@ Remove:
 Pages affected (131 matches): All files listed in grep results above
 
 **Example before:**
-```tsx
+\`\`\`tsx
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 
@@ -56,16 +56,16 @@ export default function Page() {
     </>
   )
 }
-```
+\`\`\`
 
 **Example after:**
-```tsx
+\`\`\`tsx
 export default function Page() {
   return (
     <main>Content here</main>
   )
 }
-```
+\`\`\`
 
 ---
 
@@ -128,14 +128,14 @@ See Commit 1 section above for the 131 files that need nav/footer removed.
 For bulk cleanup, you can use find/replace in GitHub or your editor:
 
 **Find:**
-```
+\`\`\`
 import Navigation from "@/components/navigation"\nimport Footer from "@/components/footer"
-```
+\`\`\`
 
 **Replace:**
-```
+\`\`\`
 // Layout handles nav/footer
-```
+\`\`\`
 
 Then manually remove `<Navigation />` and `<Footer />` from JSX.
 

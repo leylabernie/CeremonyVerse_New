@@ -3,7 +3,7 @@
 ## ✅ Configuration Status
 
 ### 1. Layout.tsx - CORRECT
-```tsx
+\`\`\`tsx
 const serif = Cormorant_Garamond({
   variable: "--font-cv-serif",
 })
@@ -13,16 +13,16 @@ const sans = Inter({
 })
 
 <html className={`${serif.variable} ${sans.variable}`}>
-```
+\`\`\`
 
 ### 2. Globals.css @theme inline - CORRECT
-```css
+\`\`\`css
 --font-serif: var(--font-cv-serif);
 --font-sans: var(--font-cv-sans);
-```
+\`\`\`
 
 ### 3. Globals.css @layer base - CORRECT
-```css
+\`\`\`css
 html, body {
   font-family: var(--font-sans) !important;
 }
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 nav a, nav button {
   font-family: var(--font-serif) !important;
 }
-```
+\`\`\`
 
 ## ✅ Expected Results
 

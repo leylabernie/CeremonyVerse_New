@@ -38,20 +38,20 @@ The homepage includes:
 If homepage is still missing on live site:
 
 **A) Clear Vercel cache:**
-```bash
+\`\`\`bash
 # In Vercel dashboard:
 # 1. Go to Deployments
 # 2. Find latest deployment
 # 3. Click "..." → "Redeploy"
 # 4. Select "Use existing Build Cache" = OFF
-```
+\`\`\`
 
 **B) Verify build succeeds:**
-```bash
+\`\`\`bash
 pnpm install
 pnpm build
 # Should complete without errors
-```
+\`\`\`
 
 **C) Check Vercel project settings:**
 - Framework Preset: Next.js ✅
@@ -68,11 +68,11 @@ pnpm build
 ### 7. Local Test
 
 To verify homepage works locally:
-```bash
+\`\`\`bash
 pnpm dev
 # Open http://localhost:3000/
 # Should show complete homepage
-```
+\`\`\`
 
 ## ✅ Conclusion
 

@@ -100,19 +100,19 @@ For EVERY file listed above, you need to:
 
 ### 1. Remove imports at the top:
 Delete these lines:
-```tsx
+\`\`\`tsx
 import Navigation from "@/components/navigation"
 import { Navigation } from "@/components/navigation"
 import Footer from "@/components/footer"
 import { Footer } from "@/components/footer"
-```
+\`\`\`
 
 ### 2. Remove JSX usage:
 Delete these lines from the return statement:
-```tsx
+\`\`\`tsx
 <Navigation />
 <Footer />
-```
+\`\`\`
 
 ### 3. Keep only the page content
 The file should only contain the actual page-specific content, not nav/footer.
@@ -120,7 +120,7 @@ The file should only contain the actual page-specific content, not nav/footer.
 ## Example Before/After
 
 **BEFORE:**
-```tsx
+\`\`\`tsx
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -136,10 +136,10 @@ export default function MyPage() {
     </>
   )
 }
-```
+\`\`\`
 
 **AFTER:**
-```tsx
+\`\`\`tsx
 import { Button } from "@/components/ui/button"
 
 export default function MyPage() {
@@ -149,13 +149,13 @@ export default function MyPage() {
     </main>
   )
 }
-```
+\`\`\`
 
 ## Quick Commands (Run from repo root)
 
 If you have perl installed, these commands will clean all files automatically:
 
-```bash
+\`\`\`bash
 # Remove old footer imports
 perl -pi -e 's/^import\s+Footer\s+from\s+"@\/components\/footer"\s*;\s*\n//g; s/^import\s+\{\s*Footer\s*\}\s+from\s+"@\/components\/footer"\s*;\s*\n//g;' $(git ls-files "app/**/*.tsx")
 
@@ -170,7 +170,7 @@ perl -pi -e 's/^\s*<Navigation\s*\/>\s*\n//g' $(git ls-files "app/**/*.tsx")
 
 # Verify cleanup
 rg -n "@/components/footer|@/components/navigation" app
-```
+\`\`\`
 
 ## After Cleanup
 
