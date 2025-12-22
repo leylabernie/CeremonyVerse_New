@@ -14,9 +14,9 @@ const nav = [
 export function Navbar() {
   return (
     <header className="sticky top-0 z-40 bg-cvBg/95 backdrop-blur border-b border-cvBorder">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-6">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-3">
         {/* Centered logo */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-3">
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.svg"
@@ -34,7 +34,7 @@ export function Navbar() {
             <div key={item.href} className="flex items-center">
               <Link
                 href={item.href}
-                className="font-serif text-[13px] uppercase tracking-[0.22em] font-medium text-foreground/80 hover:text-foreground transition px-4 py-1"
+                className="font-serif text-[13px] uppercase tracking-[0.22em] font-medium text-foreground/80 hover:text-foreground transition px-3 py-1"
               >
                 {item.label}
               </Link>
@@ -62,7 +62,7 @@ export function Navbar() {
         </div>
 
         {/* Desktop CTA below menu */}
-        <div className="hidden lg:flex justify-center mt-5">
+        <div className="hidden lg:flex justify-center mt-3">
           <Button href="/start-planning" variant="default" size="lg">
             Start Planning
           </Button>
