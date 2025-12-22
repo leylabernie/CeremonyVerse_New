@@ -19,10 +19,10 @@ export function Navbar() {
         <div className="flex justify-center mb-6">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo.png"
-              alt="CeremonyVerse - Indian Fusion Wedding & Sourcing"
-              width={400}
-              height={200}
+              src="/logo.svg"
+              alt="CeremonyVerse - Wedding Planning + Cultural Sourcing"
+              width={500}
+              height={500}
               className="h-[120px] w-auto md:h-[150px]"
               priority
             />
