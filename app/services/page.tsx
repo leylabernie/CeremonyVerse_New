@@ -3,6 +3,19 @@ import { Card } from "@/components/site/card"
 import { Button } from "@/components/ui/button"
 import { InternalCTA } from "@/components/internal-cta"
 
+export const metadata = {
+  title: "Indian Wedding Planning Services | Virtual & In-Person Nationwide | CeremonyVerse",
+  description:
+    "Full planning, partial coordination, day-of services, and cultural sourcing support for Indian, Hindu, Sikh, Gujarati & fusion weddings. Transparent pricing from $800. Available nationwide with virtual planning options.",
+  keywords:
+    "indian wedding planning services, full service indian wedding planner, partial wedding planning, cultural sourcing, virtual wedding planning",
+  openGraph: {
+    title: "Indian Wedding Planning Services | CeremonyVerse",
+    description: "Full-service Indian wedding planning with transparent pricing and cultural expertise nationwide.",
+  },
+}
+// </CHANGE>
+
 export default function ServicesPage() {
   return (
     <>
@@ -103,7 +116,6 @@ export default function ServicesPage() {
           </Button>
         </div>
       </Section>
-      {/* </CHANGE> */}
 
       <Section>
         <Card className="md:p-10">

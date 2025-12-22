@@ -22,11 +22,11 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ceremonyverse.com"),
   title: {
-    default: "Indian & Fusion Wedding Planner PA, NJ, DE, MD | CeremonyVerse",
+    default: "Indian & Fusion Wedding Planner Nationwide | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "Plan your Indian or fusion wedding in PA, NJ, DE, or MD with cultural expertise and clear pricing. Get a budget roadmap before vendor meetings. Start planning today.",
+    "Plan your Indian or fusion wedding anywhere in the USA with cultural expertise and transparent pricing. Virtual consultations available nationwide with travel for in-person events.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Indian & Fusion Wedding Planner | CeremonyVerse",

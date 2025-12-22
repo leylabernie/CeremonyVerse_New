@@ -191,6 +191,48 @@ export default function IndianWeddingPlannerPhiladelphiaPage() {
               </div>
             ))}
           </div>
+
+          <div className="mt-12 max-w-4xl mx-auto">
+            <p className="text-muted-foreground leading-relaxed">
+              Looking for guidance on specific traditions? Explore our complete{" "}
+              <a href="/blog/gujarati-wedding-planning-guide" className="text-accent hover:underline">
+                Gujarati wedding planning guide
+              </a>
+              ,{" "}
+              <a href="/blog/punjabi-wedding-traditions-guide" className="text-accent hover:underline">
+                Punjabi wedding traditions
+              </a>
+              , or{" "}
+              <a href="/blog/south-indian-wedding-ceremony-guide" className="text-accent hover:underline">
+                South Indian wedding ceremony guide
+              </a>
+              . Need help with sourcing? Read our{" "}
+              <a href="/blog/wedding-shopping-india-vs-usa" className="text-accent hover:underline">
+                India vs USA wedding shopping guide
+              </a>{" "}
+              or learn about our{" "}
+              <a href="/services/cultural-sourcing" className="text-accent hover:underline">
+                cultural sourcing services
+              </a>
+              .
+            </p>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              Planning a fusion wedding? Our{" "}
+              <a href="/blog/fusion-wedding-planning-guide" className="text-accent hover:underline">
+                fusion wedding planning guide
+              </a>{" "}
+              covers Hindu-Christian, interfaith, and multicultural ceremonies. We also offer{" "}
+              <a href="/blog/virtual-wedding-planning-guide" className="text-accent hover:underline">
+                virtual wedding planning
+              </a>{" "}
+              for couples anywhere in the country. Start with a{" "}
+              <a href="/services/planning-intensives" className="text-accent hover:underline">
+                planning intensive
+              </a>{" "}
+              to get your budget roadmap and vendor strategy in place.
+            </p>
+          </div>
+          {/* </CHANGE> */}
         </div>
       </section>
 

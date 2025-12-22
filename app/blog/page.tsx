@@ -44,6 +44,69 @@ export default function BlogPage() {
 
   const articles = [
     {
+      title: "Wedding Shopping: India vs USA - Complete Cost & Quality Comparison 2025",
+      excerpt:
+        "Should you shop in India or USA for your wedding? Comprehensive guide comparing prices, quality, shipping, customs, and hybrid strategies for outfits, jewelry, and ceremony items with real cost breakdowns.",
+      date: "December 25, 2025",
+      readTime: "18 min read",
+      category: "Shopping Guide",
+      slug: "wedding-shopping-india-vs-usa",
+    },
+    {
+      title: "Fusion Wedding Planning Guide: Hindu-Christian & Interfaith Ceremonies",
+      excerpt:
+        "Complete guide to planning fusion weddings blending Hindu, Christian, Jewish, Sikh, and Western traditions. Ceremony sequencing, cultural balance, family expectations, and timeline planning for interfaith couples.",
+      date: "December 25, 2025",
+      readTime: "20 min read",
+      category: "Cultural Traditions",
+      slug: "fusion-wedding-planning-guide",
+    },
+    {
+      title: "Sikh Wedding Planning Guide: Anand Karaj Ceremony & Traditions",
+      excerpt:
+        "Everything you need to plan an authentic Sikh wedding including Anand Karaj ceremony requirements, Gurdwara protocols, pre-wedding rituals like Roka and Chooda, timeline, attire, and budget breakdown.",
+      date: "December 25, 2025",
+      readTime: "17 min read",
+      category: "Cultural Traditions",
+      slug: "sikh-wedding-planning-guide",
+    },
+    {
+      title: "Virtual Indian Wedding Planning: How Remote Coordination Works Nationwide",
+      excerpt:
+        "Complete guide to virtual Indian wedding planning. How remote coordination works, benefits vs in-person, technology requirements, vendor coordination, cultural guidance, and pricing for nationwide couples.",
+      date: "December 25, 2025",
+      readTime: "15 min read",
+      category: "Planning Guide",
+      slug: "virtual-wedding-planning-guide",
+    },
+    {
+      title: "Complete Gujarati Wedding Planning Guide: Traditions, Timeline & Modern Ideas",
+      excerpt:
+        "Everything you need to plan an authentic Gujarati wedding. From Gol Dhana to Garba to mandap ceremony, learn about traditional rituals, timeline, attire, food, and budget-friendly planning tips for your celebration.",
+      date: "December 25, 2025",
+      readTime: "16 min read",
+      category: "Cultural Traditions",
+      slug: "gujarati-wedding-planning-guide",
+    },
+    {
+      title: "Punjabi Wedding Traditions & Planning Guide: Complete Timeline 2025",
+      excerpt:
+        "Plan your vibrant Punjabi wedding with confidence. Complete guide to Roka, Jaggo, Chooda ceremony, Sangeet, Anand Karaj, and all traditions with timeline, attire, vendors, and budget breakdown.",
+      date: "December 25, 2025",
+      readTime: "15 min read",
+      category: "Cultural Traditions",
+      slug: "punjabi-wedding-traditions-guide",
+    },
+    {
+      title: "South Indian Wedding Ceremony Guide: Tamil, Telugu, Kannada & Malayalam Traditions",
+      excerpt:
+        "Complete guide to South Indian wedding ceremonies including Muhurtham, Kanyadanam, Thali tying, Saptapadi, and regional variations across Tamil, Telugu, Kannada, and Malayalam traditions with planning tips.",
+      date: "December 25, 2025",
+      readTime: "17 min read",
+      category: "Cultural Traditions",
+      slug: "south-indian-wedding-ceremony-guide",
+    },
+    {
       title: "How to Choose Your Perfect Wedding Venue",
       excerpt:
         "Complete guide to selecting the ideal venue for your Indian-American fusion wedding. Multi-day event considerations, capacity planning, budget tips, questions to ask, and red flags to avoid when booking your dream location.",
@@ -241,6 +304,12 @@ export default function BlogPage() {
                 <p className="text-sm text-muted-foreground">
                   Venue recommendations and location-specific wedding planning guides.
                 </p>
+              </Card>
+            </Link>
+            <Link href="/blog/category/virtual">
+              <Card hover className="text-center">
+                <h3 className="text-text mb-2">Virtual Wedding Planning</h3>
+                <p className="text-sm text-muted-foreground">Learn how to plan and coordinate your wedding remotely.</p>
               </Card>
             </Link>
           </div>

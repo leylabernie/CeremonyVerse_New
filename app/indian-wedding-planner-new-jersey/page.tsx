@@ -186,6 +186,37 @@ export default function IndianWeddingPlannerNewJerseyPage() {
               </div>
             ))}
           </div>
+
+          <div className="mt-12 max-w-4xl mx-auto">
+            <p className="text-muted-foreground leading-relaxed">
+              Need help with your{" "}
+              <a href="/blog/gujarati-wedding-planning-guide" className="text-accent hover:underline">
+                Gujarati wedding ceremony
+              </a>
+              ? We specialize in traditional Gujarati rituals including Gol Dhana, Pithi, and Garba coordination. For
+              Sikh ceremonies, see our{" "}
+              <a href="/blog/sikh-wedding-planning-guide" className="text-accent hover:underline">
+                Sikh wedding planning guide
+              </a>{" "}
+              covering Anand Karaj and Gurdwara protocols.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              Looking to source authentic items from India? Our{" "}
+              <a href="/services/cultural-sourcing" className="text-accent hover:underline">
+                indian wedding sourcing services
+              </a>{" "}
+              help you coordinate outfits, jewelry, and ceremony essentials with transparent pricing. Read our{" "}
+              <a href="/blog/wedding-shopping-india-vs-usa" className="text-accent hover:underline">
+                wedding shopping guide
+              </a>{" "}
+              to understand India vs USA options. Can't travel to NJ for planning meetings?{" "}
+              <a href="/blog/virtual-wedding-planning-guide" className="text-accent hover:underline">
+                Virtual wedding planning
+              </a>{" "}
+              allows us to coordinate your entire wedding remotely while you're anywhere in the country.
+            </p>
+          </div>
+          {/* </CHANGE> */}
         </div>
       </section>
 

@@ -9,9 +9,9 @@ import { FAQSchema } from "@/components/schema/FAQSchema"
 import { TrustSignals } from "@/components/TrustSignals"
 
 export const metadata: Metadata = {
-  title: "Indian & Fusion Wedding Planner PA, NJ, DE, MD | CeremonyVerse",
+  title: "Indian & Fusion Wedding Planner Nationwide | CeremonyVerse",
   description:
-    "Plan your Indian or fusion wedding in PA, NJ, DE, or MD with cultural expertise and clear pricing. Get a budget roadmap before vendor meetings. Start planning today.",
+    "Plan your Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual consultations available nationwide. Start with a clear budget roadmap.",
   alternates: {
     canonical: "/",
   },
@@ -90,7 +90,7 @@ export default function HomePage() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center relative z-10">
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-text">
-              Indian & Fusion Wedding Planning in PA, NJ, DE & MD
+              Indian & Fusion Wedding Planning Nationwide
             </h1>
             <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
               Thoughtfully Designed to Fit Your Real Budget
@@ -108,22 +108,28 @@ export default function HomePage() {
             </div>
 
             <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-              <span className="flex items-center gap-2">
+              <Link href="/services" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Clear Pricing
-              </span>
-              <span className="flex items-center gap-2">
+                <span>Clear Pricing</span>
+              </Link>
+              <Link
+                href="/blog/gujarati-wedding-planning-guide"
+                className="flex items-center gap-2 hover:text-primary transition-colors"
+              >
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Cultural Expertise
-              </span>
-              <span className="flex items-center gap-2">
+                <span>Cultural Expertise</span>
+              </Link>
+              <Link href="/about" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Family-Friendly Planning
-              </span>
-              <span className="flex items-center gap-2">
+                <span>Family-Friendly Planning</span>
+              </Link>
+              <Link
+                href="/indian-wedding-planner-philadelphia"
+                className="flex items-center gap-2 hover:text-primary transition-colors"
+              >
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                Serving PA / NJ / DE / MD
-              </span>
+                <span>Serving Nationwide</span>
+              </Link>
             </div>
           </div>
 
@@ -141,6 +147,210 @@ export default function HomePage() {
       </Section>
 
       <TrustSignals />
+
+      <Section variant="surface">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-text mb-6">Nationwide Indian Wedding Planning with Virtual & In-Person Options</h2>
+
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            CeremonyVerse provides Indian and fusion wedding planning services throughout the United States. Whether
+            you're in California, Texas, New York, Illinois, or anywhere else—we work with couples virtually and
+            in-person to create culturally aligned weddings with budget clarity.
+          </p>
+
+          <h3 className="text-text text-2xl mb-6">How Virtual Wedding Planning Works</h3>
+
+          <div className="grid gap-6 md:grid-cols-2 mb-12">
+            <Card>
+              <div className="font-serif text-lg font-semibold text-text mb-3">Virtual Budget Planning Sessions</div>
+              <p className="text-muted-foreground leading-relaxed">
+                90-minute Zoom calls to map your budget, priorities, and vendor strategy
+              </p>
+            </Card>
+
+            <Card>
+              <div className="font-serif text-lg font-semibold text-text mb-3">Remote Vendor Research</div>
+              <p className="text-muted-foreground leading-relaxed">
+                We research and recommend vendors in your city/state based on your needs
+              </p>
+            </Card>
+
+            <Card>
+              <div className="font-serif text-lg font-semibold text-text mb-3">Digital Planning Tools</div>
+              <p className="text-muted-foreground leading-relaxed">
+                Shared documents, timelines, and budget trackers you access anywhere
+              </p>
+            </Card>
+
+            <Card>
+              <div className="font-serif text-lg font-semibold text-text mb-3">Video Vendor Meetings</div>
+              <p className="text-muted-foreground leading-relaxed">
+                We can join your virtual vendor consultations for guidance
+              </p>
+            </Card>
+
+            <Card>
+              <div className="font-serif text-lg font-semibold text-text mb-3">Travel for Events</div>
+              <p className="text-muted-foreground leading-relaxed">
+                For full planning clients, we travel to your location for key events (costs discussed upfront)
+              </p>
+            </Card>
+          </div>
+
+          <h3 className="text-text text-2xl mb-6">Popular Regions We Serve</h3>
+
+          <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+            We work with couples planning Indian weddings in major metros and beyond, including:
+          </p>
+
+          <div className="grid gap-4 md:grid-cols-2 mb-8">
+            <div className="p-6 rounded-lg bg-warm-2/30">
+              <div className="font-serif font-semibold text-text mb-3">East Coast</div>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                New York, New Jersey, Pennsylvania, Maryland, Virginia, North Carolina, Florida
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg bg-warm-2/30">
+              <div className="font-serif font-semibold text-text mb-3">West Coast</div>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                California (Bay Area, LA, San Diego), Washington, Oregon
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg bg-warm-2/30">
+              <div className="font-serif font-semibold text-text mb-3">South</div>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Texas (Houston, Dallas, Austin), Georgia, Tennessee
+              </p>
+            </div>
+
+            <div className="p-6 rounded-lg bg-warm-2/30">
+              <div className="font-serif font-semibold text-text mb-3">Midwest</div>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Illinois, Michigan, Ohio, Minnesota, Wisconsin
+              </p>
+            </div>
+          </div>
+
+          <p className="text-muted-foreground leading-relaxed">
+            Our budget-first approach works regardless of location—wedding costs vary by region, and we help you plan
+            within your local market while sourcing items strategically (India vs. USA).
+          </p>
+        </div>
+      </Section>
+
+      <Section variant="warm2">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-text mb-6">Cultural Traditions We Specialize In</h2>
+
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            CeremonyVerse understands the nuances of different{" "}
+            <Link href="/blog/south-indian-wedding-ceremony-guide" className="text-primary hover:underline">
+              South Asian wedding traditions
+            </Link>
+            :
+          </p>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            <Card hover className="bg-surface">
+              <div className="font-serif text-lg font-semibold text-text mb-3">
+                <Link
+                  href="/blog/indian-wedding-traditions-guide"
+                  className="text-text hover:text-primary transition-colors"
+                >
+                  Hindu Weddings
+                </Link>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Complete ceremony guidance including Ganesh Puja, Mandap setup, Saat Phere, Vidaai, and regional
+                variations
+              </p>
+            </Card>
+
+            <Card hover className="bg-surface">
+              <div className="font-serif text-lg font-semibold text-text mb-3">Sikh Weddings</div>
+              <p className="text-muted-foreground leading-relaxed">
+                Anand Karaj ceremony coordination, Gurdwara protocols, Milni, and cultural event planning
+              </p>
+            </Card>
+
+            <Card hover className="bg-surface">
+              <div className="font-serif text-lg font-semibold text-text mb-3">
+                <Link
+                  href="/blog/gujarati-wedding-planning-guide"
+                  className="text-text hover:text-primary transition-colors"
+                >
+                  Gujarati Traditions
+                </Link>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Pithi, Garba, Haldi customs, and regional ceremony requirements specific to Gujarati families
+              </p>
+            </Card>
+
+            <Card hover className="bg-surface">
+              <div className="font-serif text-lg font-semibold text-text mb-3">
+                <Link
+                  href="/blog/punjabi-wedding-traditions-guide"
+                  className="text-text hover:text-primary transition-colors"
+                >
+                  Punjabi Celebrations
+                </Link>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Sangeet choreography support, Jaggo, Chooda ceremony, and vibrant celebration planning
+              </p>
+            </Card>
+
+            <Card hover className="bg-surface">
+              <div className="font-serif text-lg font-semibold text-text mb-3">
+                <Link
+                  href="/blog/south-indian-wedding-ceremony-guide"
+                  className="text-text hover:text-primary transition-colors"
+                >
+                  South Indian Weddings
+                </Link>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Tamil, Telugu, Kannada, and Malayalam ceremony traditions including Muhurtham timing and rituals
+              </p>
+            </Card>
+
+            <Card hover className="bg-surface">
+              <div className="font-serif text-lg font-semibold text-text mb-3">
+                <Link
+                  href="/blog/essential-elements-fusion-wedding"
+                  className="text-text hover:text-primary transition-colors"
+                >
+                  Fusion & Interfaith
+                </Link>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Hindu-Christian, Sikh-Jewish, and other multicultural ceremony design with respectful tradition blending
+              </p>
+            </Card>
+          </div>
+
+          <div className="mt-12 p-6 rounded-lg bg-warm-2/30">
+            <h3 className="font-serif font-semibold text-text mb-4">Helpful Resources</h3>
+            <div className="grid gap-3 md:grid-cols-2">
+              <Link href="/blog/south-asian-wedding-budget-guide" className="text-primary hover:underline">
+                Indian wedding budget planning guide
+              </Link>
+              <Link href="/blog/wedding-shopping-india-vs-usa" className="text-primary hover:underline">
+                India vs USA sourcing comparison
+              </Link>
+              <Link href="/blog/vendor-verification-guide" className="text-primary hover:underline">
+                Learn about our vendor verification process
+              </Link>
+              <Link href="/services" className="text-primary hover:underline">
+                Explore CeremonyVerse wedding planning services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Section>
 
       <Section variant="surface">
         <h2 className="text-text mb-6">Serving Indian & Fusion Weddings Across the Region</h2>
@@ -169,258 +379,6 @@ export default function HomePage() {
           >
             <span className="font-serif text-lg text-text">Maryland</span>
           </Link>
-        </div>
-      </Section>
-
-      <Section variant="warm2">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-text mb-6">Who CeremonyVerse Is For</h2>
-          <ul className="space-y-4">
-            <li className="flex items-start gap-3">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-              <span className="text-muted-foreground leading-relaxed">
-                Couples planning an Indian or fusion wedding who want cultural accuracy
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-              <span className="text-muted-foreground leading-relaxed">
-                Families who need a realistic plan within a defined budget
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-              <span className="text-muted-foreground leading-relaxed">
-                Couples navigating parent expectations and ceremony details
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-              <span className="text-muted-foreground leading-relaxed">
-                Anyone who needs sourcing guidance without being pushed to overspend
-              </span>
-            </li>
-          </ul>
-
-          <div className="mt-12">
-            <h2 className="text-text mb-6">Who We're Not For</h2>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground flex-shrink-0" />
-                <span className="text-muted-foreground leading-relaxed">Ultra-luxury, unlimited-budget planning</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground flex-shrink-0" />
-                <span className="text-muted-foreground leading-relaxed">
-                  A fully hands-off concierge model with no cost boundaries
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </Section>
-
-      <Section variant="warm">
-        <h2 className="text-text mb-3">Choose Your Support Level</h2>
-        <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mb-4">
-          Every engagement starts with understanding your budget and priorities.
-        </p>
-
-        <div className="grid gap-6 md:grid-cols-2">
-          <Card hover>
-            <div className="inline-block px-3 py-1 rounded-full bg-warm-2 text-primary text-xs font-semibold mb-3">
-              QUICKSTART
-            </div>
-            <h3 className="text-text">Planning Intensives</h3>
-            <p className="mt-3 text-muted-foreground leading-relaxed">
-              Budget & Vision Roadmap session to map priorities, vendor strategy, and sourcing plan.
-            </p>
-            <p className="mt-4 text-sm text-muted-foreground italic">
-              Best for couples who need expert clarity before committing to a full plan.
-            </p>
-          </Card>
-
-          <Card hover>
-            <div className="inline-block px-3 py-1 rounded-full bg-warm-2 text-primary text-xs font-semibold mb-3">
-              GUIDANCE
-            </div>
-            <h3 className="text-text">Partial Planning & Coordination</h3>
-            <p className="mt-3 text-muted-foreground leading-relaxed">
-              Ongoing support with decision guidance, vendor shortlists, and timeline tracking.
-            </p>
-            <p className="mt-4 text-sm text-muted-foreground italic">
-              Best for couples who want guidance without full delegation.
-            </p>
-          </Card>
-
-          <Card hover>
-            <div className="inline-block px-3 py-1 rounded-full bg-warm-2 text-primary text-xs font-semibold mb-3">
-              COMPREHENSIVE
-            </div>
-            <h3 className="text-text">Full Wedding Planning</h3>
-            <p className="mt-3 text-muted-foreground leading-relaxed">
-              End-to-end management with complete vendor coordination, budget oversight, and multi-day execution.
-            </p>
-            <p className="mt-4 text-sm text-muted-foreground italic">
-              Best for couples who want turnkey planning from start to finish.
-            </p>
-          </Card>
-
-          <Card hover>
-            <div className="inline-block px-3 py-1 rounded-full bg-warm-2 text-primary text-xs font-semibold mb-3">
-              ADD-ON OR STANDALONE
-            </div>
-            <h3 className="text-text">Cultural Sourcing Support</h3>
-            <p className="mt-3 text-muted-foreground leading-relaxed">
-              Outfits, jewelry, ceremony items, favors, and India coordination — managed as part of your plan, with
-              clear boundaries.
-            </p>
-          </Card>
-        </div>
-
-        <div className="mt-10">
-          <Button href="/pricing">View Full Pricing</Button>
-        </div>
-      </Section>
-
-      <Section variant="surface">
-        <h2 className="text-text mb-3">How It Works</h2>
-        <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mb-12">
-          Three simple steps to get started with CeremonyVerse
-        </p>
-
-        <div className="grid gap-8 md:grid-cols-3">
-          <Card>
-            <div className="font-serif text-xl font-semibold text-text mb-3">
-              1. Share your budget, vision, and priorities
-            </div>
-            <p className="text-muted-foreground leading-relaxed">
-              Complete our form with your budget, events, and priorities.
-            </p>
-          </Card>
-
-          <Card>
-            <div className="font-serif text-xl font-semibold text-text mb-3">
-              2. We recommend the right level of support
-            </div>
-            <p className="text-muted-foreground leading-relaxed">
-              Receive a roadmap with priorities, vendor approach, and sourcing strategy.
-            </p>
-          </Card>
-
-          <Card>
-            <div className="font-serif text-xl font-semibold text-text mb-3">
-              3. You move forward with clarity — not pressure
-            </div>
-            <p className="text-muted-foreground leading-relaxed">
-              Pick from intensive / partial / full / coordination + sourcing based on your needs.
-            </p>
-          </Card>
-        </div>
-      </Section>
-
-      <Section variant="warm2">
-        <div className="text-center mb-14">
-          <h2 className="text-text">Budget-to-Plan Roadmap</h2>
-          <p className="mt-5 text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Our proprietary planning process starts with your real numbers and builds a decision path
-          </p>
-        </div>
-      </Section>
-
-      <Section variant="surface">
-        <div className="max-w-3xl">
-          <h2 className="text-text">Planning + Cultural Sourcing (as a service)</h2>
-          <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-            CeremonyVerse is a service-based planning studio. We don't operate as a store or marketplace — we help you
-            make the right decisions, coordinate sourcing, and manage timelines so your wedding comes together smoothly
-            and within budget.
-          </p>
-        </div>
-
-        <div className="mt-8 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-      </Section>
-
-      <Section variant="warm2">
-        <h2 className="text-text mb-3">What Couples Value About CeremonyVerse</h2>
-        <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mb-12">
-          The qualities our clients appreciate most in our planning approach
-        </p>
-
-        <div className="grid gap-8 md:grid-cols-3 mb-12">
-          <Card hover className="bg-surface">
-            <div className="font-serif font-semibold text-xl text-text mb-3">
-              Clear priorities that keep spending realistic
-            </div>
-            <p className="text-muted-foreground leading-relaxed">
-              We help you understand your true budget and allocate funds strategically across all wedding elements.
-            </p>
-          </Card>
-          <Card hover className="bg-surface">
-            <div className="font-serif font-semibold text-xl text-text mb-3">Cultural details handled thoughtfully</div>
-            <p className="text-muted-foreground leading-relaxed">
-              From Gujarati to Punjabi, South Indian to Jain — we understand ceremony requirements and family
-              expectations.
-            </p>
-          </Card>
-          <Card hover className="bg-surface">
-            <div className="font-serif font-semibold text-xl text-text mb-3">
-              Less decision fatigue, more confidence
-            </div>
-            <p className="text-muted-foreground leading-relaxed">
-              Clear recommendations, defined timelines, and milestone-based support so you can enjoy the process.
-            </p>
-          </Card>
-        </div>
-
-        <Card hover className="md:p-10 bg-surface">
-          <div className="font-serif font-semibold text-2xl text-text mb-6">You get clarity on...</div>
-          <ul className="space-y-4">
-            <li className="flex items-start gap-3">
-              <span className="w-7 h-7 rounded-full bg-accent-soft text-primary flex items-center justify-center flex-shrink-0 text-sm font-semibold">
-                ✓
-              </span>
-              <span className="text-muted-foreground leading-relaxed">
-                What fits your total budget (before vendor meetings)
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-7 h-7 rounded-full bg-accent-soft text-primary flex items-center justify-center flex-shrink-0 text-sm font-semibold">
-                ✓
-              </span>
-              <span className="text-muted-foreground leading-relaxed">
-                Which vendors to prioritize vs. where you can save
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-7 h-7 rounded-full bg-accent-soft text-primary flex items-center justify-center flex-shrink-0 text-sm font-semibold">
-                ✓
-              </span>
-              <span className="text-muted-foreground leading-relaxed">
-                Timeline for sourcing from India vs. buying locally
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-7 h-7 rounded-full bg-accent-soft text-primary flex items-center justify-center flex-shrink-0 text-sm font-semibold">
-                ✓
-              </span>
-              <span className="text-muted-foreground leading-relaxed">
-                Ceremony-specific needs (mandap, baraat, sangeet, etc.)
-              </span>
-            </li>
-          </ul>
-        </Card>
-      </Section>
-
-      <Section variant="surface">
-        <h2 className="text-text mb-8">Frequently Asked Questions</h2>
-        <div className="max-w-3xl space-y-6">
-          {homepageFAQs.map((faq, index) => (
-            <div key={index} className="border-b border-border pb-6">
-              <h3 className="font-serif text-lg font-semibold text-text mb-2">{faq.question}</h3>
-              <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-            </div>
-          ))}
         </div>
       </Section>
 
