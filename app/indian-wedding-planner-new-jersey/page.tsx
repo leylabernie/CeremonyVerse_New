@@ -3,6 +3,8 @@ import Link from "next/link"
 import { ArrowRight, Check, MapPin, Sparkles } from "@/components/icons"
 import Image from "next/image"
 import type { Metadata } from "next"
+import { JsonLd } from "@/components/schema/JsonLd"
+import { FAQSchema } from "@/components/schema/FAQSchema"
 
 export const metadata: Metadata = {
   title: "Indian Wedding Planner in New Jersey | Gujarati, Tamil & Fusion Specialists – CeremonyVerse",
@@ -20,9 +22,54 @@ export const metadata: Metadata = {
   },
 }
 
+const newJerseyFAQs = [
+  {
+    question: "How much does an Indian wedding cost in New Jersey?",
+    answer:
+      "Indian weddings in New Jersey typically range from $60,000 to $200,000+ depending on venue, guest count, and traditions. Central NJ venues like Edison and Iselin areas often offer excellent value with strong Indian vendor networks.",
+  },
+  {
+    question: "What New Jersey venues are best for Indian weddings?",
+    answer:
+      "Popular NJ venues include The Palace at Somerset Park, Crystal Plaza, The Imperia, Nanina's in the Park, and various hotels in Edison and Iselin. Many accommodate baraat processions and multi-day events.",
+  },
+  {
+    question: "Do you coordinate Gujarati garba and sangeet events?",
+    answer:
+      "Yes! We specialize in Gujarati wedding traditions including garba, sangeet, pithi, and all pre-wedding ceremonies. We coordinate with experienced Gujarati caterers, decorators, and DJs throughout NJ.",
+  },
+  {
+    question: "Can you help with Tamil Christian weddings in NJ?",
+    answer:
+      "Absolutely. We have experience with Tamil Christian ceremonies including church weddings, manthrakodi traditions, and blended celebrations honoring both South Indian and Christian customs.",
+  },
+]
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "WeddingPlanner",
+  name: "CeremonyVerse - New Jersey",
+  description: "Indian wedding planning services in New Jersey. Specializing in Gujarati, Tamil, and fusion weddings.",
+  url: "https://ceremonyverse.com/indian-wedding-planner-new-jersey",
+  telephone: "+1-215-341-9990",
+  areaServed: {
+    "@type": "State",
+    name: "New Jersey",
+  },
+  serviceType: [
+    "Indian Wedding Planning",
+    "Gujarati Wedding Coordination",
+    "Tamil Christian Wedding Planning",
+    "Fusion Wedding Planning",
+  ],
+}
+
 export default function IndianWeddingPlannerNewJerseyPage() {
   return (
     <div className="min-h-screen bg-background">
+      <JsonLd data={localBusinessSchema} />
+      <FAQSchema faqs={newJerseyFAQs} />
+
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 mb-20">
         <div className="max-w-7xl mx-auto">
@@ -249,6 +296,22 @@ export default function IndianWeddingPlannerNewJerseyPage() {
             <Button size="lg" variant="outline" asChild>
               <Link href="/start-planning">Start Planning</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-serif text-3xl sm:text-4xl font-light text-foreground mb-8 text-center">
+            New Jersey Indian Wedding FAQs
+          </h2>
+          <div className="space-y-6">
+            {newJerseyFAQs.map((faq, index) => (
+              <div key={index} className="border-b border-border pb-6">
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-2">{faq.question}</h3>
+                <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

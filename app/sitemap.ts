@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://ceremonyverse.com" // Updated baseUrl from www.ceremonyverse.com to ceremonyverse.com (non-www)
+  const baseUrl = "https://ceremonyverse.com"
   const currentDate = new Date()
 
   return [
@@ -50,7 +50,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
 
-    // Regional wedding planner pages (high SEO value)
+    // Location pages (high SEO value)
+    {
+      url: `${baseUrl}/indian-wedding-planner-philadelphia`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/indian-wedding-planner-new-jersey`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/south-asian-wedding-planner-delaware`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/hindu-wedding-planner-maryland`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+
+    // Regional wedding planner pages
     {
       url: `${baseUrl}/south-indian-wedding-coordinator`,
       lastModified: currentDate,
@@ -94,12 +120,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
 
-    {
-      url: `${baseUrl}/indian-wedding-planner-new-jersey`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
     {
       url: `${baseUrl}/indian-wedding-planner-new-york`,
       lastModified: currentDate,
@@ -219,10 +239,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/portfolio`,
+      url: `${baseUrl}/pricing`,
       lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.75,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/testimonials`,

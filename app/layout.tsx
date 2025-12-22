@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Navbar } from "@/components/site/navbar"
 import { Footer } from "@/components/site/footer"
 import { Cormorant_Garamond, Inter } from "next/font/google"
+import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,20 +20,20 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.ceremonyverse.com"),
+  metadataBase: new URL("https://ceremonyverse.com"),
   title: {
-    default: "CeremonyVerse | Indian & Fusion Wedding Planning",
+    default: "Indian & Fusion Wedding Planner PA, NJ, DE, MD | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "Indian & fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and seamless execution.",
+    "Plan your Indian or fusion wedding in PA, NJ, DE, or MD with cultural expertise and clear pricing. Get a budget roadmap before vendor meetings. Start planning today.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "CeremonyVerse | Indian & Fusion Wedding Planning",
-    description:
-      "Process-led planning for Indian and fusion weddings—timelines, cultural precision, and seamless coordination.",
-    url: "https://www.ceremonyverse.com",
+    title: "Indian & Fusion Wedding Planner | CeremonyVerse",
+    description: "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+    url: "https://ceremonyverse.com",
     siteName: "CeremonyVerse",
+    locale: "en_US",
     type: "website",
   },
   generator: "v0.app",
@@ -40,19 +41,25 @@ export const metadata: Metadata = {
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "WeddingPlanner",
   name: "CeremonyVerse",
-  url: "https://www.ceremonyverse.com",
+  url: "https://ceremonyverse.com",
   telephone: "+1-215-341-9990",
+  email: "hello@ceremonyverse.com",
   description:
     "Indian and fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and virtual planning support.",
   priceRange: "$$",
-  serviceArea: ["PA", "NJ", "DE", "MD"],
   areaServed: [
     { "@type": "State", name: "Pennsylvania" },
     { "@type": "State", name: "New Jersey" },
     { "@type": "State", name: "Delaware" },
     { "@type": "State", name: "Maryland" },
+  ],
+  serviceType: [
+    "Indian Wedding Planning",
+    "Fusion Wedding Coordination",
+    "Day-of Wedding Coordination",
+    "Cultural Sourcing Support",
   ],
   sameAs: [
     "https://www.instagram.com/ceremonyverse",
@@ -68,7 +75,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${inter.variable} ${cormorant.variable}`}
       style={
         {
-          // @ts-ignore - Next.js font style object
           "--font-sans": inter.style.fontFamily,
           "--font-serif": cormorant.style.fontFamily,
         } as React.CSSProperties
@@ -84,6 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <MobileStickyCTA />
       </body>
     </html>
   )
