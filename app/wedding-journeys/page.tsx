@@ -7,7 +7,7 @@ export default function WeddingJourneysPage() {
     {
       title: "Gujarati–Tamil Fusion Wedding | New Jersey",
       content: (
-        <div className="space-y-2 text-sm">
+        <div className="space-y-2 text-base">
           <div>
             <b>Events:</b> Mehendi, Haldi, Wedding Ceremony, Reception
           </div>
@@ -18,7 +18,7 @@ export default function WeddingJourneysPage() {
             <b>Challenges solved:</b> aligning rituals, sequencing priests, multi-event timelines, guest flow
           </div>
           <div>
-            <b>Outcome:</b> culturally respectful ceremonies with smooth transitions across events
+            <b>Outcome:</b> Culturally respectful ceremonies with smooth transitions across events
           </div>
         </div>
       ),
@@ -26,7 +26,7 @@ export default function WeddingJourneysPage() {
     {
       title: "North Indian Destination Wedding | Mexico",
       content: (
-        <div className="space-y-2 text-sm">
+        <div className="space-y-2 text-base">
           <div>
             <b>Events:</b> Welcome, Mehendi, Sangeet, Wedding, Reception
           </div>
@@ -37,7 +37,7 @@ export default function WeddingJourneysPage() {
             <b>Challenges solved:</b> venue adaptation for rituals, baraat logistics, cross-country coordination
           </div>
           <div>
-            <b>Outcome:</b> tradition preserved with destination-ready execution
+            <b>Outcome:</b> Tradition preserved with destination-ready execution
           </div>
         </div>
       ),
@@ -45,7 +45,7 @@ export default function WeddingJourneysPage() {
     {
       title: "Modern Fusion Wedding | California",
       content: (
-        <div className="space-y-2 text-sm">
+        <div className="space-y-2 text-base">
           <div>
             <b>Events:</b> Ceremony, Reception
           </div>
@@ -53,7 +53,7 @@ export default function WeddingJourneysPage() {
             <b>Scope:</b> Partial Planning
           </div>
           <div>
-            <b>Outcome:</b> meaningful cultural elements with streamlined timeline and guest experience
+            <b>Outcome:</b> Meaningful cultural elements with streamlined timeline and guest experience
           </div>
         </div>
       ),
