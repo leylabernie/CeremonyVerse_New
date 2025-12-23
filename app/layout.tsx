@@ -5,6 +5,7 @@ import { Navbar } from "@/components/site/navbar"
 import { Footer } from "@/components/site/footer"
 import { Cormorant_Garamond, Inter } from "next/font/google"
 import { MobileStickyCTA } from "@/components/MobileStickyCTA"
+import { WhatsAppWidget } from "@/components/whatsapp-widget"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -91,6 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <MobileStickyCTA />
+        <WhatsAppWidget />
       </body>
     </html>
   )

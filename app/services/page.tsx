@@ -1,150 +1,157 @@
-import { Section } from "@/components/site/section"
-import { Card } from "@/components/site/card"
-import { Button } from "@/components/ui/button"
-import { InternalCTA } from "@/components/internal-cta"
+import type { Metadata } from "next"
+import Link from "next/link"
+import { JsonLd } from "@/components/schema/JsonLd"
 
-export const metadata = {
-  title: "Indian Wedding Planning Services | Virtual & In-Person Nationwide | CeremonyVerse",
+export const metadata: Metadata = {
+  title: "Planning Support Services | Indian & Fusion Weddings | CeremonyVerse",
   description:
-    "Full planning, partial coordination, day-of services, and cultural sourcing support for Indian, Hindu, Sikh, Gujarati & fusion weddings. Transparent pricing from $800. Available nationwide with virtual planning options.",
-  keywords:
-    "indian wedding planning services, full service indian wedding planner, partial wedding planning, cultural sourcing, virtual wedding planning",
-  openGraph: {
-    title: "Indian Wedding Planning Services | CeremonyVerse",
-    description: "Full-service Indian wedding planning with transparent pricing and cultural expertise nationwide.",
+    "Indian and fusion wedding planning services: Planning Intensives, Partial Planning, Comprehensive Planning, and Cultural Sourcing Support. Nationwide availability.",
+  alternates: {
+    canonical: "/services",
   },
 }
-// </CHANGE>
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Indian Wedding Planning Services",
+  provider: {
+    "@type": "Organization",
+    name: "CeremonyVerse",
+    url: "https://ceremonyverse.com",
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "United States",
+  },
+  description:
+    "Professional Indian and fusion wedding planning services including Planning Intensives, Partial Planning, Comprehensive Planning, and Cultural Sourcing Support.",
+}
 
 export default function ServicesPage() {
   return (
     <>
-      <Section>
-        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">Indian & Fusion Wedding Planning Services</h1>
-        <p className="mt-4 text-cvMuted max-w-3xl">
-          Planning an Indian or fusion wedding means matching your vision to your budget while honoring cultural
-          traditions. We offer flexible planning support — from one-time strategy sessions to full coordination — so you
-          get the right level of help for your event complexity, timeline, and priorities.
-        </p>
+      <JsonLd data={serviceSchema} />
 
-        <div className="mt-6 flex gap-3">
-          <Button href="/start-planning">Start Planning</Button>
-          <Button href="/wedding-journeys" variant="secondary">
-            View Wedding Journeys →
-          </Button>
-        </div>
-      </Section>
+      <main className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-light text-stone-900 mb-6">Planning Support Services</h1>
 
-      <Section variant="warm">
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Core Services</h2>
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
-          <Card>
-            <div className="font-medium text-lg">Full Wedding Planning</div>
-            <ul className="mt-3 text-sm text-cvMuted list-disc pl-5 space-y-2">
-              <li>Multi-event strategy + ceremony sequencing</li>
-              <li>Vendor sourcing and management</li>
-              <li>Timelines for all events</li>
-              <li>Guest experience flow + logistics</li>
-              <li>Planning checkpoints tied to deliverables</li>
-              <li>Secure milestone invoices</li>
-            </ul>
-          </Card>
-
-          <Card>
-            <div className="font-medium text-lg">Partial Planning & Coordination</div>
-            <ul className="mt-3 text-sm text-cvMuted list-disc pl-5 space-y-2">
-              <li>Structure and planning roadmap</li>
-              <li>Vendor coordination and timeline cleanup</li>
-              <li>Cultural guidance on ceremony flow</li>
-              <li>Final run-of-show for all events</li>
-              <li>Communication and execution support</li>
-              <li>Milestone-based invoicing</li>
-            </ul>
-          </Card>
-
-          <Card>
-            <div className="font-medium text-lg">Virtual Planning & India Sourcing</div>
-            <ul className="mt-3 text-sm text-cvMuted list-disc pl-5 space-y-2">
-              <li>Virtual planning sessions</li>
-              <li>India sourcing coordination as needed</li>
-              <li>Proof/checkpoints and documentation</li>
-              <li>Vendor communication across time zones</li>
-              <li>Logistics planning for delivery readiness</li>
-              <li>Secure payments + clear milestones</li>
-            </ul>
-          </Card>
-        </div>
-      </Section>
-
-      <Section variant="warm2">
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-4">Pricing & Scope for This Service</h2>
-        <p className="text-cvMuted max-w-3xl mb-6">
-          CeremonyVerse works with couples and families across a range of wedding budgets, depending on priorities,
-          guest size, and event structure.
-        </p>
-        <p className="text-cvMuted max-w-3xl mb-6">
-          Pricing for this service is based on the scope of planning support and cultural coordination involved. All
-          services begin with a clearly defined scope — no pressure, no unnecessary upsells.
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
-          <Card>
-            <h3 className="font-medium mb-3">Minimum included:</h3>
-            <ul className="space-y-2 text-sm text-cvMuted">
-              <li>• Core planning support specific to this service</li>
-              <li>• Cultural guidance relevant to your ceremonies</li>
-              <li>• Budget-aligned recommendations</li>
-              <li>• Clear planning structure and next steps</li>
-            </ul>
-          </Card>
-
-          <Card>
-            <h3 className="font-medium mb-3">May increase depending on:</h3>
-            <ul className="space-y-2 text-sm text-cvMuted">
-              <li>• Number of events</li>
-              <li>• Guest count and logistics</li>
-              <li>• Vendor complexity</li>
-              <li>• Sourcing or travel coordination</li>
-            </ul>
-          </Card>
-        </div>
-
-        <div className="mt-8 flex gap-3">
-          <Button href="/pricing">View Full Pricing</Button>
-          <Button href="/start-planning" variant="secondary">
-            Start with Budget + Vision Form
-          </Button>
-        </div>
-      </Section>
-
-      <Section>
-        <Card className="md:p-10">
-          <h3 className="text-xl md:text-2xl font-semibold tracking-tight">
-            What these services look like in real weddings
-          </h3>
-          <p className="mt-3 text-cvMuted">
-            We share planning journeys to show how coordination, timelines, and cultural clarity come together—without
-            relying on inspiration galleries.
+          <p className="text-xl text-stone-600 mb-16">
+            Support varies based on scope, complexity, and involvement. Not every couple needs the same level of
+            planning assistance—services are structured to match actual requirements.
           </p>
-          <div className="mt-6">
-            <Button href="/wedding-journeys" variant="secondary">
-              View Wedding Journeys →
-            </Button>
+
+          <div className="space-y-16">
+            <section className="border-t border-stone-200 pt-12">
+              <h2 className="text-2xl font-light text-stone-900 mb-4">Planning Intensives</h2>
+              <p className="text-stone-600 mb-6">
+                Structured guidance for couples managing most planning independently. Focused sessions addressing
+                specific challenges—budget development, vendor strategy, or timeline creation.
+              </p>
+
+              <div className="bg-stone-50 p-6 mb-6">
+                <h3 className="font-medium text-stone-900 mb-3">What's Included:</h3>
+                <ul className="text-stone-600 space-y-2">
+                  <li>• Defined session format with clear deliverables</li>
+                  <li>• Budget framework development</li>
+                  <li>• Vendor category guidance and vetting criteria</li>
+                  <li>• Timeline and milestone planning</li>
+                  <li>• Cultural considerations specific to your traditions</li>
+                </ul>
+              </div>
+
+              <p className="text-sm text-stone-500">
+                Best for: Couples who want expert input at key decision points without ongoing management
+              </p>
+            </section>
+
+            <section className="border-t border-stone-200 pt-12">
+              <h2 className="text-2xl font-light text-stone-900 mb-4">Partial Planning</h2>
+              <p className="text-stone-600 mb-6">
+                Ongoing support layered onto self-managed planning. Regular check-ins, vendor introductions, and
+                guidance throughout the planning timeline.
+              </p>
+
+              <div className="bg-stone-50 p-6 mb-6">
+                <h3 className="font-medium text-stone-900 mb-3">What's Included:</h3>
+                <ul className="text-stone-600 space-y-2">
+                  <li>• Regular planning check-ins (frequency determined by scope)</li>
+                  <li>• Vendor introductions and coordination support</li>
+                  <li>• Contract review guidance</li>
+                  <li>• Timeline management and milestone tracking</li>
+                  <li>• Cultural sourcing consultation</li>
+                </ul>
+              </div>
+
+              <p className="text-sm text-stone-500">
+                Best for: Couples who want consistent support without full delegation
+              </p>
+            </section>
+
+            <section className="border-t border-stone-200 pt-12">
+              <h2 className="text-2xl font-light text-stone-900 mb-4">Comprehensive Planning</h2>
+              <p className="text-stone-600 mb-6">
+                End-to-end involvement from initial planning through event execution. Full vendor management, design
+                coordination, and on-site presence.
+              </p>
+
+              <div className="bg-stone-50 p-6 mb-6">
+                <h3 className="font-medium text-stone-900 mb-3">What's Included:</h3>
+                <ul className="text-stone-600 space-y-2">
+                  <li>• Complete vendor sourcing, vetting, and management</li>
+                  <li>• Design and aesthetic coordination</li>
+                  <li>• Full budget management and tracking</li>
+                  <li>• Timeline creation and execution</li>
+                  <li>• Cultural sourcing coordination</li>
+                  <li>• On-site presence and event management</li>
+                  <li>• Multi-event coordination (sangeet, ceremony, reception)</li>
+                </ul>
+              </div>
+
+              <p className="text-sm text-stone-500">
+                Best for: Couples who want to delegate the complete planning process
+              </p>
+            </section>
+
+            <section className="border-t border-stone-200 pt-12">
+              <h2 className="text-2xl font-light text-stone-900 mb-4">Cultural Sourcing Support</h2>
+              <p className="text-stone-600 mb-6">
+                Focused assistance for sourcing outfits, jewelry, and ceremony items—whether from local vendors or
+                coordinated from India. Available as standalone service or as part of planning packages.
+              </p>
+
+              <div className="bg-stone-50 p-6 mb-6">
+                <h3 className="font-medium text-stone-900 mb-3">What's Included:</h3>
+                <ul className="text-stone-600 space-y-2">
+                  <li>• Outfit procurement coordination (bridal, groom, family)</li>
+                  <li>• Jewelry sourcing and quality assessment</li>
+                  <li>• Ceremony item procurement</li>
+                  <li>• India coordination (if applicable)</li>
+                  <li>• Shipping and customs guidance</li>
+                  <li>• Quality assurance and timeline management</li>
+                </ul>
+              </div>
+
+              <p className="text-sm text-stone-500">Best for: Couples navigating complex sourcing decisions</p>
+            </section>
           </div>
-        </Card>
-      </Section>
 
-      <Section variant="warm2">
-        <Card className="md:p-10">
-          <h3 className="text-xl md:text-2xl font-semibold tracking-tight mb-4">Payment & Security</h3>
-          <p className="text-cvMuted">
-            We use secure, milestone-based payments through Stripe, PayPal, and Zelle. Each invoice is tied to specific
-            deliverables and planning checkpoints, giving you transparency and control throughout the process.
-          </p>
-        </Card>
-      </Section>
-
-      <InternalCTA />
+          <section className="mt-16 bg-stone-900 text-white p-8 text-center">
+            <h2 className="text-2xl font-light mb-4">Determine the Right Support Level</h2>
+            <p className="text-stone-300 mb-6">
+              An informational discussion to understand scope, requirements, and fit.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-stone-900 font-medium hover:bg-stone-100 transition-colors"
+            >
+              Request Planning Overview
+            </Link>
+            <p className="text-sm text-stone-400 mt-4">No obligation · Complete confidentiality</p>
+          </section>
+        </div>
+      </main>
     </>
   )
 }
