@@ -45,8 +45,8 @@ export function Breadcrumbs() {
   })
 
   return (
-    <nav aria-label="Breadcrumb" className="py-4 px-6 lg:px-8 max-w-7xl mx-auto">
-      <ol className="flex items-center gap-2 text-sm font-sans">
+    <nav aria-label="Breadcrumb" className="py-4 px-6 lg:px-8 max-w-7xl mx-auto font-sans">
+      <ol className="flex items-center gap-2 text-sm">
         <li>
           <Link href="/" className="flex items-center gap-1 text-charcoal/60 hover:text-primary transition-colors">
             <Home className="h-4 w-4" />
@@ -57,7 +57,7 @@ export function Breadcrumbs() {
           <li key={crumb.href} className="flex items-center gap-2">
             <ChevronRight className="h-4 w-4 text-charcoal/40" />
             {crumb.isLast ? (
-              <span className="text-primary font-medium" aria-current="page">
+              <span className="text-primary" aria-current="page">
                 {crumb.name}
               </span>
             ) : (

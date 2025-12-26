@@ -72,9 +72,10 @@ export default function ResourcesPage() {
     <>
       <Section variant="warm">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-text mb-4">Resources & Tools</h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Free planning tools, guides, and resources to help you plan your perfect Indian or fusion wedding.
+          <h1 className="font-serif text-text mb-4">Wedding Planning Resources</h1>
+          <p className="font-sans text-lg text-muted-foreground leading-relaxed">
+            Expert guides, tips, and insights for planning your perfect Indian-American fusion wedding. Learn from
+            experienced planners who understand your unique needs.
           </p>
         </div>
       </Section>

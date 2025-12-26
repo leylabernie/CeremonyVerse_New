@@ -70,7 +70,7 @@ export default function WeddingPlanningChatbot() {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 bg-blue-600 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition-all z-50"
+        className="fixed bottom-24 right-6 bg-blue-600 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition-all z-50"
         aria-label="Open wedding planning chat"
       >
         {isOpen ? (
@@ -90,7 +90,7 @@ export default function WeddingPlanningChatbot() {
       </button>
 
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-96 max-w-[calc(100vw-3rem)] h-[600px] max-h-[80vh] bg-white rounded-lg shadow-2xl flex flex-col z-50 border border-gray-200">
+        <div className="fixed bottom-44 right-6 w-96 max-w-[calc(100vw-3rem)] h-[600px] max-h-[80vh] bg-white rounded-lg shadow-2xl flex flex-col z-50 border border-gray-200">
           <div className="bg-blue-600 text-white p-4 rounded-t-lg">
             <h3 className="font-semibold">Wedding Planning Assistant</h3>
             <p className="text-sm opacity-90">Ask me anything about Indian weddings</p>
