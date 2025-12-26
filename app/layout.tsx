@@ -6,6 +6,8 @@ import { Footer } from "@/components/site/footer"
 import { Cormorant_Garamond, Inter } from "next/font/google"
 import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
+import LegalDisclaimer from "@/components/LegalDisclaimer"
+import WeddingPlanningChatbot from "@/components/WeddingPlanningChatbot"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -91,8 +93,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <LegalDisclaimer />
         <MobileStickyCTA />
         <WhatsAppWidget />
+        <WeddingPlanningChatbot />
       </body>
     </html>
   )

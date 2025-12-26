@@ -159,6 +159,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/blog/wedding-shopping-india-vs-usa`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/gujarati-wedding-planning-guide`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/punjabi-wedding-traditions-guide`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/south-indian-wedding-ceremony-guide`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/fusion-wedding-planning-guide`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/blog/sikh-wedding-planning-guide`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/blog/virtual-wedding-planning-guide`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
       url: `${baseUrl}/blog/mehndi-ceremony-guide`,
       lastModified: currentDate,
       changeFrequency: "monthly",
@@ -281,6 +323,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/budget-calculator`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/tradition-explainer`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/muhurat`,

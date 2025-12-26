@@ -4,90 +4,192 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { JsonLd } from "@/components/schema/JsonLd"
-import { FAQSchema } from "@/components/schema/FAQSchema"
-import { TrustSignals } from "@/components/TrustSignals"
+import Script from "next/script"
+import TrustSignals from "@/components/site/trust-signals" // Declare TrustSignals variable
 
 export const metadata: Metadata = {
-  title: "Indian & Fusion Wedding Planner Nationwide | CeremonyVerse",
+  title: "Indian & Fusion Wedding Planner Nationwide | Budget-First | CeremonyVerse",
   description:
-    "Plan your Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual consultations available nationwide. Start with a clear budget roadmap.",
-  alternates: {
-    canonical: "/",
-  },
+    "Plan your Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual consultations available nationwide. Get your free budget roadmap.",
+  keywords:
+    "indian wedding planner, fusion wedding planner, budget wedding planner, virtual wedding planner, south asian wedding planner, indian wedding planning services, affordable indian wedding planner",
   openGraph: {
-    title: "Indian & Fusion Wedding Planner | CeremonyVerse",
-    description: "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+    title: "Indian & Fusion Wedding Planner Nationwide | Budget-First | CeremonyVerse",
+    description:
+      "Plan an Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual consultations available nationwide.",
     url: "https://ceremonyverse.com",
+    siteName: "CeremonyVerse",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse - Indian & Fusion Wedding Planning",
+      },
+    ],
+    locale: "en_US",
     type: "website",
   },
   twitter: {
-    title: "Indian & Fusion Wedding Planner | CeremonyVerse",
-    description: "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+    card: "summary_large_image",
+    title: "Indian & Fusion Wedding Planner Nationwide | Budget-First",
+    description:
+      "Budget-first Indian & fusion wedding planning with transparent pricing. Virtual consultations available nationwide.",
+    images: ["/images/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 }
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "WeddingPlanner",
-  name: "CeremonyVerse",
-  description: "Indian & fusion wedding planning services with budget transparency. Serving PA, NJ, DE, and MD.",
-  url: "https://ceremonyverse.com",
-  telephone: "+1-215-341-9990",
-  email: "hello@ceremonyverse.com",
-  priceRange: "$$",
-  areaServed: [
-    { "@type": "State", name: "Pennsylvania" },
-    { "@type": "State", name: "New Jersey" },
-    { "@type": "State", name: "Delaware" },
-    { "@type": "State", name: "Maryland" },
-  ],
-  serviceType: [
-    "Indian Wedding Planning",
-    "Fusion Wedding Coordination",
-    "Day-of Wedding Coordination",
-    "Cultural Sourcing Support",
-  ],
-  sameAs: [
-    "https://www.instagram.com/ceremonyverse",
-    "https://www.facebook.com/ceremonyverse",
-    "https://www.pinterest.com/ceremonyverse",
-  ],
-}
-
-const homepageFAQs = [
-  {
-    question: "How much does an Indian wedding planner cost?",
-    answer:
-      "Our Indian wedding planning services range from $2,500 for planning intensives to $15,000+ for full planning, depending on the number of events and level of support needed. We provide transparent pricing upfront.",
-  },
-  {
-    question: "Do you plan fusion weddings with non-Indian traditions?",
-    answer:
-      "Yes! We specialize in multicultural fusion weddings that honor both families' traditions, including Hindu-Christian, Indian-Jewish, and Indian-American ceremonies.",
-  },
-  {
-    question: "What areas do you serve?",
-    answer:
-      "We serve couples in Pennsylvania, New Jersey, Delaware, and Maryland, including Philadelphia, Cherry Hill, Wilmington, and Baltimore areas.",
-  },
-  {
-    question: "Can you help source outfits and jewelry from India?",
-    answer:
-      "Yes, our Cultural Sourcing Support service helps you coordinate purchases from India, including bridal lehengas, groom sherwanis, jewelry, and ceremony items with quality verification.",
-  },
-]
 
 export default function HomePage() {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "CeremonyVerse",
+    description:
+      "Budget-first Indian & fusion wedding planning services nationwide with cultural expertise in Hindu, Sikh, Gujarati, Punjabi, and South Indian traditions. Virtual and in-person planning available.",
+    url: "https://ceremonyverse.com",
+    telephone: "+1-215-341-9990",
+    email: "hello@ceremonyverse.com",
+    priceRange: "$$",
+    areaServed: {
+      "@type": "Country",
+      name: "United States",
+    },
+    serviceType: [
+      "Indian Wedding Planning",
+      "Fusion Wedding Planning",
+      "South Asian Wedding Coordination",
+      "Cultural Wedding Sourcing",
+      "Virtual Wedding Planning",
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Wedding Planning Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Planning Intensives",
+            description: "90-minute Budget & Vision Roadmap session",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Partial Planning & Coordination",
+            description: "Ongoing guidance with vendor support and day-of coordination",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Full Wedding Planning",
+            description: "Complete end-to-end wedding planning and management",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Cultural Sourcing Support",
+            description: "Guidance on sourcing outfits, jewelry, and ceremony items from India or USA",
+          },
+        },
+      ],
+    },
+    knowsAbout: [
+      "Indian Wedding Planning",
+      "Hindu Wedding Ceremonies",
+      "Sikh Wedding Ceremonies",
+      "Gujarati Wedding Traditions",
+      "Punjabi Wedding Traditions",
+      "South Indian Wedding Ceremonies",
+      "Fusion Wedding Planning",
+      "Interfaith Wedding Coordination",
+    ],
+  }
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How much do your wedding planning services cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our Planning Intensives start at $800, Partial Planning starts at $3,500, and Full Planning starts at $6,500. All pricing is transparent with no hidden fees or percentage-based markups.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you only work with couples in certain states?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. We work with couples planning Indian weddings anywhere in the USA. Most of our services are virtual (video consultations, digital planning tools), and for full planning clients, we travel to your location for key events.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you help with sourcing outfits and jewelry from India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Cultural Sourcing Support is available as a standalone service or add-on. We provide guidance on what to source from India vs USA, timelines for international coordination, and trusted vendor recommendations.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What cultural traditions do you understand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We work with Hindu (Gujarati, Punjabi, South Indian, Bengali, Marathi), Sikh, Jain, and fusion/interfaith weddings. We understand regional ceremony differences, multi-day event logistics, and how to balance traditional expectations with modern preferences.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does virtual wedding planning work?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We conduct planning sessions via Zoom, share digital planning tools and timelines, research vendors in your local area, and can join virtual vendor meetings with you. For full planning clients, we travel to your location for the wedding weekend and key events as needed.",
+        },
+      },
+    ],
+  }
+
   return (
     <>
-      <JsonLd data={localBusinessSchema} />
-      <FAQSchema faqs={homepageFAQs} />
+      <Script
+        id="local-business-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema),
+        }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
 
       <Section className="pt-12 md:pt-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial from-warm-2/40 via-transparent to-transparent opacity-60 pointer-events-none" />
 
-        <div className="grid gap-12 md:grid-cols-2 md:items-center relative z-10">
+        <div className="grid gap-12 md:grid-cols-2 md:items-center-center z-10">
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-text">
               Indian & Fusion Wedding Planning Nationwide
@@ -97,7 +199,7 @@ export default function HomePage() {
             </p>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
               CeremonyVerse helps Indian and multicultural couples plan culturally aligned weddings, coordinate trusted
-              vendors, and source the right outfits and ceremony essentials — without overspending or guesswork.
+              vendors, and source the right outfits and jewelry essentials — without overspending or guesswork.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -147,6 +249,52 @@ export default function HomePage() {
       </Section>
 
       <TrustSignals />
+
+      <Section variant="surface">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-text mb-6">Nationwide Indian Wedding Planning with Virtual & In-Person Options</h2>
+
+          <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
+            Thoughtfully Designed to Fit Your Real Budget
+          </p>
+          <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
+            CeremonyVerse helps Indian and multicultural couples plan culturally aligned weddings, coordinate trusted
+            vendors, and source the right outfits and jewelry essentials — without overspending or guesswork.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Button href="/start-planning">Start with Budget + Vision Form</Button>
+            <Button href="/book" variant="secondary">
+              Schedule a Free Consultation
+            </Button>
+          </div>
+
+          <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+            <Link href="/services" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              <span>Clear Pricing</span>
+            </Link>
+            <Link
+              href="/blog/gujarati-wedding-planning-guide"
+              className="flex items-center gap-2 hover:text-primary transition-colors"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              <span>Cultural Expertise</span>
+            </Link>
+            <Link href="/about" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              <span>Family-Friendly Planning</span>
+            </Link>
+            <Link
+              href="/indian-wedding-planner-philadelphia"
+              className="flex items-center gap-2 hover:text-primary transition-colors"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              <span>Serving Nationwide</span>
+            </Link>
+          </div>
+        </div>
+      </Section>
 
       <Section variant="surface">
         <div className="max-w-4xl mx-auto">
@@ -381,6 +529,67 @@ export default function HomePage() {
           </Link>
         </div>
       </Section>
+
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            Frequently Asked Questions About Indian Wedding Planning
+          </h2>
+
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">How much do your wedding planning services cost?</h3>
+              <p className="text-gray-700">
+                Our Planning Intensives start at $800, Partial Planning starts at $3,500, and Full Planning starts at
+                $6,500. All pricing is transparent with no hidden fees or percentage-based markups. We discuss travel
+                costs upfront for out-of-area weddings.{" "}
+                <a href="/pricing" className="text-blue-600 hover:underline">
+                  View detailed pricing →
+                </a>
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">Do you only work with couples in certain states?</h3>
+              <p className="text-gray-700">
+                No. We work with couples planning Indian weddings anywhere in the USA. Most of our services are virtual
+                (video consultations, digital planning tools), and for full planning clients, we travel to your location
+                for key events.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">Can you help with sourcing outfits and jewelry from India?</h3>
+              <p className="text-gray-700">
+                Yes. Cultural Sourcing Support is available as a standalone service or add-on. We provide guidance on
+                what to source from India vs USA, timelines for international coordination, and trusted vendor
+                recommendations based on your needs.{" "}
+                <a href="/blog/wedding-shopping-india-vs-usa" className="text-blue-600 hover:underline">
+                  Read our India vs USA sourcing guide →
+                </a>
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">What cultural traditions do you understand?</h3>
+              <p className="text-gray-700">
+                We work with Hindu (Gujarati, Punjabi, South Indian, Bengali, Marathi), Sikh, Jain, and
+                fusion/interfaith weddings. We understand regional ceremony differences, multi-day event logistics, and
+                how to balance traditional expectations with modern preferences.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">How does virtual wedding planning work?</h3>
+              <p className="text-gray-700">
+                We conduct planning sessions via Zoom, share digital planning tools and timelines, research vendors in
+                your local area, and can join virtual vendor meetings with you. For full planning clients, we travel to
+                your location for the wedding weekend and key events as needed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Section variant="warm">
         <Card hover className="md:p-14 text-center max-w-3xl mx-auto bg-surface">
