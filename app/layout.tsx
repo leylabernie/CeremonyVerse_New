@@ -8,6 +8,7 @@ import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 import WeddingPlanningChatbot from "@/components/WeddingPlanningChatbot"
 
+// Sans-serif for body text - clean and readable
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -15,6 +16,7 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 })
 
+// Serif for headings - elegant and sophisticated
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   display: "swap",
@@ -78,7 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </head>
-      <body className={`${inter.variable} ${cormorantGaramond.variable} antialiased font-sans`}>
+      <body className="min-h-screen antialiased bg-background text-foreground font-sans">
         <Navbar />
         <main>{children}</main>
         <Footer />
