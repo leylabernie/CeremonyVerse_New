@@ -11,7 +11,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "API key not configured" }, { status: 500 })
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" })
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" })
 
     const systemPrompt = `You are a helpful wedding planning assistant for CeremonyVerse, specializing in Hindu and fusion weddings. You help couples with:
 

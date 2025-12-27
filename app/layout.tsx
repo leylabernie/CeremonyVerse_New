@@ -12,13 +12,15 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
+  weight: ["400", "500", "600"],
 })
 
-const cormorant = Cormorant_Garamond({
+const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   display: "swap",
   variable: "--font-serif",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 })
 
 export const metadata: Metadata = {
@@ -72,23 +74,11 @@ const localBusinessJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${cormorant.variable}`}
-      style={
-        {
-          "--font-sans": inter.style.fontFamily,
-          "--font-serif": cormorant.style.fontFamily,
-        } as React.CSSProperties
-      }
-    >
+    <html lang="en" className={`${inter.variable} ${cormorantGaramond.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </head>
-      <body
-        className="min-h-screen antialiased bg-background text-foreground"
-        style={{ fontFamily: cormorant.style.fontFamily }}
-      >
+      <body className={`${inter.variable} ${cormorantGaramond.variable} antialiased font-sans`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

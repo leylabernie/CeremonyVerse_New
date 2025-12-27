@@ -80,31 +80,32 @@ export function Footer() {
 
       <div className="border-t border-cvBorder bg-gray-50 py-8 px-4">
         <div className="mx-auto max-w-page px-5 md:px-8">
-          <h3 className="font-semibold text-gray-900 mb-4 text-sm">Important Disclaimers</h3>
-          <div className="grid md:grid-cols-2 gap-4 text-xs text-gray-600">
-            <div>
-              <p className="mb-3">
-                <strong>Religious & Cultural Information:</strong> Information about wedding ceremonies, traditions, and
-                religious customs provided on this website is for general educational purposes only. Always consult with
-                your family priest, religious advisor, or community elders for authoritative guidance on religious
-                ceremonies specific to your tradition.
+          <h3 className="font-serif text-gray-900 mb-4 text-base">Important Disclaimers</h3>
+          <div className="grid md:grid-cols-2 gap-4 text-xs leading-relaxed font-sans">
+            <div className="space-y-3">
+              <p className="text-gray-600">
+                <span className="font-semibold text-gray-900">Religious & Cultural Information:</span> Information about
+                wedding ceremonies, traditions, and religious customs provided on this website is for general
+                educational purposes only. Always consult with your family priest, religious advisor, or community
+                elders for authoritative guidance on religious ceremonies specific to your tradition.
               </p>
-              <p className="mb-3">
-                <strong>Budget & Financial Information:</strong> Budget estimates and financial planning tools are based
-                on general market research. Actual wedding costs vary significantly. All information is provided for
-                informational purposes only and should not be considered financial advice.
+              <p className="text-gray-600">
+                <span className="font-semibold text-gray-900">Budget & Financial Information:</span> Budget estimates
+                and financial planning tools are based on general market research. Actual wedding costs vary
+                significantly. All information is provided for informational purposes only and should not be considered
+                financial advice.
               </p>
             </div>
-            <div>
-              <p className="mb-3">
-                <strong>AI-Generated Content:</strong> Some content and recommendations are generated using artificial
-                intelligence. While we strive for accuracy, AI-generated content may contain errors. All AI-generated
-                content should be independently verified.
+            <div className="space-y-3">
+              <p className="text-gray-600">
+                <span className="font-semibold text-gray-900">AI-Generated Content:</span> Some content and
+                recommendations are generated using artificial intelligence. While we strive for accuracy, AI-generated
+                content may contain errors. All AI-generated content should be independently verified.
               </p>
-              <p className="mb-3">
-                <strong>Wedding Planning Services:</strong> CeremonyVerse provides wedding planning and coordination
-                services but does not guarantee specific outcomes. We are not liable for vendor failures, venue
-                problems, or circumstances beyond our reasonable control.
+              <p className="text-gray-600">
+                <span className="font-semibold text-gray-900">Wedding Planning Services:</span> CeremonyVerse provides
+                wedding planning and coordination services but does not guarantee specific outcomes. We are not liable
+                for vendor failures, venue problems, or circumstances beyond our reasonable control.
               </p>
             </div>
           </div>
