@@ -335,3 +335,8 @@
     opacity: 0.6;
   }
 }
+
+/* Force Cormorant Garamond on all headings - outside @layer for maximum specificity */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cormorant Garamond", ui-serif, Georgia, serif !important;
+}
