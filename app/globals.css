@@ -225,7 +225,7 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-serif) !important;
     font-weight: 600;
     letter-spacing: -0.02em;
     color: var(--foreground);
