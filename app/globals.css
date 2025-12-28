@@ -338,5 +338,5 @@
 
 /* Force Cormorant Garamond on all headings - outside @layer for maximum specificity */
 h1, h2, h3, h4, h5, h6 {
-  @apply font-serif !important;
+  @apply !font-serif;
 }
