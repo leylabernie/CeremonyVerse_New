@@ -225,7 +225,7 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-serif) !important;
+    @apply font-serif;
     font-weight: 600;
     letter-spacing: -0.02em;
     color: var(--foreground);
@@ -338,5 +338,5 @@
 
 /* Force Cormorant Garamond on all headings - outside @layer for maximum specificity */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif) !important;
+  @apply font-serif !important;
 }
