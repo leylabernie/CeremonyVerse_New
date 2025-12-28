@@ -215,7 +215,6 @@
 
   body {
     @apply bg-background text-foreground min-h-screen antialiased;
-    font-family: var(--font-sans);
   }
 
   /* Headings use serif font - elegant and sophisticated like Elegant Events */
@@ -337,6 +336,8 @@
 }
 
 /* Force Cormorant Garamond on all headings - outside @layer for maximum specificity */
+/* This duplicates the @layer base rule but is necessary to override Tailwind utility classes */
+/* that may be applied directly to heading elements (e.g., text-4xl, font-bold) */
 h1, h2, h3, h4, h5, h6 {
   @apply !font-serif;
 }
