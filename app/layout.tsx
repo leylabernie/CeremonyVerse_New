@@ -80,7 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
       </head>
-      <body className="font-sans min-h-screen antialiased bg-background text-foreground">
+      <body className="min-h-screen antialiased bg-background text-foreground">
         <Navbar />
         <main>{children}</main>
         <Footer />
