@@ -71,6 +71,11 @@
 
 /* ===== BASE TYPOGRAPHY ===== */
 @layer base {
+  * {
+    border-color: hsl(var(--border));
+    outline-color: hsl(var(--ring) / 0.5);
+  }
+
   body {
     background-color: var(--background);
     color: var(--foreground);
@@ -278,4 +283,11 @@
   .cv-highlight {
     @apply rounded-full bg-cvAccentSoft px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-cvAccentDeep;
   }
+}
+
+/* Force Cormorant Garamond on all headings - outside @layer for maximum specificity */
+/* This duplicates the @layer base rule but is necessary to override Tailwind utility classes */
+/* that may be applied directly to heading elements (e.g., text-4xl, font-bold) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif) !important;
 }
