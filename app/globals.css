@@ -26,8 +26,9 @@
 /* ===== BASE TYPOGRAPHY ===== */
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply outline-ring/50;
   }
+}
 
   body {
     @apply bg-background text-foreground min-h-screen antialiased;
