@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     "Wedding Planning & Cultural Sourcing for Indian & Fusion Weddings",
 };
 
-// Load ONLY Cormorant Garamond
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
