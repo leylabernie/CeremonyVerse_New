@@ -9,11 +9,12 @@ export const metadata: Metadata = {
     "Wedding Planning & Cultural Sourcing for Indian & Fusion Weddings",
 };
 
-// 👇 Only ONE font — used everywhere
+// Load ONLY Cormorant Garamond
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-family",
+  display: "swap",
 });
 
 export default function RootLayout({
