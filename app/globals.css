@@ -1,21 +1,87 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* 
+   EVERYTHING uses Cormorant Garamond
+   This kills Inter and any other sans fonts
+*/
+:root {
+  --font-family: "Cormorant Garamond", ui-serif, Georgia, Cambria,
+    "Times New Roman", Times, serif;
+
+  /* keep your existing colors if you had them */
+  --background: #fafaf8;
+  --foreground: #111827;
+  --border: #e5e7eb;
+}
+
+/* Tailwind resets */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* GLOBAL TYPOGRAPHY RESET */
 @layer base {
-  /* 👇 EVERYTHING uses Cormorant Garamond now */
-  body {
-    font-family: var(--font-family);
-    @apply bg-background text-foreground min-h-screen antialiased;
+  * {
+    @apply border-border outline-ring/50;
   }
 
-  /* 👇 headings still inherit the same font */
+  body {
+    @apply bg-background text-foreground min-h-screen antialiased;
+    font-family: var(--font-family);
+  }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    line-height: 1.1;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+
+  p,
+  span,
+  a,
+  li,
+  button,
+  input,
+  textarea,
+  select,
+  small,
+  label {
     font-family: var(--font-family);
   }
 }
