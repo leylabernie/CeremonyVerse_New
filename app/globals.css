@@ -6,10 +6,10 @@
 /* ===== ROOT THEME + FONTS ===== */
 :root {
   /* Use Cormorant Garamond everywhere */
-  --font-sans: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman",
-    Times, serif;
-  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman",
-    Times, serif;
+  --font-sans: "Cormorant Garamond", ui-serif, Georgia, Cambria,
+    "Times New Roman", Times, serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria,
+    "Times New Roman", Times, serif;
 
   /* Base colors - warm neutrals */
   --background: #fafaf8;
@@ -69,6 +69,12 @@
   --cvCardBorder: #e5e7eb;
 }
 
+/* Map Tailwind's font families to our variables */
+@theme inline {
+  --font-family-sans: var(--font-sans);
+  --font-family-serif: var(--font-serif);
+}
+
 /* Tailwind layers */
 @tailwind base;
 @tailwind components;
@@ -76,10 +82,6 @@
 
 /* ===== BASE TYPOGRAPHY ===== */
 @layer base {
-  * {
-    @apply outline-ring/50;
-  }
-
   body {
     @apply bg-background text-foreground min-h-screen antialiased;
     font-family: var(--font-sans);
@@ -164,8 +166,16 @@
     color: var(--foreground);
   }
 
-  /* Common inline elements */
-  a {
+  /* Inline + form elements use the same font */
+  a,
+  span,
+  li,
+  button,
+  input,
+  textarea,
+  select,
+  small,
+  label {
     font-family: var(--font-sans);
   }
 
@@ -173,16 +183,6 @@
     font-size: 0.875rem;
     line-height: 1.5;
     color: var(--cvMutedText);
-  }
-
-  button {
-    font-family: var(--font-sans);
-  }
-
-  input,
-  textarea,
-  select {
-    font-family: var(--font-sans);
   }
 }
 
