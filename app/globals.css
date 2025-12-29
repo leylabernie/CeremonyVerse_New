@@ -3,26 +3,27 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* 
-   EVERYTHING uses Cormorant Garamond
-   This kills Inter and any other sans fonts
-*/
+/* ===== FONT RESET — EVERYTHING USES CORMORANT GARANOND ===== */
 :root {
   --font-family: "Cormorant Garamond", ui-serif, Georgia, Cambria,
     "Times New Roman", Times, serif;
 
-  /* keep your existing colors if you had them */
+  --font-sans: var(--font-family);
+  --font-serif: var(--font-family);
+
   --background: #fafaf8;
   --foreground: #111827;
   --border: #e5e7eb;
+  --ring: #3f6d5b;
+  --radius: 0.75rem;
 }
 
-/* Tailwind resets */
+/* Tailwind base */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* GLOBAL TYPOGRAPHY RESET */
+/* ===== BASE TYPOGRAPHY ===== */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -83,5 +84,10 @@
   small,
   label {
     font-family: var(--font-family);
+  }
+
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.7;
   }
 }
