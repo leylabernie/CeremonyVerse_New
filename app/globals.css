@@ -69,25 +69,17 @@
   --cvCardBorder: #e5e7eb;
 }
 
-/* Map Tailwind's font families to our variables */
-@theme inline {
-  --font-family-sans: var(--font-sans);
-  --font-family-serif: var(--font-serif);
-}
-
-/* Tailwind layers */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* ===== BASE TYPOGRAPHY ===== */
 @layer base {
   body {
-    @apply bg-background text-foreground min-h-screen antialiased;
+    background-color: var(--background);
+    color: var(--foreground);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
     font-family: var(--font-sans);
   }
 
-  /* Headings use serif font */
+  /* Headings use serif font (same Cormorant) */
   h1,
   h2,
   h3,
@@ -194,20 +186,7 @@
     color: rgba(17, 24, 39, 0.55);
   }
 
-  /* Pill / chip buttons */
-  button[aria-pressed="false"],
-  .chip {
-    color: var(--foreground);
-  }
-
-  /* Icon-only buttons */
-  button[aria-label] svg {
-    opacity: 0.85;
-  }
-}
-
-/* Layout + branding utility classes */
-@layer components {
+  /* Layout + branding utility classes kept from your design */
   .container {
     @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
   }
@@ -249,11 +228,11 @@
   }
 
   .cv-button-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cvButton px-6 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-cvButtonHover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cvAccent focus-visible:ring-offset-2 focus-visible:ring-offset-cvBg;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cvButton px-6 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-cvButtonHover;
   }
 
   .cv-button-outline {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-cvButton bg-transparent px-6 py-2.5 text-sm font-medium text-cvButton shadow-sm transition hover:bg-cvBgMuted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cvAccent focus-visible:ring-offset-2 focus-visible:ring-offset-cvBg;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-cvButton bg-transparent px-6 py-2.5 text-sm font-medium text-cvButton shadow-sm transition hover:bg-cvBgMuted;
   }
 
   .cv-tagline {
