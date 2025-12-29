@@ -1,20 +1,12 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { Cormorant_Garamond } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "CeremonyVerse — Indian & Fusion Wedding Planning",
   description:
     "Wedding Planning & Cultural Sourcing for Indian & Fusion Weddings",
 };
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-family",
-  display: "swap",
-});
 
 export default function RootLayout({
   children,
@@ -23,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${cormorant.variable} min-h-screen bg-background text-foreground antialiased`}
-      >
+      <body className="min-h-screen bg-background text-foreground antialiased">
         {children}
       </body>
     </html>
