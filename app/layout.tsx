@@ -3,22 +3,23 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Navbar } from "@/components/site/navbar"
 import { Footer } from "@/components/site/footer"
-import { Cormorant_Garamond, Inter } from "next/font/google"
+import { Cormorant_Garamond, Montserrat } from "next/font/google"
 import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 import WeddingPlanningChatbot from "@/components/WeddingPlanningChatbot"
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-sans",
+  variable: "--font-sans", // body/UI font
 })
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-serif",
+  variable: "--font-serif", // headings/brand font
 })
 
 export const metadata: Metadata = {
@@ -28,11 +29,12 @@ export const metadata: Metadata = {
     template: "%s | CeremonyVerse",
   },
   description:
-    "Plan your Indian or fusion wedding anywhere in the USA with CeremonyVerse. Budget-first planning, cultural sourcing, and ceremony guidance for South Asian and fusion couples. Virtual consultations available nationwide with travel for in-person events.",
+    "Plan your Indian or fusion wedding anywhere in the USA with CeremonyVerse. Budget-first planning, cultural sourcing, and ceremony guidance for South Asian and fusion couples.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Indian & Fusion Wedding Planner | CeremonyVerse",
-    description: "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+    description:
+      "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
     url: "https://ceremonyverse.com",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -40,62 +42,31 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CeremonyVerse | Indian & Fusion Wedding Planning",
+    title: "Indian & Fusion Wedding Planner | CeremonyVerse",
     description:
-      "Planning support, cultural sourcing, and ceremony guidance for South Asian and fusion weddings.",
+      "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: { index: true, follow: true },
   },
-  generator: "v0.app",
 }
 
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WeddingPlanner",
-  name: "CeremonyVerse",
-  url: "https://ceremonyverse.com",
-  telephone: "+1-215-341-9990",
-  email: "hello@ceremonyverse.com",
-  description:
-    "Indian and fusion wedding planning with cultural clarity, budget transparency, and practical planning support. CeremonyVerse serves couples planning South Asian and fusion weddings with vendor research, shopping guidance, timelines, vendor coordination, and virtual planning support.",
-  priceRange: "$$",
-  areaServed: [
-    { "@type": "State", name: "Pennsylvania" },
-    { "@type": "State", name: "New Jersey" },
-    { "@type": "State", name: "Delaware" },
-    { "@type": "State", name: "Maryland" },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Philadelphia",
-    addressRegion: "PA",
-    postalCode: "19128",
-    addressCountry: "US",
-  },
-  sameAs: [
-    "https://www.instagram.com/ceremonyverse",
-    "https://www.facebook.com/ceremonyverse",
-    "https://www.pinterest.com/ceremonyverse",
-  ],
-}
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
-        />
-      </head>
-      <body
-        className="min-h-screen antialiased bg-background text-foreground"
-        style={{ fontFamily: "var(--font-serif)" }}
-      >
+    <html
+      lang="en"
+      className={`${montserrat.variable} ${cormorant.variable} scroll-smooth`}
+      suppressHydrationWarning
+    >
+      <body className="min-h-screen flex flex-col font-sans antialiased">
         <Navbar />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
         <MobileStickyCTA />
         <WhatsAppWidget />
