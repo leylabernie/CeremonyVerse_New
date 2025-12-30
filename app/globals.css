@@ -3,13 +3,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme inline {
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
 /* ===== ROOT THEME + FONTS ===== */
 :root {
-  /* Use Cormorant Garamond everywhere */
-  --font-sans: "Cormorant Garamond", ui-serif, Georgia, Cambria,
-    "Times New Roman", Times, serif;
-  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria,
-    "Times New Roman", Times, serif;
+  /* Font variables - loaded from Next.js font optimization */
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Montserrat", sans-serif;
 
   /* Base colors - warm neutrals */
   --background: #fafaf8;
@@ -81,19 +84,19 @@
     color: var(--foreground);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
   }
 
-  /* Headings use serif font (same Cormorant) */
+  /* Headings use Cormorant Garamond */
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: var(--font-serif);
-    font-weight: 600;
-    letter-spacing: -0.02em;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: 0.02em;
     color: var(--foreground);
   }
 
@@ -163,7 +166,7 @@
     color: var(--foreground);
   }
 
-  /* Inline + form elements use the same font */
+  /* Inline + form elements use the body font */
   a,
   span,
   li,
@@ -173,7 +176,7 @@
   select,
   small,
   label {
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
   }
 
   small {
@@ -287,7 +290,6 @@
 
 /* Force Cormorant Garamond on all headings - outside @layer for maximum specificity */
 /* This duplicates the @layer base rule but is necessary to override Tailwind utility classes */
-/* that may be applied directly to heading elements (e.g., text-4xl, font-bold) */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif) !important;
+  font-family: var(--font-heading) !important;
 }
