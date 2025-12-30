@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | CeremonyVerse",
   },
   description:
-    "Plan your Indian or fusion wedding anywhere in the USA with cultural expertise and transparent pricing. Virtual consultations available nationwide with travel for in-person events.",
+    "Plan your Indian or fusion wedding anywhere in the USA with CeremonyVerse. Budget-first planning, cultural sourcing, and ceremony guidance for South Asian and fusion couples. Virtual consultations available nationwide with travel for in-person events.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Indian & Fusion Wedding Planner | CeremonyVerse",
@@ -37,6 +37,16 @@ export const metadata: Metadata = {
     siteName: "CeremonyVerse",
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CeremonyVerse | Indian & Fusion Wedding Planning",
+    description:
+      "Planning support, cultural sourcing, and ceremony guidance for South Asian and fusion weddings.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   generator: "v0.app",
 }
@@ -49,7 +59,7 @@ const localBusinessJsonLd = {
   telephone: "+1-215-341-9990",
   email: "hello@ceremonyverse.com",
   description:
-    "Indian and fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and virtual planning support.",
+    "Indian and fusion wedding planning with cultural clarity, budget transparency, and practical planning support. CeremonyVerse serves couples planning South Asian and fusion weddings with vendor research, shopping guidance, timelines, vendor coordination, and virtual planning support.",
   priceRange: "$$",
   areaServed: [
     { "@type": "State", name: "Pennsylvania" },
@@ -57,12 +67,13 @@ const localBusinessJsonLd = {
     { "@type": "State", name: "Delaware" },
     { "@type": "State", name: "Maryland" },
   ],
-  serviceType: [
-    "Indian Wedding Planning",
-    "Fusion Wedding Coordination",
-    "Day-of Wedding Coordination",
-    "Cultural Sourcing Support",
-  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Philadelphia",
+    addressRegion: "PA",
+    postalCode: "19128",
+    addressCountry: "US",
+  },
   sameAs: [
     "https://www.instagram.com/ceremonyverse",
     "https://www.facebook.com/ceremonyverse",
@@ -74,7 +85,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
       </head>
       <body
         className="min-h-screen antialiased bg-background text-foreground"
