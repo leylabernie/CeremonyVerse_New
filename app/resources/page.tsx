@@ -70,15 +70,16 @@ export default function ResourcesPage() {
 
   return (
     <>
-      <Section variant="warm">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-serif text-text mb-4">Wedding Planning Resources</h1>
-          <p className="font-sans text-lg text-muted-foreground leading-relaxed">
-            Expert guides, tips, and insights for planning your perfect Indian-American fusion wedding. Learn from
-            experienced planners who understand your unique needs.
+      <section className="py-16 bg-cvBg">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-cvInk mb-6 leading-tight">
+            Resources &amp; Tools
+          </h1>
+          <p className="text-lg md:text-xl text-cvMuted font-sans max-w-3xl mx-auto">
+            Free planning tools, budget calculators, and cultural guides to help you plan your perfect Indian or fusion wedding.
           </p>
         </div>
-      </Section>
+      </section>
 
       <Section variant="surface">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
