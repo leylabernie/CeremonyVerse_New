@@ -29,10 +29,10 @@ export function Navbar() {
           </Link>
         </div>
 
-        <nav className="hidden lg:flex items-center justify-center gap-1">
+        <nav className="hidden lg:flex items-center justify-center gap-1 font-sans">
           {nav.map((item, index) => (
             <div key={item.href} className="flex items-center">
-              <Link href={item.href} className="cv-nav-link px-4 text-cvMuted hover:text-cvText transition-colors">
+              <Link href={item.href} className="cv-nav-link px-4 text-cvMuted hover:text-cvText transition-colors font-sans">
                 {item.label}
               </Link>
               {index < nav.length - 1 && <span className="text-foreground/30">|</span>}
@@ -42,7 +42,7 @@ export function Navbar() {
 
         {/* Mobile menu - keeping font-sans for readability */}
         <div className="lg:hidden flex flex-col items-center gap-4">
-          <nav className="flex flex-wrap items-center justify-center gap-4 text-[14px] font-medium text-cvInk">
+          <nav className="flex flex-wrap items-center justify-center gap-4 text-[14px] font-medium text-cvInk font-sans">
             {nav.map((item) => (
               <Link
                 key={item.href}
