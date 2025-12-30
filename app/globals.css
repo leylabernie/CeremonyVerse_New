@@ -7,9 +7,11 @@
    THEME TOKENS (NO FONT LOGIC)
    ================================ */
 @theme inline {
-  /* Font families - Map Tailwind utilities to CSS variables from Next.js fonts */
-  --font-sans: var(--font-body);
-  --font-serif: var(--font-heading);
+  /* === CeremonyVerse Font Tokens === */
+  /* Body / UI font → Montserrat */
+  --font-sans: var(--font-sans);
+  /* Headings / brand font → Cormorant Garamond */
+  --font-serif: var(--font-serif);
   
   /* Base colors */
   --color-background: var(--background);
