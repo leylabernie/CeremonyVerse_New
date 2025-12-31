@@ -67,8 +67,9 @@ export default function ResourcesPage() {
               Resources
             </span>
           </h1>
-          <p className="font-sans text-lg md:text-xl text-cvMuted max-w-2xl mx-auto">
-            Free wedding planning tools, calculators, and guides designed specifically for Indian and fusion celebrations.
+          <p className="mt-4 max-w-2xl mx-auto text-base md:text-lg text-muted-foreground font-sans">
+            Expert guides, tips, and insights for planning your perfect Indian-American
+            fusion wedding. Learn from experienced planners who understand your unique needs.
           </p>
         </div>
       </section>
