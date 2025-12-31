@@ -49,49 +49,47 @@ export default function ResourcesPage() {
       icon: "📖",
     },
     {
-      title: "Vendor Directory",
-      href: "/vendors",
-      description: "Find culturally experienced vendors for your Indian or fusion wedding.",
-      icon: "🏪",
+      title: "Free Resources",
+      href: "/free-resources",
+      description: "Download free wedding planning templates and guides.",
+      icon: "📋",
     },
     {
-      title: "Planning Checklist",
-      href: "/checklist",
-      description: "Stay organized with our comprehensive Indian wedding planning checklist.",
-      icon: "✅",
+      title: "Start Planning",
+      href: "/start-planning",
+      description: "Begin your wedding planning journey with our Budget + Vision Form.",
+      icon: "🎯",
+    },
+    {
+      title: "Blog",
+      href: "/blog",
+      description: "Expert advice, tips, and inspiration for your Indian or fusion wedding.",
+      icon: "✍️",
     },
   ]
 
   return (
     <>
-      <section className="py-16 bg-cvBg">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-tight text-cvInk">
-            Wedding Planning{" "}
-            <span className="block md:inline font-serif text-cvInk">
-              Resources
-            </span>
-          </h1>
-
-          <p className="mt-4 max-w-2xl mx-auto text-base md:text-lg text-muted-foreground font-sans">
-            Expert guides, tips, and insights to help you plan an Indian or fusion wedding
-            with cultural clarity, confidence, and organization — without overwhelm.
+      <Section variant="warm">
+        <div className="mx-auto max-w-4xl text-center">
+          <h1 className="font-serif text-text mb-4">Wedding Planning Resources</h1>
+          <p className="font-sans text-lg text-muted-foreground leading-relaxed">
+            Expert guides, tips, and insights for planning your perfect Indian-American fusion wedding. Learn from
+            experienced planners who understand your unique needs.
           </p>
         </div>
-      </section>
+      </Section>
 
-      <Section>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <Section variant="surface">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {resources.map((resource) => (
-            <Link key={resource.title} href={resource.href}>
-              <Card className="h-full transition-all hover:shadow-md hover:border-primary/50">
-                <div className="flex items-start gap-4">
-                  <span className="text-3xl">{resource.icon}</span>
-                  <div>
-                    <h3 className="font-semibold text-lg">{resource.title}</h3>
-                    <p className="text-muted-foreground mt-1">{resource.description}</p>
-                  </div>
-                </div>
+            <Link key={resource.href} href={resource.href} className="block group">
+              <Card hover className="h-full p-6 transition-all duration-200 group-hover:shadow-lg">
+                <div className="text-4xl mb-4">{resource.icon}</div>
+                <h3 className="text-text text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                  {resource.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{resource.description}</p>
               </Card>
             </Link>
           ))}
