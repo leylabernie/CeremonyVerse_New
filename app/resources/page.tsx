@@ -49,54 +49,47 @@ export default function ResourcesPage() {
       icon: "📖",
     },
     {
-      title: "Free Resources",
-      href: "/free-resources",
-      description: "Download free wedding planning templates and guides.",
-      icon: "📋",
-    },
-    {
-      title: "Start Planning",
-      href: "/start-planning",
-      description: "Begin your wedding planning journey with our Budget + Vision Form.",
-      icon: "🎯",
-    },
-    {
-      title: "Blog",
+      title: "Planning Articles",
       href: "/blog",
-      description: "Expert advice, tips, and inspiration for your Indian or fusion wedding.",
+      description: "Expert advice and tips for planning your perfect Indian or fusion wedding.",
       icon: "✍️",
     },
   ]
 
   return (
     <>
+      {/* Hero Section - Clean serif heading + sans paragraph */}
       <section className="py-16 bg-cvBg">
         <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-cvInk mb-6 leading-tight">
-            Resources &amp; Tools
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-cvText mb-6">
+            Resources & Tools
           </h1>
-          <p className="text-lg md:text-xl text-cvMuted font-sans max-w-3xl mx-auto">
-            Free planning tools, budget calculators, and cultural guides to help you plan your perfect Indian or fusion wedding.
+          <p className="font-sans text-lg md:text-xl text-cvMuted max-w-2xl mx-auto">
+            Free wedding planning tools, calculators, and guides designed specifically for Indian and fusion celebrations.
           </p>
         </div>
       </section>
 
-      <Section variant="surface">
+      {/* Resources Grid */}
+      <Section>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {resources.map((resource) => (
-            <Link key={resource.href} href={resource.href} className="block group">
-              <Card hover className="h-full p-6 transition-all duration-200 group-hover:shadow-lg">
-                <div className="text-4xl mb-4">{resource.icon}</div>
-                <h3 className="text-text text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                  {resource.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{resource.description}</p>
+            <Link key={resource.href} href={resource.href} className="group">
+              <Card className="h-full transition-all hover:shadow-lg hover:border-cvPrimary/30">
+                <div className="p-6">
+                  <span className="text-3xl mb-4 block">{resource.icon}</span>
+                  <h2 className="font-serif text-xl font-semibold text-cvText mb-2 group-hover:text-cvPrimary transition-colors">
+                    {resource.title}
+                  </h2>
+                  <p className="font-sans text-cvMuted text-sm">{resource.description}</p>
+                </div>
               </Card>
             </Link>
           ))}
         </div>
       </Section>
 
+      {/* CTA Section */}
       <InternalCTA />
     </>
   )
