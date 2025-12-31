@@ -13,7 +13,7 @@ const nav = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-40 bg-cvBg/95 backdrop-blur border-b border-cvBorder">
+    <header className="sticky top-0 z-40 bg-cvBg/95 backdrop-blur border-b border-cvBorder font-sans">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-3">
         {/* Centered logo */}
         <div className="flex justify-center mb-3">
@@ -40,28 +40,24 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* Mobile menu - keeping font-sans for readability */}
+        {/* Mobile menu - font-sans for readability */}
         <div className="lg:hidden flex flex-col items-center gap-4">
-          <nav className="flex flex-wrap items-center justify-center gap-4 text-[14px] font-medium text-cvInk font-sans">
+          <nav className="flex flex-wrap items-center justify-center gap-4 text-[14px] font-medium font-sans">
             {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="font-sans uppercase tracking-[0.15em] hover:text-cvAccent transition-colors"
-              >
+              <Link key={item.href} href={item.href} className="text-cvMuted hover:text-cvText transition-colors font-sans">
                 {item.label}
               </Link>
             ))}
           </nav>
-          <Button href="/start-planning" variant="default" size="sm">
-            Start Planning
+          <Button asChild size="sm" className="font-sans">
+            <Link href="/contact">Book a Call</Link>
           </Button>
         </div>
 
-        {/* Desktop CTA below menu */}
-        <div className="hidden lg:flex justify-center mt-3">
-          <Button href="/start-planning" variant="default" size="lg">
-            Start Planning
+        {/* Desktop CTA */}
+        <div className="hidden lg:flex justify-center mt-4">
+          <Button asChild className="font-sans">
+            <Link href="/contact">Book a Free Discovery Call</Link>
           </Button>
         </div>
       </div>
