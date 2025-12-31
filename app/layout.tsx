@@ -46,11 +46,6 @@ export const metadata: Metadata = {
     description:
       "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
 }
 
 export default function RootLayout({
@@ -59,14 +54,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="en"
-      className={`${montserrat.variable} ${cormorant.variable} scroll-smooth`}
-      suppressHydrationWarning
-    >
-      <body className="min-h-screen flex flex-col font-sans antialiased">
+    <html lang="en" className={`${montserrat.variable} ${cormorant.variable}`}>
+      <body className="min-h-screen bg-background text-foreground font-sans antialiased">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main>{children}</main>
         <Footer />
         <MobileStickyCTA />
         <WhatsAppWidget />
