@@ -8,9 +8,9 @@
    =========================== */
 @theme inline {
   /* === CeremonyVerse Font Tokens === */
-  /* Body / UI font ÃÂ¢ÃÂÃÂ Montserrat */
+  /* Body / UI font ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Montserrat */
   --font-sans: var(--font-sans);
-  /* Headings / brand font ÃÂ¢ÃÂÃÂ Cormorant Garamond */
+  /* Headings / brand font ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Cormorant Garamond */
   --font-serif: var(--font-serif);
   
   /* Base colors */
@@ -201,36 +201,25 @@
     @apply py-24 md:py-32;
   }
 
-  /* CeremonyVerse button styles */
-  .cv-button {
-    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors
-           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
-           disabled:pointer-events-none disabled:opacity-50;
-  }
-
+  /* CeremonyVerse button styles - inlined base styles */
   .cv-button-primary {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90
-           px-6 py-3 text-base;
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 text-base;
   }
 
   .cv-button-secondary {
-    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80
-           px-6 py-3 text-base;
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-6 py-3 text-base;
   }
 
   .cv-button-outline {
-    @apply border border-border bg-transparent hover:bg-accent hover:text-accent-foreground
-           px-6 py-3 text-base;
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-border bg-transparent hover:bg-accent hover:text-accent-foreground px-6 py-3 text-base;
   }
 
   .cv-button-ghost {
-    @apply hover:bg-accent hover:text-accent-foreground
-           px-4 py-2 text-sm;
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground px-4 py-2 text-sm;
   }
 
   .cv-button-link {
-    @apply text-primary underline-offset-4 hover:underline
-           px-0 py-0 text-base;
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline px-0 py-0 text-base;
   }
 
   /* Card styles */
