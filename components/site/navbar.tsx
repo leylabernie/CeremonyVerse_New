@@ -32,7 +32,7 @@ export function Navbar() {
         <nav className="hidden lg:flex items-center justify-center gap-1 font-sans">
           {nav.map((item, index) => (
             <div key={item.href} className="flex items-center">
-              <Link href={item.href} className="cv-nav-link px-4 text-cvMuted hover:text-cvText transition-colors font-sans">
+              <Link href={item.href} className="font-sans text-sm uppercase tracking-[0.18em] text-cvMuted hover:text-cvInk transition-colors px-4">
                 {item.label}
               </Link>
               {index < nav.length - 1 && <span className="text-foreground/30">|</span>}
