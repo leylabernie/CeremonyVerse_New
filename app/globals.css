@@ -8,9 +8,9 @@
    =========================== */
 @theme inline {
   /* === CeremonyVerse Font Tokens === */
-  /* Body / UI font â Montserrat */
+  /* Body / UI font Ã¢ÂÂ Montserrat */
   --font-sans: var(--font-sans);
-  /* Headings / brand font â Cormorant Garamond */
+  /* Headings / brand font Ã¢ÂÂ Cormorant Garamond */
   --font-serif: var(--font-serif);
   
   /* Base colors */
@@ -129,10 +129,9 @@
     @apply bg-background text-foreground font-sans;
   }
 
-  /* Headings use serif font with solid foreground color */
+  /* Headings use serif font */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
-    color: var(--foreground);
   }
 
   h1 {
