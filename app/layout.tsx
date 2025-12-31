@@ -101,7 +101,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${montserrat.variable} ${cormorant.variable}`}>
-      <body className="min-h-screen bg-background font-sans antialiased">
+      <body className="min-h-screen antialiased bg-background text-foreground">
         <Navbar />
         <main>{children}</main>
         <Footer />
