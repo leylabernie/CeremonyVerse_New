@@ -8,9 +8,9 @@
    =========================== */
 @theme inline {
   /* === CeremonyVerse Font Tokens === */
-  /* Body / UI font → Montserrat */
+  /* Body / UI font â Montserrat */
   --font-sans: var(--font-sans);
-  /* Headings / brand font → Cormorant Garamond */
+  /* Headings / brand font â Cormorant Garamond */
   --font-serif: var(--font-serif);
   
   /* Base colors */
@@ -229,6 +229,6 @@
   }
 
   .cv-card-hover {
-    @apply cv-card transition-shadow hover:shadow-md;
+    @apply rounded-lg border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md;
   }
 }
