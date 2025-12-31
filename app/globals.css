@@ -39,10 +39,6 @@
    ROOT VARIABLES (DESIGN SYSTEM)
    ================================ */
 :root {
-  /* Fonts — injected by next/font in layout.tsx */
-  --font-heading: "Cormorant Garamond", serif;
-  --font-body: "Montserrat", sans-serif;
-
   /* Base palette */
   --background: #fafaf8;
   --foreground: #111827;
@@ -86,7 +82,6 @@
     background-color: var(--background);
     color: var(--foreground);
     min-height: 100vh;
-    font-family: var(--font-body);
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
   }
@@ -98,7 +93,6 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-heading);
     font-weight: 500;
     letter-spacing: 0.04em;
     color: var(--foreground);
@@ -146,19 +140,6 @@
     font-size: 1.0625rem;
     line-height: 1.7;
     color: var(--foreground);
-  }
-
-  /* Inline + UI elements always use body font */
-  a,
-  span,
-  li,
-  button,
-  input,
-  textarea,
-  select,
-  small,
-  label {
-    font-family: var(--font-body);
   }
 
   small {
@@ -219,6 +200,7 @@
   h6,
   .cv-heading-serif {
     font-family: var(--font-serif);
+    color: var(--foreground);
   }
 
   .cv-body-sans {
