@@ -199,27 +199,27 @@
   }
 
   .cv-button-primary {
-    @apply cv-button bg-primary text-primary-foreground hover:bg-primary/90
+    @apply bg-primary text-primary-foreground hover:bg-primary/90
            px-6 py-3 text-base;
   }
 
   .cv-button-secondary {
-    @apply cv-button bg-secondary text-secondary-foreground hover:bg-secondary/80
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80
            px-6 py-3 text-base;
   }
 
   .cv-button-outline {
-    @apply cv-button border border-border bg-transparent hover:bg-accent hover:text-accent-foreground
+    @apply border border-border bg-transparent hover:bg-accent hover:text-accent-foreground
            px-6 py-3 text-base;
   }
 
   .cv-button-ghost {
-    @apply cv-button hover:bg-accent hover:text-accent-foreground
+    @apply hover:bg-accent hover:text-accent-foreground
            px-4 py-2 text-sm;
   }
 
   .cv-button-link {
-    @apply cv-button text-primary underline-offset-4 hover:underline
+    @apply text-primary underline-offset-4 hover:underline
            px-0 py-0 text-base;
   }
 
