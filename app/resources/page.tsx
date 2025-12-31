@@ -61,8 +61,11 @@ export default function ResourcesPage() {
       {/* Hero Section - Clean serif heading + sans paragraph */}
       <section className="py-16 bg-cvBg">
         <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-cvText mb-6">
-            Resources & Tools
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-tight text-cvInk">
+            Wedding Planning{" "}
+            <span className="block md:inline font-serif text-cvInk">
+              Resources
+            </span>
           </h1>
           <p className="font-sans text-lg md:text-xl text-cvMuted max-w-2xl mx-auto">
             Free wedding planning tools, calculators, and guides designed specifically for Indian and fusion celebrations.
