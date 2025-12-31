@@ -8,9 +8,9 @@
    =========================== */
 @theme inline {
   /* === CeremonyVerse Font Tokens === */
-  /* Body / UI font Ã¢ÂÂ Montserrat */
+  /* Body / UI font ÃÂ¢ÃÂÃÂ Montserrat */
   --font-sans: var(--font-sans);
-  /* Headings / brand font Ã¢ÂÂ Cormorant Garamond */
+  /* Headings / brand font ÃÂ¢ÃÂÃÂ Cormorant Garamond */
   --font-serif: var(--font-serif);
   
   /* Base colors */
@@ -56,6 +56,10 @@
   /* Fallback fonts (will be overridden by next/font CSS variables) */
   --font-sans: ui-sans-serif, system-ui, sans-serif;
   --font-serif: ui-serif, Georgia, serif;
+  
+  /* Semantic font aliases */
+  --font-heading: var(--font-serif);   /* Cormorant from layout.tsx */
+  --font-body: var(--font-sans);       /* Montserrat from layout.tsx */
 
   /* Base shadcn colors */
   --background: #FFFAF5;
@@ -122,50 +126,57 @@
    =========================== */
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--border);
+    outline-color: color-mix(in srgb, var(--ring) 50%, transparent);
+  }
+
+  html {
+    font-family: var(--font-body);
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    background-color: var(--background);
+    color: var(--foreground);
+    min-height: 100vh;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
   }
 
-  /* Headings use serif font */
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    /* NO color: here - heading colors come from Tailwind classes */
   }
 
-  h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight;
+  h1 { font-size: 2.75rem; line-height: 1.1; font-weight: 700; }
+  @media (min-width: 768px) { h1 { font-size: 3.75rem; } }
+  h2 { font-size: 2.25rem; line-height: 1.2; font-weight: 600; }
+  h3 { font-size: 1.75rem; line-height: 1.3; font-weight: 600; }
+  h4 { font-size: 1.375rem; line-height: 1.4; font-weight: 600; }
+  h5, h6 { font-size: 1.125rem; line-height: 1.5; font-weight: 600; }
+
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    font-family: var(--font-body);
   }
 
-  h2 {
-    @apply text-3xl md:text-4xl font-semibold tracking-tight;
-  }
-
-  h3 {
-    @apply text-2xl md:text-3xl font-medium tracking-tight;
-  }
-
-  h4 {
-    @apply text-xl md:text-2xl font-medium;
-  }
-
-  h5 {
-    @apply text-lg md:text-xl font-medium;
-  }
-
-  h6 {
-    @apply text-base md:text-lg font-medium;
-  }
-
-  /* Body text uses sans font */
-  p, span, li, td, th, label, input, textarea, select, button {
-    font-family: var(--font-sans);
+  small {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
   }
 
   a {
-    @apply text-primary hover:text-primary/80 transition-colors;
+    color: var(--primary);
+    transition: color 0.2s;
   }
+  a:hover {
+    color: color-mix(in srgb, var(--primary) 80%, transparent);
+  }
+
+  .cv-heading-serif { font-family: var(--font-heading); }
+  .cv-body-sans { font-family: var(--font-body); }
 }
 
 /* ===========================
