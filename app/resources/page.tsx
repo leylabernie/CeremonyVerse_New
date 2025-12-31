@@ -49,16 +49,21 @@ export default function ResourcesPage() {
       icon: "📖",
     },
     {
-      title: "Planning Articles",
-      href: "/blog",
-      description: "Expert advice and tips for planning your perfect Indian or fusion wedding.",
-      icon: "✍️",
+      title: "Vendor Directory",
+      href: "/vendors",
+      description: "Find culturally experienced vendors for your Indian or fusion wedding.",
+      icon: "🏪",
+    },
+    {
+      title: "Planning Checklist",
+      href: "/checklist",
+      description: "Stay organized with our comprehensive Indian wedding planning checklist.",
+      icon: "✅",
     },
   ]
 
   return (
     <>
-            {/* Hero Section - Clean serif heading + sans paragraph */}
       <section className="py-16 bg-cvBg">
         <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-tight text-cvInk">
@@ -75,18 +80,17 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* Resources Grid */}
       <Section>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {resources.map((resource) => (
-            <Link key={resource.href} href={resource.href} className="group">
-              <Card className="h-full transition-all hover:shadow-lg hover:border-cvPrimary/30">
-                <div className="p-6">
-                  <span className="text-3xl mb-4 block">{resource.icon}</span>
-                  <h2 className="font-serif text-xl font-semibold text-cvText mb-2 group-hover:text-cvPrimary transition-colors">
-                    {resource.title}
-                  </h2>
-                  <p className="font-sans text-cvMuted text-sm">{resource.description}</p>
+            <Link key={resource.title} href={resource.href}>
+              <Card className="h-full transition-all hover:shadow-md hover:border-primary/50">
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl">{resource.icon}</span>
+                  <div>
+                    <h3 className="font-semibold text-lg">{resource.title}</h3>
+                    <p className="text-muted-foreground mt-1">{resource.description}</p>
+                  </div>
                 </div>
               </Card>
             </Link>
@@ -94,7 +98,6 @@ export default function ResourcesPage() {
         </div>
       </Section>
 
-      {/* CTA Section */}
       <InternalCTA />
     </>
   )
