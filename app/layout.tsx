@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 import { Navbar } from "@/components/site/navbar"
 import { Footer } from "@/components/site/footer"
 import { Cormorant_Garamond, Montserrat } from "next/font/google"
-import { MobileStickyBTA } from "@/components/MobileStickyBTA"
+import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 import WeddingPlanningChatbot from "@/components/WeddingPlanningChatbot"
 
@@ -105,7 +105,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <MobileStickyBTA />
+        <MobileStickyCTA />
         <WhatsAppWidget />
         <WeddingPlanningChatbot />
       </body>
