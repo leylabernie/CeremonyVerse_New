@@ -58,7 +58,7 @@ export default function ResourcesPage() {
 
   return (
     <>
-      {/* Hero Section - Clean serif heading + sans paragraph */}
+            {/* Hero Section - Clean serif heading + sans paragraph */}
       <section className="py-16 bg-cvBg">
         <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-tight text-cvInk">
@@ -67,9 +67,10 @@ export default function ResourcesPage() {
               Resources
             </span>
           </h1>
+
           <p className="mt-4 max-w-2xl mx-auto text-base md:text-lg text-muted-foreground font-sans">
-            Expert guides, tips, and insights for planning your perfect Indian-American
-            fusion wedding. Learn from experienced planners who understand your unique needs.
+            Expert guides, tips, and insights to help you plan an Indian or fusion wedding
+            with cultural clarity, confidence, and organization — without overwhelm.
           </p>
         </div>
       </section>
