@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 import { Navbar } from "@/components/site/navbar"
 import { Footer } from "@/components/site/footer"
 import { Cormorant_Garamond, Montserrat } from "next/font/google"
-import { MobileStickyCTA } from "@/components/MobileStickyCTA"
+import { MobileStickyBTA } from "@/components/MobileStickyBTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 import WeddingPlanningChatbot from "@/components/WeddingPlanningChatbot"
 
@@ -29,37 +29,83 @@ export const metadata: Metadata = {
     template: "%s | CeremonyVerse",
   },
   description:
-    "Plan your Indian or fusion wedding anywhere in the USA with CeremonyVerse. Budget-first planning, cultural sourcing, and ceremony guidance for South Asian and fusion couples.",
-  alternates: { canonical: "/" },
+    "Plan your Indian or fusion wedding anywhere in the world with CeremonyVerse. Budget-first planning, cultural sourcing, and ceremony guidance for South Asian and fusion couples worldwide.",
+  keywords: [
+    "Indian wedding planner",
+    "South Asian wedding planner",
+    "fusion wedding planner",
+    "Hindu wedding planner",
+    "multicultural wedding",
+    "destination Indian wedding",
+    "budget Indian wedding",
+    "Indian wedding coordinator",
+  ],
+  authors: [{ name: "CeremonyVerse" }],
+  creator: "CeremonyVerse",
+  publisher: "CeremonyVerse",
   openGraph: {
-    title: "Indian & Fusion Wedding Planner | CeremonyVerse",
-    description:
-      "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+    type: "website",
+    locale: "en_US",
     url: "https://ceremonyverse.com",
     siteName: "CeremonyVerse",
-    locale: "en_US",
-    type: "website",
+    title: "Indian & Fusion Wedding Planner Nationwide | CeremonyVerse",
+    description:
+      "Plan your Indian or fusion wedding anywhere in the world with CeremonyVerse. Budget-first planning, cultural sourcing, and ceremony guidance.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse - Indian & Fusion Wedding Planning",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Indian & Fusion Wedding Planner | CeremonyVerse",
+    title: "Indian & Fusion Wedding Planner Nationwide | CeremonyVerse",
     description:
-      "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+      "Plan your Indian or fusion wedding anywhere in the world. Budget-first planning, cultural sourcing, and ceremony guidance.",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  other: {
+    "script:ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "CeremonyVerse",
+      description:
+        "Indian and fusion wedding planning services with cultural expertise and budget-first approach.",
+      url: "https://ceremonyverse.com",
+      telephone: "+1-XXX-XXX-XXXX",
+      areaServed: {
+        "@type": "Country",
+        name: "United States",
+      },
+      serviceType: "Wedding Planning",
+    }),
   },
 }
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${montserrat.variable} ${cormorant.variable}`}>
-      <body className="min-h-screen bg-background text-foreground font-sans antialiased">
+      <body className="min-h-screen bg-background font-sans antialiased">
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <MobileStickyCTA />
+        <MobileStickyBTA />
         <WhatsAppWidget />
         <WeddingPlanningChatbot />
       </body>
