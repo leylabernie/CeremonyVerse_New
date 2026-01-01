@@ -1,67 +1,115 @@
-import { GoogleGenerativeAI } from "@google/generative-ai"
+// app/api/chat/route.ts
+
 import { NextResponse } from "next/server"
+import { GoogleGenerativeAI } from "@google/generative-ai"
+
+const apiKey = process.env.GOOGLE_AI_API_KEY
+
+if (!apiKey) {
+  console.warn(
+    "[Chat API] GOOGLE_AI_API_KEY is not set. The chatbot route will return an error.",
+  )
+}
+
+const genAI = apiKey
+  ? new GoogleGenerativeAI(apiKey).getGenerativeModel({
+      model: "gemini-1.5-pro",
+    })
+  : null
+
+// CeremonyVerse system prompt – you can tweak wording if you like
+const SYSTEM_PROMPT = `
+You are an Indian & fusion wedding planning assistant for CeremonyVerse.
+
+Your job:
+- Answer questions about Indian weddings, budgets, timelines, rituals, and cultural sourcing.
+- Be clear, practical, and kind.
+- Do NOT give legal, medical, or financial advice beyond general guidance.
+- When appropriate, encourage users to book a consultation via the CeremonyVerse website.
+
+Keep answers concise but helpful, and avoid sounding like a generic chatbot.
+`.trim()
+
+type ChatMessage = {
+  role: "user" | "assistant"
+  content: string
+}
 
 export async function POST(req: Request) {
-  if (!process.env.GOOGLE_AI_API_KEY) {
-    console.error("Missing GOOGLE_AI_API_KEY environment variable")
-    return NextResponse.json({ error: "Missing GOOGLE_AI_API_KEY environment variable" }, { status: 500 })
-  }
-
   try {
-    const { messages } = await req.json()
+    if (!genAI || !apiKey) {
+      return NextResponse.json(
+        {
+          error: "SERVER_ERROR",
+          details:
+            "Chatbot is not configured correctly on the server (missing GOOGLE_AI_API_KEY).",
+        },
+        { status: 500 },
+      )
+    }
 
-    const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_API_KEY)
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" })
+    const body = await req.json().catch(() => null)
 
-    const systemPrompt = `You are a helpful wedding planning assistant for CeremonyVerse, specializing in Hindu and fusion weddings. You help couples with:
+    if (!body || !Array.isArray(body.messages)) {
+      return NextResponse.json(
+        { error: "BAD_REQUEST", details: "Missing or invalid `messages` array." },
+        { status: 400 },
+      )
+    }
 
-- Budget planning and cost breakdowns for Hindu weddings
-- Hindu cultural traditions (General Hindu, Gujarati Hindu, South Indian/Tamil Hindu)
-- India vs USA sourcing decisions for outfits, jewelry, and ceremony items
-- Multi-day event planning (mehndi, sangeet, baraat, mandap ceremony, reception)
-- Fusion wedding ceremony ideas that incorporate Hindu elements
-- Vendor selection guidance
-- Timeline and checklist recommendations
+    const rawMessages: ChatMessage[] = body.messages
 
-IMPORTANT LIMITATIONS:
-- Only provide information about HINDU wedding traditions and customs
-- You can discuss Gujarati Hindu and South Indian/Tamil Hindu variations
-- You can discuss fusion weddings that blend Hindu with other traditions
-- Do NOT provide information about Sikh, Jain, or other religious traditions
-- Always note that specific religious requirements may vary and couples should consult their family priest or religious advisor
+    // 1) Find the first USER message in the conversation
+    const firstUserIndex = rawMessages.findIndex((m) => m.role === "user")
 
-Be warm, helpful, and culturally knowledgeable. Keep responses concise (under 150 words). Always include this disclaimer when discussing religious ceremonies:
+    if (firstUserIndex === -1) {
+      return NextResponse.json(
+        { error: "BAD_REQUEST", details: "No user message found in request." },
+        { status: 400 },
+      )
+    }
 
-"Note: This is general information about Hindu traditions. For specific religious requirements, please consult with your family priest or religious advisor."
+    // 2) Build Gemini `contents` array and guarantee the FIRST item is role: "user"
+    const contents: { role: "user" | "model"; parts: { text: string }[] }[] = []
 
-Always encourage booking a consultation with CeremonyVerse for personalized planning at https://ceremonyverse.com/start-planning.
+    const firstUser = rawMessages[firstUserIndex]
 
-When discussing budgets, mention that CeremonyVerse offers transparent pricing starting at $800 for Planning Intensives.`
-
-    const history = messages.slice(0, -1).map((msg: any) => ({
-      role: msg.role === "user" ? "user" : "model",
-      parts: [{ text: msg.content }],
-    }))
-
-    const lastMessage = messages[messages.length - 1].content
-
-    const chat = model.startChat({
-      history,
-      generationConfig: {
-        maxOutputTokens: 500,
-        temperature: 0.7,
-      },
+    // First message: system prompt + first user message, as a single USER turn
+    contents.push({
+      role: "user",
+      parts: [{ text: `${SYSTEM_PROMPT}\n\n${firstUser.content}` }],
     })
 
-    const result = await chat.sendMessage(`${systemPrompt}\n\nUser question: ${lastMessage}`)
+    // 3) Add the rest of the messages AFTER that first user message
+    for (let i = firstUserIndex + 1; i < rawMessages.length; i++) {
+      const msg = rawMessages[i]
+      if (!msg?.content) continue
+
+      contents.push({
+        role: msg.role === "assistant" ? "model" : "user",
+        parts: [{ text: msg.content }],
+      })
+    }
+
+    // 4) Call Gemini
+    const result = await genAI.generateContent({ contents })
     const response = await result.response
     const text = response.text()
 
-    return NextResponse.json({ message: text })
-  } catch (error) {
-    console.error("Chatbot API error:", error)
     return NextResponse.json(
-      { error: "SERVER_ERROR", details: error instanceof Error ? error.message : "Unknown error" },
+      {
+        reply: text,
+      },
+      { status: 200 },
+    )
+  } catch (err: any) {
+    console.error("[Chat API] Error:", err)
+
+    return NextResponse.json(
+      {
+        error: "SERVER_ERROR",
+        details: err?.message ?? String(err),
+      },
       { status: 500 },
     )
   }
