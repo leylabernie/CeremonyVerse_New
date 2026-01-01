@@ -10,29 +10,19 @@ export default function Footer() {
           <h3 className="font-semibold text-lg">CeremonyVerse</h3>
           <p className="text-sm">Indian & multicultural fusion wedding planning</p>
         </div>
+
         <div>
           <h4 className="font-semibold mb-2">Navigate</h4>
           <ul className="text-sm space-y-1">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/services">Services</Link>
-            </li>
-            <li>
-              <Link href="/heritage-harmony">Heritage & Harmony</Link>
-            </li>
-            <li>
-              <Link href="/portfolio">Portfolio</Link>
-            </li>
-            <li>
-              <Link href="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link href="/free-resources">Resources</Link>
-            </li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/services">Services</Link></li>
+            <li><Link href="/heritage-harmony">Heritage & Harmony</Link></li>
+            <li><Link href="/portfolio">Portfolio</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/free-resources">Resources</Link></li>
           </ul>
         </div>
+
         <div>
           <h4 className="font-semibold mb-2">Contact</h4>
           <p className="text-sm">
@@ -40,6 +30,7 @@ export default function Footer() {
             <br />
             +1-215-341-9990
           </p>
+
           <div className="mt-2 flex space-x-4">
             <a
               href="https://instagram.com/ceremonyverse"
@@ -50,6 +41,7 @@ export default function Footer() {
             >
               <Instagram className="h-5 w-5" />
             </a>
+
             <a
               href="https://www.facebook.com/839146832623298"
               target="_blank"
@@ -59,6 +51,7 @@ export default function Footer() {
             >
               <Facebook className="h-5 w-5" />
             </a>
+
             <a
               href="https://pinterest.com/ceremonyverse"
               target="_blank"
@@ -70,6 +63,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
+
         <div>
           <h4 className="font-semibold mb-2">Legal</h4>
           <ul className="text-sm space-y-1">
@@ -79,9 +73,13 @@ export default function Footer() {
             <li>
               <Link href="/terms-of-service">Terms of Service</Link>
             </li>
+            <li>
+              <Link href="/ai-tools-disclaimer">AI-Assisted Tools Disclaimer</Link>
+            </li>
           </ul>
         </div>
       </div>
+
       <div className="mt-4 text-center text-xs text-gray-500">
         © {new Date().getFullYear()} CeremonyVerse. All rights reserved.
       </div>
