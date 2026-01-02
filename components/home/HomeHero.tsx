@@ -1,6 +1,6 @@
-// components/home/HomeHero.tsx
-
 "use client";
+
+import React from "react";
 
 export function HomeHero() {
   return (
@@ -18,12 +18,12 @@ export function HomeHero() {
           <p className="mx-auto max-w-2xl text-base sm:text-lg leading-relaxed">
             US-based planning, Mexico resort expertise, and honest budget
             guidance for Indian and South Asian weddings that honor your
-            traditions without losing sight of real numbers.
+            traditions while staying grounded in real numbers.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <a
-              href="/start-planning" {/* update to your actual contact/lead route */}
+              href="/start-planning"
               className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium uppercase tracking-[0.18em] border border-current"
             >
               Start with a free budget analysis
@@ -38,8 +38,8 @@ export function HomeHero() {
           </div>
 
           <p className="text-xs opacity-80">
-            Virtual-first support across the US · Mexico resort partnerships ·
-            Culturally fluent planning
+            Virtual-first planning · Mexico resort partners · Cultural-fluent
+            support
           </p>
         </div>
       </div>
