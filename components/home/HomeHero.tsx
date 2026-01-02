@@ -48,8 +48,8 @@ export function HomeHero() {
           {/* Image Column - Right */}
           <div className="relative aspect-[4/3] lg:aspect-[3/4] w-full overflow-hidden rounded-lg">
             <Image
-              src="/images/hero-couple.png"
-              alt="Indian destination wedding couple"
+              src="/images/ChatGPT Image Jan 2, 2026, 06_00_17 PM.png"
+              alt="Soft editorial Indian wedding planning scene with cultural details such as diya candle, pastel fabrics, petals, and planning notes"
               fill
               className="object-cover"
               priority
