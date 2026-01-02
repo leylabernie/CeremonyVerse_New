@@ -12,7 +12,7 @@ export function Navigation() {
   const pathname = usePathname()
 
   const isActive = (href: string) => {
-    if (href === "/") return pathname === "/"
+    if (href === "/home") return pathname === "/" || pathname === "/home"
     return pathname.startsWith(href)
   }
 
@@ -51,7 +51,7 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
-            <Link href="/" className={linkStyles("/")}>
+            <Link href="/home" className={linkStyles("/home")}>
               Home
             </Link>
 
@@ -175,9 +175,9 @@ export function Navigation() {
           <div className="lg:hidden py-6 border-t border-warm-beige/40">
             <div className="flex flex-col gap-2">
               <Link
-                href="/"
+                href="/home"
                 className={`font-sans px-4 py-3 text-[15px] font-medium rounded-sm transition-all ${
-                  isActive("/")
+                  isActive("/home")
                     ? "text-cvAccent bg-cvAccent/10"
                     : "text-cvInk hover:text-cvAccent hover:bg-warm-beige/30"
                 }`}
