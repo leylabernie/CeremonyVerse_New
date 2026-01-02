@@ -6,6 +6,7 @@ const nav = [
   { href: "/home", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/wedding-journeys", label: "Wedding Journeys" },
+  { href: "/indian-destination-wedding-planner-mexico", label: "Mexico Destination Weddings" },
   { href: "/resources", label: "Resources" },
   { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pricing" },
@@ -45,15 +46,11 @@ export function Navbar() {
         <div className="lg:hidden flex flex-col items-center gap-4">
           <nav className="flex flex-wrap items-center justify-center gap-4 text-[14px] font-medium text-cvInk">
             {nav.map((item) => (
-              <Link key={item.href} href={item.href} className="cv-nav-link hover:text-cvAccent transition-colors">
+              <Link key={item.href} href={item.href} className="hover:underline">
                 {item.label}
               </Link>
             ))}
           </nav>
-
-          <Button asChild size="sm" className="bg-cvAccent text-white hover:bg-cvAccent/90">
-            <Link href="/start-planning">Start Planning</Link>
-          </Button>
         </div>
       </div>
     </header>
