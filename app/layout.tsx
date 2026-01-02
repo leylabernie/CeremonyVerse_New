@@ -6,7 +6,7 @@ import { Footer } from "@/components/site/footer"
 import { Cormorant_Garamond, Inter } from "next/font/google"
 import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
-import WeddingPlanningChatbot from "@/components/WeddingPlanningChatbot"
+import { ChatWidget } from "./_components/ChatWidget"
 
 // Sans-serif for body text - clean and readable
 const inter = Inter({
@@ -36,7 +36,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     title: "Indian & Fusion Wedding Planner | CeremonyVerse",
-    description: "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+    description:
+      "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
     url: "https://ceremonyverse.com",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -74,11 +75,23 @@ const localBusinessJsonLd = {
   ],
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en" className={`${inter.variable} ${cormorantGaramond.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${cormorantGaramond.variable}`}
+    >
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessJsonLd),
+          }}
+        />
       </head>
       <body className="min-h-screen antialiased bg-background text-foreground font-sans">
         <Navbar />
@@ -86,7 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <MobileStickyCTA />
         <WhatsAppWidget />
-        <WeddingPlanningChatbot />
+        <ChatWidget />
       </body>
     </html>
   )
