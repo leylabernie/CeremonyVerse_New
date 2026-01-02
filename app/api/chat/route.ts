@@ -1,77 +1,100 @@
 // app/api/chat/route.ts
-import { NextRequest, NextResponse } from "next/server"
 
-const OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
+// Force a standard runtime; no extra imports, no "openai" package
+export const runtime = "edge"
 
-export async function POST(req: NextRequest) {
+export async function POST(req: Request): Promise<Response> {
   try {
     const body = await req.json()
 
-    const messages = body?.messages
-    if (!Array.isArray(messages)) {
-      return NextResponse.json(
-        { error: "Invalid request: messages must be an array." },
-        { status: 400 },
+    // Basic validation
+    if (!Array.isArray(body?.messages)) {
+      return new Response(
+        JSON.stringify({ error: "messages must be an array" }),
+        {
+          status: 400,
+          headers: { "Content-Type": "application/json" },
+        },
       )
     }
 
-    const systemMessage = {
-      role: "system" as const,
+    if (!process.env.OPENAI_API_KEY) {
+      return new Response(
+        JSON.stringify({ error: "Missing OPENAI_API_KEY" }),
+        {
+          status: 500,
+          headers: { "Content-Type": "application/json" },
+        },
+      )
+    }
+
+    const system = {
+      role: "system",
       content: `
 You are the CeremonyVerse website assistant.
 
 - You help visitors with Indian & fusion wedding planning questions.
-- You explain CeremonyVerse services (planning tiers, cultural sourcing, service area: PA/NJ/DE/MD).
-- You are clear, concise, and calm.
-- Do NOT promise prices, contracts, or availability. Encourage them to use the contact form or WhatsApp for specifics.
-- If a question is outside weddings or CeremonyVerse, answer briefly and redirect to wedding-related help.
+- You explain CeremonyVerse services (planning tiers, cultural sourcing).
+- Service area focus: PA, NJ, DE, MD (but can answer general questions too).
+- You are clear, calm, and concise.
+- You never promise prices, contracts, or availability. For that, direct people to the contact form or WhatsApp.
       `.trim(),
     }
 
-    const response = await fetch(OPENAI_API_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY ?? ""}`,
+    const upstream = await fetch(
+      "https://api.openai.com/v1/chat/completions",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        },
+        body: JSON.stringify({
+          model: "gpt-4o-mini",
+          temperature: 0.4,
+          max_tokens: 400,
+          messages: [system, ...body.messages],
+        }),
       },
-      body: JSON.stringify({
-        model: "gpt-4.1-mini",
-        temperature: 0.4,
-        max_tokens: 400,
-        messages: [systemMessage, ...messages],
-      }),
-    })
-
-    if (!response.ok) {
-      const errorText = await response.text()
-      console.error("OpenAI API error:", response.status, errorText)
-      return NextResponse.json(
-        { error: "Chat service error from model provider." },
-        { status: 500 },
-      )
-    }
-
-    const data = await response.json()
-
-    const assistantMessage =
-      data?.choices?.[0]?.message ?? null
-
-    if (!assistantMessage) {
-      return NextResponse.json(
-        { error: "No response from model." },
-        { status: 500 },
-      )
-    }
-
-    return NextResponse.json(
-      { message: assistantMessage },
-      { status: 200 },
     )
-  } catch (error) {
-    console.error("Chat API route error:", error)
-    return NextResponse.json(
-      { error: "Something went wrong with the chat service." },
-      { status: 500 },
+
+    if (!upstream.ok) {
+      const text = await upstream.text()
+      console.error("OpenAI error:", upstream.status, text)
+      return new Response(
+        JSON.stringify({
+          error: "Chat service error from model provider.",
+        }),
+        {
+          status: 500,
+          headers: { "Content-Type": "application/json" },
+        },
+      )
+    }
+
+    const json = await upstream.json()
+
+    const replyContent =
+      json?.choices?.[0]?.message?.content ??
+      "Sorry — I couldn’t generate a response just now."
+
+    return new Response(
+      JSON.stringify({
+        message: { role: "assistant", content: replyContent },
+      }),
+      {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      },
+    )
+  } catch (err) {
+    console.error("Chat route error:", err)
+    return new Response(
+      JSON.stringify({ error: "Chat service failure" }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      },
     )
   }
 }
