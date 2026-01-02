@@ -1,49 +1,47 @@
-// app/_components/ChatWidget.tsx
-"use client";
+"use client"
 
-import { useState, useRef, useEffect, FormEvent } from "react";
+import { useState, useRef, useEffect, FormEvent } from "react"
 
-type Role = "user" | "assistant";
+type Role = "user" | "assistant"
 
 type ChatMessage = {
-  role: Role;
-  content: string;
-};
+  role: Role
+  content: string
+}
 
 export function ChatWidget() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: "assistant",
       content:
         "Hi! I’m the CeremonyVerse assistant. I can help with Indian & fusion wedding planning, cultural shopping questions, and how our services work. What are you planning?",
     },
-  ]);
-  const [input, setInput] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement | null>(null);
+  ])
+  const [input, setInput] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
+  const messagesEndRef = useRef<HTMLDivElement | null>(null)
 
-  // Scroll to bottom on new messages
   useEffect(() => {
     if (messagesEndRef.current) {
-      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
     }
-  }, [messages, isOpen]);
+  }, [messages, isOpen])
 
   async function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    if (!input.trim() || isLoading) return;
+    e.preventDefault()
+    if (!input.trim() || isLoading) return
 
     const userMessage: ChatMessage = {
       role: "user",
       content: input.trim(),
-    };
+    }
 
-    const newMessages = [...messages, userMessage];
+    const newMessages = [...messages, userMessage]
 
-    setMessages(newMessages);
-    setInput("");
-    setIsLoading(true);
+    setMessages(newMessages)
+    setInput("")
+    setIsLoading(true)
 
     try {
       const res = await fetch("/api/chat", {
@@ -55,14 +53,15 @@ export function ChatWidget() {
             content: m.content,
           })),
         }),
-      });
+      })
 
       if (!res.ok) {
-        throw new Error("Failed to fetch reply");
+        throw new Error("Failed to fetch reply")
       }
 
-      const data = await res.json();
-      const assistantMessage = data.message as { role: string; content: string };
+      const data = await res.json()
+      const assistantMessage = data
+        .message as { role: string; content: string }
 
       setMessages((prev) => [
         ...prev,
@@ -72,9 +71,9 @@ export function ChatWidget() {
             assistantMessage?.content ??
             "I’m sorry, I couldn’t respond. Please try again or use WhatsApp/contact form.",
         },
-      ]);
+      ])
     } catch (error) {
-      console.error(error);
+      console.error(error)
       setMessages((prev) => [
         ...prev,
         {
@@ -82,9 +81,9 @@ export function ChatWidget() {
           content:
             "Sorry, something went wrong. You can always reach out via WhatsApp or the contact form for help.",
         },
-      ]);
+      ])
     } finally {
-      setIsLoading(false);
+      setIsLoading(false)
     }
   }
 
@@ -110,7 +109,9 @@ export function ChatWidget() {
           {/* Header */}
           <div className="flex items-center justify-between border-b px-3 py-2">
             <div>
-              <div className="text-sm font-semibold">CeremonyVerse Assistant</div>
+              <div className="text-sm font-semibold">
+                CeremonyVerse Assistant
+              </div>
               <div className="text-xs text-neutral-500">
                 Indian &amp; fusion wedding help
               </div>
@@ -137,7 +138,7 @@ export function ChatWidget() {
                 <div
                   className={`max-w-[85%] rounded-2xl px-3 py-2 whitespace-pre-wrap ${
                     m.role === "user"
-                      ? "bg-emerald-600 text-white" // swap to your sage color later
+                      ? "bg-emerald-600 text-white"
                       : "bg-neutral-100 text-neutral-900"
                   }`}
                 >
@@ -179,11 +180,11 @@ export function ChatWidget() {
 
           {/* Disclaimer */}
           <div className="border-t px-3 py-2 text-[10px] text-neutral-400">
-            This chat is for general guidance. For exact pricing &amp; availability,
-            please use the contact form.
+            This chat is for general guidance. For exact pricing &amp;
+            availability, please use the contact form.
           </div>
         </div>
       )}
     </>
-  );
+  )
 }
