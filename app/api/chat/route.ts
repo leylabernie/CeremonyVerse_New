@@ -18,7 +18,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // SYSTEM PROMPT: customize for CeremonyVerse
     const systemMessage = {
       role: "system" as const,
       content: `
@@ -26,7 +25,7 @@ You are the CeremonyVerse website assistant.
 
 - You help visitors with Indian & fusion wedding planning questions.
 - You explain CeremonyVerse services (planning tiers, cultural sourcing, service-area: PA/NJ/DE/MD).
-- You are clear, concise, and friendly but not over-familiar.
+- You are clear, concise, and calm.
 - Do NOT promise prices, contracts, or availability. Encourage them to use the contact form or WhatsApp for specifics.
 - If a question is outside weddings or CeremonyVerse, answer briefly and redirect to wedding-related help.
       `.trim(),
@@ -49,17 +48,13 @@ You are the CeremonyVerse website assistant.
     }
 
     return NextResponse.json(
-      {
-        message: assistantMessage,
-      },
+      { message: assistantMessage },
       { status: 200 }
     );
-  } catch (error: any) {
+  } catch (error) {
     console.error("Chat API error:", error);
     return NextResponse.json(
-      {
-        error: "Something went wrong with the chat service.",
-      },
+      { error: "Something went wrong with the chat service." },
       { status: 500 }
     );
   }
