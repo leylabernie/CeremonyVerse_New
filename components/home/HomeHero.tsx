@@ -29,7 +29,7 @@ export function HomeHero() {
               Start with a free budget analysis
             </a>
 
-            <a
+          <a
               href="/indian-destination-wedding-planner-mexico"
               className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium uppercase tracking-[0.18em]"
             >
