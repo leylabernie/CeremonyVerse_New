@@ -6,9 +6,8 @@ import { Footer } from "@/components/site/footer"
 import { Cormorant_Garamond, Inter } from "next/font/google"
 import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
-import { ChatWidget } from "./_components/ChatWidget"
+import { ChatWidget } from "@/components/ChatWidget"
 
-// Sans-serif for body text - clean and readable
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -16,7 +15,6 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 })
 
-// Serif for headings - elegant and sophisticated
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   display: "swap",
