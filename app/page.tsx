@@ -612,7 +612,7 @@ export default function HomePage() {
       </Section>
     
       <JsonLd
-        data={
+        data={{
     "@context": "https://schema.org",
     "@type": "EventPlanner",
     "name": "CeremonyVerse",
