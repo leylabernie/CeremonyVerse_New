@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 
+import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Indian Destination Wedding Planner Mexico | CeremonyVerse",
   description:
@@ -243,6 +244,25 @@ export default function MexicoDestinationWeddingPage() {
           </div>
         </div>
       </section>
+    
+      <JsonLd
+        data={
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Indian Destination Wedding Planning in Mexico",
+    "serviceType": ["Indian wedding planning", "South Asian wedding planning", "Destination wedding planning"],
+    "provider": { "@type": "EventPlanner", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
+    "areaServed": [
+      { "@type": "City", "name": "Cancun", "address": { "@type": "PostalAddress", "addressCountry": "MX" } },
+      { "@type": "City", "name": "Riviera Maya", "address": { "@type": "PostalAddress", "addressCountry": "MX" } },
+      { "@type": "City", "name": "Los Cabos", "address": { "@type": "PostalAddress", "addressCountry": "MX" } },
+      { "@type": "City", "name": "Tulum", "address": { "@type": "PostalAddress", "addressCountry": "MX" } },
+      { "@type": "City", "name": "Puerto Vallarta", "address": { "@type": "PostalAddress", "addressCountry": "MX" } }
+    ],
+    "url": "https://www.ceremonyverse.com/indian-destination-wedding-planner-mexico",
+    "description": "Budget-first Indian and South Asian destination wedding planning for Mexico resorts including Cancun, Riviera Maya, Los Cabos, Tulum, and Puerto Vallarta."
+  }
+      />
     </main>
   );
 }
