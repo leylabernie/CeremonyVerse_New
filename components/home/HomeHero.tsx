@@ -49,7 +49,7 @@ export function HomeHero() {
           <div className="relative aspect-[4/3] lg:aspect-[3/4] w-full overflow-hidden rounded-lg">
             <Image
               src="/images/home-hero-planning.jpg"
-              alt="Soft editorial Indian wedding planning scene with cultural details such as diya candle, pastel fabrics, petals, and planning notes"
+              alt="Calm editorial Indian wedding planning scene with notes, fabrics, petals, and a diya candle"
               fill
               className="object-cover"
               priority
