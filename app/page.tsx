@@ -8,6 +8,7 @@ import Script from "next/script"
 import TrustSignals from "@/components/site/trust-signals" // Declare TrustSignals variable
 import HomeMexicoPromo from "@/components/home/HomeMexicoPromo"
 
+import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Indian & Fusion Wedding Planner Nationwide | Budget-First | CeremonyVerse",
   description:
@@ -200,7 +201,7 @@ export default function HomePage() {
             </p>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
               CeremonyVerse helps Indian and multicultural couples plan culturally aligned weddings, coordinate trusted
-              vendors, and source the right outfits and jewelry essentials â without overspending or guesswork.
+              vendors, and source the right outfits and jewelry essentials Ã¢ÂÂ without overspending or guesswork.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -260,7 +261,7 @@ export default function HomePage() {
           </p>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
             CeremonyVerse helps Indian and multicultural couples plan culturally aligned weddings, coordinate trusted
-            vendors, and source the right outfits and jewelry essentials â without overspending or guesswork.
+            vendors, and source the right outfits and jewelry essentials Ã¢ÂÂ without overspending or guesswork.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -303,7 +304,7 @@ export default function HomePage() {
 
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
             CeremonyVerse provides Indian and fusion wedding planning services throughout the United States. Whether
-            you're in California, Texas, New York, Illinois, or anywhere elseâwe work with couples virtually and
+            you're in California, Texas, New York, Illinois, or anywhere elseÃ¢ÂÂwe work with couples virtually and
             in-person to create culturally aligned weddings with budget clarity.
           </p>
 
@@ -383,7 +384,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-muted-foreground leading-relaxed">
-            Our budget-first approach works regardless of locationâwedding costs vary by region, and we help you plan
+            Our budget-first approach works regardless of locationÃ¢ÂÂwedding costs vary by region, and we help you plan
             within your local market while sourcing items strategically (India vs. USA).
           </p>
         </div>
@@ -548,7 +549,7 @@ export default function HomePage() {
                 $6,500. All pricing is transparent with no hidden fees or percentage-based markups. We discuss travel
                 costs upfront for out-of-area weddings.{" "}
                 <a href="/pricing" className="text-blue-600 hover:underline">
-                  View detailed pricing â
+                  View detailed pricing Ã¢ÂÂ
                 </a>
               </p>
             </div>
@@ -569,7 +570,7 @@ export default function HomePage() {
                 what to source from India vs USA, timelines for international coordination, and trusted vendor
                 recommendations based on your needs.{" "}
                 <a href="/blog/wedding-shopping-india-vs-usa" className="text-blue-600 hover:underline">
-                  Read our India vs USA sourcing guide â
+                  Read our India vs USA sourcing guide Ã¢ÂÂ
                 </a>
               </p>
             </div>
@@ -609,6 +610,24 @@ export default function HomePage() {
           </div>
         </Card>
       </Section>
+    
+      <JsonLd
+        data={
+    "@context": "https://schema.org",
+    "@type": "EventPlanner",
+    "name": "CeremonyVerse",
+    "url": "https://www.ceremonyverse.com",
+    "image": "https://www.ceremonyverse.com/images/home-hero-planning.jpg",
+    "priceRange": "$800 - $6500",
+    "areaServed": [
+      { "@type": "Country", "name": "United States" },
+      { "@type": "Country", "name": "Mexico" }
+    ],
+    "serviceType": ["Indian wedding planning", "South Asian wedding planning", "Destination wedding planning", "Mexico resort wedding planning"],
+    "description": "Indian and fusion wedding planning studio with a budget-first, culturally fluent approach. CeremonyVerse plans multi-day celebrations in the US and Mexico with clear pricing and realistic support.",
+    "address": { "@type": "PostalAddress", "addressCountry": "US" }
+  }
+      />
     </>
   )
 }
