@@ -238,7 +238,7 @@ export default function HomePage() {
 
           <Card hover className="overflow-hidden p-0 aspect-[4/5] border-none">
             <Image
-              src="/images/hero-couple.png"
+              src="/images/home-hero-planning.jpg"
               alt="Elegant Indian wedding couple in traditional attire"
               width={640}
               height={800}
