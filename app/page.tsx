@@ -626,7 +626,7 @@ export default function HomePage() {
     "serviceType": ["Indian wedding planning", "South Asian wedding planning", "Destination wedding planning", "Mexico resort wedding planning"],
     "description": "Indian and fusion wedding planning studio with a budget-first, culturally fluent approach. CeremonyVerse plans multi-day celebrations in the US and Mexico with clear pricing and realistic support.",
     "address": { "@type": "PostalAddress", "addressCountry": "US" }
-  }
+  }}
       />
     </>
   )
