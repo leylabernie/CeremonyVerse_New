@@ -243,37 +243,6 @@ export default function MexicoDestinationWeddingPage() {
           </div>
         </div>
       </section>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Indian Destination Wedding Planning in Mexico",
-            "serviceType": [
-              "Indian wedding planning",
-              "South Asian wedding planning",
-              "Destination wedding planning"
-            ],
-            "provider": {
-              "@type": "EventPlanner",
-              "name": "CeremonyVerse",
-              "url": "https://www.ceremonyverse.com"
-            },
-            "areaServed": [
-              { "@type": "City", "name": "Cancun" },
-              { "@type": "City", "name": "Riviera Maya" },
-              { "@type": "City", "name": "Los Cabos" },
-              { "@type": "City", "name": "Tulum" },
-              { "@type": "City", "name": "Puerto Vallarta" }
-            ],
-            "url": "https://www.ceremonyverse.com/indian-destination-wedding-planner-mexico",
-            "description": "Budget-first Indian and South Asian destination wedding planning for Mexico resorts including Cancun, Riviera Maya, Los Cabos, Tulum, and Puerto Vallarta."
-          }),
-        }}
-      />
-
-    
     </main>
   );
 }
