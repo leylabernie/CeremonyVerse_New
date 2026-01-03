@@ -14,7 +14,17 @@ export default function MexicoDestinationWeddingPage() {
         <h1 className="text-4xl sm:text-5xl font-bold mb-6">
           Indian destination wedding planning in Mexico
         </h1>
-        <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+        <p className="mt-4 text-base leading-relaxed">
+  Want real numbers before you decide?{" "}
+  <a
+    href="/indian-wedding-mexico-cost-guide"
+    className="underline underline-offset-4"
+  >
+    See the Indian wedding in Mexico cost guide
+  </a>{" "}
+  for typical budget ranges and sample breakdowns.
+</p>
+          className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
           Mexico offers the perfect blend of stunning venues, warm hospitality, and
           affordability for your Indian destination wedding. From beachfront mandaps to
           luxury resort celebrations, we help you create an unforgettable multi-day
