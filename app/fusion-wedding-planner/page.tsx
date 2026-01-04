@@ -50,7 +50,7 @@ export default function FusionWeddingPlannerPage() {
               asChild
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 text-lg"
             >
-              <Link href="/contact">Schedule Free Consultation</Link>
+              <Link href="/start-planning">Schedule Free Consultation</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="px-10 py-6 text-lg bg-transparent">
               <Link href="/services">View Services</Link>
@@ -445,7 +445,7 @@ export default function FusionWeddingPlannerPage() {
             Schedule a free consultation to discuss how we can honor both your traditions beautifully
           </p>
           <Button asChild size="lg" className="bg-white text-accent hover:bg-white/90 px-10 py-6 text-lg">
-            <Link href="/contact">Book Free Consultation</Link>
+            <Link href="/start-planning">Book Free Consultation</Link>
           </Button>
         </div>
       </section>
