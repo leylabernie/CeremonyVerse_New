@@ -203,7 +203,7 @@ export default function BudgetPlannerPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full bg-transparent" variant="outline">
-                  <a href="/contact">Download Template</a>
+                  <a href="/start-planning">Download Template</a>
                 </Button>
               </Card>
 
@@ -235,7 +235,7 @@ export default function BudgetPlannerPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <a href="/contact">Download Template</a>
+                  <a href="/start-planning">Download Template</a>
                 </Button>
               </Card>
 
@@ -264,7 +264,7 @@ export default function BudgetPlannerPage() {
                   </li>
                 </ul>
                 <Button asChild className="w-full bg-transparent" variant="outline">
-                  <a href="/contact">Download Template</a>
+                  <a href="/start-planning">Download Template</a>
                 </Button>
               </Card>
             </div>
@@ -365,7 +365,7 @@ export default function BudgetPlannerPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-                <Link href="/contact">Schedule Free Consultation</Link>
+                <Link href="/start-planning">Schedule Free Consultation</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a href="tel:+12153419990" className="flex items-center gap-2">
