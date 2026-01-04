@@ -40,7 +40,7 @@ export function StickyCTA() {
               asChild
               className="font-sans flex-1 sm:flex-none bg-primary text-primary-foreground hover:bg-primary/90"
             >
-              <Link href="/contact">
+              <Link href="/start-planning">
                 <Calendar className="h-4 w-4 mr-2" />
                 Book Free Consultation
               </Link>
