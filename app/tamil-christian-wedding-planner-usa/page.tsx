@@ -37,7 +37,7 @@ export default function TamilChristianWeddingPlannerPage() {
             the process simple and respectful for everyone involved.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 text-lg">
+            <Link href="/start-planning" className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 text-lg">
               Schedule Consultation
             </Link>
             <Link href="/services" className="bg-transparent border px-10 py-6 text-lg text-accent-foreground">
@@ -295,7 +295,7 @@ export default function TamilChristianWeddingPlannerPage() {
           <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
             Tell us about your church, your family's traditions and your dream reception.
           </p>
-          <Link href="/contact" className="bg-white text-accent hover:bg-white/90 px-10 py-6 text-lg">
+          <Link href="/start-planning" className="bg-white text-accent hover:bg-white/90 px-10 py-6 text-lg">
             Schedule Free Consultation
           </Link>
         </div>
