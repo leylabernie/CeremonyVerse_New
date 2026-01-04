@@ -192,7 +192,7 @@ export default function TestimonialsPage() {
             authentic, stress-free fusion wedding.
           </p>
           <div className="pt-4">
-            <Link href="/contact">
+            <Link href="/start-planning">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground hover:from-primary/90 hover:to-primary/70 text-lg h-16 px-12 rounded-full shadow-2xl hover:shadow-3xl transition-all"
