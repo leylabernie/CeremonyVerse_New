@@ -41,7 +41,7 @@ export default function TeluguWeddingCoordinator() {
                   authentic rituals, traditional Kanjivaram silk, and cultural expertise.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                  <Link href="/contact">
+                  <Link href="/start-planning">
                     <Button
                       size="lg"
                       className="w-full sm:w-auto bg-[var(--accent)] hover:bg-[var(--accent)] text-white"
@@ -272,7 +272,7 @@ export default function TeluguWeddingCoordinator() {
               Let's create a celebration that honors your heritage and creates memories for generations
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href="/start-planning">
                 <Button size="lg" className="bg-[var(--accent)] hover:bg-[var(--accent)] text-white">
                   Schedule Free Consultation
                 </Button>
