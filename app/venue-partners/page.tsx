@@ -157,7 +157,7 @@ export default function VenuePartnersPage() {
                     asChild
                     className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white hover:from-[var(--primary)]/90 hover:to-[var(--accent)]/90"
                   >
-                    <Link href="/contact">
+                    <Link href="/start-planning">
                       Request Venue Tour
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -182,7 +182,7 @@ export default function VenuePartnersPage() {
               className="bg-white text-[var(--primary)] hover:bg-white/90 px-10 py-6 text-lg shadow-lg"
               asChild
             >
-              <Link href="/contact">
+              <Link href="/start-planning">
                 Schedule Free Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
