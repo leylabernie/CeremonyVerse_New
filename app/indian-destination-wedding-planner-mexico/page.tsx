@@ -1,254 +1,179 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Indian Destination Wedding Planner Mexico | CeremonyVerse",
+  title: "Indian Destination Wedding Planner in Mexico | CeremonyVerse",
   description:
-    "Plan your dream Indian destination wedding in Mexico with our budget-first approach. Expert planners for Hindu, Sikh, and multicultural ceremonies across Cancun, Riviera Maya, and Los Cabos.",
+    "Planning-focused support for Indian and South Asian destination weddings in Mexico. Budget-first strategy, realistic cost guidance, and culturally fluent coordination.",
 };
 
-export default function MexicoDestinationWeddingPage() {
+export default function MexicoDestinationWeddingPlannerPage() {
   return (
-    <main className="py-16 sm:py-20">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-          Indian destination wedding planning in Mexico
-        </h1>
-        <p className="mt-4 text-base leading-relaxed">
-  Want real numbers before you decide?{" "}
-  <a
-    href="/indian-wedding-mexico-cost-guide"
-    className="underline underline-offset-4"
-  >
-    See the Indian wedding in Mexico cost guide
-  </a>{" "}
-  for typical budget ranges and sample breakdowns.
-</p>
-          className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-          Mexico offers the perfect blend of stunning venues, warm hospitality, and
-          affordability for your Indian destination wedding. From beachfront mandaps to
-          luxury resort celebrations, we help you create an unforgettable multi-day
-          experience within your budget.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="/contact"
-            className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition"
-          >
-            Start planning
-          </a>
-          <a
-            href="/mexico-wedding-cost-guide"
-            className="inline-block border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary/10 transition"
-          >
-            View Mexico cost guide
-          </a>
-        </div>
-      </section>
-
-      {/* Why Mexico Works Section */}
-      <section className="container mx-auto px-4 mt-20">
-        <h2 className="text-3xl font-bold text-center mb-8">Why Mexico works</h2>
-        <div className="max-w-4xl mx-auto space-y-6 text-gray-600">
-          <p>
-            Mexico has emerged as one of the most popular destinations for Indian weddings
-            outside of India. With direct flights from major US and Canadian cities, no visa
-            requirements for many nationalities, and a favorable exchange rate, it offers
-            exceptional value without compromising on luxury or experience.
+      <section className="bg-gradient-to-b from-amber-50 to-white py-20 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-xs font-medium tracking-[0.2em] text-amber-700 mb-3 uppercase">
+            INDIAN & SOUTH ASIAN DESTINATION WEDDINGS
           </p>
-          <p>
-            The country&apos;s world-class resorts are increasingly experienced in hosting
-            elaborate Indian celebrations, from Sangeet nights to Baraat processions. Many
-            venues offer dedicated Indian wedding packages with experienced culinary teams
-            who understand the nuances of regional cuisines, vegetarian requirements, and
-            multi-day event logistics.
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
+            Indian destination wedding planning in Mexico
+          </h1>
+          <p className="text-lg md:text-xl text-gray-700 mb-6">
+            Mexico offers the perfect blend of stunning venues, warm
+            hospitality, and better budget efficiency than many US metro
+            markets—without asking you to compromise on rituals or guest
+            experience.
+          </p>
+          <p className="text-sm text-gray-600 max-w-3xl mx-auto mb-8">
+            My role is to help you translate your guest count, wish list, and
+            family expectations into a realistic Mexico plan—events, venues,
+            vendors, and logistics that actually fit your numbers.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/book-consultation"
+              className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium uppercase tracking-[0.18em] bg-amber-700 text-white hover:bg-amber-800 transition-colors"
+            >
+              Start with a planning consult
+            </a>
+            <a
+              href="/indian-wedding-mexico-cost-guide"
+              className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium uppercase tracking-[0.18em] text-amber-700 bg-white border-2 border-amber-600 hover:bg-amber-50 transition-colors"
+            >
+              See the Mexico cost guide
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Regions & Focus Section */}
+      <section className="py-16 px-4 bg-white border-t border-b border-amber-100">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-gray-900 mb-4">
+            Where I help couples plan in Mexico
+          </h2>
+          <p className="text-gray-600 mb-8">
+            I focus on resort areas that are already set up for multi-day Indian
+            and South Asian weddings—with reliable venues, experienced vendors,
+            and accessible travel for US-based families.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-amber-50 rounded-xl p-6 border border-amber-100">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Popular regions
+              </h3>
+              <ul className="list-disc list-inside text-gray-700 space-y-1">
+                <li>Cancun & Riviera Maya</li>
+                <li>Playa del Carmen & Puerto Morelos</li>
+                <li>Tulum (resort zones)</li>
+                <li>Los Cabos</li>
+                <li>Puerto Vallarta & Nuevo Vallarta</li>
+              </ul>
+            </div>
+
+            <div className="bg-amber-50 rounded-xl p-6 border border-amber-100">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Ceremony types
+              </h3>
+              <ul className="list-disc list-inside text-gray-700 space-y-1">
+                <li>Hindu, Sikh, Jain, and Muslim ceremonies</li>
+                <li>Fusion and interfaith weddings</li>
+                <li>Multiple-ceremony weekends (e.g., Hindu + Christian)</li>
+                <li>Smaller legal or civil ceremonies when needed</li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="text-sm text-gray-600 mt-6">
+            If you&apos;re still deciding between multiple regions—or between
+            Mexico and a US city—our first step is a budget and feasibility
+            comparison so you&apos;re not guessing.
           </p>
         </div>
       </section>
 
-      {/* Cultural Expertise Section */}
-      <section className="container mx-auto px-4 mt-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Cultural expertise</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-xl shadow-sm border">
-            <h3 className="text-xl font-semibold mb-3">Hindu ceremonies</h3>
-            <p className="text-gray-600">
-              Traditional Hindu wedding rituals including Haldi, Mehndi, Sangeet, and the
-              main wedding ceremony with proper mandap setup and fire rituals.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm border">
-            <h3 className="text-xl font-semibold mb-3">Sikh & Anand Karaj</h3>
-            <p className="text-gray-600">
-              Respectful Anand Karaj ceremonies with proper setup for the Guru Granth Sahib,
-              coordination with Granthis, and traditional Sikh wedding customs.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm border">
-            <h3 className="text-xl font-semibold mb-3">Gujarati & Punjabi</h3>
-            <p className="text-gray-600">
-              Vibrant celebrations honoring Gujarati and Punjabi traditions, from Garba
-              nights to energetic Bhangra performances and regional customs.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm border">
-            <h3 className="text-xl font-semibold mb-3">South Indian</h3>
-            <p className="text-gray-600">
-              Elegant South Indian ceremonies including Tamil, Telugu, Kannada, and
-              Malayalam traditions with authentic rituals and cultural elements.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm border">
-            <h3 className="text-xl font-semibold mb-3">Fusion & interfaith</h3>
-            <p className="text-gray-600">
-              Thoughtfully blended ceremonies that honor multiple traditions, creating
-              meaningful celebrations for interfaith and multicultural couples.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm border">
-            <h3 className="text-xl font-semibold mb-3">Guest experience</h3>
-            <p className="text-gray-600">
-              Comprehensive guest management including welcome bags, transportation,
-              activities, and ensuring all dietary and accessibility needs are met.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Planning Approach Section */}
+      <section className="py-16 px-4 bg-gradient-to-b from-white to-amber-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-gray-900 mb-4">
+            A planning process built around your numbers
+          </h2>
+          <p className="text-gray-600 mb-8">
+            I don&apos;t start with moodboards; I start with structure. Once we
+            know what&apos;s realistic, the creative decisions become much less
+            stressful—for you and for your families.
+          </p>
 
-      {/* Mexico Resort Regions Section */}
-      <section className="container mx-auto px-4 mt-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Mexico resort regions</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          <div className="text-center p-6 bg-gray-50 rounded-xl">
-            <h3 className="text-lg font-semibold mb-2">Cancun</h3>
-            <p className="text-sm text-gray-600">
-              World-famous beaches with excellent resort infrastructure and easy
-              accessibility for international guests.
-            </p>
-          </div>
-          <div className="text-center p-6 bg-gray-50 rounded-xl">
-            <h3 className="text-lg font-semibold mb-2">Riviera Maya</h3>
-            <p className="text-sm text-gray-600">
-              Stunning Caribbean coastline with luxury all-inclusive resorts perfect for
-              multi-day Indian celebrations.
-            </p>
-          </div>
-          <div className="text-center p-6 bg-gray-50 rounded-xl">
-            <h3 className="text-lg font-semibold mb-2">Los Cabos</h3>
-            <p className="text-sm text-gray-600">
-              Dramatic desert-meets-ocean landscapes on the Pacific side, ideal for intimate
-              luxury weddings.
-            </p>
-          </div>
-          <div className="text-center p-6 bg-gray-50 rounded-xl">
-            <h3 className="text-lg font-semibold mb-2">Tulum & Playa del Carmen</h3>
-            <p className="text-sm text-gray-600">
-              Bohemian charm with ancient Mayan ruins backdrop, perfect for couples seeking
-              unique, Instagram-worthy venues.
-            </p>
-          </div>
-          <div className="text-center p-6 bg-gray-50 rounded-xl">
-            <h3 className="text-lg font-semibold mb-2">Puerto Vallarta</h3>
-            <p className="text-sm text-gray-600">
-              Charming Pacific coast town with beautiful sunsets, colonial architecture, and
-              warm Mexican hospitality.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* How Our Process Works Section */}
-      <section className="container mx-auto px-4 mt-20">
-        <h2 className="text-3xl font-bold text-center mb-12">How our process works</h2>
-        <div className="max-w-3xl mx-auto">
-          <ol className="space-y-6">
-            <li className="flex gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-semibold">
-                1
-              </span>
-              <div>
-                <h3 className="font-semibold mb-1">Discovery consultation</h3>
-                <p className="text-gray-600">
-                  We learn about your vision, guest count, cultural requirements, and budget
-                  to understand exactly what you&apos;re looking for.
-                </p>
-              </div>
+          <ol className="space-y-6 text-gray-700">
+            <li className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
+              <h3 className="font-semibold text-gray-900 mb-1">
+                1. Budget-first intake
+              </h3>
+              <p>
+                We map your guest list, ideal dates, and non-negotiable
+                traditions, then outline a Mexico budget range that reflects
+                real F&amp;B, room block, and vendor costs—not generic averages.
+              </p>
             </li>
-            <li className="flex gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-semibold">
-                2
-              </span>
-              <div>
-                <h3 className="font-semibold mb-1">Venue research & proposals</h3>
-                <p className="text-gray-600">
-                  We present curated venue options across Mexico that match your criteria,
-                  complete with pricing breakdowns and availability.
-                </p>
-              </div>
+            <li className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
+              <h3 className="font-semibold text-gray-900 mb-1">
+                2. Region &amp; resort shortlisting
+              </h3>
+              <p>
+                Based on your budget and priorities, we narrow down destination
+                zones and specific properties that make sense for your group
+                size, events, and travel patterns.
+              </p>
             </li>
-            <li className="flex gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-semibold">
-                3
-              </span>
-              <div>
-                <h3 className="font-semibold mb-1">Site visits & vendor selection</h3>
-                <p className="text-gray-600">
-                  Optional site visits to shortlisted venues, followed by connecting you
-                  with trusted local vendors experienced in Indian weddings.
-                </p>
-              </div>
+            <li className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
+              <h3 className="font-semibold text-gray-900 mb-1">
+                3. Event &amp; vendor architecture
+              </h3>
+              <p>
+                We design the weekend structure—how many events, where they
+                live, and which vendors are local vs traveling—so you have a
+                clear framework before you approve any big line items.
+              </p>
             </li>
-            <li className="flex gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-semibold">
-                4
-              </span>
-              <div>
-                <h3 className="font-semibold mb-1">Detailed planning & coordination</h3>
-                <p className="text-gray-600">
-                  Comprehensive timeline creation, vendor management, guest logistics, and
-                  all the details that make your celebration seamless.
-                </p>
-              </div>
-            </li>
-            <li className="flex gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-semibold">
-                5
-              </span>
-              <div>
-                <h3 className="font-semibold mb-1">On-site execution</h3>
-                <p className="text-gray-600">
-                  Our team is present throughout your wedding events to ensure every
-                  ceremony, meal, and moment unfolds perfectly.
-                </p>
-              </div>
+            <li className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
+              <h3 className="font-semibold text-gray-900 mb-1">
+                4. Detailed design &amp; guest experience
+              </h3>
+              <p>
+                Once the foundation is solid, we design decor, timelines, and
+                guest touchpoints that feel personal, culturally fluent, and
+                logistically calm.
+              </p>
             </li>
           </ol>
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="container mx-auto px-4 mt-20">
-        <div className="bg-gray-50 rounded-2xl p-8 sm:p-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to plan your Mexico wedding?
+      {/* CTA Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-semibold text-gray-900 mb-4">
+            Not sure if Mexico fits your budget yet?
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            Whether you&apos;re just starting to explore the idea or ready to book your
-            venue, we&apos;re here to help make your Indian destination wedding in Mexico
-            a reality.
+          <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
+            You don&apos;t need a venue picked out to start planning. You just
+            need honest numbers and a clear comparison to your other options.
+            That&apos;s what we build together.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="/contact"
-              className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition"
+              href="/book-consultation"
+              className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium uppercase tracking-[0.18em] bg-amber-700 text-white hover:bg-amber-800 transition-colors"
             >
-              Schedule a consultation
+              Book a Mexico planning consult
             </a>
             <a
-              href="/mexico-wedding-cost-guide"
-              className="inline-block border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary/10 transition"
+              href="/indian-wedding-mexico-cost-guide"
+              className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium uppercase tracking-[0.18em] text-amber-700 border border-amber-600 hover:bg-amber-50 transition-colors"
             >
-              View cost guide
+              Read the full cost guide
             </a>
           </div>
         </div>
