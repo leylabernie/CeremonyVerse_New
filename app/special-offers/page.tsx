@@ -76,7 +76,7 @@ export default function SpecialOffersPage() {
                 </div>
 
                 <Link
-                  href="/contact"
+                  href="/start-planning"
                   className="inline-block bg-gradient-to-r from-primary to-primary/80 text-white px-8 py-3 rounded-lg font-medium hover:shadow-xl transition-all"
                 >
                   Claim This Offer
@@ -134,7 +134,7 @@ export default function SpecialOffersPage() {
                 </div>
 
                 <Link
-                  href="/contact"
+                  href="/start-planning"
                   className="inline-block bg-gradient-to-r from-secondary to-secondary/80 text-white px-8 py-3 rounded-lg font-medium hover:shadow-xl transition-all"
                 >
                   Get Your Credit
@@ -192,7 +192,7 @@ export default function SpecialOffersPage() {
                 </div>
 
                 <Link
-                  href="/contact"
+                  href="/start-planning"
                   className="inline-block bg-gradient-to-r from-primary to-primary/80 text-white px-8 py-3 rounded-lg font-medium hover:shadow-xl transition-all"
                 >
                   Learn More
@@ -219,7 +219,7 @@ export default function SpecialOffersPage() {
                 coordination (valued at $800) plus upgraded floral arrangements for your Mandap.
               </p>
               <Link
-                href="/contact"
+                href="/start-planning"
                 className="inline-block bg-gradient-to-r from-primary to-primary/80 text-white px-8 py-3 rounded-lg font-medium hover:shadow-xl transition-all"
               >
                 Book Spring 2025
@@ -238,7 +238,7 @@ export default function SpecialOffersPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/contact"
+              href="/start-planning"
               className="bg-gradient-to-r from-primary to-primary/80 text-white px-8 py-4 rounded-lg font-medium hover:shadow-xl transition-all"
             >
               Schedule Free Consultation
