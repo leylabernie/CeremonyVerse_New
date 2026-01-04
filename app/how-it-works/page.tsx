@@ -163,7 +163,7 @@ export default function HowItWorksPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <Link href="/contact">Schedule Free Consultation</Link>
+              <Link href="/start-planning">Schedule Free Consultation</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <a href="tel:+12153419990">Call +1-215-341-9990</a>
