@@ -5,17 +5,17 @@ import { Button } from "@/components/ui/button"
 const nav = [
   { href: "/home", label: "Home" },
   { href: "/services", label: "Services" },
-  // Added dedicated navigation link for our virtual shopping service. This makes it easy for visitors to
-  // discover our India shopping offering directly from the top navigation.
-  { href: "/shopping-from-india", label: "Shopping" },
-  { href: "/wedding-journeys", label: "Wedding Journeys" },
-  { href: "/indian-destination-wedding-planner-mexico", label: "Mexico Destination Weddings" },
+  // Highlight our virtual shopping service with a concise label
+  { href: "/shopping-from-india", label: "Shop" },
+  // Shortened label to improve readability
+  { href: "/wedding-journeys", label: "Journeys" },
+  // Shortened label to improve readability
+  { href: "/indian-destination-wedding-planner-mexico", label: "Destinations" },
   { href: "/resources", label: "Resources" },
   { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pricing" },
   { href: "/our-story", label: "About" },
-  // Dedicated navigation link for our virtual shopping service
-  { href: "/shopping-from-india", label: "Shopping" },
+  // Removed duplicate 'Shopping' entry to avoid confusion
 ]
 
 export function Navbar() {
