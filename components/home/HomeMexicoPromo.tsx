@@ -38,7 +38,7 @@ export default function HomeMexicoPromo() {
             <h3 className="font-serif text-xl text-cvInk mb-4">Quick Snapshot</h3>
             <ul className="space-y-3 text-cvMuted">
               <li className="flex items-start gap-2">
-                <span className="text-cvAccent mt-1">â¢</span>
+                <span className="text-cvAccent mt-1">•</span>
                 <span><strong className="text-cvInk">Popular regions:</strong> Cancun, Riviera Maya, Los Cabos, Puerto Vallarta, San Miguel de Allende</span>
               </li>
               <li className="flex items-start gap-2">
