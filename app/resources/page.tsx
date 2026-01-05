@@ -27,13 +27,15 @@ export default function ResourcesPage() {
     {
       title: "AI Budget Calculator",
       href: "/budget-calculator",
-      description: "Get personalized AI-powered budget recommendations for your Indian or fusion wedding.",
+      description:
+        "Get personalized AI-powered budget recommendations for your Indian or fusion wedding.",
       icon: "🤖",
     },
     {
       title: "Tradition Explainer",
       href: "/tradition-explainer",
-      description: "Learn about Indian wedding traditions and their cultural significance with AI assistance.",
+      description:
+        "Learn about Indian wedding traditions and their cultural significance with AI assistance.",
       icon: "🕉️",
     },
     {
@@ -55,6 +57,12 @@ export default function ResourcesPage() {
       icon: "📋",
     },
     {
+      title: "Wedding Journeys",
+      href: "/wedding-journeys",
+      description: "Explore real couples' stories and itineraries for inspiration.",
+      icon: "🗺️",
+    },
+    {
       title: "Start Planning",
       href: "/start-planning",
       description: "Begin your wedding planning journey with our Budget + Vision Form.",
@@ -74,8 +82,8 @@ export default function ResourcesPage() {
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="font-serif text-text mb-4">Wedding Planning Resources</h1>
           <p className="font-sans text-lg text-muted-foreground leading-relaxed">
-            Expert guides, tips, and insights for planning your perfect Indian-American fusion wedding. Learn from
-            experienced planners who understand your unique needs.
+            Expert guides, tips, and insights for planning your perfect Indian-American fusion wedding. Learn
+            from experienced planners who understand your unique needs.
           </p>
         </div>
       </Section>
