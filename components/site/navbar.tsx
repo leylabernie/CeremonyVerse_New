@@ -12,6 +12,8 @@ const nav = [
   // Shortened label to improve readability
   { href: "/indian-destination-wedding-planner-mexico", label: "Destinations" },
   { href: "/resources", label: "Resources" },
+  // New: link to our portfolio gallery so couples can see past weddings and outfit examples
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pricing" },
   { href: "/our-story", label: "About" },
