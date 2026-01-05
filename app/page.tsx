@@ -257,7 +257,10 @@ export default function HomePage() {
 
       <Section variant="surface">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-text mb-6">Nationwide Indian Wedding Planning with Virtual & In-Person Options</h2>
+          {/* Clarify heading to avoid repeating the previous section title */}
+          <h2 className="text-text mb-6">
+            Your Virtual & In‑Person Planning Journey
+          </h2>
 
           <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
             Thoughtfully Designed to Fit Your Real Budget
