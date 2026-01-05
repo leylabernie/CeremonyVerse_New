@@ -37,16 +37,19 @@ export default function HomeMexicoPromo() {
           <div className="bg-cvCard border border-cvBorder rounded-lg p-6 md:p-8">
             <h3 className="font-serif text-xl text-cvInk mb-4">Quick Snapshot</h3>
             <ul className="space-y-3 text-cvMuted">
-              <li className="flex items-start gap-2">
-                <span className="text-cvAccent mt-1">•</span>
+               <li className="flex items-start gap-2">
+                 {/* Use a real bullet character instead of mis-encoded sequence */}
+                 <span className="text-cvAccent mt-1">•</span>
                 <span><strong className="text-cvInk">Popular regions:</strong> Cancun, Riviera Maya, Los Cabos, Puerto Vallarta, San Miguel de Allende</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-cvAccent mt-1">â¢</span>
+               <li className="flex items-start gap-2">
+                 {/* Use a real bullet character instead of mis-encoded sequence */}
+                 <span className="text-cvAccent mt-1">•</span>
                 <span><strong className="text-cvInk">Ceremony types:</strong> Hindu, Sikh, Muslim, Christian, fusion, and interfaith ceremonies</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-cvAccent mt-1">â¢</span>
+               <li className="flex items-start gap-2">
+                 {/* Use a real bullet character instead of mis-encoded sequence */}
+                 <span className="text-cvAccent mt-1">•</span>
                 <span><strong className="text-cvInk">Budget-first approach:</strong> Transparent pricing with no hidden fees or vendor kickbacks</span>
               </li>
               <li className="flex items-start gap-2">
