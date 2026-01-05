@@ -53,8 +53,12 @@ export default function HomeMexicoPromo() {
                 <span><strong className="text-cvInk">Budget-first approach:</strong> Transparent pricing with no hidden fees or vendor kickbacks</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-cvAccent mt-1">â¢</span>
-                <span><strong className="text-cvInk">US-based planner:</strong> Coordination from the US with trusted local partners on the ground</span>
+                {/* Use a real bullet character instead of mis-encoded sequence */}
+                <span className="text-cvAccent mt-1">•</span>
+                <span>
+                  <strong className="text-cvInk">US-based planner:</strong> Coordination from the US with trusted
+                  local partners on the ground
+                </span>
               </li>
             </ul>
           </div>
