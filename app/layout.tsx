@@ -8,18 +8,20 @@ import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 
 // Sans-serif for body text - clean and readable
+// IMPORTANT: use cv-prefixed variable so we can control mapping in CSS
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-sans",
+  variable: "--font-cv-sans",
   weight: ["400", "500", "600"],
 })
 
 // Serif for headings - elegant and sophisticated
+// IMPORTANT: use cv-prefixed variable so we can control mapping in CSS
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-serif",
+  variable: "--font-cv-serif",
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
 })
@@ -82,6 +84,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      // Attach font variables from next/font to the html element
       className={`${inter.variable} ${cormorantGaramond.variable}`}
     >
       <head>
