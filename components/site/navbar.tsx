@@ -1,23 +1,31 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
+
+/**
+ * Top-level navigation component for CeremonyVerse.
+ *
+ * This version simplifies the primary navigation by grouping
+ * sub-services into their parent categories. Specifically:
+ *
+ * - The dedicated "Shop" link has been removed from the navbar and
+ *   is now promoted within the Services page itself as a call-to-action.
+ * - The "Journeys" link has been removed from the top-level navbar;
+ *   it appears instead within the Resources page to consolidate
+ *   educational and inspirational content.
+ * - The "Portfolio" link has been removed from the navigation to
+ *   reduce clutter until a full portfolio gallery is ready.
+ */
 
 const nav = [
   { href: "/home", label: "Home" },
   { href: "/services", label: "Services" },
-  // Highlight our virtual shopping service with a concise label
-  { href: "/shopping-from-india", label: "Shop" },
-  // Shortened label to improve readability
-  { href: "/wedding-journeys", label: "Journeys" },
-  // Shortened label to improve readability
+  // Destinations page for Mexico and other destination weddings
   { href: "/indian-destination-wedding-planner-mexico", label: "Destinations" },
+  // Consolidate educational tools, blogs, and journeys under Resources
   { href: "/resources", label: "Resources" },
-  // New: link to our portfolio gallery so couples can see past weddings and outfit examples
-  { href: "/portfolio", label: "Portfolio" },
   { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pricing" },
   { href: "/our-story", label: "About" },
-  // Removed duplicate 'Shopping' entry to avoid confusion
 ]
 
 export function Navbar() {
@@ -38,6 +46,7 @@ export function Navbar() {
           </Link>
         </div>
 
+        {/* Desktop navigation */}
         <nav className="hidden lg:flex items-center justify-center gap-1">
           {nav.map((item, index) => (
             <div key={item.href} className="flex items-center">
@@ -49,7 +58,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* Mobile menu - keeping font-sans for readability */}
+        {/* Mobile menu */}
         <div className="lg:hidden flex flex-col items-center gap-4">
           <nav className="flex flex-wrap items-center justify-center gap-4 text-[14px] font-medium text-cvInk">
             {nav.map((item) => (
