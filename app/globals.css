@@ -4,10 +4,20 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Font family variables */
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  /*
+   * Font family variables
+   *
+   * Define `--font-cv-sans` and `--font-cv-serif` to provide a fallback stack
+   * for the Inter and Cormorant Garamond fonts. These variables are also
+   * populated by Next.js via the `variable` property in app/layout.tsx.
+   */
+  --font-cv-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-cv-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* Map generic font tokens to the cv-prefixed variables. */
+  --font-sans: var(--font-cv-sans);
+  --font-serif: var(--font-cv-serif);
 
   /* Applying Option A sage palette by overriding shadcn defaults */
   /* Base colors - warm neutrals */
@@ -133,6 +143,15 @@
   /* Font family mappings for Tailwind */
   --font-family-sans: var(--font-sans);
   --font-family-serif: var(--font-serif);
+
+  /*
+   * Map the generic font tokens to the cv-prefixed variables here as
+   * well. This mirrors the mapping in :root and ensures that any
+   * components relying on `--font-sans` or `--font-serif` receive the
+   * correct values.
+   */
+  --font-serif: var(--font-cv-serif);
+  --font-sans: var(--font-cv-sans);
 
   /* Shadcn/ui color mappings */
   --color-background: var(--background);
