@@ -11,17 +11,14 @@ import HomeMexicoPromo from "@/components/home/HomeMexicoPromo"
 import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Indian & Fusion Wedding Planner Nationwide | Budget-First | CeremonyVerse",
-  // Updated description to include shopping services.
   description:
-    "Plan and shop for your Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual planning and shopping consultations available nationwide. Get your free budget roadmap and outfit sourcing plan.",
-  // Added keywords related to shopping and virtual sourcing.
+    "Plan your Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual planning and culturally aware sourcing consultations available nationwide. Get your free budget roadmap and outfit sourcing plan.",
   keywords:
-    "indian wedding planner, fusion wedding planner, budget wedding planner, virtual wedding planner, south asian wedding planner, indian wedding planning services, affordable indian wedding planner, indian wedding shopping, virtual shopping india, bridal lehenga shopping, indian wedding outfits, jewelry sourcing",
+    "indian wedding planner, fusion wedding planner, budget wedding planner, virtual wedding planner, south asian wedding planner, indian wedding planning services, affordable indian wedding planner, indian wedding outfits, jewelry sourcing, cultural wedding planning",
   openGraph: {
     title: "Indian & Fusion Wedding Planner Nationwide | Budget-First | CeremonyVerse",
-    // Reflect shopping alongside planning in Open Graph description.
     description:
-      "Plan and shop an Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual planning and shopping consultations available nationwide.",
+      "Plan your Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual planning and culturally aware sourcing consultations available nationwide.",
     url: "https://ceremonyverse.com",
     siteName: "CeremonyVerse",
     images: [
@@ -204,7 +201,7 @@ export default function HomePage() {
             </p>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
               CeremonyVerse helps Indian and multicultural couples plan culturally aligned weddings, coordinate trusted
-              vendors, and source the right outfits and jewelry essentials via our virtual shopping service — without overspending or guesswork.
+              vendors, and source the right outfits and jewelry essentials through guided cultural sourcing and planning support — without overspending or guesswork.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -267,7 +264,7 @@ export default function HomePage() {
           </p>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
             CeremonyVerse helps Indian and multicultural couples plan culturally aligned weddings, coordinate trusted
-            vendors, and source the right outfits and jewelry essentials via our virtual shopping service — without overspending or guesswork.
+            vendors, and source the right outfits and jewelry essentials through guided cultural sourcing and planning support — without overspending or guesswork.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
