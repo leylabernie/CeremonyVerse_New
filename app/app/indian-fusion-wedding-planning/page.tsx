@@ -104,7 +104,7 @@ export default function IndianFusionWeddingPlanningPage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-1">
                 Planning Intensive
               </h3>
-              <p className="text-sm text-gray-600 mb-3">From $800</p>
+              <p className="text-sm text-gray-600 mb-3">From $1,250</p>
               <p className="text-sm text-gray-700 mb-4 flex-1">
                 A deep-dive strategy session to map your budget, priorities, and
                 planning order before you commit to major contracts.

@@ -136,7 +136,7 @@ export default function HomePage() {
         name: "How much do your wedding planning services cost?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Our Planning Intensives start at $800, Partial Planning starts at $3,500, and Full Planning starts at $6,500. All pricing is transparent with no hidden fees or percentage-based markups.",
+          text: "Our Planning Intensives start at $1,250, Partial Planning starts at $3,000, and Full Planning starts at $6,500. All pricing is transparent with no hidden fees or percentage-based markups.",
         },
       },
       {
@@ -551,7 +551,7 @@ export default function HomePage() {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-xl font-semibold mb-3">How much do your wedding planning services cost?</h3>
               <p className="text-gray-700">
-                Our Planning Intensives start at $800, Partial Planning starts at $3,500, and Full Planning starts at
+                Our Planning Intensives start at $1,250, Partial Planning starts at $3,000, and Full Planning starts at
                 $6,500. All pricing is transparent with no hidden fees or percentage-based markups. We discuss travel
                 costs upfront for out-of-area weddings.{" "}
                 <a href="/pricing" className="text-blue-600 hover:underline">
@@ -624,7 +624,7 @@ export default function HomePage() {
     "name": "CeremonyVerse",
     "url": "https://www.ceremonyverse.com",
     "image": "https://www.ceremonyverse.com/images/home-hero-planning.jpg",
-    "priceRange": "$800 - $6500",
+    "priceRange": "$1250 - $6500",
     "areaServed": [
       { "@type": "Country", "name": "United States" },
       { "@type": "Country", "name": "Mexico" }

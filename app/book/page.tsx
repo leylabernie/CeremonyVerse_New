@@ -47,9 +47,13 @@ export default function BookPage() {
         )}
 
         <p className="mt-6 text-sm text-muted-foreground">
-          Prefer to call? Reach us at{" "}
+          Prefer phone or email? Call{" "}
           <a href="tel:+12153419990" className="text-accent hover:underline">
             +1-215-341-9990
+          </a>{" "}
+          or email{" "}
+          <a href="mailto:hello@ceremonyverse.com" className="text-accent hover:underline">
+            hello@ceremonyverse.com
           </a>
         </p>
       </div>

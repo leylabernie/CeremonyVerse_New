@@ -8,10 +8,10 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema"
 export const metadata = {
   title: "Indian Wedding Planning Intensives | Budget Consultation | CeremonyVerse",
   description:
-    "Single-session wedding planning intensives starting at $800. Get a budget roadmap, vendor strategy, and cultural ceremony guidance for your Indian or fusion wedding. Virtual nationwide.",
+    "Single-session wedding planning intensives starting at $1,250. Get a budget roadmap, vendor strategy, and cultural ceremony guidance for your Indian or fusion wedding. Virtual nationwide.",
   openGraph: {
     title: "Indian Wedding Planning Intensives | Budget Consultation",
-    description: "Budget-first planning intensive for Indian & fusion weddings. $800+ transparent pricing.",
+    description: "Budget-first planning intensive for Indian & fusion weddings. $1,250+ transparent pricing.",
   },
 }
 
@@ -30,7 +30,7 @@ export default function PlanningIntensivesPage() {
     offers: {
       "@type": "Offer",
       priceCurrency: "USD",
-      price: "800",
+      price: "1250",
       priceValidUntil: "2025-12-31",
     },
   }
@@ -109,7 +109,7 @@ export default function PlanningIntensivesPage() {
       <Section>
         <Card className="md:p-10 max-w-3xl">
           <h3 className="text-xl md:text-2xl font-semibold tracking-tight mb-4">Pricing</h3>
-          <p className="text-2xl font-semibold text-cvAccent mb-2">Starting at $800</p>
+          <p className="text-2xl font-semibold text-cvAccent mb-2">Starting at $1,250</p>
           <p className="text-cvMuted mb-6">
             Single 2-hour planning intensive session via Zoom. Available nationwide with flexible scheduling.
           </p>

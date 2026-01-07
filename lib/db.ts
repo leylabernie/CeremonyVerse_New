@@ -14,6 +14,12 @@ interface Lead {
   status: 'new' | 'contacted' | 'qualified' | 'converted' | 'lost'
   tags?: string[]
   notes?: string
+  metadata?: {
+    location?: string
+    budget?: string
+    services?: string[]
+    [key: string]: any
+  }
 }
 
 // Check if we have Vercel KV available
