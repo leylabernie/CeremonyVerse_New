@@ -158,12 +158,12 @@ export function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "EventPlanning",
-    "@id": "https://ceremonyverse.com/#business",
+    "@id": "https://www.ceremonyverse.com/#business",
     name: "CeremonyVerse",
-    url: "https://ceremonyverse.com",
+    url: "https://www.ceremonyverse.com",
     telephone: "+1-215-341-9990",
     email: "hello@ceremonyverse.com",
-    image: "https://ceremonyverse.com/og-image.jpg",
+    image: "https://www.ceremonyverse.com/og-image.jpg",
     description:
       "Indian and fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and virtual planning support.",
     priceRange: "$$",
