@@ -27,7 +27,7 @@ const cormorantGaramond = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ceremonyverse.com"),
+  metadataBase: new URL("https://www.ceremonyverse.com"),
   title: {
     default: "Indian & Fusion Wedding Planner Nationwide | CeremonyVerse",
     template: "%s | CeremonyVerse",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Indian & Fusion Wedding Planner | CeremonyVerse",
     description:
       "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
-    url: "https://ceremonyverse.com",
+    url: "https://www.ceremonyverse.com",
     siteName: "CeremonyVerse",
     locale: "en_US",
     type: "website",
@@ -51,7 +51,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "WeddingPlanner",
   name: "CeremonyVerse",
-  url: "https://ceremonyverse.com",
+  url: "https://www.ceremonyverse.com",
   telephone: "+1-215-341-9990",
   email: "hello@ceremonyverse.com",
   description:
