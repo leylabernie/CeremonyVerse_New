@@ -17,13 +17,13 @@ export default function SEO({
   description = "Expert Indian-American fusion wedding planning with verified suppliers, secure payment processing, and virtual shopping from India. Serving USA & Mexico. Call +1-215-341-9990",
   keywords = "Indian wedding planner, fusion wedding, multicultural wedding, wedding planning USA, luxury wedding services, verified wedding suppliers, virtual wedding shopping India",
   image = "/og-image.jpg",
-  url = "https://ceremonyverse.com",
+  url = "https://www.ceremonyverse.com",
   type = "website",
   publishedTime,
   modifiedTime,
   author = "CeremonyVerse",
 }: SEOProps) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ceremonyverse.com"
+  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.ceremonyverse.com").replace("ceremonyverse.com", "www.ceremonyverse.com")
   const fullUrl = url.startsWith("http") ? url : `${siteUrl}${url}`
   const fullImage = image.startsWith("http") ? image : `${siteUrl}${image}`
 
@@ -75,107 +75,4 @@ export default function SEO({
       <meta name="apple-mobile-web-app-title" content="CeremonyVerse" />
     </Head>
   )
-}
-
-// Schema.org structured data generators
-export function generateLocalBusinessSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://ceremonyverse.com",
-    name: "CeremonyVerse",
-    description: "Luxury Indian-American Fusion Wedding Planning Services",
-    url: "https://ceremonyverse.com",
-    telephone: "+1-215-341-9990",
-    email: "hello@ceremonyverse.com",
-    priceRange: "$$$",
-    image: "https://ceremonyverse.com/logo.png",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "US",
-      addressRegion: "Nationwide",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "40.7128",
-      longitude: "-74.0060",
-    },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "09:00",
-        closes: "19:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "10:00",
-        closes: "16:00",
-      },
-    ],
-    sameAs: [
-      "https://www.facebook.com/839146832623298",
-      "https://www.instagram.com/ceremonyverse",
-      "https://www.pinterest.com/ceremonyverse",
-    ],
-  }
-}
-
-export function generateBreadcrumbSchema(items: Array<{ name: string; url: string }>) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.name,
-      item: item.url,
-    })),
-  }
-}
-
-export function generateServiceSchema(service: {
-  name: string
-  description: string
-  provider: string
-  areaServed: string[]
-  price?: string
-}) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: service.name,
-    description: service.description,
-    provider: {
-      "@type": "Organization",
-      name: service.provider,
-    },
-    areaServed: service.areaServed.map((area) => ({
-      "@type": "Place",
-      name: area,
-    })),
-    offers: service.price
-      ? {
-          "@type": "Offer",
-          price: service.price,
-          priceCurrency: "USD",
-        }
-      : undefined,
-  }
-}
-
-export function generateFAQSchema(faqs: Array<{ question: string; answer: string }>) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  }
 }
