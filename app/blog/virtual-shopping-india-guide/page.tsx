@@ -47,14 +47,12 @@ export default function VirtualShoppingIndiaGuidePage() {
                   You've seen the photos on Instagram—stunning bridal lehengas with intricate embroidery, elaborate
                   jewelry sets that sparkle under the lights, perfectly coordinated outfits for the entire wedding
                   party. You want that same level of authenticity and craftsmanship for your wedding. But there's one
-                  problem: you live in the United States, and the best pieces are in India.
-                </p>
-                <p className="text-charcoal/80 leading-relaxed mb-4">
-                  You could fly to India for shopping, but that means taking time off work, spending thousands on
-                  flights and hotels, and dealing with the stress of coordinating with multiple vendors in different
-                  cities. Or you could try shopping online, but how do you know if what you see in photos is what you'll
-                  actually receive? How do you verify quality? What if the sizing is wrong? What if the package never
-                  arrives?
+                  <p>
+  While many couples consider traveling to India for wedding shopping,
+  international trips introduce airfare costs, hotel stays, time away from
+  work, and vendor trust concerns. Our sourcing process gives you access to
+  trusted Indian suppliers without the travel burden.
+</p>
                 </p>
                 <p className="text-charcoal/80 leading-relaxed">
                   This guide will show you exactly how to shop for authentic Indian wedding items virtually—safely,
