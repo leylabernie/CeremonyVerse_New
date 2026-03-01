@@ -53,14 +53,15 @@ export default function IndiaBuyingTripInterestPage() {
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
-              India Buying Trip Interest List
-            </h1>
+            <h1 className="text-3xl font-serif text-stone-900">
+  Thinking About Traveling to India?
+</h1>
             <p className="text-xl text-foreground/70 leading-relaxed">
-              Join our interest list for the annual India Buying Trip. We'll contact you with trip details,
-              availability, and pricing.
-            </p>
-          </div>
+              <p className="mt-4 text-stone-600">
+  Before booking flights, explore a structured sourcing plan that gives you
+  access to vetted vendors and competitive pricing — without depending on
+  international travel.
+</p>
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-8 space-y-6">
