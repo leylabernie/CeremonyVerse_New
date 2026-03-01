@@ -193,16 +193,19 @@ export default function HomePage() {
 
         <div className="grid gap-12 md:grid-cols-2 md:items-center-center z-10">
           <div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-text">
-              Indian & Fusion Wedding Planning Nationwide
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900">
+  Shop Your Indian Wedding Without Traveling to India
+</h1>
             <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
               Thoughtfully Designed to Fit Your Real Budget
             </p>
-            <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              CeremonyVerse helps Indian and multicultural couples plan culturally aligned weddings, coordinate trusted
-              vendors, and source the right outfits and jewelry essentials through guided cultural sourcing and planning support — without overspending or guesswork.
-            </p>
+            <p className="mt-6 text-lg leading-8 text-stone-600">
+  U.S. boutiques can be expensive — but flying to India adds airfare, hotels,
+  PTO, local transportation, language barriers, and vendor uncertainty.
+  CeremonyVerse sources through vetted Indian suppliers, manages communication,
+  coordinates sizing and production timelines, and reduces risk — without
+  requiring international travel.
+</p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="/start-planning">Start with Budget + Vision Form</Button>
