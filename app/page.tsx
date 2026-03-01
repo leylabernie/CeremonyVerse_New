@@ -6,7 +6,6 @@ import Link from "next/link"
 import type { Metadata } from "next"
 import Script from "next/script"
 import TrustSignals from "@/components/site/trust-signals" // Declare TrustSignals variable
-import HomeMexicoPromo from "@/components/home/HomeMexicoPromo"
 
 import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
@@ -536,8 +535,7 @@ export default function HomePage() {
       </Section>
 
       
-      <HomeMexicoPromo />
-
+     
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">
