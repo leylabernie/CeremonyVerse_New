@@ -1,3 +1,8 @@
+import ShoppingPage from "./shopping-from-india/page"
+
+export default function Home() {
+  return <ShoppingPage />
+}
 import SocialShare from "@/components/social-share"
 import Link from "next/link"
 import type { Metadata } from "next"
