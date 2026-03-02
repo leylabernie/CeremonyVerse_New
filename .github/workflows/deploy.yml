@@ -1,0 +1,50 @@
+name: Deploy CeremonyVerse
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Download and extract zip from Google Drive
+        run: |
+          # Download the zip file
+          curl -L -o ceremonyverse.zip "https://drive.google.com/uc?export=download&id=1ifUjf8pgz8rB_jCEH0lnfb9uZtCSHFfN"
+          
+          # Create a temporary directory for extraction
+          mkdir -p temp_extract
+          
+          # Extract the zip
+          unzip -o ceremonyverse.zip -d temp_extract/
+          
+          # Move files to root (handle both with and without wrapper directory)
+          if [ -d "temp_extract/ceremonyverse" ]; then
+            cp -r temp_extract/ceremonyverse/* .
+          elif [ -d "temp_extract/CeremonyVerse" ]; then
+            cp -r temp_extract/CeremonyVerse/* .
+          else
+            # Find the first directory and use it
+            for dir in temp_extract/*/; do
+              if [ -d "\$dir" ]; then
+                cp -r "\$dir"/* .
+                break
+              fi
+            done
+          fi
+          
+          # Clean up
+          rm -rf temp_extract ceremonyverse.zip
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Update site with latest version from Google Drive" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: \{{ secrets.GITHUB_TOKEN }}
