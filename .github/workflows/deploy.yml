@@ -14,11 +14,33 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-        
+          
       - name: Download and extract zip from Google Drive
         run: |
-          # Download the zip file
-          curl -L -o ceremonyverse.zip "https://drive.google.com/uc?export=download&id=1ifUjf8pgz8rB_jCEH0lnfb9uZtCSHFfN"
+          # Download the zip file using a different approach for large files
+          # First, get the confirmation token
+          CONFIRM=$(curl -sc /tmp/gdrive_cookie "https://drive.google.com/uc?export=download&id=1ifUjf8pgz8rB_jCEH0lnfb9uZwTSHFfN" | grep -o 'confirm=[^&]*' | head -1)
+          
+          if [ -n "$CONFIRM" ]; then
+            # Large file - need confirmation
+            curl -Lb /tmp/gdrive_cookie "https://drive.google.com/uc?export=download&$CONFIRM&id=1ifUjf8pgz8rB_jCEH0lnfb9uZtCSHFfN" -o ceremonyverse.zip
+          else
+            # Small file - direct download
+            curl -L -o ceremonyverse.zip "https://drive.google.com/uc?export=download&id=1ifUjf8pgz8rB_jCEH0lnfb9uZwTSHFfN"
+          fi
+          
+          # Check if download was successful
+          if [ ! -f ceremonyverse.zip ] || [ ! -s ceremonyverse.zip ]; then
+            echo "Failed to download file"
+            exit 1
+          fi
+          
+          # Check if it's a valid zip
+          if ! unzip -t ceremonyverse.zip > /dev/null 2>&1; then
+            echo "Downloaded file is not a valid zip"
+            cat ceremonyverse.zip | head -20
+            exit 1
+          fi
           
           # Create a temporary directory for extraction
           mkdir -p temp_extract
@@ -26,7 +48,7 @@ jobs:
           # Extract the zip
           unzip -o ceremonyverse.zip -d temp_extract/
           
-          # Move files to root (handle both with and without wrapper directory)
+          # Move files to root (handle both with and with out wrapper directory)
           if [ -d "temp_extract/ceremonyverse" ]; then
             cp -r temp_extract/ceremonyverse/* .
           elif [ -d "temp_extract/CeremonyVerse" ]; then
@@ -46,10 +68,8 @@ jobs:
           
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git commit -m "Update site with latest version from Google Drive" || echo "No changes to commit"
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add .
+          git commit -m "Update site with latest version from Google Drive"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
