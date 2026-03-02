@@ -1,0 +1,92 @@
+import type React from "react"
+import "./globals.css"
+import type { Metadata } from "next"
+import { Navbar } from "@/components/site/navbar"
+import { Footer } from "@/components/site/footer"
+import { Cormorant_Garamond, Inter } from "next/font/google"
+import { MobileStickyCTA } from "@/components/MobileStickyCTA"
+import { WhatsAppWidget } from "@/components/whatsapp-widget"
+import WeddingPlanningChatbot from "@/components/WeddingPlanningChatbot"
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-serif",
+})
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://ceremonyverse.com"),
+  title: {
+    default: "Indian & Fusion Wedding Planner Nationwide | CeremonyVerse",
+    template: "%s | CeremonyVerse",
+  },
+  description:
+    "Plan your Indian or fusion wedding anywhere in the USA with cultural expertise and transparent pricing. Virtual consultations available nationwide with travel for in-person events.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Indian & Fusion Wedding Planner | CeremonyVerse",
+    description: "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+    url: "https://ceremonyverse.com",
+    siteName: "CeremonyVerse",
+    locale: "en_US",
+    type: "website",
+  },
+  generator: "v0.app",
+}
+
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WeddingPlanner",
+  name: "CeremonyVerse",
+  url: "https://ceremonyverse.com",
+  telephone: "+1-215-341-9990",
+  email: "hello@ceremonyverse.com",
+  description:
+    "Indian and fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and virtual planning support.",
+  priceRange: "$$",
+  areaServed: [
+    { "@type": "State", name: "Pennsylvania" },
+    { "@type": "State", name: "New Jersey" },
+    { "@type": "State", name: "Delaware" },
+    { "@type": "State", name: "Maryland" },
+  ],
+  serviceType: [
+    "Indian Wedding Planning",
+    "Fusion Wedding Coordination",
+    "Day-of Wedding Coordination",
+    "Cultural Sourcing Support",
+  ],
+  sameAs: [
+    "https://www.instagram.com/ceremonyverse",
+    "https://www.facebook.com/ceremonyverse",
+    "https://www.pinterest.com/ceremonyverse",
+  ],
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+      </head>
+      <body
+        className="min-h-screen antialiased bg-background text-foreground"
+        style={{ fontFamily: "var(--font-serif)" }}
+      >
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+        <MobileStickyCTA />
+        <WhatsAppWidget />
+        <WeddingPlanningChatbot />
+      </body>
+    </html>
+  )
+}
