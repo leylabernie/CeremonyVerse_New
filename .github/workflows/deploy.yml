@@ -3,12 +3,17 @@ name: Deploy CeremonyVerse
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
         
       - name: Download and extract zip from Google Drive
         run: |
@@ -29,8 +34,8 @@ jobs:
           else
             # Find the first directory and use it
             for dir in temp_extract/*/; do
-              if [ -d "\$dir" ]; then
-                cp -r "\$dir"/* .
+              if [ -d "$dir" ]; then
+                cp -r "$dir"/* .
                 break
               fi
             done
@@ -47,4 +52,4 @@ jobs:
           git commit -m "Update site with latest version from Google Drive" || echo "No changes to commit"
           git push
         env:
-          GITHUB_TOKEN: \{{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
