@@ -41,7 +41,6 @@ export default function IndiaBuyingTripInterestPage() {
       </div>
     )
   }
-
   return (
     <div className="min-h-screen bg-background">
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
