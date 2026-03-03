@@ -11,6 +11,7 @@ export default function IndiaBuyingTripInterestPage() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    // TODO: Implement email/CRM integration
     setSubmitted(true)
   }
 
@@ -23,10 +24,11 @@ export default function IndiaBuyingTripInterestPage() {
               <Check className="h-8 w-8 text-accent" />
             </div>
             <h1 className="font-serif text-4xl font-bold text-foreground mb-4">
-              Thank You for Your Interest!
+              Thank You — We Got It!
             </h1>
             <p className="text-xl text-foreground/70 mb-8 leading-relaxed">
-              We've received your information and will contact you with details about our structured sourcing options.
+              We&apos;ve received your info. Next, we&apos;ll follow up with a structured sourcing plan so you can access
+              vetted Indian vendors and pricing — without depending on international travel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild>
@@ -39,66 +41,238 @@ export default function IndiaBuyingTripInterestPage() {
           </div>
         </div>
       </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-background">
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl font-serif text-stone-900">
-              Thinking About Traveling to India?
-            </h1>
+            <h1 className="text-3xl font-serif text-stone-900">Thinking About Traveling to India?</h1>
             <p className="mt-4 text-xl text-foreground/70 leading-relaxed">
-              Before booking flights, explore a structured sourcing plan that gives you
-              access to vetted vendors and competitive pricing — without depending on
-              international travel.
+              Before booking flights, explore a structured sourcing plan that gives you access to vetted vendors and
+              competitive pricing — without depending on international travel.
             </p>
           </div>
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-8 space-y-6">
-
             {/* Basic Information */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">
-                Your Information
-              </h2>
+              <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">Your Information</h2>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <input type="text" name="firstName" placeholder="First Name *" required className="input-style" />
-                <input type="text" name="lastName" placeholder="Last Name *" required className="input-style" />
+                <div>
+                  <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
+                    First Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    required
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="lastName" className="block text-sm font-medium text-foreground mb-2">
+                    Last Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    required
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  />
+                </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 mt-6">
-                <input type="email" name="email" placeholder="Email *" required className="input-style" />
-                <input type="tel" name="phone" placeholder="Phone *" required className="input-style" />
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                    Email Address *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                    Phone Number *
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mt-6">
+                <div>
+                  <label htmlFor="city" className="block text-sm font-medium text-foreground mb-2">
+                    City *
+                  </label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    required
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="state" className="block text-sm font-medium text-foreground mb-2">
+                    State/Country *
+                  </label>
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    required
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Wedding Details */}
             <div className="pt-6 border-t border-border">
-              <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">
-                Wedding Details
-              </h2>
+              <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">Wedding Details</h2>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <input type="text" name="weddingDate" placeholder="Wedding Date (Month/Year) *" required className="input-style" />
-                <input type="text" name="weddingLocation" placeholder="Wedding Location *" required className="input-style" />
+                <div>
+                  <label htmlFor="weddingDate" className="block text-sm font-medium text-foreground mb-2">
+                    Wedding Date (Month/Year) *
+                  </label>
+                  <input
+                    type="text"
+                    id="weddingDate"
+                    name="weddingDate"
+                    required
+                    placeholder="e.g., November 2026"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="weddingLocation" className="block text-sm font-medium text-foreground mb-2">
+                    Wedding Location *
+                  </label>
+                  <input
+                    type="text"
+                    id="weddingLocation"
+                    name="weddingLocation"
+                    required
+                    placeholder="City, State"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  />
+                </div>
               </div>
             </div>
 
-            {/* Budget */}
+            {/* Shopping Needs */}
             <div className="pt-6 border-t border-border">
-              <select name="budgetRange" required className="input-style">
-                <option value="">Estimated Shopping Budget *</option>
-                <option>$5,000 - $10,000</option>
-                <option>$10,000 - $20,000</option>
-                <option>$20,000 - $30,000</option>
-                <option>$30,000+</option>
-                <option>Not sure yet</option>
+              <h2 className="font-serif text-2xl font-semibold text-foreground mb-4">
+                What are you looking to shop for?
+              </h2>
+              <p className="text-sm text-foreground/70 mb-4">Select all that apply</p>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                {[
+                  "Bridal Lehenga/Saree",
+                  "Groom Sherwani",
+                  "Parent Outfits",
+                  "Bridesmaid Lehengas",
+                  "Groomsmen Sherwanis",
+                  "Jewelry (Bridal)",
+                  "Jewelry (Family)",
+                  "Ceremony Items/Vidhi",
+                  "Welcome Gifts/Favors",
+                  "Other (please specify below)",
+                ].map((item) => (
+                  <label
+                    key={item}
+                    className="flex items-center gap-3 p-3 border border-border rounded-lg hover:bg-muted/30 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name="shoppingNeeds"
+                      value={item}
+                      className="w-4 h-4 text-primary border-border rounded focus:ring-2 focus:ring-primary"
+                    />
+                    <span className="text-sm text-foreground">{item}</span>
+                  </label>
+                ))}
+              </div>
+
+              <div className="mt-6">
+                <label htmlFor="shoppingDetails" className="block text-sm font-medium text-foreground mb-2">
+                  Additional Details (Optional)
+                </label>
+                <textarea
+                  id="shoppingDetails"
+                  name="shoppingDetails"
+                  rows={4}
+                  placeholder="Tell us more about your shopping needs, style preferences, or specific items you're looking for..."
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                />
+              </div>
+            </div>
+
+            {/* Budget Range */}
+            <div className="pt-6 border-t border-border">
+              <label htmlFor="budgetRange" className="block text-sm font-medium text-foreground mb-2">
+                Estimated Shopping Budget *
+              </label>
+              <select
+                id="budgetRange"
+                name="budgetRange"
+                required
+                className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+              >
+                <option value="">Select a range</option>
+                <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                <option value="$20,000 - $30,000">$20,000 - $30,000</option>
+                <option value="$30,000+">$30,000+</option>
+                <option value="Not sure yet">Not sure yet</option>
               </select>
+            </div>
+
+            {/* Questions/Comments */}
+            <div className="pt-6 border-t border-border">
+              <label htmlFor="questions" className="block text-sm font-medium text-foreground mb-2">
+                Questions or Special Requests (Optional)
+              </label>
+              <textarea
+                id="questions"
+                name="questions"
+                rows={4}
+                placeholder="Anything we should know about your timeline, sizing, or must-have items?"
+                className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+              />
+            </div>
+
+            {/* Important Notice */}
+            <div className="bg-amber-50 dark:bg-amber-950/20 p-6 rounded-xl border border-amber-200 dark:border-amber-800">
+              <p className="text-sm text-foreground leading-relaxed">
+                <strong className="text-foreground">Note:</strong> We will confirm feasibility based on your timeline,
+                item list, and budget range. If you need urgent delivery, we’ll recommend realistic options and buffers
+                to reduce last-minute risk.
+              </p>
             </div>
 
             {/* Submit */}
@@ -108,7 +282,6 @@ export default function IndiaBuyingTripInterestPage() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
-
           </form>
         </div>
       </div>
