@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import CalendlyEmbed from "@/components/calendly-embed"
+import { CalendlyEmbed } from "@/components/calendly-embed"
 
 export const metadata: Metadata = {
   title: "Book Your Free Consultation | CeremonyVerse Wedding Planning",
