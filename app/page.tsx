@@ -29,9 +29,6 @@ export const metadata: Metadata = {
    },
     ],
   },
-},
-  
-   
     
     
   robots: {
