@@ -10,15 +10,16 @@ import HomeMexicoPromo from "@/components/home/HomeMexicoPromo"
 
 import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
-  title: "Indian & Fusion Wedding Planner Nationwide | Budget-First | CeremonyVerse",
-  description:
-    "Plan your Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual planning and culturally aware sourcing consultations available nationwide. Get your free budget roadmap and outfit sourcing plan.",
-  keywords:
-    "indian wedding planner, fusion wedding planner, budget wedding planner, virtual wedding planner, south asian wedding planner, indian wedding planning services, affordable indian wedding planner, indian wedding outfits, jewelry sourcing, cultural wedding planning",
-  openGraph: {
-    title: "Indian & Fusion Wedding Planner Nationwide | Budget-First | CeremonyVerse",
-    description:
-      "Plan your Indian or fusion wedding anywhere in the USA with transparent pricing and cultural expertise. Virtual planning and culturally aware sourcing consultations available nationwide.",
+  title: "Indian Wedding Outfit & Cultural Sourcing | CeremonyVerse",
+
+description:
+"Source authentic Indian wedding outfits, jewelry, and ceremony essentials directly from India with managed vendor coordination and shipping logistics.",
+
+keywords:
+"indian wedding outfits from india, indian wedding shopping from india, buy lehenga from india usa, indian wedding jewelry sourcing, indian wedding outfit sourcing",
+  
+   
+    
     url: "https://ceremonyverse.com",
     siteName: "CeremonyVerse",
     images: [
