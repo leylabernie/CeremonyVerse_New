@@ -18,14 +18,17 @@ export const metadata: Metadata = {
   keywords:
     "indian wedding outfits from india, indian wedding shopping from india, buy lehenga from india usa, indian wedding jewelry sourcing, indian wedding outfit sourcing",
 
-  openGraph: {
-    url: "https://ceremonyverse.com",
-    siteName: "CeremonyVerse",
-    images: [
-      {
-        url: "/images/og-image.jpg",
-      },
-    ],
+    openGraph: {
+  url: "https://ceremonyverse.com",
+  siteName: "CeremonyVerse",
+  images: [
+    {
+      url: "/images/og-image.jpg",
+      width: 1200,
+      height: 630,
+    },
+  ],
+},
   },
 }
   
