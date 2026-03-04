@@ -194,7 +194,7 @@ export default function HomePage() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center-center z-10">
           <div>
             <h1 className="text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900">
-  Shop Your Indian Wedding Without Traveling to India
+  Source Your Indian Wedding Attire Without Traveling to India
 </h1>
             <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
               Thoughtfully Designed to Fit Your Real Budget
