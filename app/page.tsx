@@ -12,19 +12,26 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Indian Wedding Outfit & Cultural Sourcing | CeremonyVerse",
 
-description:
-"Source authentic Indian wedding outfits, jewelry, and ceremony essentials directly from India with managed vendor coordination and shipping logistics.",
+  description:
+    "Source authentic Indian wedding outfits, jewelry, and ceremony essentials directly from India with managed vendor coordination and shipping logistics.",
 
-keywords:
-"indian wedding outfits from india, indian wedding shopping from india, buy lehenga from india usa, indian wedding jewelry sourcing, indian wedding outfit sourcing",
-  
-   
-    
+  keywords:
+    "indian wedding outfits from india, indian wedding shopping from india, buy lehenga from india usa, indian wedding jewelry sourcing, indian wedding outfit sourcing",
+
+  openGraph: {
     url: "https://ceremonyverse.com",
     siteName: "CeremonyVerse",
     images: [
       {
         url: "/images/og-image.jpg",
+      },
+    ],
+  },
+}
+  
+   
+    
+    
         width: 1200,
         height: 630,
         alt: "CeremonyVerse - Indian & Fusion Wedding Planning",
