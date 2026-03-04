@@ -29,26 +29,11 @@ export const metadata: Metadata = {
    },
     ],
   },
-};
+},
   
    
     
     
-        width: 1200,
-        height: 630,
-        alt: "CeremonyVerse - Indian & Fusion Wedding Planning",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Indian & Fusion Wedding Planner Nationwide | Budget-First",
-    description:
-      "Budget-first Indian & fusion wedding planning with transparent pricing. Virtual consultations available nationwide.",
-    images: ["/images/og-image.jpg"],
-  },
   robots: {
     index: true,
     follow: true,
