@@ -197,14 +197,12 @@ export default function HomePage() {
   Source Your Indian Wedding Attire Without Traveling to India
 </h1>
             <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
-              Thoughtfully Designed to Fit Your Real Budget
+              Guided sourcing from trusted vendors in India — without flights, language barriers, or vendor risk.
             </p>
             <p className="mt-6 text-lg leading-8 text-stone-600">
-  U.S. boutiques can be expensive — but flying to India adds airfare, hotels,
-  PTO, local transportation, language barriers, and vendor uncertainty.
-  CeremonyVerse sources through vetted Indian suppliers, manages communication,
-  coordinates sizing and production timelines, and reduces risk — without
-  requiring international travel.
+  Many couples believe the only way to buy authentic Indian wedding outfits is to travel to India. But international shopping trips often involve airfare, hotels, lost PTO, navigating unfamiliar cities, and uncertainty with unknown vendors.
+
+CeremonyVerse helps couples source outfits and wedding essentials from trusted Indian suppliers through guided virtual shopping, vendor coordination, and secure logistics — without requiring international travel.
 </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
