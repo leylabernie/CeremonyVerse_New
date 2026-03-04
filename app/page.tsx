@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     },
   },
 }
-
+};
 export default function HomePage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
