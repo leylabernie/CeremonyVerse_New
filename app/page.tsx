@@ -199,12 +199,17 @@ export default function HomePage() {
             <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
               Guided sourcing from trusted vendors in India — without flights, language barriers, or vendor risk.
             </p>
-            <p className="mt-6 text-lg leading-8 text-stone-600">
-  Many couples believe the only way to buy authentic Indian wedding outfits is to travel to India. But international shopping trips often involve airfare, hotels, lost PTO, navigating unfamiliar cities, and uncertainty with unknown vendors.
-
-CeremonyVerse helps couples source outfits and wedding essentials from trusted Indian suppliers through guided virtual shopping, vendor coordination, and secure logistics — without requiring international travel.
+            <p className="text-lg text-charcoal/70">
+Many couples believe the only way to buy authentic Indian wedding outfits is to travel to India.
 </p>
 
+<p className="text-lg text-charcoal/70 mt-4">
+But international shopping trips often involve airfare, hotel stays, lost PTO, navigating unfamiliar cities, and uncertainty when dealing with unknown vendors.
+</p>
+
+<p className="text-lg text-charcoal/70 mt-4">
+CeremonyVerse helps couples source authentic wedding outfits and ceremony essentials from trusted vendors in India through guided virtual sourcing, vendor coordination, and secure logistics — without requiring international travel.
+</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="/start-planning">Start with Budget + Vision Form</Button>
               <Button href="/book" variant="secondary">
