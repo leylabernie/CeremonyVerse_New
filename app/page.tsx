@@ -194,7 +194,39 @@ export default function HomePage() {
             <p className="text-lg text-charcoal/70">
 We coordinate sourcing from trusted boutiques and artisans so you can shop authentic Indian wedding attire without navigating overseas vendors yourself.
 </p>
+{/* How Sourcing Works */}
+<Section className="pt-12 md:pt-20">
+  <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
 
+    <Card>
+      <h3 className="text-xl font-semibold mb-3">
+        Outfit Sourcing
+      </h3>
+      <p className="text-charcoal/70">
+        We help source bridal lehengas, sherwanis, bridesmaid outfits, and custom pieces from trusted boutiques in India with guidance on sizing, fabrics, and authenticity.
+      </p>
+    </Card>
+
+    <Card>
+      <h3 className="text-xl font-semibold mb-3">
+        Jewelry & Ceremony Items
+      </h3>
+      <p className="text-charcoal/70">
+        From bridal jewelry sets to ceremonial accessories, we coordinate sourcing so couples avoid managing multiple overseas vendors.
+      </p>
+    </Card>
+
+    <Card>
+      <h3 className="text-xl font-semibold mb-3">
+        Vendor Coordination & Delivery
+      </h3>
+      <p className="text-charcoal/70">
+        We handle vendor communication, production timelines, and shipping logistics to ensure your items arrive correctly and on time.
+      </p>
+    </Card>
+
+  </div>
+</Section>
 <p className="text-lg text-charcoal/70 mt-4">
 But international shopping trips often involve airfare, hotel stays, lost PTO, navigating unfamiliar cities, and uncertainty when dealing with unknown vendors.
 </p>
