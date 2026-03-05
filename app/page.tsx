@@ -184,16 +184,19 @@ export default function HomePage() {
 
         <div className="grid gap-12 md:grid-cols-2 md:items-center-center z-10">
           <div>
-            <h1 className="text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900">
-  Indian Wedding Outfit & Jewelry Sourcing — Managed From the US
-</h1>
-            <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
-              Source bridal lehengas, sherwanis, jewelry, and ceremony essentials directly from trusted vendors in India while we manage vendor communication, timelines, and delivery logistics.
-            </p>
-           <p className="text-lg text-charcoal/70">
-  We coordinate sourcing from trusted boutiques and artisans so you can shop authentic Indian wedding attire without navigating overseas vendors yourself.
-</p>
-</Section>
+            <div>
+  <h1 className="text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900">
+    Indian Wedding Outfit &amp; Jewelry Sourcing — Managed From the US
+  </h1>
+
+  <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
+    Source bridal lehengas, sherwanis, jewelry, and ceremony essentials directly from trusted vendors in India while we manage vendor communication, timelines, and delivery logistics.
+  </p>
+
+  <p className="text-lg text-charcoal/70">
+    We coordinate sourcing from trusted boutiques and artisans so you can shop authentic Indian wedding attire without navigating overseas vendors yourself.
+  </p>
+</div>
 
 {/* How Sourcing Works */}
 <Section className="pt-12 md:pt-20">
