@@ -49,8 +49,7 @@ export default function HomePage() {
     "@type": "ProfessionalService",
     name: "CeremonyVerse",
     description:
-      description:
-"US-based sourcing service helping couples buy authentic Indian wedding outfits, bridal lehengas, sherwanis, and jewelry directly from trusted boutiques in India."
+     "US-based sourcing service helping couples buy authentic Indian wedding outfits, bridal lehengas, sherwanis, and jewelry directly from trusted boutiques in India."
     url: "https://ceremonyverse.com",
     telephone: "+1-215-341-9990",
     email: "hello@ceremonyverse.com",
