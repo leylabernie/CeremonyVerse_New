@@ -186,7 +186,7 @@ export default function HomePage() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center-center z-10">
           <div>
             <h1 className="text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900">
-  Source Your Indian Wedding Attire Without Traveling to India
+  Indian Wedding Outfit & Jewelry Sourcing — Managed From the US
 </h1>
             <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
               Guided sourcing from trusted vendors in India — without flights, language barriers, or vendor risk.
