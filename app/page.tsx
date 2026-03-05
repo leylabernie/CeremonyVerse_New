@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: "Indian Wedding Outfit & Cultural Sourcing | CeremonyVerse",
 
   description:
-    "Source authentic Indian wedding outfits, jewelry, and ceremony essentials directly from India with managed vendor coordination and shipping logistics.",
+   description:
+"US-based sourcing service to buy Indian wedding outfits, bridal lehengas, sherwanis, and jewelry from trusted vendors in India — with managed communication, timelines, and shipping."
 
   keywords:
     "indian wedding outfits from india, indian wedding shopping from india, buy lehenga from india usa, indian wedding jewelry sourcing, indian wedding outfit sourcing",
