@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { CalendlyEmbed } from "@/components/calendly-embed"
   export const metadata: Metadata = {
-  title: "Book Your Free Consultation | CeremonyVerse Wedding Planning",
+  title: "Indian Wedding Outfit Sourcing Consultation | CeremonyVerse",
   description:
     "Schedule a free 30-minute consultation to source authentic Indian wedding outfits, bridal lehengas, sherwanis, and jewelry from trusted boutiques in India.",
   keywords:
