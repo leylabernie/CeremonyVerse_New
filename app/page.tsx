@@ -194,6 +194,8 @@ export default function HomePage() {
             <p className="text-lg text-charcoal/70">
 We coordinate sourcing from trusted boutiques and artisans so you can shop authentic Indian wedding attire without navigating overseas vendors yourself.
 </p>
+</Section>
+
 {/* How Sourcing Works */}
 <Section className="pt-12 md:pt-20">
   <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
