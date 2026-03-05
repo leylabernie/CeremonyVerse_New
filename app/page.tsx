@@ -192,7 +192,7 @@ export default function HomePage() {
               Source bridal lehengas, sherwanis, jewelry, and ceremony essentials directly from trusted vendors in India while we manage vendor communication, timelines, and delivery logistics.
             </p>
             <p className="text-lg text-charcoal/70">
-Many couples believe the only way to buy authentic Indian wedding outfits is to travel to India.
+We coordinate sourcing from trusted boutiques and artisans so you can shop authentic Indian wedding attire without navigating overseas vendors yourself.
 </p>
 
 <p className="text-lg text-charcoal/70 mt-4">
