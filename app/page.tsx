@@ -192,7 +192,12 @@ export default function HomePage() {
   <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
     Source bridal lehengas, sherwanis, jewelry, and ceremony essentials directly from trusted vendors in India while we manage vendor communication, timelines, and delivery logistics.
   </p>
-
+              
+<p className="mt-3 text-charcoal/70">
+  <Link href="/shop-from-india" className="underline">
+    Learn how our “Shop From India” sourcing process works →
+  </Link>
+</p>
   <p className="text-lg text-charcoal/70">
     We coordinate sourcing from trusted boutiques and artisans so you can shop authentic Indian wedding attire without navigating overseas vendors yourself.
   </p>
