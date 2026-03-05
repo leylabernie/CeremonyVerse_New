@@ -4,8 +4,7 @@ import { CalendlyEmbed } from "@/components/calendly-embed"
 export const metadata: Metadata = {
   title: "Book Your Free Consultation | CeremonyVerse Wedding Planning",
   description:
-    description:
-"Schedule a free 30-minute consultation to source authentic Indian wedding outfits, bridal lehengas, sherwanis, and jewelry from trusted boutiques in India."
+   "Schedule a free 30-minute consultation to source authentic Indian wedding outfits, bridal lehengas, sherwanis, and jewelry from trusted boutiques in India."
   keywords:
     "book wedding consultation, schedule wedding planner, Indian fusion wedding appointment, free wedding consultation, multicultural wedding planner booking",
 }
