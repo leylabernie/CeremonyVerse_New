@@ -12,8 +12,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Indian Wedding Outfit & Cultural Sourcing | CeremonyVerse",
 
-  description:
-   description:
+    description:
 "US-based sourcing service to buy Indian wedding outfits, bridal lehengas, sherwanis, and jewelry from trusted vendors in India — with managed communication, timelines, and shipping."
 
   keywords:
