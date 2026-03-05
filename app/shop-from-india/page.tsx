@@ -1,142 +1,127 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 import { Section } from "@/components/site/section"
-import { Card } from "@/components/site/card"
-import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Shop Indian Wedding Outfits from India (Without Traveling) | CeremonyVerse",
+  title: "Shop Indian Wedding Outfits From India | Lehenga & Sherwani Sourcing",
   description:
-    "US-managed sourcing service to buy Indian wedding outfits, bridal lehengas, sherwanis, and jewelry from trusted boutiques in India—without the stress of overseas shopping.",
+    "Buy authentic Indian wedding outfits directly from trusted boutiques in India while we manage communication, customization, and international shipping.",
   keywords:
-    "buy lehenga from india usa, indian wedding outfits from india, indian bridal lehenga sourcing, sherwani from india usa, indian wedding jewelry sourcing, shop from india service",
+    "buy lehenga from india usa, indian wedding outfits from india, sherwani from india usa, indian bridal lehenga sourcing, indian wedding shopping service",
 }
 
 export default function ShopFromIndiaPage() {
   return (
     <main>
-      <Section className="pt-16 md:pt-24">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-sm text-muted-foreground">
-            <Link href="/" className="underline">
-              Home
-            </Link>{" "}
-            / Shop From India
+
+      <Section className="pt-16 pb-12">
+        <h1 className="text-4xl md:text-5xl font-serif">
+          Shop Indian Wedding Outfits Directly From India
+        </h1>
+
+        <p className="mt-6 text-lg text-muted-foreground max-w-3xl">
+          Finding authentic Indian wedding outfits while living in the US can be difficult.
+          Traveling internationally is expensive and coordinating with boutiques overseas
+          can be frustrating. CeremonyVerse makes it simple.
+        </p>
+
+        <p className="mt-4 text-lg text-muted-foreground max-w-3xl">
+          We help couples source bridal lehengas, sherwanis, jewelry, and ceremony
+          outfits directly from trusted boutiques in India while we manage vendor
+          communication, customization, and shipping logistics.
+        </p>
+      </Section>
+
+
+      <Section className="py-12">
+        <h2 className="text-3xl font-serif">
+          How Our “Shop From India” Service Works
+        </h2>
+
+        <div className="mt-8 space-y-6 max-w-3xl">
+
+          <p>
+            <strong>1. Consultation</strong> – We understand your wedding events,
+            outfit needs, and style preferences.
           </p>
 
-          <h1 className="mt-4 text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900">
-            Shop Indian Wedding Outfits From India — Managed From the US
-          </h1>
-
-          <p className="mt-6 text-lg text-charcoal/70">
-            CeremonyVerse helps couples in the US source authentic Indian wedding outfits, bridal lehengas,
-            sherwanis, and jewelry directly from trusted boutiques and artisans in India — while we manage
-            vendor communication, timelines, customization steps, and shipping coordination.
+          <p>
+            <strong>2. Boutique sourcing</strong> – We identify trusted Indian
+            boutiques and designers that match your budget and aesthetic.
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
-            <Button asChild>
-              <Link href="/book-consultation">Start Your Outfit Sourcing</Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <Link href="/book-consultation">Book a Sourcing Consultation</Link>
-            </Button>
-          </div>
+          <p>
+            <strong>3. Coordination</strong> – We handle communication,
+            measurements, customization requests, and timelines.
+          </p>
+
+          <p>
+            <strong>4. Delivery</strong> – Your outfits are shipped safely
+            with managed international logistics.
+          </p>
+
         </div>
       </Section>
 
-      <Section className="pt-10 md:pt-14">
-        <div className="max-w-6xl mx-auto grid gap-6 md:grid-cols-3">
-          <Card>
-            <h2 className="text-xl font-semibold mb-2">What we source</h2>
-            <p className="text-charcoal/70">
-              Bridal lehengas, reception outfits, pre-wedding looks, sherwanis, bridesmaid/groomsmen outfits,
-              and wedding jewelry from trusted vendors in India.
-            </p>
-          </Card>
 
-          <Card>
-            <h2 className="text-xl font-semibold mb-2">What we manage</h2>
-            <p className="text-charcoal/70">
-              Boutique outreach, communication, customization details, measurement guidance, production
-              checkpoints, and timeline coordination.
-            </p>
-          </Card>
+      <Section className="py-12">
+        <h2 className="text-3xl font-serif">
+          What You Can Source Through CeremonyVerse
+        </h2>
 
-          <Card>
-            <h2 className="text-xl font-semibold mb-2">Why it’s safer</h2>
-            <p className="text-charcoal/70">
-              Avoid language barriers, time-zone delays, and uncertainty. You get US-based coordination with a
-              sourcing process designed for real wedding deadlines.
-            </p>
-          </Card>
+        <ul className="mt-6 list-disc pl-6 space-y-3 text-muted-foreground max-w-3xl">
+
+          <li>Bridal lehengas</li>
+          <li>Sherwanis for grooms</li>
+          <li>Bridesmaid and groomsmen outfits</li>
+          <li>Wedding jewelry</li>
+          <li>Sangeet and reception outfits</li>
+          <li>Family ceremony attire</li>
+
+        </ul>
+      </Section>
+
+
+      <Section className="py-12">
+        <h2 className="text-3xl font-serif">
+          Why Couples Use Our Sourcing Service
+        </h2>
+
+        <div className="mt-6 space-y-4 text-muted-foreground max-w-3xl">
+
+          <p>
+            Traveling to India for wedding shopping can cost thousands in flights
+            and time away from work. Our sourcing service allows couples to access
+            authentic boutiques without the stress of international coordination.
+          </p>
+
+          <p>
+            We act as your trusted liaison, ensuring communication clarity,
+            quality expectations, and timeline management.
+          </p>
+
         </div>
       </Section>
 
-      <Section className="pt-10 md:pt-14">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-serif font-medium tracking-tight text-stone-900">
-            How sourcing works
-          </h2>
 
-          <ol className="mt-6 space-y-4 text-charcoal/80 list-decimal pl-5">
-            <li>
-              <strong>Consultation:</strong> share wedding date, events, budget range, and what you want to
-              source.
-            </li>
-            <li>
-              <strong>Vendor matching:</strong> we shortlist boutiques in India that fit your style and budget.
-            </li>
-            <li>
-              <strong>Measurements & customization:</strong> we guide measurements and confirm details with the
-              vendor.
-            </li>
-            <li>
-              <strong>Production timeline:</strong> we track progress and keep timelines aligned to your events.
-            </li>
-            <li>
-              <strong>Shipping coordination:</strong> we coordinate shipping checkpoints so your outfits arrive
-              on time.
-            </li>
-          </ol>
+      <Section className="py-16">
+        <h2 className="text-3xl font-serif">
+          Start Your Outfit Sourcing Consultation
+        </h2>
 
-          <div className="mt-10">
-            <h3 className="text-2xl font-serif font-medium tracking-tight text-stone-900">
-              Frequently asked questions
-            </h3>
+        <p className="mt-4 text-muted-foreground max-w-2xl">
+          Schedule a consultation and we will help you source the right outfits
+          for your wedding events.
+        </p>
 
-            <div className="mt-6 space-y-4">
-              <div>
-                <p className="font-semibold">Do I need to travel to India to shop?</p>
-                <p className="text-charcoal/70">
-                  No. We coordinate sourcing directly with vetted vendors in India and manage the process from
-                  the US.
-                </p>
-              </div>
-              <div>
-                <p className="font-semibold">What timelines should I plan for?</p>
-                <p className="text-charcoal/70">
-                  Most custom outfits need several weeks. We’ll align vendor timelines to your wedding dates
-                  and event schedule.
-                </p>
-              </div>
-              <div>
-                <p className="font-semibold">Can you help with sizing and customization?</p>
-                <p className="text-charcoal/70">
-                  Yes. We provide measurement guidance and confirm customization details with vendors before
-                  production starts.
-                </p>
-              </div>
-            </div>
+        <a
+          href="/book-consultation"
+          className="inline-block mt-6 underline"
+        >
+          Book Your Consultation →
+        </a>
 
-            <div className="mt-10">
-              <Button asChild>
-                <Link href="/book-consultation">Book Your Sourcing Consultation</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
       </Section>
+
     </main>
   )
 }
