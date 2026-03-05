@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     description:
 "US-based sourcing service to buy Indian wedding outfits, bridal lehengas, sherwanis, and jewelry from trusted vendors in India — with managed communication, timelines, and shipping."
 
-  keywords:
      keywords:
 "buy lehenga from india usa, indian wedding outfits from india, indian bridal lehenga sourcing, indian wedding jewelry sourcing, sherwani from india usa, indian wedding shopping from india",
 
