@@ -17,7 +17,8 @@ export const metadata: Metadata = {
 "US-based sourcing service to buy Indian wedding outfits, bridal lehengas, sherwanis, and jewelry from trusted vendors in India — with managed communication, timelines, and shipping."
 
   keywords:
-    "indian wedding outfits from india, indian wedding shopping from india, buy lehenga from india usa, indian wedding jewelry sourcing, indian wedding outfit sourcing",
+     keywords:
+"buy lehenga from india usa, indian wedding outfits from india, indian bridal lehenga sourcing, indian wedding jewelry sourcing, sherwani from india usa, indian wedding shopping from india",
 
     openGraph: {
   url: "https://ceremonyverse.com",
