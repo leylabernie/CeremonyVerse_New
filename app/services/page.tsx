@@ -23,6 +23,16 @@ export default function ServicesPage() {
         without dealing with overseas communication challenges.
       </p>
 
+      <p className="mt-4 text-charcoal/70">
+  New to sourcing outfits from India? Start with our guide:
+  <Link
+    href="/how-to-buy-indian-wedding-outfits-from-india"
+    className="underline ml-1"
+  >
+    How to buy Indian wedding outfits from India →
+  </Link>
+</p>
+
       {/* SERVICE GRID */}
 
       <div className="mt-10 grid gap-6 md:grid-cols-2">
