@@ -27,11 +27,14 @@ export default function GuidePage() {
       </h1>
 
       <p className="mt-3 text-charcoal/70">
-        Many couples in the United States want authentic Indian wedding outfits
-        directly from India, but the process can be confusing. Production
-        timelines, measurements, designer communication and international
-        shipping all require careful planning.
-      </p>
+  Many couples in the United States want authentic Indian wedding outfits
+  directly from India, but the process can be confusing. If you want guided
+  help coordinating boutiques, timelines, and measurements, you can explore
+  our{" "}
+  <Link href="/shop-from-india" className="underline">
+    outfit sourcing service from India
+  </Link>.
+</p>
 
       <section className="mt-10">
         <h2 className="text-xl font-semibold text-charcoal">
