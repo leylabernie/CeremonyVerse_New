@@ -60,11 +60,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "monthly",
   priority: 0.85,
 },
-      url: `${baseUrl}/heritage-harmony`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
+   {
+  url: `${baseUrl}/heritage-harmony`,
+  lastModified: currentDate,
+  changeFrequency: "weekly",
+  priority: 0.9,
+},
     {
       url: `${baseUrl}/book-consultation`,
       lastModified: currentDate,
