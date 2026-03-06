@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BookConsultationCTA from "../components/BookConsultationCTA";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Buy Sherwani From India (USA Grooms) | CeremonyVerse",
