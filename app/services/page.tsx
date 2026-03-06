@@ -27,20 +27,7 @@ export default function ServicesPage() {
 
       <div className="mt-10 grid gap-6 md:grid-cols-2">
 
-        {/* PLANNING */}
-
-        <div className="rounded-2xl border border-charcoal/10 p-6">
-          <h2 className="text-xl font-semibold text-charcoal">
-            Indian Wedding Planning Support
-          </h2>
-
-          <p className="mt-2 text-charcoal/70">
-            Guidance for couples planning Indian weddings in the United States,
-            including event timelines, ceremony logistics, and cultural
-            coordination.
-          </p>
-
-          <Link
+       
             href="/indian-wedding-planner-usa"
             className="mt-4 inline-block underline"
           >
@@ -110,6 +97,21 @@ export default function ServicesPage() {
         </div>
 
       </div>
+
+  {/* PLANNING */}
+
+        <div className="rounded-2xl border border-charcoal/10 p-6">
+          <h2 className="text-xl font-semibold text-charcoal">
+            Indian Wedding Planning Support
+          </h2>
+
+          <p className="mt-2 text-charcoal/70">
+            Guidance for couples planning Indian weddings in the United States,
+            including event timelines, ceremony logistics, and cultural
+            coordination.
+          </p>
+
+          <Link
 
       {/* CTA */}
 
