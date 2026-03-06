@@ -30,6 +30,14 @@ export default function BuyLehengaPage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
 
+      <Breadcrumbs
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "Buy Bridal Lehenga From India" },
+  ]}
+/>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd()) }}
