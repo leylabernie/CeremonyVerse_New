@@ -79,6 +79,23 @@ export default function ServicesPage() {
           </Link>
         </div>
 
+        {/* BRIDESMAIDS */}
+
+<div className="rounded-2xl border border-charcoal/10 p-6">
+  <h2 className="text-xl font-semibold text-charcoal">
+    Bridesmaid Lehengas From India
+  </h2>
+
+  <p className="mt-2 text-charcoal/70">
+    Coordinated bridesmaid outfits sourced from India with guidance on
+    measurements, color matching, and production timelines.
+  </p>
+
+  <Link href="/buy-bridesmaid-lehenga-from-india" className="mt-4 inline-block underline">
+    Explore bridesmaid outfit sourcing →
+  </Link>
+</div>
+        
         {/* WEDDING GUIDANCE */}
 
         <div className="rounded-2xl border border-charcoal/10 p-6">
