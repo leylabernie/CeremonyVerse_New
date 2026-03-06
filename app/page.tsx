@@ -314,6 +314,15 @@ CeremonyVerse helps couples source authentic wedding outfits and ceremony essent
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+  <Link
+    href="/services"
+    className="flex items-center gap-2 hover:text-primary transition-colors"
+  >
+    <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+    Explore all CeremonyVerse services →
+  </Link>
+</div>
+          <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
             <Link href="/services" className="flex items-center gap-2 hover:text-primary transition-colors">
               <span className="w-1.5 h-1.5 rounded-full bg-primary" />
               <span>Clear Pricing</span>
