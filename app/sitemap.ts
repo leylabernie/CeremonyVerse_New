@@ -25,6 +25,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      {
+  url: `${baseUrl}/shop-from-india`,
+  lastModified: currentDate,
+  changeFrequency: "weekly",
+  priority: 0.95,
+},
+{
+  url: `${baseUrl}/buy-lehenga-from-india`,
+  lastModified: currentDate,
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+{
+  url: `${baseUrl}/buy-sherwani-from-india-usa`,
+  lastModified: currentDate,
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+{
+  url: `${baseUrl}/buy-bridesmaid-lehenga-from-india`,
+  lastModified: currentDate,
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
+{
+  url: `${baseUrl}/how-to-buy-indian-wedding-outfits-from-india`,
+  lastModified: currentDate,
+  changeFrequency: "monthly",
+  priority: 0.85,
+},
+{
+  url: `${baseUrl}/indian-wedding-outfits-shipping-to-usa`,
+  lastModified: currentDate,
+  changeFrequency: "monthly",
+  priority: 0.85,
+},
       url: `${baseUrl}/heritage-harmony`,
       lastModified: currentDate,
       changeFrequency: "weekly",
