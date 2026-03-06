@@ -321,6 +321,19 @@ CeremonyVerse helps couples source authentic wedding outfits and ceremony essent
     <span className="w-1.5 h-1.5 rounded-full bg-primary" />
     Explore all CeremonyVerse services →
   </Link>
+            <div className="mt-6 space-y-2 text-charcoal/70">
+  <Link href="/shop-from-india" className="underline">
+    How our outfit sourcing from India works →
+  </Link>
+  <br />
+  <Link href="/buy-lehenga-from-india" className="underline">
+    Bridal lehenga sourcing guide →
+  </Link>
+  <br />
+  <Link href="/indian-wedding-outfits-shipping-to-usa" className="underline">
+    Shipping wedding outfits from India to the USA →
+  </Link>
+</div>
 </div>
           <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
             <Link href="/services" className="flex items-center gap-2 hover:text-primary transition-colors">
