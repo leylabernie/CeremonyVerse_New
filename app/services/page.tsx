@@ -31,7 +31,7 @@ export default function ServicesPage() {
             href="/indian-wedding-planner-usa"
             className="mt-4 inline-block underline"
           >
-            Learn more →
+            Learn more &rarr;
           </Link>
         </div>
 
