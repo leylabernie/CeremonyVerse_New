@@ -14,6 +14,14 @@ export default function SherwaniPage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
 
+      <Breadcrumbs
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "Buy Sherwani From India" },
+  ]}
+/>
+
       <h1 className="text-3xl font-semibold text-charcoal">
         Buy a Sherwani From India (For USA Grooms)
       </h1>
