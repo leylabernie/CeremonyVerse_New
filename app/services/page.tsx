@@ -3,9 +3,9 @@ import Link from "next/link";
 import BookConsultationCTA from "../components/BookConsultationCTA";
 
 export const metadata: Metadata = {
-  title: "Indian Wedding Planning & Outfit Sourcing Services | CeremonyVerse",
+  title: "Indian Wedding Outfit Sourcing Services | CeremonyVerse",
   description:
-    "CeremonyVerse helps US-based couples plan Indian weddings and source bridal outfits directly from India. Bridal lehengas, sherwanis, bridesmaid outfits and wedding logistics support.",
+    "CeremonyVerse helps US-based couples source authentic Indian wedding outfits directly from India and coordinate culturally aligned celebrations without overseas communication stress.",
   alternates: { canonical: "/services" },
 };
 
@@ -14,26 +14,18 @@ export default function ServicesPage() {
     <main className="mx-auto max-w-4xl px-4 py-10">
 
       <h1 className="text-3xl font-semibold text-charcoal">
-        Wedding Planning + Outfit Sourcing Services
+        Wedding Outfit Sourcing Services
       </h1>
 
       <p className="mt-3 text-charcoal/70">
-        CeremonyVerse helps US-based couples plan Indian weddings and source
-        authentic outfits directly from India without dealing with overseas
-        coordination challenges.
+        CeremonyVerse helps US-based couples source authentic Indian wedding
+        outfits directly from India and navigate cultural wedding logistics
+        without dealing with overseas communication challenges.
       </p>
 
       {/* SERVICE GRID */}
 
       <div className="mt-10 grid gap-6 md:grid-cols-2">
-
-       
-            href="/indian-wedding-planner-usa"
-            className="mt-4 inline-block underline"
-          >
-            Learn more &rarr;
-          </Link>
-        </div>
 
         {/* SOURCING */}
 
@@ -47,10 +39,7 @@ export default function ServicesPage() {
             trusted boutiques and designers in India.
           </p>
 
-          <Link
-            href="/shop-from-india"
-            className="mt-4 inline-block underline"
-          >
+          <Link href="/shop-from-india" className="mt-4 inline-block underline">
             See how sourcing works →
           </Link>
         </div>
@@ -64,14 +53,11 @@ export default function ServicesPage() {
 
           <p className="mt-2 text-charcoal/70">
             Looking for a bridal lehenga directly from India? We guide the
-            sourcing process so you can find the right designer and fit without
-            traveling overseas.
+            sourcing process so you can identify the right designer and fit
+            without traveling overseas.
           </p>
 
-          <Link
-            href="/buy-lehenga-from-india"
-            className="mt-4 inline-block underline"
-          >
+          <Link href="/buy-lehenga-from-india" className="mt-4 inline-block underline">
             Explore bridal lehenga sourcing →
           </Link>
         </div>
@@ -88,34 +74,36 @@ export default function ServicesPage() {
             coordinated with the wedding timeline.
           </p>
 
-          <Link
-            href="/buy-sherwani-from-india-usa"
-            className="mt-4 inline-block underline"
-          >
+          <Link href="/buy-sherwani-from-india-usa" className="mt-4 inline-block underline">
             View sherwani sourcing →
+          </Link>
+        </div>
+
+        {/* WEDDING GUIDANCE */}
+
+        <div className="rounded-2xl border border-charcoal/10 p-6">
+          <h2 className="text-xl font-semibold text-charcoal">
+            Wedding Coordination Guidance
+          </h2>
+
+          <p className="mt-2 text-charcoal/70">
+            Support for couples navigating Indian wedding traditions,
+            timelines, and family logistics while organizing celebrations in
+            the United States.
+          </p>
+
+          <Link href="/consultation" className="mt-4 inline-block underline">
+            Book a consultation →
           </Link>
         </div>
 
       </div>
 
-  {/* PLANNING */}
-
-        <div className="rounded-2xl border border-charcoal/10 p-6">
-          <h2 className="text-xl font-semibold text-charcoal">
-            Indian Wedding Planning Support
-          </h2>
-
-          <p className="mt-2 text-charcoal/70">
-            Guidance for couples planning Indian weddings in the United States,
-            including event timelines, ceremony logistics, and cultural
-            coordination.
-          </p>
-
-          <Link
-
       {/* CTA */}
 
-      <BookConsultationCTA />
+      <div className="mt-12">
+        <BookConsultationCTA />
+      </div>
 
     </main>
   );
