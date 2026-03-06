@@ -245,7 +245,7 @@ CeremonyVerse helps couples source authentic wedding outfits and ceremony essent
 </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="/start-planning">Start with Budget + Vision Form</Button>
-              <Button href="/book" variant="secondary">
+              <Button href="/consultation" variant="secondary">
                 Schedule a Free Consultation
               </Button>
             </div>
