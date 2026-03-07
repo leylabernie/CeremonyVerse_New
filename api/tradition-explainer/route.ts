@@ -28,7 +28,7 @@ Provide:
 Keep the explanation informative, respectful, and helpful for couples planning their wedding.`
 
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GOOGLE_AI_API_KEY}`,
+      https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
