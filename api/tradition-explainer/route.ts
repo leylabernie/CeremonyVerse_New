@@ -1,9 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const API_KEY = process.env.GOOGLE_AI_API_KEY;
-
 export async function POST(req: NextRequest) {
   try {
+    const { tradition } = await req.json();
+
+    if (!tradition) {
+      return NextResponse.json(
+        { error: "Tradition is required" },
+        { status: 400 }
+      );
+    }
+
+    const API_KEY = process.env.GOOGLE_AI_API_KEY;
+
     if (!API_KEY) {
       return NextResponse.json(
         { error: "Missing GOOGLE_AI_API_KEY" },
@@ -11,22 +20,11 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const body = await req.json();
-    const tradition = body?.tradition;
-
-    if (!tradition || typeof tradition !== "string") {
-      return NextResponse.json(
-        { error: "Tradition text required" },
-        { status: 400 }
-      );
-    }
-
     const prompt = `Explain the Indian wedding tradition "${tradition}".
-Include origin, meaning, how it is performed, and modern adaptations.`;
+Include origin, cultural meaning, how it is performed, and modern variations.`;
 
-    const res = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" +
-        API_KEY,
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`,
       {
         method: "POST",
         headers: {
@@ -42,15 +40,15 @@ Include origin, meaning, how it is performed, and modern adaptations.`;
       }
     );
 
-    const data = await res.json();
+    const data = await response.json();
 
-    const text =
+    const explanation =
       data?.candidates?.[0]?.content?.parts?.[0]?.text ||
       "No explanation generated.";
 
-    return NextResponse.json({ explanation: text });
-  } catch (err) {
-    console.error("Tradition API error:", err);
+    return NextResponse.json({ explanation });
+  } catch (error) {
+    console.error("Tradition API error:", error);
     return NextResponse.json(
       { error: "Server error generating explanation" },
       { status: 500 }
