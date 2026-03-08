@@ -21,14 +21,7 @@ const resources = [
       "Get personalized AI-powered budget recommendations for your Indian or fusion wedding.",
     icon: "🤖",
   },
-  {
-    title: "Tradition Explainer",
-    href: "/tradition-explainer",
-    description:
-      "Learn about Indian wedding traditions and their cultural significance with AI assistance.",
-    icon: "🕉️",
-  },
-  {
+    {
     title: "Budget Planner",
     href: "/budget-planner",
     description:
