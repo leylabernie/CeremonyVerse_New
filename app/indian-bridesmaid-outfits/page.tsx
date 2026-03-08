@@ -4,30 +4,30 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Buy Bridesmaid Lehengas From India | CeremonyVerse",
+  title: "Indian Bridesmaid Outfits | CeremonyVerse",
   description:
-    "Bridesmaid lehengas sourced directly from India for US weddings. Coordinated bridal party outfits with reliable international shipping.",
+    "Indian bridesmaid outfits sourced from trusted boutiques in India. Lehengas, sarees, anarkalis and coordinated bridal party styles for US weddings.",
   alternates: {
     canonical:
-      "https://www.ceremonyverse.com/bridesmaid-lehenga-from-india",
+      "https://www.ceremonyverse.com/indian-bridesmaid-outfits",
   },
 }
 
-export default function BridesmaidLehengaPage() {
+export default function BridesmaidOutfitsPage() {
   return (
     <>
       <Section variant="warm">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="font-serif text-text mb-4">
-            Bridesmaid Lehengas From India
+            Indian Bridesmaid Outfits
           </h1>
 
           <p className="text-lg text-muted-foreground">
-            Coordinating bridesmaid outfits for an Indian wedding can be
-            challenging, especially when family members live in different
-            cities or countries. CeremonyVerse helps couples source
-            bridesmaid lehengas directly from trusted Indian boutiques while
-            simplifying measurements, coordination, and delivery.
+            Bridesmaids play an important role in Indian weddings and their
+            outfits often coordinate with the wedding theme and color palette.
+            CeremonyVerse helps couples source bridesmaid outfits directly
+            from India while simplifying measurements, customization,
+            and international delivery.
           </p>
         </div>
       </Section>
@@ -37,32 +37,47 @@ export default function BridesmaidLehengaPage() {
 
           <div>
             <h2 className="text-2xl font-semibold mb-3">
-              Coordinated Bridal Party Outfits
+              Popular Bridesmaid Outfit Styles
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              Indian weddings often include multiple events such as the
-              Mehndi, Sangeet, Haldi, and the wedding ceremony itself.
-              Bridesmaids may wear coordinated lehengas, sarees, or
-              Indo-western outfits depending on the event.
+              Indian bridesmaids commonly wear a variety of traditional
+              outfits depending on the event. Popular options include
+              lehengas, sarees, anarkali suits, sharara sets, and
+              contemporary Indo-western styles.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold mb-3">
-              Sourcing Bridesmaid Lehengas From India
+              Coordinating Bridal Party Looks
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              Many couples prefer purchasing outfits directly from India
-              because Indian boutiques offer a much wider selection of
-              fabrics, embroidery styles, and custom color palettes.
+              Many couples coordinate their bridesmaids’ outfits by color
+              palette or embroidery style rather than choosing identical
+              designs. This approach allows each bridesmaid to wear a
+              flattering silhouette while maintaining a cohesive look.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-3">
+              Sourcing Bridesmaid Outfits From India
+            </h2>
+
+            <p className="text-muted-foreground leading-relaxed">
+              Indian boutiques offer far more variety than most US stores.
+              CeremonyVerse helps couples source outfits from trusted
+              boutiques in India while managing measurements, timelines,
+              and shipping logistics.
             </p>
 
-            <p className="text-muted-foreground leading-relaxed mt-4">
-              Our sourcing service helps you coordinate designs, sizes,
-              and shipping timelines so your bridal party receives their
-              outfits in time for the wedding.
+            <p className="text-muted-foreground mt-4">
+              Learn more about our{" "}
+              <Link href="/shop-from-india" className="underline">
+                outfit sourcing process
+              </Link>.
             </p>
           </div>
 
