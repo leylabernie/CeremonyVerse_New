@@ -12,6 +12,7 @@ interface Message {
 export default function WeddingAssistantChatbot() {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
+    }
       role: "assistant",
       content:
         "Hi! I can help answer questions about Indian wedding outfits, sourcing from India, budgets, traditions, and timelines.
