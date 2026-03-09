@@ -14,13 +14,14 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-2">Navigate</h4>
           <ul className="text-sm space-y-1">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/services">Services</Link></li>
-            <li><Link href="/heritage-harmony">Heritage & Harmony</Link></li>
-            <li><Link href="/portfolio">Portfolio</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/free-resources">Resources</Link></li>
-          </ul>
+<li><Link href="/">Home</Link></li>
+<li><Link href="/shop-from-india">Shop From India</Link></li>
+<li><Link href="/services">Services</Link></li>
+<li><Link href="/heritage-harmony">Heritage & Harmony</Link></li>
+<li><Link href="/portfolio">Portfolio</Link></li>
+<li><Link href="/blog">Blog</Link></li>
+<li><Link href="/free-resources">Resources</Link></li>
+</ul>
         </div>
 
         <div>
