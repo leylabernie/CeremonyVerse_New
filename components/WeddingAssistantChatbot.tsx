@@ -9,13 +9,13 @@ interface Message {
   content: string
 }
 
-export default function WeddingPlanningChatbot() {
+export default function WeddingAssistantChatbot()
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
       content:
-        "Hi! I can help answer questions about Indian wedding planning, budgets, traditions, and sourcing. What would you like to know?",
+        "Hi! I can help answer questions about Indian wedding outfits, sourcing from India, budgets, traditions, and timelines.
     },
   ])
   const [input, setInput] = useState("")
