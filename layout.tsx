@@ -6,7 +6,6 @@ import { Footer } from "@/components/site/footer"
 import { Cormorant_Garamond, Inter } from "next/font/google"
 import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
-import WeddingPlanningChatbot from "@/components/WeddingPlanningChatbot"
 
 const inter = Inter({
   subsets: ["latin"],
