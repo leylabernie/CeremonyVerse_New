@@ -367,7 +367,9 @@ export default function HomePage() {
 
       <Section variant="surface">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-text mb-6">Planning Support for Couples Who Need More Than Sourcing</h2>
+          <h2 className="text-text mb-6">
+Optional Planning Support (If You Need It)
+</h2>
 
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
             Planning support is available for Indian, fusion, and destination weddings when couples need help beyond shopping. This includes strategy, cultural logistics, and more structured support.
