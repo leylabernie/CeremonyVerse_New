@@ -377,7 +377,7 @@ CeremonyVerse primarily helps couples source authentic Indian wedding outfits fr
 
           <div className="grid gap-6 md:grid-cols-3">
             <Card>
-              <h3 className="text-lg font-semibold mb-3">Services</h3>
+              <h3 className="text-lg font-semibold mb-3">Outfit Sourcing & Support</h3>
               <p className="text-muted-foreground mb-4">
                 Explore the full range of CeremonyVerse support.
               </p>
