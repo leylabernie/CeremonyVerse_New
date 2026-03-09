@@ -11,7 +11,7 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: 500, label: "Weddings Planned", suffix: "+" },
+  { value: 500, label: "Couples Assisted", suffix: "+" },
   { value: 98, label: "Client Satisfaction", suffix: "%" },
   { value: 25, label: "Countries Served", suffix: "+" },
   { value: 1000, label: "Verified Vendors", suffix: "+" },
