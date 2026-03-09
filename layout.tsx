@@ -7,12 +7,14 @@ import { Cormorant_Garamond, Inter } from "next/font/google"
 import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 
+// Sans font for body text
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
 })
 
+// Serif font for headings
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -23,15 +25,16 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ceremonyverse.com"),
   title: {
-    default: "Indian & Fusion Wedding Planner Nationwide | CeremonyVerse",
+    default: "Indian Wedding Outfit Sourcing From India | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "Plan your Indian or fusion wedding anywhere in the USA with cultural expertise and transparent pricing. Virtual consultations available nationwide with travel for in-person events.",
+    "CeremonyVerse helps couples in the US source Indian wedding outfits including bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and ceremony accessories directly from trusted vendors in India.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Indian & Fusion Wedding Planner | CeremonyVerse",
-    description: "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+    title: "Indian Wedding Outfit Sourcing From India | CeremonyVerse",
+    description:
+      "Source bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and wedding accessories from trusted vendors in India with guidance from CeremonyVerse.",
     url: "https://ceremonyverse.com",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -40,27 +43,25 @@ export const metadata: Metadata = {
   generator: "v0.app",
 }
 
-const localBusinessJsonLd = {
+const businessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "WeddingPlanner",
+  "@type": "ClothingStore",
   name: "CeremonyVerse",
   url: "https://ceremonyverse.com",
   telephone: "+1-215-341-9990",
   email: "hello@ceremonyverse.com",
   description:
-    "Indian and fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and virtual planning support.",
+    "CeremonyVerse helps couples source Indian wedding outfits including bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and accessories directly from trusted vendors in India.",
   priceRange: "$$",
   areaServed: [
-    { "@type": "State", name: "Pennsylvania" },
-    { "@type": "State", name: "New Jersey" },
-    { "@type": "State", name: "Delaware" },
-    { "@type": "State", name: "Maryland" },
+    { "@type": "Country", name: "United States" },
+    { "@type": "Country", name: "Canada" },
   ],
   serviceType: [
-    "Indian Wedding Planning",
-    "Fusion Wedding Coordination",
-    "Day-of Wedding Coordination",
-    "Cultural Sourcing Support",
+    "Indian Bridal Outfit Sourcing",
+    "Sherwani & Menswear Sourcing",
+    "Bridesmaid Outfit Coordination",
+    "Wedding Jewelry & Accessories Sourcing",
   ],
   sameAs: [
     "https://www.instagram.com/ceremonyverse",
@@ -73,8 +74,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(businessJsonLd),
+          }}
+        />
       </head>
+
       <body
         className="min-h-screen antialiased bg-background text-foreground"
         style={{ fontFamily: "var(--font-serif)" }}
@@ -84,7 +91,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <MobileStickyCTA />
         <WhatsAppWidget />
-        <WeddingPlanningChatbot />
       </body>
     </html>
   )
