@@ -5,113 +5,105 @@ import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
 import Script from "next/script"
-import TrustSignals from "@/components/site/trust-signals" // Declare TrustSignals variable
+import TrustSignals from "@/components/site/trust-signals"
 import HomeMexicoPromo from "@/components/home/HomeMexicoPromo"
+import { JsonLd } from "@/components/seo/JsonLd"
 
-import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
-  title: "Indian Wedding Outfit & Cultural Sourcing | CeremonyVerse",
-
+  title: "Indian Wedding Outfit Sourcing From India | CeremonyVerse",
+  description:
+    "CeremonyVerse helps USA-based couples source bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and ceremony essentials from trusted vendors in India with managed communication, timelines, and shipping support.",
+  keywords:
+    "buy lehenga from india usa, sherwani from india usa, indian bridesmaid outfits, indian wedding outfits shipping to usa, shop from india wedding outfits, indian wedding sourcing service",
+  openGraph: {
+    title: "Indian Wedding Outfit Sourcing From India | CeremonyVerse",
     description:
-"US-based sourcing service to buy Indian wedding outfits, bridal lehengas, sherwanis, and jewelry from trusted vendors in India — with managed communication, timelines, and shipping.",
-
-     keywords:
-"buy lehenga from india usa, indian wedding outfits from india, indian bridal lehenga sourcing, indian wedding jewelry sourcing, sherwani from india usa, indian wedding shopping from india",
-
-    openGraph: {
-  url: "https://ceremonyverse.com",
-  siteName: "CeremonyVerse",
-  images: [
-    {
-      url: "/images/og-image.jpg",
-      width: 1200,
-      height: 630,
-   },
+      "Source Indian wedding outfits and ceremony essentials from trusted vendors in India without managing overseas shopping alone.",
+    url: "https://ceremonyverse.com",
+    siteName: "CeremonyVerse",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
     ],
+    type: "website",
   },
-    
-    
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
-};
+}
+
 export default function HomePage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "CeremonyVerse",
     description:
-     "US-based sourcing service helping couples buy authentic Indian wedding outfits, bridal lehengas, sherwanis, and jewelry directly from trusted boutiques in India.",
+      "USA-based Indian wedding outfit and cultural sourcing service helping couples source bridal lehengas, sherwanis, jewelry, and ceremony essentials from trusted vendors in India.",
     url: "https://ceremonyverse.com",
     telephone: "+1-215-341-9990",
     email: "bhamini@ceremonyverse.com",
-    priceRange: "$$",
     areaServed: {
       "@type": "Country",
       name: "United States",
     },
     serviceType: [
-      "Indian Wedding Planning",
-      "Fusion Wedding Planning",
-      "South Asian Wedding Coordination",
-      "Cultural Wedding Sourcing",
-      "Virtual Wedding Planning",
+      "Indian Wedding Outfit Sourcing",
+      "Bridal Lehenga Sourcing",
+      "Sherwani Sourcing",
+      "Indian Bridesmaid Outfit Sourcing",
+      "Wedding Jewelry Sourcing",
+      "Ceremony Essentials Sourcing",
+      "Indian Wedding Planning Support",
+      "Destination Wedding Planning Mexico",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Wedding Planning Services",
+      name: "CeremonyVerse Services",
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Planning Intensives",
-            description: "90-minute Budget & Vision Roadmap session",
+            name: "Shop From India",
+            description:
+              "Managed sourcing for bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and ceremony essentials from India.",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Partial Planning & Coordination",
-            description: "Ongoing guidance with vendor support and day-of coordination",
+            name: "Wedding Outfit Shipping Support",
+            description:
+              "Guidance on timelines, production coordination, and shipping wedding outfits from India to the USA.",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Full Wedding Planning",
-            description: "Complete end-to-end wedding planning and management",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Cultural Sourcing Support",
-            description: "Guidance on sourcing outfits, jewelry, and ceremony items from India or USA",
+            name: "Planning Support",
+            description:
+              "Optional planning guidance for Indian, fusion, and destination weddings.",
           },
         },
       ],
     },
     knowsAbout: [
-      "Indian Wedding Planning",
-      "Hindu Wedding Ceremonies",
-      "Sikh Wedding Ceremonies",
-      "Gujarati Wedding Traditions",
-      "Punjabi Wedding Traditions",
-      "South Indian Wedding Ceremonies",
-      "Fusion Wedding Planning",
-      "Interfaith Wedding Coordination",
+      "Indian wedding outfit sourcing",
+      "Bridal lehenga sourcing",
+      "Sherwani sourcing",
+      "Indian bridesmaid outfits",
+      "Wedding outfit shipping to USA",
+      "Indian wedding jewelry sourcing",
+      "Ceremony essentials sourcing",
+      "Hindu wedding traditions",
+      "Fusion wedding logistics",
+      "Destination wedding planning Mexico",
     ],
   }
 
@@ -121,42 +113,34 @@ export default function HomePage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "How much do your wedding planning services cost?",
+        name: "What does CeremonyVerse help source from India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Our Planning Intensives start at $1,250, Partial Planning starts at $3,000, and Full Planning starts at $6,500. All pricing is transparent with no hidden fees or percentage-based markups.",
+          text: "CeremonyVerse helps source bridal lehengas, sherwanis, bridesmaid outfits, wedding jewelry, and ceremony essentials from trusted vendors in India for couples based in the USA.",
         },
       },
       {
         "@type": "Question",
-        name: "Do you only work with couples in certain states?",
+        name: "Do you help with shipping wedding outfits to the USA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. We work with couples planning Indian weddings anywhere in the USA. Most of our services are virtual (video consultations, digital planning tools), and for full planning clients, we travel to your location for key events.",
+          text: "Yes. We help couples think through production timelines, vendor coordination, and shipping logistics so outfits and related items arrive on time.",
         },
       },
       {
         "@type": "Question",
-        name: "Can you help with sourcing outfits and jewelry from India?",
+        name: "Can CeremonyVerse help if I need planning support too?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Cultural Sourcing Support is available as a standalone service or add-on. We provide guidance on what to source from India vs USA, timelines for international coordination, and trusted vendor recommendations.",
+          text: "Yes. CeremonyVerse also offers planning support for Indian, fusion, and destination weddings, but outfit sourcing from India is a core service.",
         },
       },
       {
         "@type": "Question",
-        name: "What cultural traditions do you understand?",
+        name: "Do you work only with couples in Philadelphia?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We work with Hindu (Gujarati, Punjabi, South Indian, Bengali, Marathi), Sikh, Jain, and fusion/interfaith weddings. We understand regional ceremony differences, multi-day event logistics, and how to balance traditional expectations with modern preferences.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How does virtual wedding planning work?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "We conduct planning sessions via Zoom, share digital planning tools and timelines, research vendors in your local area, and can join virtual vendor meetings with you. For full planning clients, we travel to your location for the wedding weekend and key events as needed.",
+          text: "No. CeremonyVerse works with USA-based couples virtually for sourcing and planning support, including destination wedding clients.",
         },
       },
     ],
@@ -167,111 +151,59 @@ export default function HomePage() {
       <Script
         id="local-business-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <Script
         id="faq-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <Section className="pt-12 md:pt-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial from-warm-2/40 via-transparent to-transparent opacity-60 pointer-events-none" />
-
-        <div className="grid gap-12 md:grid-cols-2 md:items-center-center z-10">
+        <div className="grid gap-12 md:grid-cols-2 md:items-center relative z-10">
           <div>
-            <div>
-  <h1 className="text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900">
-    Indian Wedding Outfit &amp; Jewelry Sourcing — Managed From the US
-  </h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900">
+              Indian Wedding Outfit Sourcing From India — Managed From the US
+            </h1>
 
-  <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
-    Source bridal lehengas, sherwanis, jewelry, and ceremony essentials directly from trusted vendors in India while we manage vendor communication, timelines, and delivery logistics.
-  </p>
-              
-<p className="mt-3 text-charcoal/70">
-  <Link href="/shop-from-india" className="underline">
-    Learn how our “Shop From India” sourcing process works →
-  </Link>
-</p>
-  <p className="text-lg text-charcoal/70">
-    We coordinate sourcing from trusted boutiques and artisans so you can shop authentic Indian wedding attire without navigating overseas vendors yourself.
-  </p>
-</div>
+            <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
+              Source bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and ceremony essentials from trusted vendors in India while we manage communication, timelines, and delivery logistics.
+            </p>
 
-{/* How Sourcing Works */}
-<Section className="pt-12 md:pt-20">
-  <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
+            <p className="mt-4 text-lg text-charcoal/70">
+              CeremonyVerse helps couples avoid the stress of navigating overseas vendors alone. We focus on guided sourcing, clearer coordination, and realistic shipping support for USA-based weddings.
+            </p>
 
-    <Card>
-      <h3 className="text-xl font-semibold mb-3">
-        Outfit Sourcing
-      </h3>
-      <p className="text-charcoal/70">
-        We help source bridal lehengas, sherwanis, bridesmaid outfits, and custom pieces from trusted boutiques in India with guidance on sizing, fabrics, and authenticity.
-      </p>
-    </Card>
+            <p className="mt-3 text-charcoal/70">
+              <Link href="/shop-from-india" className="underline">
+                Learn how our Shop From India sourcing process works →
+              </Link>
+            </p>
 
-    <Card>
-      <h3 className="text-xl font-semibold mb-3">
-        Jewelry & Ceremony Items
-      </h3>
-      <p className="text-charcoal/70">
-        From bridal jewelry sets to ceremonial accessories, we coordinate sourcing so couples avoid managing multiple overseas vendors.
-      </p>
-    </Card>
-
-    <Card>
-      <h3 className="text-xl font-semibold mb-3">
-        Vendor Coordination & Delivery
-      </h3>
-      <p className="text-charcoal/70">
-        We handle vendor communication, production timelines, and shipping logistics to ensure your items arrive correctly and on time.
-      </p>
-    </Card>
-
-  </div>
-</Section>
-<p className="text-lg text-charcoal/70 mt-4">
-But international shopping trips often involve airfare, hotel stays, lost PTO, navigating unfamiliar cities, and uncertainty when dealing with unknown vendors.
-</p>
-
-<p className="text-lg text-charcoal/70 mt-4">
-CeremonyVerse helps couples source authentic wedding outfits and ceremony essentials from trusted vendors in India through guided virtual sourcing, vendor coordination, and secure logistics — without requiring international travel.
-</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/start-planning">Start with Budget + Vision Form</Button>
-              <Button href="/consultation" variant="secondary">
-                Schedule a Free Consultation
+              <Button href="/shop-from-india">Shop From India</Button>
+              <Button href="/services" variant="secondary">
+                Explore Planning Support
               </Button>
             </div>
 
             <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-              <Link href="/services" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Link href="/buy-lehenga-from-india" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                <span>Clear Pricing</span>
+                <span>Bridal Lehenga Sourcing</span>
               </Link>
-              <Link
-                href="/blog/gujarati-wedding-planning-guide"
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
+              <Link href="/buy-sherwani-from-india-usa" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                <span>Cultural Expertise</span>
+                <span>Sherwani Sourcing</span>
               </Link>
-              <Link href="/about" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Link href="/indian-bridesmaid-outfits" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                <span>Family-Friendly Planning</span>
+                <span>Bridesmaid Outfits</span>
               </Link>
-              <Link
-                href="/indian-wedding-planner-philadelphia"
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
+              <Link href="/indian-wedding-outfits-shipping-to-usa" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                <span>Serving Nationwide</span>
+                <span>Shipping to USA</span>
               </Link>
             </div>
           </div>
@@ -289,409 +221,208 @@ CeremonyVerse helps couples source authentic wedding outfits and ceremony essent
         </div>
       </Section>
 
-      <TrustSignals />
+      <Section className="pt-12 md:pt-16">
+        <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
+          <Card>
+            <h2 className="text-xl font-semibold mb-3">Outfit Sourcing</h2>
+            <p className="text-charcoal/70">
+              We help source bridal lehengas, sherwanis, bridesmaid outfits, and custom pieces from trusted boutiques in India with guidance on fabrics, fit, and coordination.
+            </p>
+          </Card>
 
-      <Section variant="surface">
-        <div className="max-w-4xl mx-auto">
-          {/* Clarify heading to avoid repeating the previous section title */}
-          <h2 className="text-text mb-6">
-            Your Virtual & In‑Person Planning Journey
-          </h2>
+          <Card>
+            <h2 className="text-xl font-semibold mb-3">Jewelry & Ceremony Items</h2>
+            <p className="text-charcoal/70">
+              From bridal jewelry to ceremony essentials, we help couples source the right pieces without managing multiple overseas vendors on their own.
+            </p>
+          </Card>
 
-          <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
-            Thoughtfully Designed to Fit Your Real Budget
-          </p>
-          <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-            CeremonyVerse helps Indian and multicultural couples plan culturally aligned weddings, coordinate trusted
-            vendors, and source the right outfits and jewelry essentials through guided cultural sourcing and planning support — without overspending or guesswork.
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/start-planning">Start with Budget + Vision Form</Button>
-            <Button href="/book" variant="secondary">
-              Schedule a Free Consultation
-            </Button>
-          </div>
-
-          <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-  <Link
-    href="/services"
-    className="flex items-center gap-2 hover:text-primary transition-colors"
-  >
-    <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-    Explore all CeremonyVerse services →
-  </Link>
-            <div className="mt-6 space-y-2 text-charcoal/70">
-  <Link href="/shop-from-india" className="underline">
-    How our outfit sourcing from India works →
-  </Link>
-  <br />
-  <Link href="/buy-lehenga-from-india" className="underline">
-    Bridal lehenga sourcing guide →
-  </Link>
-  <br />
-  <Link href="/indian-wedding-outfits-shipping-to-usa" className="underline">
-    Shipping wedding outfits from India to the USA →
-  </Link>
-</div>
-</div>
-          <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-            <Link href="/services" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-              <span>Clear Pricing</span>
-            </Link>
-            <Link
-              href="/blog/gujarati-wedding-planning-guide"
-              className="flex items-center gap-2 hover:text-primary transition-colors"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-              <span>Cultural Expertise</span>
-            </Link>
-            <Link href="/about" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-              <span>Family-Friendly Planning</span>
-            </Link>
-            <Link
-              href="/indian-wedding-planner-philadelphia"
-              className="flex items-center gap-2 hover:text-primary transition-colors"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-              <span>Serving Nationwide</span>
-            </Link>
-          </div>
+          <Card>
+            <h2 className="text-xl font-semibold mb-3">Vendor Coordination & Shipping</h2>
+            <p className="text-charcoal/70">
+              We support communication, production timing, and delivery planning so your items move on a more realistic timeline for your wedding.
+            </p>
+          </Card>
         </div>
       </Section>
 
+      <TrustSignals />
+
       <Section variant="surface">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-text mb-6">Nationwide Indian Wedding Planning with Virtual & In-Person Options</h2>
-
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-text mb-6">Shop Indian Wedding Outfits From India</h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            CeremonyVerse provides Indian and fusion wedding planning services throughout the United States. Whether
-            you're in California, Texas, New York, Illinois, or anywhere else—we work with couples virtually and
-            in-person to create culturally aligned weddings with budget clarity.
+            These are the pages built to help USA-based couples understand what to buy, when to buy it, and how to manage sourcing from India more confidently.
           </p>
 
-          <h3 className="text-text text-2xl mb-6">How Virtual Wedding Planning Works</h3>
-
-          <div className="grid gap-6 md:grid-cols-2 mb-12">
-            <Card>
-              <div className="font-serif text-lg font-semibold text-text mb-3">Virtual Budget Planning Sessions</div>
-              <p className="text-muted-foreground leading-relaxed">
-                90-minute Zoom calls to map your budget, priorities, and vendor strategy
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <Card hover>
+              <h3 className="text-lg font-semibold mb-3">Buy Lehenga From India</h3>
+              <p className="text-muted-foreground mb-4">
+                Bridal lehenga sourcing guidance for USA-based weddings.
               </p>
+              <Link href="/buy-lehenga-from-india" className="underline">
+                Visit page →
+              </Link>
             </Card>
 
-            <Card>
-              <div className="font-serif text-lg font-semibold text-text mb-3">Remote Vendor Research</div>
-              <p className="text-muted-foreground leading-relaxed">
-                We research and recommend vendors in your city/state based on your needs
+            <Card hover>
+              <h3 className="text-lg font-semibold mb-3">Buy Sherwani From India</h3>
+              <p className="text-muted-foreground mb-4">
+                Groom and groomsmen sherwani sourcing support.
               </p>
+              <Link href="/buy-sherwani-from-india-usa" className="underline">
+                Visit page →
+              </Link>
             </Card>
 
-            <Card>
-              <div className="font-serif text-lg font-semibold text-text mb-3">Digital Planning Tools</div>
-              <p className="text-muted-foreground leading-relaxed">
-                Shared documents, timelines, and budget trackers you access anywhere
+            <Card hover>
+              <h3 className="text-lg font-semibold mb-3">Indian Bridesmaid Outfits</h3>
+              <p className="text-muted-foreground mb-4">
+                Coordinated bridesmaid outfit sourcing from India.
               </p>
+              <Link href="/indian-bridesmaid-outfits" className="underline">
+                Visit page →
+              </Link>
             </Card>
 
-            <Card>
-              <div className="font-serif text-lg font-semibold text-text mb-3">Video Vendor Meetings</div>
-              <p className="text-muted-foreground leading-relaxed">
-                We can join your virtual vendor consultations for guidance
+            <Card hover>
+              <h3 className="text-lg font-semibold mb-3">Shipping Wedding Outfits to USA</h3>
+              <p className="text-muted-foreground mb-4">
+                Timeline and shipping considerations for USA delivery.
               </p>
-            </Card>
-
-            <Card>
-              <div className="font-serif text-lg font-semibold text-text mb-3">Travel for Events</div>
-              <p className="text-muted-foreground leading-relaxed">
-                For full planning clients, we travel to your location for key events (costs discussed upfront)
-              </p>
+              <Link href="/indian-wedding-outfits-shipping-to-usa" className="underline">
+                Visit page →
+              </Link>
             </Card>
           </div>
-
-          <h3 className="text-text text-2xl mb-6">Popular Regions We Serve</h3>
-
-          <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-            We work with couples planning Indian weddings in major metros and beyond, including:
-          </p>
-
-          <div className="grid gap-4 md:grid-cols-2 mb-8">
-            <div className="p-6 rounded-lg bg-warm-2/30">
-              <div className="font-serif font-semibold text-text mb-3">East Coast</div>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                New York, New Jersey, Pennsylvania, Maryland, Virginia, North Carolina, Florida
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg bg-warm-2/30">
-              <div className="font-serif font-semibold text-text mb-3">West Coast</div>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                California (Bay Area, LA, San Diego), Washington, Oregon
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg bg-warm-2/30">
-              <div className="font-serif font-semibold text-text mb-3">South</div>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Texas (Houston, Dallas, Austin), Georgia, Tennessee
-              </p>
-            </div>
-
-            <div className="p-6 rounded-lg bg-warm-2/30">
-              <div className="font-serif font-semibold text-text mb-3">Midwest</div>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Illinois, Michigan, Ohio, Minnesota, Wisconsin
-              </p>
-            </div>
-          </div>
-
-          <p className="text-muted-foreground leading-relaxed">
-            Our budget-first approach works regardless of location—wedding costs vary by region, and we help you plan
-            within your local market while sourcing items strategically (India vs. USA).
-          </p>
         </div>
       </Section>
 
       <Section variant="warm2">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-text mb-6">Cultural Traditions We Specialize In</h2>
-
-          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            CeremonyVerse understands the nuances of different{" "}
-            <Link href="/blog/south-indian-wedding-ceremony-guide" className="text-primary hover:underline">
-              South Asian wedding traditions
-            </Link>
-            :
-          </p>
+          <h2 className="text-text mb-6">Why Couples Use CeremonyVerse Instead of Shopping Alone</h2>
 
           <div className="grid gap-6 md:grid-cols-2">
             <Card hover className="bg-surface">
-              <div className="font-serif text-lg font-semibold text-text mb-3">
-                <Link
-                  href="/blog/indian-wedding-traditions-guide"
-                  className="text-text hover:text-primary transition-colors"
-                >
-                  Hindu Weddings
-                </Link>
-              </div>
+              <h3 className="font-serif text-lg font-semibold text-text mb-3">Less Vendor Guesswork</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Complete ceremony guidance including Ganesh Puja, Mandap setup, Saat Phere, Vidaai, and regional
-                variations
+                We focus on trusted sourcing paths so you are not starting from random Instagram accounts or unknown overseas contacts.
               </p>
             </Card>
 
             <Card hover className="bg-surface">
-              <div className="font-serif text-lg font-semibold text-text mb-3">Sikh Weddings</div>
+              <h3 className="font-serif text-lg font-semibold text-text mb-3">Better Timeline Awareness</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Anand Karaj ceremony coordination, Gurdwara protocols, Milni, and cultural event planning
+                Wedding shopping from India often fails because couples start too late. We help you think through lead times and shipping windows earlier.
               </p>
             </Card>
 
             <Card hover className="bg-surface">
-              <div className="font-serif text-lg font-semibold text-text mb-3">
-                <Link
-                  href="/blog/gujarati-wedding-planning-guide"
-                  className="text-text hover:text-primary transition-colors"
-                >
-                  Gujarati Traditions
-                </Link>
-              </div>
+              <h3 className="font-serif text-lg font-semibold text-text mb-3">More Coordinated Shopping</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Pithi, Garba, Haldi customs, and regional ceremony requirements specific to Gujarati families
+                Bridal, groom, bridesmaid, and ceremony items can be planned together instead of becoming disconnected purchases.
               </p>
             </Card>
 
             <Card hover className="bg-surface">
-              <div className="font-serif text-lg font-semibold text-text mb-3">
-                <Link
-                  href="/blog/punjabi-wedding-traditions-guide"
-                  className="text-text hover:text-primary transition-colors"
-                >
-                  Punjabi Celebrations
-                </Link>
-              </div>
+              <h3 className="font-serif text-lg font-semibold text-text mb-3">Planning Support When Needed</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Sangeet choreography support, Jaggo, Chooda ceremony, and vibrant celebration planning
+                If you also need help with traditions, vendor strategy, or destination logistics, planning support is available without overpowering the sourcing side of the business.
               </p>
             </Card>
-
-            <Card hover className="bg-surface">
-              <div className="font-serif text-lg font-semibold text-text mb-3">
-                <Link
-                  href="/blog/south-indian-wedding-ceremony-guide"
-                  className="text-text hover:text-primary transition-colors"
-                >
-                  South Indian Weddings
-                </Link>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Tamil, Telugu, Kannada, and Malayalam ceremony traditions including Muhurtham timing and rituals
-              </p>
-            </Card>
-
-            <Card hover className="bg-surface">
-              <div className="font-serif text-lg font-semibold text-text mb-3">
-                <Link
-                  href="/blog/essential-elements-fusion-wedding"
-                  className="text-text hover:text-primary transition-colors"
-                >
-                  Fusion & Interfaith
-                </Link>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Hindu-Christian, Sikh-Jewish, and other multicultural ceremony design with respectful tradition blending
-              </p>
-            </Card>
-          </div>
-
-          <div className="mt-12 p-6 rounded-lg bg-warm-2/30">
-            <h3 className="font-serif font-semibold text-text mb-4">Helpful Resources</h3>
-            <div className="grid gap-3 md:grid-cols-2">
-              <Link href="/blog/south-asian-wedding-budget-guide" className="text-primary hover:underline">
-                Indian wedding budget planning guide
-              </Link>
-              <Link href="/blog/wedding-shopping-india-vs-usa" className="text-primary hover:underline">
-                India vs USA sourcing comparison
-              </Link>
-              <Link href="/blog/vendor-verification-guide" className="text-primary hover:underline">
-                Learn about our vendor verification process
-              </Link>
-              <Link href="/services" className="text-primary hover:underline">
-                Explore CeremonyVerse wedding planning services
-              </Link>
-            </div>
           </div>
         </div>
       </Section>
 
       <Section variant="surface">
-        <h2 className="text-text mb-6">Serving Indian & Fusion Weddings Across the Region</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <Link
-            href="/indian-wedding-planner-philadelphia"
-            className="p-4 rounded-lg bg-warm-2/50 hover:bg-warm-2 transition-colors text-center"
-          >
-            <span className="font-serif text-lg text-text">Philadelphia, PA</span>
-          </Link>
-          <Link
-            href="/indian-wedding-planner-new-jersey"
-            className="p-4 rounded-lg bg-warm-2/50 hover:bg-warm-2 transition-colors text-center"
-          >
-            <span className="font-serif text-lg text-text">New Jersey</span>
-          </Link>
-          <Link
-            href="/south-asian-wedding-planner-delaware"
-            className="p-4 rounded-lg bg-warm-2/50 hover:bg-warm-2 transition-colors text-center"
-          >
-            <span className="font-serif text-lg text-text">Delaware</span>
-          </Link>
-          <Link
-            href="/hindu-wedding-planner-maryland"
-            className="p-4 rounded-lg bg-warm-2/50 hover:bg-warm-2 transition-colors text-center"
-          >
-            <span className="font-serif text-lg text-text">Maryland</span>
-          </Link>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-text mb-6">Educational Guides for Traditions, Shopping, and Planning</h2>
+
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            CeremonyVerse also publishes educational resources so couples can better understand traditions, shopping decisions, and wedding logistics before they commit.
+          </p>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            <Link href="/tradition-explainer" className="p-6 rounded-lg bg-warm-2/30 hover:bg-warm-2 transition-colors">
+              <span className="font-serif text-lg text-text">Indian Wedding Traditions Explained</span>
+            </Link>
+
+            <Link href="/resources" className="p-6 rounded-lg bg-warm-2/30 hover:bg-warm-2 transition-colors">
+              <span className="font-serif text-lg text-text">Resources</span>
+            </Link>
+
+            <Link href="/blog" className="p-6 rounded-lg bg-warm-2/30 hover:bg-warm-2 transition-colors">
+              <span className="font-serif text-lg text-text">Blog</span>
+            </Link>
+
+            <Link href="/shop-from-india" className="p-6 rounded-lg bg-warm-2/30 hover:bg-warm-2 transition-colors">
+              <span className="font-serif text-lg text-text">Shop From India Process</span>
+            </Link>
+          </div>
         </div>
       </Section>
 
-      
       <HomeMexicoPromo />
 
-      <section className="py-16 px-4 bg-gray-50">
+      <Section variant="surface">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Frequently Asked Questions About Indian Wedding Planning
-          </h2>
+          <h2 className="text-text mb-6">Planning Support for Couples Who Need More Than Sourcing</h2>
 
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">How much do your wedding planning services cost?</h3>
-              <p className="text-gray-700">
-                Our Planning Intensives start at $1,250, Partial Planning starts at $3,000, and Full Planning starts at
-                $6,500. All pricing is transparent with no hidden fees or percentage-based markups. We discuss travel
-                costs upfront for out-of-area weddings.{" "}
-                <a href="/pricing" className="text-blue-600 hover:underline">
-                  View detailed pricing →
-                </a>
-              </p>
-            </div>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            Planning support is available for Indian, fusion, and destination weddings when couples need help beyond shopping. This includes strategy, cultural logistics, and more structured support.
+          </p>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">Do you only work with couples in certain states?</h3>
-              <p className="text-gray-700">
-                No. We work with couples planning Indian weddings anywhere in the USA. Most of our services are virtual
-                (video consultations, digital planning tools), and for full planning clients, we travel to your location
-                for key events.
+          <div className="grid gap-6 md:grid-cols-3">
+            <Card>
+              <h3 className="text-lg font-semibold mb-3">Services</h3>
+              <p className="text-muted-foreground mb-4">
+                Explore the full range of CeremonyVerse support.
               </p>
-            </div>
+              <Link href="/services" className="underline">
+                View services →
+              </Link>
+            </Card>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">Can you help with sourcing outfits and jewelry from India?</h3>
-              <p className="text-gray-700">
-                Yes. Cultural Sourcing Support is available as a standalone service or add-on. We provide guidance on
-                what to source from India vs USA, timelines for international coordination, and trusted vendor
-                recommendations based on your needs.{" "}
-                <a href="/blog/wedding-shopping-india-vs-usa" className="text-blue-600 hover:underline">
-                  Read our India vs USA sourcing guide →
-                </a>
+            <Card>
+              <h3 className="text-lg font-semibold mb-3">Destination Weddings</h3>
+              <p className="text-muted-foreground mb-4">
+                Planning help for destination Indian weddings in Mexico.
               </p>
-            </div>
+              <Link href="/indian-destination-wedding-planner-mexico" className="underline">
+                View Mexico page →
+              </Link>
+            </Card>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">What cultural traditions do you understand?</h3>
-              <p className="text-gray-700">
-                We work with Hindu (Gujarati, Punjabi, South Indian, Bengali, Marathi), Sikh, Jain, and
-                fusion/interfaith weddings. We understand regional ceremony differences, multi-day event logistics, and
-                how to balance traditional expectations with modern preferences.
+            <Card>
+              <h3 className="text-lg font-semibold mb-3">Consultation</h3>
+              <p className="text-muted-foreground mb-4">
+                Book a consultation to discuss your next step.
               </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">How does virtual wedding planning work?</h3>
-              <p className="text-gray-700">
-                We conduct planning sessions via Zoom, share digital planning tools and timelines, research vendors in
-                your local area, and can join virtual vendor meetings with you. For full planning clients, we travel to
-                your location for the wedding weekend and key events as needed.
-              </p>
-            </div>
+              <Link href="/book" className="underline">
+                Schedule consultation →
+              </Link>
+            </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       <Section variant="warm">
         <Card hover className="md:p-14 text-center max-w-3xl mx-auto bg-surface">
-          <h3 className="text-text">Ready to plan with clarity and cultural understanding?</h3>
+          <h2 className="text-text">Ready to start with sourcing, not confusion?</h2>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-            Start with our Budget + Vision Form so we can recommend the right level of support for your wedding.
+            Start with the sourcing path that makes the most sense for your wedding, then add planning support only if you need it.
           </p>
           <div className="mt-10 flex flex-wrap gap-4 justify-center">
-            <Button href="/start-planning">Start with Budget + Vision Form</Button>
+            <Button href="/shop-from-india">Shop From India</Button>
             <Button href="/book" variant="secondary">
               Schedule a Free Consultation
             </Button>
           </div>
         </Card>
       </Section>
-    
-      <JsonLd
-        data={{
-    "@context": "https://schema.org",
-    "@type": "EventPlanner",
-    "name": "CeremonyVerse",
-    "url": "https://www.ceremonyverse.com",
-    "image": "https://www.ceremonyverse.com/images/home-hero-planning.jpg",
-    "priceRange": "$1250 - $6500",
-    "areaServed": [
-      { "@type": "Country", "name": "United States" },
-      { "@type": "Country", "name": "Mexico" }
-    ],
-    "serviceType": ["Indian wedding planning", "South Asian wedding planning", "Destination wedding planning", "Mexico resort wedding planning"],
-    "description": "Indian and fusion wedding planning studio with a budget-first, culturally fluent approach. CeremonyVerse plans multi-day celebrations in the US and Mexico with clear pricing and realistic support.",
-    "address": { "@type": "PostalAddress", "addressCountry": "US" }
-  }}
-      />
+
+      <JsonLd data={localBusinessSchema} />
     </>
   )
 }
