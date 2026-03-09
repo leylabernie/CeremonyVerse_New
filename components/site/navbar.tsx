@@ -47,7 +47,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.svg"
-              alt="CeremonyVerse - Wedding Planning + Cultural Sourcing"
+              alt="CeremoCeremonyVerse - Wedding Outfit & Cultural Sourcing
               width={500}
               height={500}
               className="h-[120px] w-auto md:h-[150px]"
