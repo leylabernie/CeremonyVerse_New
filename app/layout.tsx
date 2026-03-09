@@ -7,8 +7,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google"
 import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 
-// Sans-serif for body text - clean and readable
-// IMPORTANT: use cv-prefixed variable so we can control mapping in CSS
+// Sans-serif for body text
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -16,8 +15,7 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 })
 
-// Serif for headings - elegant and sophisticated
-// IMPORTANT: use cv-prefixed variable so we can control mapping in CSS
+// Serif for headings
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   display: "swap",
@@ -29,16 +27,16 @@ const cormorantGaramond = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ceremonyverse.com"),
   title: {
-    default: "Indian & Fusion Wedding Planner Nationwide | CeremonyVerse",
+    default: "Indian Wedding Outfit Sourcing From India | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "Plan your Indian or fusion wedding anywhere in the USA with cultural expertise and transparent pricing. Virtual consultations available nationwide with travel for in-person events.",
+    "CeremonyVerse helps USA-based couples source bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and wedding essentials directly from trusted vendors in India.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Indian & Fusion Wedding Planner | CeremonyVerse",
+    title: "Indian Wedding Outfit Sourcing From India | CeremonyVerse",
     description:
-      "Budget-first Indian and fusion wedding planning for PA, NJ, DE & MD couples.",
+      "Source bridal lehengas, sherwanis, bridesmaid outfits, and wedding essentials from trusted vendors in India without the complexity of international shopping.",
     url: "https://www.ceremonyverse.com",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -47,27 +45,25 @@ export const metadata: Metadata = {
   generator: "v0.app",
 }
 
-const localBusinessJsonLd = {
+const businessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "WeddingPlanner",
+  "@type": "ClothingStore",
   name: "CeremonyVerse",
   url: "https://www.ceremonyverse.com",
   telephone: "+1-215-341-9990",
   email: "hello@ceremonyverse.com",
   description:
-    "Indian and fusion wedding planning with cultural clarity—multi-day ceremonies, timelines, vendor coordination, and virtual planning support.",
+    "CeremonyVerse helps couples source Indian wedding outfits including bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and accessories directly from trusted vendors in India.",
   priceRange: "$$",
   areaServed: [
-    { "@type": "State", name: "Pennsylvania" },
-    { "@type": "State", name: "New Jersey" },
-    { "@type": "State", name: "Delaware" },
-    { "@type": "State", name: "Maryland" },
+    { "@type": "Country", name: "United States" },
+    { "@type": "Country", name: "Canada" },
   ],
   serviceType: [
-    "Indian Wedding Planning",
-    "Fusion Wedding Coordination",
-    "Day-of Wedding Coordination",
-    "Cultural Sourcing Support",
+    "Indian Bridal Outfit Sourcing",
+    "Sherwani & Menswear Sourcing",
+    "Bridesmaid Outfit Coordination",
+    "Wedding Jewelry & Accessories Sourcing",
   ],
   sameAs: [
     "https://www.instagram.com/ceremonyverse",
@@ -84,17 +80,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      // Attach font variables from next/font to the html element
       className={`${inter.variable} ${cormorantGaramond.variable}`}
     >
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessJsonLd),
+            __html: JSON.stringify(businessJsonLd),
           }}
         />
       </head>
+
       <body className="min-h-screen antialiased bg-background text-foreground font-sans">
         <Navbar />
         <main>{children}</main>
