@@ -10,10 +10,10 @@ interface Message {
 }
 
 const suggestedQuestions = [
-  "What's a realistic budget for a 200-guest fusion wedding?",
-  "How do I blend Hindu and Christian ceremonies?",
+  "What outfits do I need for an Indian wedding ceremony?"
+  "How do I source lehengas and sherwanis from India?"
   "What are auspicious dates for 2025?",
-  "How far in advance should I book vendors?",
+  "How long does it take to ship wedding outfits from India?"
 ]
 
 // Pre-defined responses for common questions
@@ -283,7 +283,7 @@ export default function AIPlanningAssistant() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={(e) => e.key === "Enter" && handleSend()}
-                  placeholder="Ask about budgets, traditions, dates..."
+                  placeholder="Ask about outfits, sourcing from India, budgets, traditions..."
                   className="flex-1 px-4 py-2 border border-gray-200 rounded-full text-sm focus:outline-none focus:border-primary"
                 />
                 <Button size="sm" onClick={handleSend} disabled={!input.trim()} className="rounded-full h-10 w-10 p-0">
