@@ -44,16 +44,16 @@ export function Navbar() {
 
         {/* Centered logo */}
         <div className="flex justify-center mb-3">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/logo.svg"
-              alt="CeremoCeremonyVerse - Wedding Outfit & Cultural Sourcing
-              width={500}
-              height={500}
-              className="h-[120px] w-auto md:h-[150px]"
-              priority
-            />
-          </Link>
+          <Link href="/" className="flex items-center justify-center">
+  <Image
+    src="/logo.svg"
+    alt="CeremonyVerse"
+    width={500}
+    height={500}
+    className="h-[120px] w-auto md:h-[150px]"
+    priority
+  />
+</Link>
         </div>
 
         {/* Desktop navigation */}
