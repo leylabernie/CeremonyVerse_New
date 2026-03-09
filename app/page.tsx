@@ -372,8 +372,8 @@ Optional Planning Support (If You Need It)
 </h2>
 
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Planning support is available for Indian, fusion, and destination weddings when couples need help beyond shopping. This includes strategy, cultural logistics, and more structured support.
-          </p>
+CeremonyVerse primarily helps couples source authentic Indian wedding outfits from India. Planning support is available for couples who want deeper guidance with traditions, logistics, and timelines.
+</p>
 
           <div className="grid gap-6 md:grid-cols-3">
             <Card>
