@@ -112,7 +112,19 @@ export default function ShopFromIndiaPage() {
           Schedule a consultation and we will help you source the right outfits
           for your wedding events.
         </p>
+<p className="mt-6 text-muted-foreground max-w-2xl">
+  Prefer to start by browsing real outfit examples? You can explore
+  curated bridal, groom, and wedding party outfits in our Etsy shop.
+</p>
 
+<a
+  href="https://desiweddingstudious.etsy.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block mt-3 underline"
+>
+  Browse outfits on Etsy →
+</a>
         <a
           href="/book-consultation"
           className="inline-block mt-6 underline"
