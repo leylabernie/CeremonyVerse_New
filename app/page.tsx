@@ -207,7 +207,6 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-
           <Card hover className="overflow-hidden p-0 aspect-[4/5] border-none">
             <Image
               src="/images/home-hero-planning.jpg"
@@ -217,11 +216,9 @@ export default function HomePage() {
               className="w-full h-full object-cover"
               priority
             />
-                  </div>
+          </Card>
+        </div>
       </Section>
-
-              </div>
-   </Section>
 
 {/* WHO THIS IS FOR & WHAT WE HELP SOURCE */}
 <Section className="pt-12 md:pt-16">
