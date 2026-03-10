@@ -18,10 +18,13 @@ import Image from "next/image"
  */
 
 const nav = [
+  const nav = [
   { href: "/home", label: "Home" },
+
+  { href: "/indian-wedding-outfits-from-india", label: "Outfit Sourcing" },
+
   { href: "/services", label: "Services" },
 
-  // Core sourcing hub
   { href: "/shop-from-india", label: "Shop From India" },
 
   // Destination weddings
