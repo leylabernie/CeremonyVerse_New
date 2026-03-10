@@ -17,7 +17,6 @@ import Image from "next/image"
  * - "Portfolio" removed until gallery is ready
  */
 
-const nav = [
   const nav = [
   { href: "/home", label: "Home" },
 
