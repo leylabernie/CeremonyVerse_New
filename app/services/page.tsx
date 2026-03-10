@@ -101,9 +101,9 @@ export default function ServicesPage() {
     measurements, color matching, and production timelines.
   </p>
 
-  <Link href="/buy-bridesmaid-lehenga-from-india" className="mt-4 inline-block underline">
-    Explore bridesmaid outfit sourcing →
-  </Link>
+  <Link href="/indian-bridesmaid-outfits" className="mt-4 inline-block underline">
+  Explore bridesmaid outfit sourcing →
+</Link>
 </div>
         
         {/* WEDDING GUIDANCE */}
