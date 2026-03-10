@@ -401,6 +401,16 @@ CeremonyVerse primarily helps couples source authentic Indian wedding outfits fr
                 Book a consultation to discuss your next step.
               </p>
               <Link href="/book" className="underline">
+                <p className="text-sm text-muted-foreground mb-3">
+  New to Indian wedding shopping? Start with our outfit sourcing guide.
+</p>
+
+<Link
+  href="/indian-wedding-outfits-from-india"
+  className="underline block mb-4"
+>
+  Read the outfit sourcing guide →
+</Link>
                 Schedule consultation →
               </Link>
             </Card>
