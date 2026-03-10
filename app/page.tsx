@@ -217,12 +217,10 @@ export default function HomePage() {
               className="w-full h-full object-cover"
               priority
             />
-          </Card>
-        </div>
+                  </div>
       </Section>
 
-             </Card>
-     </div>
+              </div>
    </Section>
 
 {/* WHO THIS IS FOR & WHAT WE HELP SOURCE */}
