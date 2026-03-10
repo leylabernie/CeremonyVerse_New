@@ -244,8 +244,7 @@ export default function HomePage() {
     </div>
   </div>
 </Section>
-      </Section>
-
+     
       <TrustSignals />
 
       <Section variant="surface">
