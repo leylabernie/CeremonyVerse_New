@@ -151,7 +151,7 @@
    * correct values.
    */
   --font-serif: var(--font-cv-serif);
-  --font-sans: var(--font-cv-sans);
+  --font-sans: var(--font-cv-serif);
 
   /* Shadcn/ui color mappings */
   --color-background: var(--background);
