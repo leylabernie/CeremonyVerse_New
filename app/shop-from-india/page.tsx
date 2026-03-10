@@ -118,7 +118,7 @@ export default function ShopFromIndiaPage() {
 </p>
 
 <a
-  href="https://desiweddingstudious.etsy.com"
+  href="https://www.etsy.com/shop/DesiWeddingStudioUS?ref=dashboard-header"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block mt-3 underline"
