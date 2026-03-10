@@ -221,35 +221,34 @@ export default function HomePage() {
         </div>
       </Section>
 
-      @@ app/page.tsx:220
-       </Card>
+             </Card>
      </div>
    </Section>
 
-+  {/* WHO THIS IS FOR & WHAT WE HELP SOURCE */}
-+  <Section className="pt-12 md:pt-16">
-+    <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-2">
-+      {/* Who this is for */}
-+      <div>
-+        <h2 className="text-2xl font-semibold">Who this is for</h2>
-+        <ul className="mt-4 space-y-3 text-charcoal/70 list-disc pl-5">
-+          <li>Brides seeking authentic Indian bridal lehengas</li>
-+          <li>Couples coordinating multiple family outfits</li>
-+          <li>US‑based clients needing help with overseas vendors</li>
-+        </ul>
-+      </div>
-+      {/* What we help source */}
-+      <div>
-+        <h2 className="text-2xl font-semibold">What we help source</h2>
-+        <ul className="mt-4 space-y-3 text-charcoal/70 list-disc pl-5">
-+          <li>Bridal lehengas</li>
-+          <li>Sherwanis</li>
-+          <li>Bridesmaid & family outfits</li>
-+          <li>Wedding jewelry & ceremony essentials</li>
-+        </ul>
-+      </div>
-+    </div>
-+  </Section>
+{/* WHO THIS IS FOR & WHAT WE HELP SOURCE */}
+<Section className="pt-12 md:pt-16">
+  <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-2">
+    {/* Who this is for */}
+    <div>
+      <h2 className="text-2xl font-semibold">Who this is for</h2>
+      <ul className="mt-4 space-y-3 text-charcoal/70 list-disc pl-5">
+        <li>Brides seeking authentic Indian bridal lehengas</li>
+        <li>Couples coordinating multiple family outfits</li>
+        <li>US‑based clients needing help with overseas vendors</li>
+      </ul>
+    </div>
+    {/* What we help source */}
+    <div>
+      <h2 className="text-2xl font-semibold">What we help source</h2>
+      <ul className="mt-4 space-y-3 text-charcoal/70 list-disc pl-5">
+        <li>Bridal lehengas</li>
+        <li>Sherwanis</li>
+        <li>Bridesmaid & family outfits</li>
+        <li>Wedding jewelry & ceremony essentials</li>
+      </ul>
+    </div>
+  </div>
+</Section>
       </Section>
 
       <TrustSignals />
