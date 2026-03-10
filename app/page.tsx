@@ -221,29 +221,35 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section className="pt-12 md:pt-16">
-        <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
-          <Card>
-            <h2 className="text-xl font-semibold mb-3">Outfit Sourcing</h2>
-            <p className="text-charcoal/70">
-              We help source bridal lehengas, sherwanis, bridesmaid outfits, and custom pieces from trusted boutiques in India with guidance on fabrics, fit, and coordination.
-            </p>
-          </Card>
+      @@ app/page.tsx:220
+       </Card>
+     </div>
+   </Section>
 
-          <Card>
-            <h2 className="text-xl font-semibold mb-3">Jewelry & Ceremony Items</h2>
-            <p className="text-charcoal/70">
-              From bridal jewelry to ceremony essentials, we help couples source the right pieces without managing multiple overseas vendors on their own.
-            </p>
-          </Card>
-
-          <Card>
-            <h2 className="text-xl font-semibold mb-3">Vendor Coordination & Shipping</h2>
-            <p className="text-charcoal/70">
-              We support communication, production timing, and delivery planning so your items move on a more realistic timeline for your wedding.
-            </p>
-          </Card>
-        </div>
++  {/* WHO THIS IS FOR & WHAT WE HELP SOURCE */}
++  <Section className="pt-12 md:pt-16">
++    <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-2">
++      {/* Who this is for */}
++      <div>
++        <h2 className="text-2xl font-semibold">Who this is for</h2>
++        <ul className="mt-4 space-y-3 text-charcoal/70 list-disc pl-5">
++          <li>Brides seeking authentic Indian bridal lehengas</li>
++          <li>Couples coordinating multiple family outfits</li>
++          <li>US‑based clients needing help with overseas vendors</li>
++        </ul>
++      </div>
++      {/* What we help source */}
++      <div>
++        <h2 className="text-2xl font-semibold">What we help source</h2>
++        <ul className="mt-4 space-y-3 text-charcoal/70 list-disc pl-5">
++          <li>Bridal lehengas</li>
++          <li>Sherwanis</li>
++          <li>Bridesmaid & family outfits</li>
++          <li>Wedding jewelry & ceremony essentials</li>
++        </ul>
++      </div>
++    </div>
++  </Section>
       </Section>
 
       <TrustSignals />
