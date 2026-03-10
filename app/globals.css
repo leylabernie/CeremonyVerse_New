@@ -16,8 +16,8 @@
   --font-cv-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
   /* Map generic font tokens to the cv-prefixed variables. */
-  --font-sans: var(--font-cv-sans);
-  --font-serif: var(--font-cv-serif);
+  --font-sans: var(--font-cv-serif);
+--font-serif: var(--font-cv-serif);
 
   /* Applying Option A sage palette by overriding shadcn defaults */
   /* Base colors - warm neutrals */
