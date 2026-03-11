@@ -414,7 +414,7 @@ CeremonyVerse primarily helps couples source authentic Indian wedding outfits fr
 </p>
 
 <a
-  href="https://desiweddingstudious.etsy.com"
+  href="https://www.etsy.com/shop/DesiWeddingStudioUS?ref=dashboard-header"
   target="_blank"
   rel="noopener noreferrer"
   className="underline block mb-4"
