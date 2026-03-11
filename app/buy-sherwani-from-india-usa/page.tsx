@@ -113,6 +113,29 @@ export default function SherwaniPage() {
         </ul>
       </section>
 
+      <Section className="py-12">
+  <h2 className="text-2xl font-serif">Related Guides</h2>
+
+  <ul className="mt-4 space-y-2 text-muted-foreground">
+    <li>
+      <Link href="/buy-lehenga-from-india" className="underline">
+        Buying a bridal lehenga from India →
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/indian-bridesmaid-outfits" className="underline">
+        Coordinating bridesmaid outfits from India →
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/indian-wedding-outfits-from-india" className="underline">
+        Complete guide to Indian wedding outfit sourcing →
+      </Link>
+    </li>
+  </ul>
+</Section>
     </main>
   );
 }
