@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 
 export default function VirtualShoppingIndiaGuide() {
   return (
@@ -9,143 +9,171 @@ export default function VirtualShoppingIndiaGuide() {
       </h1>
 
       <p className="text-muted-foreground mb-10">
-        Many South Asian couples living in the United States want authentic Indian wedding outfits,
-        but traveling to India for shopping is not always practical. Fortunately, virtual sourcing
-        and coordinated vendor communication now make it possible to purchase bridal lehengas,
-        sherwanis, and bridesmaid outfits directly from India while planning your wedding abroad.
+        Many couples living in the United States want authentic Indian
+        wedding outfits but cannot travel to India to shop in person.
+        Fortunately, modern sourcing methods now allow couples to
+        coordinate custom outfits remotely while still working directly
+        with trusted designers and boutiques in India.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-        Why Many US Couples Buy Wedding Outfits From India
+        Why Couples Buy Wedding Outfits From India
       </h2>
 
       <p className="mb-6">
-        Indian designers and boutiques offer far more customization, craftsmanship, and variety
-        than most US bridal stores. Couples often choose to source outfits directly from India
-        because they want traditional embroidery styles, better pricing, and access to a wider
-        selection of fabrics and designs.
+        Indian bridal fashion is known for its craftsmanship. Hand
+        embroidery techniques, detailed beadwork, and luxurious fabrics
+        such as silk, velvet, and organza are often more accessible
+        through Indian designers than overseas boutiques.
       </p>
 
       <p className="mb-6">
-        However, ordering wedding outfits internationally can be challenging if couples do not
-        understand vendor timelines, measurement requirements, or shipping logistics.
+        Couples often choose to source outfits directly from India because
+        it allows them to access more design options, better
+        customization, and traditional craftsmanship that can be difficult
+        to find abroad.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-        Common Challenges When Ordering From India
+        The Challenge of Shopping Internationally
       </h2>
 
       <p className="mb-6">
-        Couples frequently encounter problems when trying to purchase wedding outfits remotely.
-        These challenges include unclear production timelines, difficulty communicating
-        customization details, and uncertainty around international shipping.
+        While sourcing outfits from India offers many advantages, the
+        process can also feel overwhelming for couples who are unfamiliar
+        with international ordering.
       </p>
-
-      <ul className="list-disc pl-6 mb-6 space-y-2">
-        <li>Incorrect measurements or sizing confusion</li>
-        <li>Vendor communication delays</li>
-        <li>Unclear production timelines</li>
-        <li>International shipping and customs issues</li>
-        <li>Risk of unreliable vendors</li>
-      </ul>
-
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        What Couples Usually Buy From India
-      </h2>
 
       <p className="mb-6">
-        Many couples coordinate multiple items from India when planning their wedding outfits.
+        Common concerns include sizing accuracy, vendor communication,
+        production timelines, and international shipping logistics. These
+        factors can make the process stressful if couples attempt to
+        coordinate everything independently.
       </p>
-
-      <ul className="list-disc pl-6 mb-6 space-y-2">
-        <li>Bridal lehengas and reception outfits</li>
-        <li>Groom sherwanis and accessories</li>
-        <li>Bridesmaid lehengas or sarees</li>
-        <li>Wedding jewelry sets</li>
-        <li>Mehndi and sangeet outfits</li>
-      </ul>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
         How Virtual Wedding Outfit Shopping Works
       </h2>
 
       <p className="mb-6">
-        Instead of traveling internationally, couples can coordinate with vendors remotely
-        through measurements, design references, and production timelines. When managed
-        properly, this process allows couples to receive authentic outfits without the
-        stress of coordinating everything alone.
+        Virtual sourcing allows couples to collaborate with designers
+        remotely. Measurements, fabric references, embroidery styles, and
+        design details can be coordinated through video consultations,
+        reference photos, and digital communication.
       </p>
 
       <p className="mb-6">
-        Many couples begin by learning how the{" "}
+        Many couples begin by reviewing examples of bridal lehengas,
+        sherwanis, and bridesmaid outfits before narrowing down a design
+        direction that fits their wedding style.
+      </p>
+
+      <p className="mb-6">
+        If you are beginning the process, it helps to understand how the{" "}
         <Link href="/shop-from-india" className="underline">
           Shop From India sourcing process works
+        </Link>.
+      </p>
+
+      <h2 className="text-2xl font-serif mt-10 mb-4">
+        Planning Production Timelines
+      </h2>
+
+      <p className="mb-6">
+        Custom Indian wedding outfits typically take between 6 and 12
+        weeks to produce depending on the design complexity. Embroidery,
+        beadwork, and hand finishing require time to complete properly.
+      </p>
+
+      <p className="mb-6">
+        After production is complete, international shipping can take
+        approximately one to two weeks depending on the carrier and
+        destination.
+      </p>
+
+      <p className="mb-6">
+        Couples planning destination weddings should allow additional
+        buffer time to ensure outfits arrive comfortably before the
+        ceremony date.
+      </p>
+
+      <h2 className="text-2xl font-serif mt-10 mb-4">
+        Choosing the Right Bridal Outfit
+      </h2>
+
+      <p className="mb-6">
+        The bridal lehenga is the most recognizable outfit worn during
+        Indian weddings. Traditional designs often feature red, maroon,
+        or gold color palettes, although modern weddings frequently
+        incorporate pastel shades and contemporary embroidery styles.
+      </p>
+
+      <p className="mb-6">
+        If you are exploring bridal options, our guide to{" "}
+        <Link href="/buy-lehenga-from-india" className="underline">
+          buying bridal lehengas from India
         </Link>{" "}
-        before selecting vendors and confirming measurements.
+        explains how to coordinate measurements, design preferences, and
+        production timelines.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-Buying Bridal Lehengas From India
-</h2>
-
-<p className="mb-6">
-Many brides choose to purchase their bridal lehenga directly from India
-because of the wider variety of embroidery styles, fabrics, and
-customization options available.
-</p>
-
-<p className="mb-6">
-If you are considering ordering a bridal outfit remotely, read our full
-guide to{" "}
-<Link href="/buy-lehenga-from-india" className="underline">
-buying bridal lehengas from India
-</Link>.
-</p>
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        Shipping Indian Wedding Outfits to the USA
+        Groom and Wedding Party Attire
       </h2>
 
       <p className="mb-6">
-        Production timelines typically range from 6 to 12 weeks depending on the design,
-        embroidery complexity, and vendor workload. After production is complete,
-        international shipping usually takes 5 to 10 days.
+        Grooms typically wear sherwanis during traditional ceremonies.
+        These garments are long embroidered coats paired with churidar
+        pants or trousers and often coordinated with turbans and jewelry
+        accessories.
       </p>
 
       <p className="mb-6">
-        Couples planning destination weddings or multi-event celebrations should allow
-        enough time for alterations and coordination before the wedding date.
-      </p>
-
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        Avoiding Common Mistakes
-      </h2>
-
-      <p className="mb-6">
-        Many couples encounter problems because they start the process too late or
-        underestimate how long production takes. Clear communication and proper
-        measurements are essential to avoid delays or unexpected alterations.
+        Learn more about selecting groom attire in our guide to{" "}
+        <Link href="/buy-sherwani-from-india-usa" className="underline">
+          buying sherwanis from India
+        </Link>.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-        Need Help Coordinating Wedding Outfits From India?
+        Coordinating Bridesmaid Outfits
       </h2>
 
       <p className="mb-6">
-        CeremonyVerse helps US-based couples coordinate bridal lehengas, sherwanis,
-        bridesmaid outfits, and other ceremony attire directly with trusted vendors
-        in India.
+        Bridesmaids typically wear lehengas, sarees, or anarkali dresses
+        that coordinate with the wedding color palette. Many couples
+        choose complementary shades that allow the bridal outfit to remain
+        the focal point.
       </p>
 
       <p className="mb-6">
-        We assist with measurements, customization details, vendor communication,
-        and realistic shipping timelines so couples can focus on the rest of
-        their wedding planning.
+        For styling ideas, visit our{" "}
+        <Link href="/indian-bridesmaid-outfits" className="underline">
+          bridesmaid outfit guide
+        </Link>.
+      </p>
+
+      <h2 className="text-2xl font-serif mt-10 mb-4">
+        Working With a Sourcing Specialist
+      </h2>
+
+      <p className="mb-6">
+        Many couples choose to work with a sourcing specialist who can
+        coordinate vendor communication, measurements, design references,
+        and shipping logistics. This approach helps reduce the risk of
+        miscommunication or production delays.
+      </p>
+
+      <p className="mb-6">
+        CeremonyVerse helps couples based in the United States coordinate
+        authentic Indian wedding outfits directly with trusted vendors in
+        India while simplifying the entire process.
       </p>
 
       <Link href="/book" className="underline text-lg">
-        Schedule a sourcing consultation →
+        Schedule a consultation →
       </Link>
 
     </main>
-  );
+  )
 }
