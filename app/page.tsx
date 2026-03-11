@@ -449,6 +449,12 @@ CeremonyVerse primarily helps couples source authentic Indian wedding outfits fr
   href="/indian-wedding-outfits-guide"
   className="underline block mb-4"
 >
+  Read the complete Indian wedding outfit guide →
+</Link>
+  <Link
+  href="/indian-wedding-outfits-guide"
+  className="underline block mb-4"
+>
 Read the complete Indian wedding outfit guide →
 </Link>
 </Link>
