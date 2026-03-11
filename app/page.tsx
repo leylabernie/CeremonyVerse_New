@@ -215,8 +215,8 @@ export default function HomePage() {
             <Image
               src="/images/Gemini_Generated_Image_1io2yi1io2yi1io2.png"
               alt="Elegant Indian wedding couple in traditional attire"
-              width={640}
-              height={800}
+              width={2560}
+              height={1440}
               className="w-full h-full object-cover"
               priority
             />
