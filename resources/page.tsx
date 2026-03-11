@@ -6,19 +6,22 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Resources & Tools",
-  description: "Free wedding planning tools, calculators, guides, and resources for Indian and fusion weddings.",
+  description:
+    "Free wedding planning tools, guides, and resources for Indian and fusion weddings.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/resources",
   },
   openGraph: {
     title: "Resources & Tools | CeremonyVerse",
-    description: "Free wedding planning tools, guides, and resources for Indian and fusion weddings.",
+    description:
+      "Free wedding planning tools, guides, and resources for Indian and fusion weddings.",
     url: "https://www.ceremonyverse.com/resources",
     type: "website",
   },
   twitter: {
     title: "Resources & Tools | CeremonyVerse",
-    description: "Free wedding planning tools, guides, and resources for Indian and fusion weddings.",
+    description:
+      "Free wedding planning tools, guides, and resources for Indian and fusion weddings.",
   },
 }
 
@@ -27,44 +30,61 @@ export default function ResourcesPage() {
     {
       title: "AI Budget Calculator",
       href: "/budget-calculator",
-      description: "Get personalized AI-powered budget recommendations for your Indian or fusion wedding.",
+      description:
+        "Get personalized AI-powered budget recommendations for your Indian or fusion wedding.",
       icon: "🤖",
     },
     {
       title: "Tradition Explainer",
       href: "/tradition-explainer",
-      description: "Learn about Indian wedding traditions and their cultural significance with AI assistance.",
+      description:
+        "Learn about Indian wedding traditions and their cultural significance with AI assistance.",
       icon: "🕉️",
     },
     {
       title: "Budget Planner",
       href: "/budget-planner",
-      description: "Plan your wedding budget with our comprehensive calculator tool.",
+      description:
+        "Plan your wedding budget with our comprehensive calculator tool.",
       icon: "💰",
     },
     {
       title: "Wedding Glossary",
       href: "/wedding-glossary",
-      description: "Understand Indian wedding terminology and traditions.",
+      description:
+        "Understand Indian wedding terminology and traditions.",
       icon: "📖",
     },
     {
       title: "Free Resources",
       href: "/free-resources",
-      description: "Download free wedding planning templates and guides.",
+      description:
+        "Download free wedding planning templates and guides.",
       icon: "📋",
     },
     {
       title: "Start Planning",
       href: "/start-planning",
-      description: "Begin your wedding planning journey with our Budget + Vision Form.",
+      description:
+        "Begin your wedding planning journey with our Budget + Vision Form.",
       icon: "🎯",
     },
     {
       title: "Blog",
       href: "/blog",
-      description: "Expert advice, tips, and inspiration for your Indian or fusion wedding.",
+      description:
+        "Expert advice, tips, and inspiration for your Indian or fusion wedding.",
       icon: "✍️",
+    },
+
+    /* NEW GUIDE */
+
+    {
+      title: "What to Wear to an Indian Wedding",
+      href: "/what-to-wear-indian-wedding",
+      description:
+        "Complete guide explaining what guests should wear to Indian weddings including lehengas, sarees, sherwanis, and festive attire.",
+      icon: "👗",
     },
   ]
 
@@ -72,10 +92,13 @@ export default function ResourcesPage() {
     <>
       <Section variant="warm">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-serif text-text mb-4">Wedding Planning Resources</h1>
+          <h1 className="font-serif text-text mb-4">
+            Wedding Planning Resources
+          </h1>
           <p className="font-sans text-lg text-muted-foreground leading-relaxed">
-            Expert guides, tips, and insights for planning your perfect Indian-American fusion wedding. Learn from
-            experienced planners who understand your unique needs.
+            Expert guides, tools, and resources for planning your Indian
+            or fusion wedding. Learn from experienced planners who understand
+            modern multicultural celebrations.
           </p>
         </div>
       </Section>
@@ -86,10 +109,14 @@ export default function ResourcesPage() {
             <Link key={resource.href} href={resource.href} className="block group">
               <Card hover className="h-full p-6 transition-all duration-200 group-hover:shadow-lg">
                 <div className="text-4xl mb-4">{resource.icon}</div>
+
                 <h3 className="text-text text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                   {resource.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{resource.description}</p>
+
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {resource.description}
+                </p>
               </Card>
             </Link>
           ))}
