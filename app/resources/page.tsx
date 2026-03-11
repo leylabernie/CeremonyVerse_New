@@ -93,6 +93,13 @@ const resources = [
       "Everything you need to know about international shipping, customs, and delivery timelines.",
     icon: "✈️",
   },
+  {
+  title: "Indian Wedding Outfit Timeline",
+  href: "/indian-wedding-outfit-timeline",
+  description:
+    "Recommended timeline for ordering bridal lehengas, sherwanis, and bridesmaid outfits for weddings in the United States.",
+  icon: "⏱️",
+},
 ]
 
 export default function ResourcesPage() {
