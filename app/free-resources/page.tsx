@@ -8,7 +8,8 @@ import LeadMagnetForm from "@/components/lead-magnet-form"
 export const metadata: Metadata = {
   title: "Free Indian Wedding Guides | CeremonyVerse",
   description:
-    "Access free wedding planning tools including our Indian Wedding Planning Timeline PDF, budget calculator, auspicious dates calendar, and wedding glossary.",
+    description:
+"Access free guides for Indian wedding outfits, guest attire, cultural traditions, and sourcing wedding clothing from India."
 }
 
 // Auspicious dates for 2025-2026
