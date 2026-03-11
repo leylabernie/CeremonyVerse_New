@@ -2,12 +2,11 @@ import Link from "next/link"
 
 const nav = [
   { href: "/", label: "Home" },
-  { href: "/indian-wedding-outfits-from-india", label: "Outfit Sourcing" },
   { href: "/shop-from-india", label: "Shop From India" },
-  { href: "/resources", label: "Guides" },
+  { href: "/resources", label: "Resources" },
   { href: "/blog", label: "Blog" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/our-story", label: "About" }
+  { href: "/pricing", label: "Services" },
+  { href: "/our-story", label: "About" },
 ]
 
 export function Navbar() {
