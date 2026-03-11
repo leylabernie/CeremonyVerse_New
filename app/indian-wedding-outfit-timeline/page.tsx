@@ -104,6 +104,27 @@ export default function Page() {
         </ul>
       </Section>
 
+      <Section className="py-12">
+  <h2 className="text-2xl font-serif">
+    Planning Your Wedding Outfits?
+  </h2>
+
+  <p className="mt-4 text-muted-foreground max-w-3xl">
+    CeremonyVerse helps couples in the United States source authentic
+    Indian wedding outfits directly from India while coordinating
+    measurements, customization, and delivery timelines.
+  </p>
+
+  <div className="mt-6 space-y-2">
+    <Link href="/shop-from-india" className="underline block">
+      Learn how sourcing from India works →
+    </Link>
+
+    <Link href="/buy-lehenga-from-india" className="underline block">
+      Guide to buying a bridal lehenga →
+    </Link>
+  </div>
+</Section>
     </main>
   )
 }
