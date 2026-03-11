@@ -3,10 +3,8 @@ import Link from "next/link"
 const nav = [
   { href: "/", label: "Home" },
   { href: "/indian-wedding-outfits-from-india", label: "Outfit Sourcing" },
-  { href: "/services", label: "Services" },
   { href: "/shop-from-india", label: "Shop From India" },
-  { href: "/indian-destination-wedding-planner-mexico", label: "Destinations" },
-  { href: "/resources", label: "Resources" },
+  { href: "/resources", label: "Guides" },
   { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pricing" },
   { href: "/our-story", label: "About" }
