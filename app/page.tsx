@@ -85,6 +85,31 @@ export default function Page() {
 
 </section>
 
+      <section className="bg-cream py-20">
+
+  <div className="mx-auto max-w-5xl px-6">
+
+    <h2 className="font-serif text-3xl md:text-4xl">
+      Need Help Sourcing Indian Wedding Outfits?
+    </h2>
+
+    <p className="mt-4 text-charcoal/70 max-w-2xl">
+      CeremonyVerse helps couples source authentic Indian wedding attire
+      directly from India — including bridal lehengas, sherwanis, bridesmaid
+      outfits, and coordinated wedding party looks.
+    </p>
+
+    <Link
+      href="/shop-from-india"
+      className="inline-block mt-8 px-6 py-3 rounded-full bg-charcoal text-white text-sm"
+    >
+      Learn How Outfit Sourcing Works
+    </Link>
+
+  </div>
+
+</section>
+
     </main>
   )
 }
