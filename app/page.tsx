@@ -202,6 +202,10 @@ export default function HomePage() {
                 <span>Bridesmaid Outfits</span>
               </Link>
               <Link href="/indian-wedding-outfits-shipping-to-usa" className="flex items-center gap-2 hover:text-primary transition-colors">
+  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+  <span>Shipping to USA</span>
+</Link>
+              <Link href="/indian-wedding-outfits-shipping-to-usa" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 <span>Shipping to USA</span>
               </Link>
