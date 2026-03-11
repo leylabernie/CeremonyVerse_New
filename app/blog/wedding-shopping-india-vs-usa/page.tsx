@@ -1,132 +1,183 @@
-import Link from "next/link";
+import Link from "next/link"
 
 export default function WeddingShoppingIndiaVsUSA() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
 
       <h1 className="text-4xl font-serif mb-6">
-        Indian Wedding Shopping: India vs USA Cost & Quality Comparison
+        Wedding Shopping: India vs USA — Complete Cost & Quality Comparison
       </h1>
 
       <p className="text-muted-foreground mb-10">
-        Many South Asian couples living in the United States wonder whether
-        they should buy wedding outfits locally or source them directly from
-        India. Both options have advantages, but understanding the real
-        differences in price, customization, and timelines can help couples
-        make better decisions.
+        One of the biggest decisions for Indian-American couples planning a
+        wedding is where to buy their wedding outfits. Should you shop in
+        India or purchase outfits locally in the United States? Both options
+        have advantages, but understanding the differences in price,
+        customization, and craftsmanship can help couples make the best
+        decision.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-        Buying Wedding Outfits in the United States
+        Why Many Couples Consider Shopping in India
       </h2>
 
       <p className="mb-6">
-        US boutiques offer convenience and the ability to try outfits in
-        person. However, inventory is often limited and prices are typically
-        much higher because boutiques import garments and add retail markups.
+        India is the global center of South Asian bridal fashion. Designers
+        and boutiques offer extensive customization options and traditional
+        hand embroidery techniques that are often difficult to replicate in
+        overseas boutiques.
       </p>
 
       <p className="mb-6">
-        Customization options may also be limited compared to designer
-        studios in India that specialize in bridal embroidery and
-        traditional craftsmanship.
+        Couples who shop directly in India typically gain access to a much
+        wider variety of bridal lehengas, sherwanis, jewelry sets, and
+        coordinated outfits for the entire wedding party.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-        Buying Wedding Outfits in India
+        Shopping in the United States
       </h2>
 
       <p className="mb-6">
-        India offers far more variety in bridal fashion. Designers and
-        boutiques produce garments locally, which means couples can
-        choose fabrics, embroidery patterns, and colors that are often
-        unavailable outside India.
+        Buying wedding outfits in the United States can feel easier because
+        couples are able to visit stores in person and try on garments
+        directly. Communication with local boutiques is often simpler, and
+        alterations can be handled locally.
       </p>
 
-      <ul className="list-disc pl-6 mb-6 space-y-2">
-        <li>Greater design variety</li>
-        <li>Custom embroidery and tailoring</li>
-        <li>Lower cost for intricate outfits</li>
-        <li>Access to traditional craftsmanship</li>
-      </ul>
+      <p className="mb-6">
+        However, many US boutiques import garments from India and mark up the
+        prices significantly. As a result, couples may pay substantially more
+        for the same garment that could be sourced directly from Indian
+        designers.
+      </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
         Cost Comparison
       </h2>
 
       <p className="mb-6">
-        A bridal lehenga that costs several thousand dollars in a US boutique
-        may cost significantly less when purchased directly from a designer
-        in India. The price difference often comes from import costs and
-        retail markups added by overseas boutiques.
+        Bridal lehengas purchased through US boutiques can often range from
+        $2,500 to $6,000 or more depending on the designer and embroidery
+        detail.
       </p>
 
       <p className="mb-6">
-        However, couples should still factor in production timelines and
-        international shipping when ordering from India.
+        When sourcing directly from India, couples may find similar designs
+        for significantly lower prices while still receiving authentic
+        craftsmanship and customization options.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-        Where Most Brides Buy Their Bridal Lehenga
+        Customization and Design Options
       </h2>
 
       <p className="mb-6">
-        Many brides in the United States still choose to purchase their
-        bridal lehenga directly from India because of the wider range
-        of embroidery styles and customization options available.
+        Indian designers typically offer far more customization options.
+        Brides can select fabrics, embroidery patterns, sleeve styles,
+        blouse designs, and color variations to match the theme of their
+        wedding ceremonies.
       </p>
 
       <p className="mb-6">
-        If you are considering ordering your bridal outfit remotely,
-        read our guide to{" "}
+        Couples coordinating multiple events — such as the mehndi, sangeet,
+        and reception — often prefer working directly with Indian designers
+        because they can create cohesive outfits for the entire celebration.
+      </p>
+
+      <h2 className="text-2xl font-serif mt-10 mb-4">
+        Production Timelines
+      </h2>
+
+      <p className="mb-6">
+        Custom Indian wedding outfits typically require six to twelve weeks
+        for production. Hand embroidery and detailed embellishments require
+        time to complete properly.
+      </p>
+
+      <p className="mb-6">
+        After production is finished, international shipping generally takes
+        one to two weeks depending on the carrier and destination.
+      </p>
+
+      <h2 className="text-2xl font-serif mt-10 mb-4">
+        Coordinating Bridal and Groom Outfits
+      </h2>
+
+      <p className="mb-6">
+        Many couples prefer coordinating bridal lehengas and groom sherwanis
+        together to create a cohesive look during the wedding ceremony.
+      </p>
+
+      <p className="mb-6">
+        If you are planning to source a bridal outfit internationally, see
+        our guide to{" "}
         <Link href="/buy-lehenga-from-india" className="underline">
-          buying a bridal lehenga from India
+          buying bridal lehengas from India
+        </Link>.
+      </p>
+
+      <p className="mb-6">
+        Grooms can learn more about selecting traditional attire in our
+        guide to{" "}
+        <Link href="/buy-sherwani-from-india-usa" className="underline">
+          buying sherwanis from India
         </Link>.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-        Timeline Considerations
+        Bridesmaid and Family Outfits
       </h2>
 
       <p className="mb-6">
-        Custom wedding outfits typically take between 6 and 12 weeks to
-        produce depending on the design and embroidery complexity.
-        Shipping from India to the United States usually takes an
-        additional 5 to 10 days.
+        Coordinating outfits for bridesmaids, groomsmen, and family members
+        can be challenging when purchasing from multiple boutiques. Many
+        couples prefer sourcing outfits together from India to maintain a
+        consistent color palette and embroidery style across the wedding
+        party.
       </p>
 
       <p className="mb-6">
-        Couples planning multi-event weddings should begin the outfit
-        sourcing process several months before the wedding date.
+        For inspiration, visit our{" "}
+        <Link href="/indian-bridesmaid-outfits" className="underline">
+          bridesmaid outfit guide
+        </Link>.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-        Understanding the Sourcing Process
+        Ordering Outfits Without Traveling
       </h2>
 
       <p className="mb-6">
-        Before ordering from overseas, many couples explore how the{" "}
-        <Link href="/shop-from-india" className="underline">
-          Shop From India sourcing process works
+        Many couples assume that traveling to India is necessary for wedding
+        shopping, but modern sourcing methods allow designers to coordinate
+        measurements, design preferences, and embroidery details remotely.
+      </p>
+
+      <p className="mb-6">
+        Our guide to{" "}
+        <Link href="/blog/virtual-shopping-india-guide" className="underline">
+          virtual wedding outfit shopping
         </Link>{" "}
-        so they can understand production timelines, measurements, and
-        delivery expectations.
+        explains how couples can coordinate authentic outfits without
+        international travel.
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
-        Need Help Coordinating Wedding Outfits From India?
+        Simplifying the Process
       </h2>
 
       <p className="mb-6">
-        CeremonyVerse helps US-based couples coordinate bridal lehengas,
-        sherwanis, and bridesmaid outfits directly with trusted vendors
-        in India.
+        Coordinating wedding outfits across multiple vendors and countries
+        can quickly become overwhelming. Many couples choose to work with a
+        sourcing specialist who helps manage vendor communication, design
+        details, and shipping logistics.
       </p>
 
       <p className="mb-6">
-        We assist with measurements, customization, vendor communication,
-        and realistic shipping timelines so couples can avoid common
-        mistakes when ordering outfits internationally.
+        CeremonyVerse assists couples in the United States with sourcing
+        authentic Indian wedding outfits while simplifying communication
+        and delivery timelines.
       </p>
 
       <Link href="/book" className="underline text-lg">
@@ -134,5 +185,5 @@ export default function WeddingShoppingIndiaVsUSA() {
       </Link>
 
     </main>
-  );
+  )
 }
