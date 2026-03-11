@@ -85,6 +85,23 @@ export default function VirtualShoppingIndiaGuide() {
       </p>
 
       <h2 className="text-2xl font-serif mt-10 mb-4">
+Buying Bridal Lehengas From India
+</h2>
+
+<p className="mb-6">
+Many brides choose to purchase their bridal lehenga directly from India
+because of the wider variety of embroidery styles, fabrics, and
+customization options available.
+</p>
+
+<p className="mb-6">
+If you are considering ordering a bridal outfit remotely, read our full
+guide to{" "}
+<Link href="/buy-lehenga-from-india" className="underline">
+buying bridal lehengas from India
+</Link>.
+</p>
+      <h2 className="text-2xl font-serif mt-10 mb-4">
         Shipping Indian Wedding Outfits to the USA
       </h2>
 
