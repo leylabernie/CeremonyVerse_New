@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BookConsultationCTA from "../components/BookConsultationCTA";
 import Breadcrumbs from "../components/Breadcrumbs";
+import { Section } from "@/components/site/section"
 export const metadata: Metadata = {
   title: "Buy Bridal Lehenga From India (USA Brides) | CeremonyVerse",
   description:
