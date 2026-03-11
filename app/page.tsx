@@ -247,6 +247,26 @@ export default function HomePage() {
      
       <TrustSignals />
 
+      <Section className="py-16">
+  <h2 className="text-3xl font-serif text-center">
+    Real Outfit Examples
+  </h2>
+
+  <p className="mt-4 text-center text-muted-foreground max-w-2xl mx-auto">
+    Browse real bridal, groom, and wedding party outfit examples available through our curated Etsy shop.
+  </p>
+
+  <div className="mt-8 text-center">
+    <a
+      href="https://desiweddingstudious.etsy.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline"
+    >
+      Browse outfits on Etsy →
+    </a>
+  </div>
+</Section>
       <Section variant="surface">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-text mb-6">Shop Indian Wedding Outfits From India</h2>
