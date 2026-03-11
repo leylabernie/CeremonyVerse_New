@@ -100,6 +100,13 @@ const resources = [
     "Recommended timeline for ordering bridal lehengas, sherwanis, and bridesmaid outfits for weddings in the United States.",
   icon: "⏱️",
 },
+  {
+  title: "What to Wear to an Indian Wedding",
+  href: "/what-to-wear-indian-wedding",
+  description:
+    "Complete guide for wedding guests choosing outfits for Indian ceremonies including lehengas, sarees, and sherwanis.",
+  icon: "👗",
+},
 ]
 
 export default function ResourcesPage() {
