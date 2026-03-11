@@ -43,17 +43,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "www.ceremonyverse.com",
-          },
-        ],
-        destination: "https://ceremonyverse.com/:path*",
-        permanent: true,
-      },
-      {
         source: "/vendors",
         destination: "/portfolio",
         permanent: true,
