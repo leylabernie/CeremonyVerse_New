@@ -169,6 +169,7 @@ export default function BuyLehengaPage() {
 
         </div>
       </section>
+      
 <Section className="py-12">
   <h2 className="text-2xl font-serif">Related Guides</h2>
 
