@@ -409,6 +409,18 @@ CeremonyVerse primarily helps couples source authentic Indian wedding outfits fr
   href="/indian-wedding-outfits-from-india"
   className="underline block mb-4"
 >
+  <p className="text-sm text-muted-foreground mb-2">
+  Or browse ready-to-order outfit examples.
+</p>
+
+<a
+  href="https://desiweddingstudious.etsy.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="underline block mb-4"
+>
+  Browse outfits on Etsy →
+</a>
   Read the outfit sourcing guide →
 </Link>
                 Schedule consultation →
