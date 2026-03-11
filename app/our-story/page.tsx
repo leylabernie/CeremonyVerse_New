@@ -1,25 +1,24 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import Breadcrumbs from "@/components/breadcrumbs"
-import { Check } from "@/components/icons"
 
 export const metadata: Metadata = {
-  title: "About Us | Planning Indian & Fusion Weddings with Cultural Clarity",
+  title: "About CeremonyVerse | Indian Wedding Outfit Sourcing & Cultural Guidance",
   description:
-    "CeremonyVerse specializes in multi-day Indian and fusion weddings, where tradition, logistics, and family expectations require thoughtful planning and precise coordination.",
+    "CeremonyVerse helps US-based couples source Indian wedding outfits and understand wedding traditions with clear guidance on lehengas, sherwanis, bridesmaid outfits, timelines, and etiquette.",
   keywords: [
     "about CeremonyVerse",
-    "Indian wedding planner",
-    "fusion wedding experts",
-    "multi-day wedding planning",
-    "cultural wedding planning",
+    "Indian wedding outfit sourcing",
+    "buy lehenga from India USA",
+    "Indian wedding traditions guide",
+    "Indian wedding outfit help USA",
+    "sherwani sourcing USA",
   ],
   openGraph: {
-    title: "About CeremonyVerse | Indian & Fusion Wedding Planning",
+    title: "About CeremonyVerse | Indian Wedding Outfit Sourcing & Cultural Guidance",
     description:
-      "CeremonyVerse specializes in multi-day Indian and fusion weddings with thoughtful planning and precise coordination.",
+      "CeremonyVerse helps US-based couples source Indian wedding outfits and navigate traditions with confidence.",
     type: "website",
+    url: "https://ceremonyverse.com/our-story",
   },
   alternates: {
     canonical: "https://ceremonyverse.com/our-story",
@@ -28,153 +27,129 @@ export const metadata: Metadata = {
 
 export default function OurStoryPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <div className="pt-32 lg:pt-36">
-        <Breadcrumbs />
-      </div>
+    <main className="bg-white text-charcoal">
+      <section className="mx-auto max-w-4xl px-6 py-14 md:px-8 md:py-20">
+        <p className="text-sm uppercase tracking-[0.2em] text-charcoal/60">
+          About CeremonyVerse
+        </p>
 
-      {/* Hero Section */}
-      <section className="relative py-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-            Planning Indian & Fusion Weddings with Cultural Clarity
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            CeremonyVerse specializes in multi-day Indian and fusion weddings, where tradition, logistics, and family
-            expectations require thoughtful planning and precise coordination.
-          </p>
+        <h1 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">
+          Indian wedding outfit sourcing and cultural guidance for couples in the US
+        </h1>
+
+        <p className="mt-6 text-lg leading-8 text-charcoal/75">
+          CeremonyVerse was built for couples who want authentic Indian wedding outfits
+          and clear cultural guidance without the confusion of doing everything alone.
+          We help families in the United States understand what to wear, when to order,
+          how to coordinate outfits across events, and how to source from India with
+          less risk and more clarity.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 pb-6 md:px-8">
+        <div className="rounded-2xl border border-charcoal/10 bg-[#f8f6f2] p-8">
+          <h2 className="font-serif text-2xl md:text-3xl">What we actually help with</h2>
+
+          <ul className="mt-6 space-y-3 text-base leading-7 text-charcoal/75">
+            <li>• Bridal lehenga sourcing from India</li>
+            <li>• Sherwani and groom outfit guidance</li>
+            <li>• Bridesmaid and family outfit coordination</li>
+            <li>• Outfit timelines, measurements, and shipping planning</li>
+            <li>• Guest dress code and etiquette education</li>
+            <li>• Cultural context for multi-event Indian weddings</li>
+          </ul>
         </div>
       </section>
 
-      {/* Who We Are */}
-      <section className="py-20 px-6 bg-gradient-to-b from-background to-secondary/5">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6 text-center">Who We Are</h2>
-          <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-            <p>
-              CeremonyVerse was created to support couples planning Indian and fusion weddings that span multiple
-              ceremonies, cultures, and expectations. We understand that these weddings are not one-day events—they are
-              layered celebrations rooted in tradition, family, and community.
+      <section className="mx-auto max-w-4xl px-6 py-10 md:px-8">
+        <h2 className="font-serif text-2xl md:text-3xl">Why CeremonyVerse exists</h2>
+
+        <p className="mt-4 text-base leading-8 text-charcoal/75">
+          Many US-based couples want the beauty and meaning of Indian wedding clothing
+          and traditions, but they do not have the time, language confidence, travel
+          flexibility, or boutique network to manage it smoothly. Shopping in India can
+          offer better variety and customization, but it also introduces issues around
+          communication, sizing, production lead times, and international delivery.
+        </p>
+
+        <p className="mt-4 text-base leading-8 text-charcoal/75">
+          CeremonyVerse exists to make that process easier to understand. We combine
+          practical sourcing guidance with educational content so couples can make better
+          decisions about lehengas, sherwanis, bridesmaid outfits, timelines, and
+          cultural expectations.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-10 md:px-8">
+        <h2 className="font-serif text-2xl md:text-3xl">How this site is structured</h2>
+
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="rounded-2xl border border-charcoal/10 p-6">
+            <h3 className="font-serif text-xl">Guides for search traffic</h3>
+            <p className="mt-3 text-charcoal/75 leading-7">
+              We publish practical guides answering the real questions couples and guests
+              search for: what to wear, how early to order, where to buy, how shipping
+              works, and what each event means.
             </p>
-            <p className="font-medium text-foreground">
-              Our role is not to sell inspiration, but to provide structure, guidance, and seamless execution.
+          </div>
+
+          <div className="rounded-2xl border border-charcoal/10 p-6">
+            <h3 className="font-serif text-xl">Services for qualified leads</h3>
+            <p className="mt-3 text-charcoal/75 leading-7">
+              When readers need more than information, CeremonyVerse can support sourcing,
+              coordination, and consultation for Indian wedding outfits and planning
+              logistics.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Why Indian Weddings Require Different Approach */}
-      <section className="py-20 px-6 bg-background">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 text-center">
-            Why Indian Weddings Require a Different Approach
-          </h2>
+      <section className="mx-auto max-w-4xl px-6 py-10 md:px-8">
+        <h2 className="font-serif text-2xl md:text-3xl">Start here</h2>
 
-          <ul className="space-y-4 mb-8">
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-secondary shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">Multiple ceremonies across several days</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-secondary shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">Cultural and religious precision</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-secondary shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">Family involvement and expectations</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-secondary shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">Complex timelines and guest flow</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-secondary shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">
-                Coordination across vendors, venues, and sometimes countries
-              </span>
-            </li>
-          </ul>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <Link
+            href="/shop-from-india"
+            className="rounded-2xl border border-charcoal/10 p-6 transition hover:border-charcoal/25"
+          >
+            <h3 className="font-serif text-xl">Shop wedding outfits from India</h3>
+            <p className="mt-3 text-charcoal/75 leading-7">
+              Learn how our sourcing process works for lehengas, sherwanis, and wedding
+              party outfits.
+            </p>
+          </Link>
 
-          <p className="text-lg text-muted-foreground leading-relaxed text-center">
-            Without a clear planning process, these elements can quickly become overwhelming. CeremonyVerse focuses on
-            clarity, coordination, and respect for tradition at every stage.
-          </p>
+          <Link
+            href="/resources"
+            className="rounded-2xl border border-charcoal/10 p-6 transition hover:border-charcoal/25"
+          >
+            <h3 className="font-serif text-xl">Browse all guides and resources</h3>
+            <p className="mt-3 text-charcoal/75 leading-7">
+              Explore dress code, guest etiquette, outfit timelines, and sourcing guides.
+            </p>
+          </Link>
+
+          <Link
+            href="/what-to-wear-indian-wedding"
+            className="rounded-2xl border border-charcoal/10 p-6 transition hover:border-charcoal/25"
+          >
+            <h3 className="font-serif text-xl">What to wear to an Indian wedding</h3>
+            <p className="mt-3 text-charcoal/75 leading-7">
+              A guest-friendly guide to outfit types, colors, and event expectations.
+            </p>
+          </Link>
+
+          <Link
+            href="/contact"
+            className="rounded-2xl border border-charcoal/10 p-6 transition hover:border-charcoal/25"
+          >
+            <h3 className="font-serif text-xl">Contact CeremonyVerse</h3>
+            <p className="mt-3 text-charcoal/75 leading-7">
+              Reach out if you need help with outfit sourcing, coordination, or planning.
+            </p>
+          </Link>
         </div>
       </section>
-
-      {/* Our Planning Philosophy */}
-      <section className="py-20 px-6 bg-gradient-to-b from-secondary/5 to-background">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 text-center">Our Planning Philosophy</h2>
-
-          <div className="space-y-6">
-            <div className="bg-background p-6 rounded-lg border border-border">
-              <p className="text-lg text-foreground">We prioritize process over aesthetics</p>
-            </div>
-            <div className="bg-background p-6 rounded-lg border border-border">
-              <p className="text-lg text-foreground">We plan with cultural accuracy, not assumptions</p>
-            </div>
-            <div className="bg-background p-6 rounded-lg border border-border">
-              <p className="text-lg text-foreground">We design timelines that work for families and guests</p>
-            </div>
-            <div className="bg-background p-6 rounded-lg border border-border">
-              <p className="text-lg text-foreground">We communicate clearly and document decisions</p>
-            </div>
-            <div className="bg-background p-6 rounded-lg border border-border">
-              <p className="text-lg text-foreground">
-                We use secure, milestone-based payments via Stripe, PayPal, and Zelle
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Support Couples */}
-      <section className="py-20 px-6 bg-background">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 text-center">
-            How We Support Our Couples
-          </h2>
-
-          <ul className="space-y-4">
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-accent shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">Ceremony guidance across Indian communities</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-accent shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">Vendor coordination and logistics</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-accent shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">Multi-day timeline planning</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-accent shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">Virtual planning and India sourcing when needed</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Check className="w-6 h-6 text-accent shrink-0 mt-1" />
-              <span className="text-lg text-muted-foreground">Clear deliverables and planning checkpoints</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-accent/10 via-background to-secondary/10">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-            Planning an Indian or Fusion Wedding?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            Schedule a free consultation to discuss your vision and learn how we can help.
-          </p>
-          <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground px-12 py-6 text-lg">
-            <Link href="/book-consultation">Book a Free Consultation</Link>
-          </Button>
-        </div>
-      </section>
-    </div>
+    </main>
   )
 }
