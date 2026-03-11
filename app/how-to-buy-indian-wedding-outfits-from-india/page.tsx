@@ -89,6 +89,41 @@ export default function GuidePage() {
 
         </ul>
 
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Can you buy a bridal lehenga directly from India if you live in the USA?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Many couples in the United States source bridal lehengas directly from designers and boutiques in India. Measurements, customization, and shipping must be coordinated carefully to ensure proper fit and delivery timing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does it take to receive a wedding outfit from India?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Production timelines for bridal outfits can range from several weeks to a few months depending on embroidery and customization. Shipping to the United States also adds additional time depending on the courier and customs processing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can bridesmaid outfits be coordinated from India?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Bridesmaid outfits are often coordinated through a single designer or boutique so fabrics and colors match across the wedding party.",
+          },
+        },
+      ],
+    }),
+  }}
+/>
       </section>
 
     </main>
