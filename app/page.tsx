@@ -164,19 +164,27 @@ export default function HomePage() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center relative z-10">
           <div>
             <h1 className="text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900">
-              Indian Wedding Outfit Sourcing From India — Managed From the US
-            </h1>
+  Indian Wedding Outfit Sourcing From India — Managed From the US
+</h1>
 
-            <p className="mt-4 text-xl md:text-2xl text-muted-foreground">
-              Source bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and ceremony essentials from trusted vendors in India while we manage communication, timelines, and delivery logistics.
-            </p>
+<p className="mt-4 text-xl md:text-2xl text-muted-foreground">
+  CeremonyVerse helps couples source authentic Indian wedding outfits including bridal lehengas,
+  sherwanis, bridesmaid attire, and ceremony essentials while navigating traditions with clarity.
+</p>
 
-            <p className="mt-4 text-lg text-charcoal/70">
-              CeremonyVerse helps couples avoid the stress of navigating overseas vendors alone. We focus on guided sourcing, clearer coordination, and realistic shipping support for USA-based weddings.
-            </p>
+<p className="mt-4 text-lg text-charcoal/70">
+  Work with trusted boutiques in India without the stress of international communication,
+  sizing uncertainty, or shipping logistics. We help guide the process from inspiration to delivery.
+</p>
 
-            <p className="mt-3 text-charcoal/70">
-              <Link href="/shop-from-india" className="underline">
+<div className="mt-6 flex gap-4">
+  <Link href="/shop-from-india" className="underline">
+    Learn how our sourcing process works →
+  </Link>
+  <Link href="/resources" className="underline">
+    Browse Indian wedding guides →
+  </Link>
+</div>
                 Learn how our Shop From India sourcing process works →
               </Link>
             </p>
