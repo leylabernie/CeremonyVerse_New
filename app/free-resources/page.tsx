@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 import LeadMagnetForm from "@/components/lead-magnet-form"
 
 export const metadata: Metadata = {
-  title: "Free Wedding Planning Resources | CeremonyVerse",
+  title: "Free Indian Wedding Guides | CeremonyVerse",
   description:
     "Access free wedding planning tools including our Indian Wedding Planning Timeline PDF, budget calculator, auspicious dates calendar, and wedding glossary.",
 }
