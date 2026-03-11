@@ -7,8 +7,8 @@ const nextConfig = {
         destination: "/resources",
         permanent: true,
       },
-    ]
+    ];
   },
-}
+};
 
-module.exports = nextConfig
+export default nextConfig;
