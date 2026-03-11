@@ -1,142 +1,110 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 
-export default function WhatToWearIndianWedding() {
+export const metadata: Metadata = {
+  title: "What to Wear to an Indian Wedding | Guest Outfit Guide",
+  description:
+    "A practical guide to Indian wedding guest attire including lehengas, sarees, sherwanis, colors, and outfit ideas for each wedding event.",
+}
+
+export default function WhatToWearIndianWeddingPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
+    <main className="bg-white text-charcoal">
 
-      <h1 className="text-4xl font-serif mb-6">
-        What to Wear to an Indian Wedding (Guest Outfit Guide)
-      </h1>
+      <section className="mx-auto max-w-5xl px-6 py-16 md:px-8">
+        <h1 className="font-serif text-4xl md:text-5xl">
+          What to Wear to an Indian Wedding
+        </h1>
 
-      <p className="text-muted-foreground mb-10">
-        Indian weddings are vibrant, multi-day celebrations filled with
-        color, music, and beautifully coordinated outfits. Guests are
-        encouraged to dress elegantly and embrace traditional styles.
-        If you’ve been invited to an Indian wedding and are unsure what
-        to wear, this guide explains the most common outfit choices and
-        how to choose the right attire for each ceremony.
-      </p>
+        <p className="mt-6 text-lg text-charcoal/70 max-w-3xl">
+          Indian weddings are vibrant multi-day celebrations with several
+          different events, and each event typically has its own style of
+          attire. Guests often wear traditional clothing such as lehengas,
+          sarees, kurta sets, or sherwanis. Understanding what to wear for
+          each part of the wedding helps you feel comfortable while also
+          respecting the cultural traditions of the celebration.
+        </p>
+      </section>
 
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        Traditional Outfits for Female Guests
-      </h2>
+      <section className="mx-auto max-w-5xl px-6 pb-16 md:px-8">
 
-      <p className="mb-6">
-        Female guests often wear sarees, lehengas, or anarkali dresses.
-        These garments feature flowing fabrics, embroidery, and vibrant
-        colors that match the festive atmosphere of Indian weddings.
-      </p>
+        <h2 className="font-serif text-2xl">Popular Indian Wedding Guest Outfits</h2>
 
-      <p className="mb-6">
-        Lehengas are particularly popular for evening ceremonies such
-        as receptions or sangeet celebrations because they combine
-        elegance with comfort for dancing and socializing.
-      </p>
+        <p className="mt-4 text-charcoal/70 max-w-3xl">
+          The most common guest outfits for Indian weddings include lehengas,
+          sarees, salwar suits, and kurta sets. These outfits are colorful,
+          elegant, and often feature embroidery, brocade, or silk fabrics.
+        </p>
 
-      <p className="mb-6">
-        If you are exploring lehenga styles, you can see examples in our
-        guide to{" "}
-        <Link href="/buy-lehenga-from-india" className="underline">
-          buying bridal and guest lehengas from India
-        </Link>.
-      </p>
+        <ul className="mt-6 space-y-3 text-charcoal/70">
+          <li>• <strong>Lehenga Choli:</strong> A popular choice for female guests, consisting of a skirt, blouse, and dupatta.</li>
+          <li>• <strong>Saree:</strong> A traditional draped garment worn for formal ceremonies and receptions.</li>
+          <li>• <strong>Salwar Suit:</strong> A comfortable yet elegant option often worn at mehndi or daytime events.</li>
+          <li>• <strong>Kurta Set:</strong> A classic outfit for male guests, usually paired with churidar pants.</li>
+          <li>• <strong>Sherwani:</strong> A more formal option typically worn for the main ceremony or reception.</li>
+        </ul>
 
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        Traditional Outfits for Male Guests
-      </h2>
+      </section>
 
-      <p className="mb-6">
-        Male guests typically wear kurtas, sherwanis, or Indo-Western
-        suits depending on the formality of the event. A kurta with a
-        Nehru jacket is common for daytime ceremonies, while sherwanis
-        are often worn for evening receptions or formal celebrations.
-      </p>
+      <section className="mx-auto max-w-5xl px-6 pb-16 md:px-8">
 
-      <p className="mb-6">
-        Learn more about traditional groom and guest attire in our
-        guide to{" "}
-        <Link href="/buy-sherwani-from-india-usa" className="underline">
-          buying sherwanis from India
-        </Link>.
-      </p>
+        <h2 className="font-serif text-2xl">What to Wear for Each Wedding Event</h2>
 
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        What Colors Should Guests Wear?
-      </h2>
+        <div className="mt-6 space-y-6 text-charcoal/70 max-w-3xl">
 
-      <p className="mb-6">
-        Indian weddings celebrate vibrant color palettes. Guests often
-        wear shades such as emerald green, royal blue, gold, pink, and
-        pastel tones depending on the wedding theme.
-      </p>
+          <p>
+            <strong>Mehndi:</strong> Mehndi events are colorful and festive.
+            Guests usually wear bright outfits such as lehengas, salwar suits,
+            or lightweight sarees.
+          </p>
 
-      <p className="mb-6">
-        Avoid wearing white or extremely muted colors unless the couple
-        specifically indicates a modern dress code.
-      </p>
+          <p>
+            <strong>Sangeet:</strong> The sangeet is a lively celebration with
+            music and dancing. Many guests choose glamorous outfits such as
+            embellished lehengas or elegant kurta sets.
+          </p>
 
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        Dressing for Different Wedding Events
-      </h2>
+          <p>
+            <strong>Ceremony:</strong> The wedding ceremony is the most
+            traditional event. Guests typically wear more formal attire such
+            as silk sarees, lehengas, or sherwanis.
+          </p>
 
-      <p className="mb-6">
-        Indian weddings usually include multiple events such as the
-        mehndi, sangeet, ceremony, and reception. Guests often choose
-        lighter outfits for daytime events and more formal attire for
-        evening celebrations.
-      </p>
+          <p>
+            <strong>Reception:</strong> Reception outfits are often the most
+            glamorous. Guests frequently choose heavily embroidered lehengas,
+            designer sarees, or formal sherwani sets.
+          </p>
 
-      <p className="mb-6">
-        Coordinated outfits for bridesmaids and family members are
-        also common. Our{" "}
-        <Link href="/indian-bridesmaid-outfits" className="underline">
-          bridesmaid outfit guide
-        </Link>{" "}
-        explains how wedding parties coordinate colors and styles.
-      </p>
+        </div>
 
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        Where Guests Can Buy Indian Wedding Outfits
-      </h2>
+      </section>
 
-      <p className="mb-6">
-        Guests can purchase outfits from South Asian boutiques in the
-        United States or source garments directly from India for a wider
-        selection of styles and customization options.
-      </p>
+      <section className="mx-auto max-w-5xl px-6 pb-20 md:px-8">
 
-      <p className="mb-6">
-        If you are ordering internationally, our guide to{" "}
-        <Link href="/blog/virtual-shopping-india-guide" className="underline">
-          virtual wedding outfit shopping
-        </Link>{" "}
-        explains how couples and guests coordinate outfits remotely.
-      </p>
+        <h2 className="font-serif text-2xl">Where to Buy Indian Wedding Guest Outfits</h2>
 
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        Planning Your Outfit in Advance
-      </h2>
+        <p className="mt-4 text-charcoal/70 max-w-3xl">
+          Many wedding guests living in the United States look for authentic
+          Indian outfits but are unsure where to buy them. Traditional wedding
+          clothing is often sourced from boutiques in India where the variety
+          of fabrics, embroidery, and customization options is much wider.
+        </p>
 
-      <p className="mb-6">
-        Custom Indian garments may require several weeks for production,
-        especially if embroidery or tailoring adjustments are involved.
-        Guests attending destination weddings should plan their outfits
-        well in advance to ensure proper delivery and alterations.
-      </p>
+        <p className="mt-4 text-charcoal/70 max-w-3xl">
+          CeremonyVerse helps couples and guests source authentic Indian
+          wedding outfits directly from India while navigating sizing,
+          customization, and shipping timelines.
+        </p>
 
-      <h2 className="text-2xl font-serif mt-10 mb-4">
-        Need Help Finding the Right Outfit?
-      </h2>
+        <Link
+          href="/shop-from-india"
+          className="inline-block mt-6 px-6 py-3 rounded-full bg-charcoal text-white text-sm"
+        >
+          Learn How Outfit Sourcing Works
+        </Link>
 
-      <p className="mb-6">
-        CeremonyVerse helps couples and guests coordinate authentic
-        Indian wedding outfits from trusted vendors in India while
-        simplifying the ordering process.
-      </p>
-
-      <Link href="/book" className="underline text-lg">
-        Schedule a consultation →
-      </Link>
+      </section>
 
     </main>
   )
