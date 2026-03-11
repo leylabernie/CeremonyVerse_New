@@ -157,10 +157,13 @@ export default function FreeResourcesPage() {
                 <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-6">
                   <BookOpen className="h-7 w-7 text-primary" />
                 </div>
-                <h3 className="font-serif text-2xl font-light text-charcoal mb-3">Heritage & Harmony Guide</h3>
-                <p className="text-charcoal/70 font-light mb-6 flex-grow">
-                  Comprehensive guide to our full-service Indian wedding planning package.
-                </p>
+                <h3 className="font-serif text-2xl font-light text-charcoal mb-3">
+  Free Indian Wedding Guides
+</h3>
+
+<p className="text-charcoal/70 font-light mb-6 flex-grow">
+  Practical guides for Indian wedding outfits, guest attire, ceremony timelines, and sourcing clothing from India.
+</p>
                 <Button asChild className="w-full">
                   <Link href="/heritage-harmony-guide">
                     Read Guide
