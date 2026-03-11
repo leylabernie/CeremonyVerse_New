@@ -2,7 +2,6 @@ import { Section } from "@/components/site/section"
 import { InternalCTA } from "@/components/internal-cta"
 import Link from "next/link"
 import type { Metadata } from "next"
-import { Section } from "@/components/site/section"
 
 export const metadata: Metadata = {
   title: "Indian Bridesmaid Outfits | CeremonyVerse",
