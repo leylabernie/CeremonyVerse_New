@@ -7,8 +7,7 @@ import LeadMagnetForm from "@/components/lead-magnet-form"
 
 export const metadata: Metadata = {
   title: "Free Indian Wedding Guides | CeremonyVerse",
-  description:
-    description:
+      description:
 "Access free guides for Indian wedding outfits, guest attire, cultural traditions, and sourcing wedding clothing from India."
 }
 
