@@ -2,73 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Base typography */
-
-html {
-  font-family: var(--font-cv-sans);
-  color: #1F2933;
-}
+/* Base styles */
 
 body {
-  background-color: #F7F3ED;
-  color: #1F2933;
-  line-height: 1.65;
+  @apply bg-[#F7F3ED] text-[#1F2933] antialiased;
 }
 
-/* Headings */
-
-h1, h2, h3, h4 {
-  font-family: var(--font-cv-serif);
-  color: #111827;
-  font-weight: 500;
-}
-
-/* Paragraphs */
+/* Typography improvements */
 
 p {
   color: #374151;
 }
 
-/* Links */
-
-a {
-  color: #1F2933;
-}
-
-a:hover {
-  color: #000000;
-}
-
-/* Elegant list bullets */
-
-ul {
-  padding-left: 1.25rem;
-}
-
-ul li {
-  position: relative;
-  margin-bottom: 0.6rem;
+li {
   color: #374151;
-  list-style: none;
 }
 
-ul li::before {
-  content: "•";
-  position: absolute;
-  left: -1rem;
+/* Elegant bullets */
+
+ul li::marker {
   color: #C9B79C;
-  font-size: 1.1rem;
-  line-height: 1;
-}
-
-/* Buttons */
-
-button {
-  font-weight: 500;
-}
-
-/* Selection color */
-
-::selection {
-  background: #EADFD2;
 }
