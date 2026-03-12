@@ -121,22 +121,22 @@ export default function BridalLehengasFromIndiaPage() {
   <div className="grid gap-6 md:grid-cols-3 mt-8">
 
     <EtsyOutfitCard
-      title="Classic Red Bridal Lehenga"
-      image="https://images.unsplash.com/photo-1610030469983-98e550d6193c"
-      link="https://desiweddingstudious.etsy.com"
-    />
+  title="Lilac Chanderi Lehenga Set"
+  image="/images/Pastel Lehenga.jpeg"
+  link="https://www.etsy.com/listing/4464043944/lilac-chanderi-lehenga-set-corset-blouse"
+/>
 
     <EtsyOutfitCard
-      title="Gold Embroidered Lehenga"
-      image="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf"
-      link="https://desiweddingstudious.etsy.com"
-    />
+  title="Deep Purple Banarasi Brocade Lehenga"
+  image="/images/Bridal Lehenga - Pink & Green.jpeg"
+  link="https://www.etsy.com/listing/4461093221/deep-purple-banarasi-brocade-lehenga"
+/>
 
-    <EtsyOutfitCard
-      title="Modern Pastel Bridal Lehenga"
-      image="https://images.unsplash.com/photo-1627293509201-0e5d3f9e1c9d"
-      link="https://desiweddingstudious.etsy.com"
-    />
+<EtsyOutfitCard
+  title="Teal Soft Net Lehenga Choli"
+  image="/images/Dusty pink and Navy blue on human.jpeg"
+  link="https://www.etsy.com/listing/4458672584/teal-soft-net-lehenga-choli-gathered-at"
+/>
 
   </div>
 </section>
