@@ -6,6 +6,12 @@ import { Section } from "@/components/site/section"
 import RelatedLinks from "@/components/content/RelatedLinks";
 import EtsyShopCta from "@/components/cta/EtsyShopCta";
 
+export const metadata = {
+  title: "Buy Sherwani From India for US Weddings | CeremonyVerse",
+  description:
+    "Complete guide for grooms buying sherwanis from India. Learn sizing, timelines, and how to order groom outfits internationally.",
+};
+
 export const metadata: Metadata = {
   title: "Buy Sherwani From India (USA Grooms) | CeremonyVerse",
   description:
