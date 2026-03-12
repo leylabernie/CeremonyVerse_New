@@ -29,15 +29,6 @@ export const metadata: Metadata = {
     template: "%s | CeremonyVerse",
   },
   description:
-    "CeremonyVerse helps USA-based couples source bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and wedding essentials directly from trusted vendors in India.",
-}
-
-const businessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ClothingStore",
-  name: "CeremonyVerse",
-  url: "https://www.ceremonyverse.com",
-  description:
     "CeremonyVerse helps couples source authentic Indian wedding outfits from India.",
 }
 
@@ -51,18 +42,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${cormorantGaramond.variable}`}
     >
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(businessJsonLd),
-          }}
-        />
-      </head>
-
       <body className="min-h-screen antialiased font-sans text-[#1F2933] bg-[#F7F3ED]">
 
-        {/* CV monogram watermark */}
+        {/* Subtle watermark */}
         <div
           className="fixed inset-0 pointer-events-none"
           style={{
@@ -70,7 +52,7 @@ export default function RootLayout({
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "700px",
-            opacity: 0.05,
+            opacity: 0.04,
             zIndex: 0,
           }}
         />
