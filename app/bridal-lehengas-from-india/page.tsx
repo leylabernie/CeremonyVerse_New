@@ -102,6 +102,27 @@ export default function BridalLehengasFromIndiaPage() {
         ]}
       />
 
+<RelatedLinks
+  heading="Related Outfit Guides"
+  items={[
+    {
+      title: "Buy Sherwani From India",
+      href: "/buy-sherwani-from-india",
+      description: "Guide for grooms ordering sherwanis from India.",
+    },
+    {
+      title: "Indian Wedding Outfit Sizing Guide",
+      href: "/indian-wedding-outfit-sizing-guide",
+      description: "How to take accurate measurements before ordering.",
+    },
+    {
+      title: "When to Order Indian Wedding Outfits",
+      href: "/when-to-order-indian-wedding-outfits",
+      description: "Timeline planning for production and shipping.",
+    },
+  ]}
+/>
+      
       <EtsyShopCta />
 
     </main>
