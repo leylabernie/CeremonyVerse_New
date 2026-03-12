@@ -122,19 +122,19 @@ export default function BridalLehengasFromIndiaPage() {
 
     <EtsyOutfitCard
       title="Classic Red Bridal Lehenga"
-      image="/images/lehenga1.jpg"
+      image="https://images.unsplash.com/photo-1610030469983-98e550d6193c"
       link="https://desiweddingstudious.etsy.com"
     />
 
     <EtsyOutfitCard
       title="Gold Embroidered Lehenga"
-      image="/images/lehenga2.jpg"
+      image="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf"
       link="https://desiweddingstudious.etsy.com"
     />
 
     <EtsyOutfitCard
       title="Modern Pastel Bridal Lehenga"
-      image="/images/lehenga3.jpg"
+      image="https://images.unsplash.com/photo-1627293509201-0e5d3f9e1c9d"
       link="https://desiweddingstudious.etsy.com"
     />
 
