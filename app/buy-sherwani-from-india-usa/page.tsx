@@ -185,8 +185,7 @@ export default function SherwaniPage() {
       description: "Measurement tips before ordering custom outfits.",
     },
     {
-      {
-  title: "Buy Indian Wedding Outfits Online",
+      title: "Buy Indian Wedding Outfits Online",
   href: "/buy-indian-wedding-outfits-online",
   description: "Complete guide to ordering Indian wedding outfits online.",
 },
