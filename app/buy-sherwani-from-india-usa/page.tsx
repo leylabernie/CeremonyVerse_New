@@ -137,6 +137,28 @@ export default function SherwaniPage() {
     </li>
   </ul>
 </Section>
+      <RelatedLinks
+  heading="Related Outfit Guides"
+  items={[
+    {
+      title: "Bridal Lehengas From India",
+      href: "/bridal-lehengas-from-india",
+      description: "Guide for brides sourcing lehengas from India.",
+    },
+    {
+      title: "Indian Wedding Outfit Sizing Guide",
+      href: "/indian-wedding-outfit-sizing-guide",
+      description: "Measurement tips before ordering custom outfits.",
+    },
+    {
+      title: "When to Order Indian Wedding Outfits",
+      href: "/when-to-order-indian-wedding-outfits",
+      description: "Production and shipping timeline planning.",
+    },
+  ]}
+/>
+
+<EtsyShopCta />
     </main>
   );
 }
