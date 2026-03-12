@@ -4,16 +4,17 @@ type Props = {
   title: string;
   image: string;
   link: string;
+  imageHeight?: string; // add this line
 };
 
-export default function EtsyOutfitCard({ title, image, link }: Props) {
+export default function EtsyOutfitCard({ title, image, link, imageHeight }: Props) {
   return (
     <div className="border rounded-xl shadow-sm hover:shadow-md transition bg-white">
       <Link href={link} target="_blank">
         <img
   src={image}
   alt={title}
-  className="w-full h-[520px] object-contain"
+  className={`w-full ${imageHeight ?? 'h-[520px]'} object-contain`}
 />
       </Link>
 
