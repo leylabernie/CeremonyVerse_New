@@ -8,7 +8,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: baseUrl,
       lastModified: new Date(),
     },
-
     {
       url: `${baseUrl}/buy-indian-wedding-outfits-online`,
       lastModified: new Date(),
@@ -18,7 +17,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: `${baseUrl}/buy-lehenga-from-india-usa`,
+      lastModified: new Date(),
+    },
+    {
       url: `${baseUrl}/bridal-lehengas-from-india`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/indian-bridesmaid-dresses-from-india`,
       lastModified: new Date(),
     },
     {
