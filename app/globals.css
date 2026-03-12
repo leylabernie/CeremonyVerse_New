@@ -29,12 +29,6 @@ p {
   color: #374151;
 }
 
-/* Lists */
-
-li {
-  color: #374151;
-}
-
 /* Links */
 
 a {
@@ -43,6 +37,28 @@ a {
 
 a:hover {
   color: #000000;
+}
+
+/* Elegant list bullets */
+
+ul {
+  padding-left: 1.25rem;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 0.6rem;
+  color: #374151;
+  list-style: none;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: -1rem;
+  color: #C9B79C;
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 /* Buttons */
