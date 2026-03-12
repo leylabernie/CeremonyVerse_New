@@ -3,6 +3,8 @@ import Link from "next/link";
 import BookConsultationCTA from "../components/BookConsultationCTA";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { Section } from "@/components/site/section"
+import RelatedLinks from "@/components/content/RelatedLinks";
+import EtsyShopCta from "@/components/cta/EtsyShopCta";
 
 export const metadata: Metadata = {
   title: "Buy Sherwani From India (USA Grooms) | CeremonyVerse",
