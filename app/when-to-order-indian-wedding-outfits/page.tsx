@@ -2,6 +2,12 @@ import Link from "next/link";
 import RelatedLinks from "@/components/content/RelatedLinks";
 import EtsyShopCta from "@/components/cta/EtsyShopCta";
 
+export const metadata = {
+  title: "When to Order Indian Wedding Outfits | CeremonyVerse",
+  description:
+    "Timeline for ordering Indian wedding outfits from India including bridal lehengas, sherwanis, bridesmaid outfits, and guest attire.",
+};
+
 export default function WhenToOrderIndianWeddingOutfitsPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
