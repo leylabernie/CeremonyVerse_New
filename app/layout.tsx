@@ -7,7 +7,6 @@ import { Cormorant_Garamond, Inter } from "next/font/google"
 import { MobileStickyCTA } from "@/components/MobileStickyCTA"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 
-// Sans-serif for body text
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -15,7 +14,6 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 })
 
-// Serif for headings
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   display: "swap",
@@ -32,17 +30,6 @@ export const metadata: Metadata = {
   },
   description:
     "CeremonyVerse helps USA-based couples source bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and wedding essentials directly from trusted vendors in India.",
-  alternates: { canonical: "/" },
-  openGraph: {
-    title: "Indian Wedding Outfit Sourcing From India | CeremonyVerse",
-    description:
-      "Source bridal lehengas, sherwanis, bridesmaid outfits, and wedding essentials from trusted vendors in India without the complexity of international shopping.",
-    url: "https://www.ceremonyverse.com",
-    siteName: "CeremonyVerse",
-    locale: "en_US",
-    type: "website",
-  },
-  generator: "v0.app",
 }
 
 const businessJsonLd = {
@@ -50,26 +37,8 @@ const businessJsonLd = {
   "@type": "ClothingStore",
   name: "CeremonyVerse",
   url: "https://www.ceremonyverse.com",
-  telephone: "+1-215-341-9990",
-  email: "hello@ceremonyverse.com",
   description:
-    "CeremonyVerse helps couples source Indian wedding outfits including bridal lehengas, sherwanis, bridesmaid outfits, jewelry, and accessories directly from trusted vendors in India.",
-  priceRange: "$$",
-  areaServed: [
-    { "@type": "Country", name: "United States" },
-    { "@type": "Country", name: "Canada" },
-  ],
-  serviceType: [
-    "Indian Bridal Outfit Sourcing",
-    "Sherwani & Menswear Sourcing",
-    "Bridesmaid Outfit Coordination",
-    "Wedding Jewelry & Accessories Sourcing",
-  ],
-  sameAs: [
-    "https://www.instagram.com/ceremonyverse",
-    "https://www.facebook.com/ceremonyverse",
-    "https://www.pinterest.com/ceremonyverse",
-  ],
+    "CeremonyVerse helps couples source authentic Indian wedding outfits from India.",
 }
 
 export default function RootLayout({
@@ -91,12 +60,29 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="min-h-screen antialiased bg-background text-[#1F2933] font-sans">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <MobileStickyCTA />
-        <WhatsAppWidget />
+      <body className="min-h-screen antialiased font-sans text-[#1F2933] bg-[#F7F3ED]">
+
+        {/* CV monogram watermark */}
+        <div
+          className="fixed inset-0 pointer-events-none"
+          style={{
+            backgroundImage: "url('/cv-watermark.svg')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "700px",
+            opacity: 0.05,
+            zIndex: 0,
+          }}
+        />
+
+        <div className="relative z-10">
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <MobileStickyCTA />
+          <WhatsAppWidget />
+        </div>
+
       </body>
     </html>
   )
