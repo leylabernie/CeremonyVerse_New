@@ -42,18 +42,17 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${cormorantGaramond.variable}`}
     >
-      <body className="min-h-screen antialiased font-sans text-[#1F2933] bg-[#F7F3ED]">
+      <body className="min-h-screen antialiased text-[#1F2933] font-sans bg-[#F7F3ED]">
 
-        {/* Subtle watermark */}
+        {/* watermark */}
         <div
-          className="fixed inset-0 pointer-events-none"
+          className="fixed inset-0 pointer-events-none z-0"
           style={{
             backgroundImage: "url('/cv-watermark.svg')",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            backgroundSize: "700px",
-            opacity: 0.04,
-            zIndex: 0,
+            backgroundSize: "600px",
+            opacity: 0.05,
           }}
         />
 
