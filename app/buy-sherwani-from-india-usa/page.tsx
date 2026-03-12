@@ -185,6 +185,16 @@ export default function SherwaniPage() {
       description: "Measurement tips before ordering custom outfits.",
     },
     {
+      {
+  title: "Buy Indian Wedding Outfits Online",
+  href: "/buy-indian-wedding-outfits-online",
+  description: "Complete guide to ordering Indian wedding outfits online.",
+},
+{
+  title: "Shop Wedding Outfits From India",
+  href: "/shop-from-india",
+  description: "How US couples source wedding outfits directly from India.",
+},
       title: "When to Order Indian Wedding Outfits",
       href: "/when-to-order-indian-wedding-outfits",
       description: "Production and shipping timeline planning.",
