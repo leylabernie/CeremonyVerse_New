@@ -158,10 +158,10 @@ export default function SherwaniPage() {
   />
 
   <EtsyOutfitCard
-    title="Lavender Banarasi Indo-Western Set"
-    image="/images/lavender-kurta-set.webp"
-    link="https://www.etsy.com/listing/4459607351/mens-indo-western-set-mauve-banarasi"
-  />
+  title="Lavender Kurta Pajama Set"
+  image="/images/lavender-kurta-set.webp"
+  link="https://www.etsy.com/listing/4458258716/lavender-kurta-pajama-for-men-with"
+/>
 
   <EtsyOutfitCard
     title="Fuchsia Banarasi Nehru Jacket Set"
