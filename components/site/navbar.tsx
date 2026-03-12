@@ -7,11 +7,12 @@ export function Navbar() {
 
         {/* Brand */}
         <Link href="/" className="flex flex-col leading-tight">
-          <span className="text-xl font-semibold tracking-tight">
+          <span className="text-xl font-semibold tracking-tight text-[#1F2933]">
             CeremonyVerse
           </span>
+
           <span className="text-xs text-neutral-500">
-            Wedding Planning + Cultural Sourcing
+            Outfit Sourcing + Cultural Guidance
           </span>
         </Link>
 
