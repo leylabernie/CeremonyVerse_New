@@ -1,116 +1,81 @@
-import { Section } from "@/components/site/section"
-import { InternalCTA } from "@/components/internal-cta"
-import Link from "next/link"
 import type { Metadata } from "next"
+import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Indian Bridesmaid Outfits | CeremonyVerse",
+  title: "Indian Bridesmaid Outfits | Lehengas & Wedding Party Attire",
   description:
-    "Indian bridesmaid outfits sourced from trusted boutiques in India. Lehengas, sarees, anarkalis and coordinated bridal party styles for US weddings.",
-  alternates: {
-    canonical:
-      "https://www.ceremonyverse.com/indian-bridesmaid-outfits",
-  },
+    "Guide to Indian bridesmaid outfits including lehengas, sarees, and coordinated wedding party attire sourced from India.",
 }
 
-export default function BridesmaidOutfitsPage() {
+export default function Page() {
   return (
-    <>
-      <Section variant="warm">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-serif text-text mb-4">
-            Indian Bridesmaid Outfits
-          </h1>
+    <main className="bg-white text-charcoal">
 
-          <p className="text-lg text-muted-foreground">
-            Bridesmaids play an important role in Indian weddings and their
-            outfits often coordinate with the wedding theme and color palette.
-            CeremonyVerse helps couples source bridesmaid outfits directly
-            from India while simplifying measurements, customization,
-            and international delivery.
+      <section className="mx-auto max-w-5xl px-6 py-20">
+        <h1 className="font-serif text-4xl md:text-5xl">
+          Indian Bridesmaid Outfits
+        </h1>
+
+        <p className="mt-6 text-lg text-charcoal/75 max-w-3xl">
+          Bridesmaids at Indian weddings often wear coordinated outfits
+          such as lehengas, sarees, or contemporary fusion designs.
+          Many couples choose to source bridesmaid outfits from India
+          to achieve cohesive styling across wedding events.
+        </p>
+
+        <p className="mt-4 text-lg text-charcoal/75 max-w-3xl">
+          CeremonyVerse helps couples explore bridesmaid outfit styles,
+          coordinate colors, and source designs from boutiques in India.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 py-16 border-t">
+        <h2 className="font-serif text-2xl">
+          Popular Bridesmaid Outfit Styles
+        </h2>
+
+        <ul className="mt-6 space-y-3 text-charcoal/70">
+          <li>• Coordinated bridesmaid lehengas</li>
+          <li>• Sarees in matching wedding colors</li>
+          <li>• Indo-western fusion dresses</li>
+          <li>• Mix-and-match lehenga skirts and blouses</li>
+        </ul>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 py-16 border-t">
+        <h2 className="font-serif text-2xl">
+          Coordinating Bridesmaid Outfits
+        </h2>
+
+        <p className="mt-4 text-charcoal/75 max-w-3xl">
+          Bridesmaid outfits are often coordinated around wedding colors,
+          ceremony themes, or regional traditions. Some couples prefer
+          identical outfits while others allow bridesmaids to select
+          complementary styles within a shared color palette.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 py-20 border-t">
+        <div className="rounded-xl border border-charcoal/10 bg-[#f8f6f2] p-8 text-center">
+          <h2 className="font-serif text-2xl">
+            Explore Bridesmaid Outfit Ideas
+          </h2>
+
+          <p className="mt-4 text-charcoal/75">
+            Browse outfit inspiration and bridesmaid designs.
           </p>
+
+          <div className="mt-6">
+            <Link
+              href="https://desiweddingstudious.etsy.com"
+              className="rounded-full bg-charcoal px-6 py-3 text-sm font-medium text-white"
+            >
+              View Bridesmaid Outfits
+            </Link>
+          </div>
         </div>
-      </Section>
+      </section>
 
-      <Section variant="surface">
-        <div className="mx-auto max-w-4xl space-y-10">
-
-          <div>
-            <h2 className="text-2xl font-semibold mb-3">
-              Popular Bridesmaid Outfit Styles
-            </h2>
-
-            <p className="text-muted-foreground leading-relaxed">
-              Indian bridesmaids commonly wear a variety of traditional
-              outfits depending on the event. Popular options include
-              lehengas, sarees, anarkali suits, sharara sets, and
-              contemporary Indo-western styles.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold mb-3">
-              Coordinating Bridal Party Looks
-            </h2>
-
-            <p className="text-muted-foreground leading-relaxed">
-              Many couples coordinate their bridesmaids’ outfits by color
-              palette or embroidery style rather than choosing identical
-              designs. This approach allows each bridesmaid to wear a
-              flattering silhouette while maintaining a cohesive look.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold mb-3">
-              Sourcing Bridesmaid Outfits From India
-            </h2>
-
-            <p className="text-muted-foreground leading-relaxed">
-              Indian boutiques offer far more variety than most US stores.
-              CeremonyVerse helps couples source outfits from trusted
-              boutiques in India while managing measurements, timelines,
-              and shipping logistics.
-            </p>
-
-            <p className="text-muted-foreground mt-4">
-              Learn more about our{" "}
-              <Link href="/shop-from-india" className="underline">
-                outfit sourcing process
-              </Link>.
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold mb-3">
-              Related Outfit Guides
-            </h2>
-
-            <ul className="space-y-2 text-muted-foreground">
-              <li>
-                <Link href="/buy-lehenga-from-india" className="underline">
-                  Buying Bridal Lehengas From India
-                </Link>
-              </li>
-
-              <li>
-                <Link href="/buy-sherwani-from-india-usa" className="underline">
-                  Buying Sherwanis From India
-                </Link>
-              </li>
-
-              <li>
-                <Link href="/shop-from-india" className="underline">
-                  How Our Outfit Sourcing Works
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </Section>
-
-      <InternalCTA />
-    </>
+    </main>
   )
 }
