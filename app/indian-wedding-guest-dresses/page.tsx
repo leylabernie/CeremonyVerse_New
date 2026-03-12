@@ -2,6 +2,12 @@ import Link from "next/link";
 import RelatedLinks from "@/components/content/RelatedLinks";
 import EtsyShopCta from "@/components/cta/EtsyShopCta";
 
+export const metadata = {
+  title: "Indian Wedding Guest Dresses Guide | CeremonyVerse",
+  description:
+    "What to wear to an Indian wedding as a guest. Explore outfit ideas for sangeet, ceremony, and reception events.",
+};
+
 export default function IndianWeddingGuestDressesPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
