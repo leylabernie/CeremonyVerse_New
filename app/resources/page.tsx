@@ -1,179 +1,162 @@
-import type { Metadata } from "next"
-import Link from "next/link"
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Indian Wedding Resources | Outfit Guides, Dress Code, Timelines & Traditions",
-  description:
-    "Browse CeremonyVerse resources for Indian wedding outfits, guest attire, dress code, ceremony timelines, shipping guidance, and cultural traditions.",
-  alternates: {
-    canonical: "https://www.ceremonyverse.com/resources",
-  },
-  openGraph: {
-    title: "Indian Wedding Resources | CeremonyVerse",
-    description:
-      "Guides explaining Indian wedding attire, traditions, ceremony timelines, and how to source wedding outfits from India.",
-    type: "website",
-    url: "https://www.ceremonyverse.com/resources",
-  },
-}
-
-const guides = [
+const commercialPages = [
   {
-    title: "What to Wear to an Indian Wedding",
-    href: "/what-to-wear-indian-wedding",
-    description:
-      "A practical guide explaining what guests should wear to Indian wedding ceremonies including lehengas, sarees, sherwanis, and dress etiquette.",
-  },
-  {
-    title: "Indian Wedding Dress Code",
-    href: "/indian-wedding-dress-code",
-    description:
-      "Understand traditional Indian wedding dress expectations across events like mehndi, sangeet, ceremony, and reception.",
-  },
-  {
-    title: "Indian Wedding Guest Etiquette",
-    href: "/indian-wedding-guest-etiquette",
-    description:
-      "Learn the customs and etiquette guests should understand when attending an Indian wedding celebration.",
-  },
-  {
-    title: "Indian Wedding Ceremony Timeline",
-    href: "/indian-wedding-ceremony-timeline",
-    description:
-      "A simple explanation of the typical order of events across an Indian wedding weekend.",
-  },
-]
-
-const sourcing = [
-  {
-    title: "Shop Wedding Outfits From India",
+    title: "Shop From India",
     href: "/shop-from-india",
     description:
-      "Learn how CeremonyVerse helps couples source bridal lehengas, sherwanis, and wedding outfits directly from India.",
+      "Understand how CeremonyVerse helps US-based couples source Indian wedding outfits from India with less stress.",
   },
   {
     title: "Buy Indian Wedding Outfits Online",
     href: "/buy-indian-wedding-outfits-online",
     description:
-      "A step-by-step guide explaining how couples safely buy Indian wedding outfits online from overseas boutiques.",
+      "Overview page for sourcing bridal, groom, bridesmaid, and guest outfits from India.",
   },
-]
+  {
+    title: "Indian Bridesmaid Outfits",
+    href: "/indian-bridesmaid-outfits",
+    description:
+      "Guidance for coordinating bridesmaid lehengas, sarees, and wedding party looks.",
+  },
+  {
+    title: "Shipping Indian Wedding Outfits to USA",
+    href: "/indian-wedding-outfits-shipping-to-usa",
+    description:
+      "Learn about timelines, production, delivery buffers, and international shipping risks.",
+  },
+];
 
-function ResourceCard({
-  title,
-  href,
-  description,
-}: {
-  title: string
-  href: string
-  description: string
-}) {
-  return (
-    <Link
-      href={href}
-      className="rounded-xl border border-charcoal/10 bg-white p-6 transition hover:border-charcoal/30 hover:shadow-sm"
-    >
-      <h3 className="font-serif text-xl">{title}</h3>
-      <p className="mt-3 text-base leading-7 text-charcoal/70">{description}</p>
-      <p className="mt-4 text-sm font-medium text-charcoal">Read guide →</p>
-    </Link>
-  )
-}
+const guideTopics = [
+  {
+    title: "Bridal Lehengas From India",
+    href: "/bridal-lehengas-from-india",
+  },
+  {
+    title: "Buy Sherwani From India",
+    href: "/buy-sherwani-from-india",
+  },
+  {
+    title: "Indian Wedding Guest Dresses",
+    href: "/indian-wedding-guest-dresses",
+  },
+  {
+    title: "Indian Wedding Outfit Sizing Guide",
+    href: "/indian-wedding-outfit-sizing-guide",
+  },
+  {
+    title: "When to Order Indian Wedding Outfits",
+    href: "/when-to-order-indian-wedding-outfits",
+  },
+];
+
+const blogIdeas = [
+  "What to wear for mehendi, haldi, sangeet, wedding ceremony, and reception",
+  "How to buy a bridal lehenga from India while living in the US",
+  "How early to order bridesmaid outfits for an Indian wedding",
+  "Sherwani vs suit: what grooms should wear for Indian wedding events",
+  "Indian wedding guest attire explained for American guests",
+];
 
 export default function ResourcesPage() {
   return (
-    <main className="bg-white text-charcoal">
-
-      {/* Hero */}
-      <section className="mx-auto max-w-5xl px-6 py-20 md:px-8">
+    <main className="mx-auto max-w-6xl px-6 py-12">
+      <section className="max-w-3xl">
         <p className="text-sm uppercase tracking-[0.2em] text-charcoal/60">
-          CeremonyVerse Resources
+          Resources
         </p>
-
-        <h1 className="mt-4 font-serif text-4xl leading-tight md:text-5xl">
-          Indian wedding outfit and tradition guides
+        <h1 className="mt-3 text-4xl font-semibold tracking-tight text-charcoal">
+          Indian Wedding Outfit Guides for US-Based Couples
         </h1>
-
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-charcoal/75">
-          Indian weddings involve multiple ceremonies, traditional clothing,
-          and specific cultural etiquette. Many guests and couples attending
-          their first Indian wedding are unsure what to wear, how events work,
-          and how to source authentic outfits from India.
-        </p>
-
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-charcoal/75">
-          CeremonyVerse provides practical guides explaining Indian wedding
-          dress codes, ceremony timelines, outfit sourcing, and cultural
-          traditions so couples and guests can prepare with confidence.
+        <p className="mt-4 text-lg leading-8 text-charcoal/75">
+          CeremonyVerse helps couples understand what to buy, when to buy it,
+          and how to source Indian wedding outfits from India with more clarity.
+          Start with the core sourcing pages below, then explore practical
+          guides for bridal, groom, bridesmaid, guest, sizing, and shipping
+          questions.
         </p>
       </section>
 
-      {/* Popular Guides */}
-      <section className="mx-auto max-w-5xl px-6 py-6 md:px-8">
-        <h2 className="font-serif text-2xl md:text-3xl">
-          Most popular Indian wedding guides
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold text-charcoal">
+          Start Here
         </h2>
-
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
-          {guides.map((item) => (
-            <ResourceCard
-              key={item.href}
-              title={item.title}
-              href={item.href}
-              description={item.description}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* Outfit sourcing */}
-      <section className="mx-auto max-w-5xl px-6 py-14 md:px-8">
-        <h2 className="font-serif text-2xl md:text-3xl">
-          Outfit sourcing guides
-        </h2>
-
-        <p className="mt-4 max-w-2xl text-charcoal/70">
-          Many couples planning Indian weddings in the United States choose
-          to source wedding outfits from boutiques in India. These guides
-          explain the process, timelines, and common challenges involved.
-        </p>
-
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
-          {sourcing.map((item) => (
-            <ResourceCard
-              key={item.href}
-              title={item.title}
-              href={item.href}
-              description={item.description}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="mx-auto max-w-5xl px-6 py-16 md:px-8">
-        <div className="rounded-2xl border border-charcoal/10 bg-[#f8f6f2] p-8">
-          <h2 className="font-serif text-2xl md:text-3xl">
-            Need help sourcing wedding outfits?
-          </h2>
-
-          <p className="mt-4 max-w-3xl text-base leading-8 text-charcoal/75">
-            CeremonyVerse helps couples source bridal lehengas, sherwanis,
-            bridesmaid outfits, and other Indian weddingwear while navigating
-            international ordering, sizing, and delivery timelines.
-          </p>
-
-          <div className="mt-6">
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          {commercialPages.map((page) => (
             <Link
-              href="/shop-from-india"
-              className="inline-block rounded-full bg-charcoal px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+              key={page.href}
+              href={page.href}
+              className="rounded-2xl border border-charcoal/10 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md"
             >
-              Learn how sourcing works
+              <h3 className="text-xl font-semibold text-charcoal">{page.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-charcoal/70">
+                {page.description}
+              </p>
+              <span className="mt-4 inline-block text-sm font-medium text-charcoal">
+                Visit page →
+              </span>
             </Link>
-          </div>
+          ))}
         </div>
       </section>
 
+      <section className="mt-14">
+        <h2 className="text-2xl font-semibold text-charcoal">
+          Next SEO Pages to Build
+        </h2>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          {guideTopics.map((page) => (
+            <Link
+              key={page.href}
+              href={page.href}
+              className="rounded-2xl border border-charcoal/10 bg-ivory p-5 transition hover:shadow-md"
+            >
+              <span className="text-base font-medium text-charcoal">
+                {page.title} →
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-14 rounded-3xl border border-charcoal/10 bg-charcoal px-6 py-8 text-white">
+        <h2 className="text-2xl font-semibold">
+          Ready to browse actual outfit options?
+        </h2>
+        <p className="mt-3 max-w-2xl text-white/80">
+          Once you understand the process, timing, and outfit categories, browse
+          curated options in our Etsy shop.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-4">
+          <a
+            href="https://desiweddingstudious.etsy.com"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-charcoal"
+          >
+            Visit Etsy Shop
+          </a>
+          <Link
+            href="/shop-from-india"
+            className="rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white"
+          >
+            Learn the sourcing process
+          </Link>
+        </div>
+      </section>
+
+      <section className="mt-14">
+        <h2 className="text-2xl font-semibold text-charcoal">
+          Blog topics that support this funnel
+        </h2>
+        <ul className="mt-6 space-y-3 text-charcoal/75">
+          {blogIdeas.map((item) => (
+            <li key={item} className="rounded-xl border border-charcoal/10 px-4 py-3">
+              {item}
+            </li>
+          ))}
+        </ul>
+      </section>
     </main>
-  )
+  );
 }
