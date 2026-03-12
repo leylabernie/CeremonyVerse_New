@@ -98,6 +98,74 @@ export default function HomePage() {
         </Button>
       </section>
 
+      <section className="mt-24 mx-auto max-w-6xl px-6">
+
+  <h2 className="text-3xl font-semibold text-charcoal">
+    Indian Wedding Outfit Guides
+  </h2>
+
+  <p className="mt-3 text-charcoal/70 max-w-2xl">
+    Planning an Indian wedding often means sourcing outfits from India.
+    These guides help couples and guests understand what to wear,
+    how to measure, and when to order wedding outfits.
+  </p>
+
+  <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+    <Link
+      href="/bridal-lehengas-from-india"
+      className="block border rounded-xl p-6 hover:shadow-md transition"
+    >
+      <h3 className="text-lg font-semibold">Bridal Lehengas From India</h3>
+      <p className="mt-2 text-sm text-charcoal/70">
+        Guide for brides sourcing bridal lehengas directly from India.
+      </p>
+    </Link>
+
+    <Link
+      href="/buy-sherwani-from-india-usa"
+      className="block border rounded-xl p-6 hover:shadow-md transition"
+    >
+      <h3 className="text-lg font-semibold">Buy Sherwani From India</h3>
+      <p className="mt-2 text-sm text-charcoal/70">
+        Guide for grooms ordering sherwanis for Indian weddings.
+      </p>
+    </Link>
+
+    <Link
+      href="/indian-wedding-guest-dresses"
+      className="block border rounded-xl p-6 hover:shadow-md transition"
+    >
+      <h3 className="text-lg font-semibold">Indian Wedding Guest Dresses</h3>
+      <p className="mt-2 text-sm text-charcoal/70">
+        Outfit ideas for guests attending Indian wedding ceremonies.
+      </p>
+    </Link>
+
+    <Link
+      href="/indian-wedding-outfit-sizing-guide"
+      className="block border rounded-xl p-6 hover:shadow-md transition"
+    >
+      <h3 className="text-lg font-semibold">Outfit Sizing Guide</h3>
+      <p className="mt-2 text-sm text-charcoal/70">
+        How to measure correctly before ordering outfits from India.
+      </p>
+    </Link>
+
+    <Link
+      href="/when-to-order-indian-wedding-outfits"
+      className="block border rounded-xl p-6 hover:shadow-md transition"
+    >
+      <h3 className="text-lg font-semibold">When to Order Wedding Outfits</h3>
+      <p className="mt-2 text-sm text-charcoal/70">
+        Timeline for ordering outfits before your wedding events.
+      </p>
+    </Link>
+
+  </div>
+
+</section>
+
     </main>
   )
 }
