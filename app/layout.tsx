@@ -91,7 +91,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="min-h-screen antialiased bg-background text-foreground font-sans">
+      <body className="min-h-screen antialiased bg-background text-[#1F2933] font-sans">
         <Navbar />
         <main>{children}</main>
         <Footer />
