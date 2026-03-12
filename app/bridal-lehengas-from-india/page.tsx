@@ -122,19 +122,19 @@ export default function BridalLehengasFromIndiaPage() {
 
     <EtsyOutfitCard
   title="Lilac Chanderi Lehenga Set"
-  image="/images/Pastel Lehenga.jpeg"
+  image="/images/lilac-lehenga.webp"
   link="https://www.etsy.com/listing/4464043944/lilac-chanderi-lehenga-set-corset-blouse"
 />
 
-    <EtsyOutfitCard
+<EtsyOutfitCard
   title="Deep Purple Banarasi Brocade Lehenga"
-  image="/images/Bridal Lehenga - Pink & Green.jpeg"
+  image="/images/dusty-rose-lehenga.webp"
   link="https://www.etsy.com/listing/4461093221/deep-purple-banarasi-brocade-lehenga"
 />
 
 <EtsyOutfitCard
   title="Teal Soft Net Lehenga Choli"
-  image="/images/Dusty pink and Navy blue on human.jpeg"
+  image="/images/teal-lehenga.webp"
   link="https://www.etsy.com/listing/4458672584/teal-soft-net-lehenga-choli-gathered-at"
 />
 
