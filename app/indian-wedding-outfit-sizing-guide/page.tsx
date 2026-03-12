@@ -2,6 +2,12 @@ import Link from "next/link";
 import RelatedLinks from "@/components/content/RelatedLinks";
 import EtsyShopCta from "@/components/cta/EtsyShopCta";
 
+export const metadata = {
+  title: "Indian Wedding Outfit Sizing Guide | CeremonyVerse",
+  description:
+    "How to measure correctly for lehengas, sherwanis, and Indian wedding outfits before ordering from India.",
+};
+
 export default function IndianWeddingOutfitSizingGuidePage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
