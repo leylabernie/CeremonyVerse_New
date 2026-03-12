@@ -151,25 +151,25 @@ export default function SherwaniPage() {
 
   <div className="grid gap-6 md:grid-cols-3 mt-8">
 
-    <EtsyOutfitCard
-  title="Burnt Orange Banarasi Brocade Sherwani"
-  image="/images/burnt-orange-sherwani.webp"
-  link="https://www.etsy.com/listing/4464235614/burnt-orange-banarasi-brocade-sherwani"
-/>
+  <EtsyOutfitCard
+    title="Burnt Orange Banarasi Brocade Sherwani"
+    image="/images/burnt-orange-sherwani.webp"
+    link="https://www.etsy.com/listing/4464235614/burnt-orange-banarasi-brocade-sherwani"
+  />
 
-<EtsyOutfitCard
-  title="Mauve Banarasi Indo-Western Set"
-  image="/images/lavender-kurta-set.webp"
-  link="https://www.etsy.com/listing/4459607351/mens-indo-western-set-mauve-banarasi"
-/>
+  <EtsyOutfitCard
+    title="Lavender Banarasi Indo-Western Set"
+    image="/images/lavender-kurta-set.webp"
+    link="https://www.etsy.com/listing/4459607351/mens-indo-western-set-mauve-banarasi"
+  />
 
-<EtsyOutfitCard
-  title="Lavender Kurta Pajama Set"
-  image="/images/lavender-kurta-set.webp"
-  link="https://www.etsy.com/listing/4458258716/lavender-kurta-pajama-for-men-with"
-/>
+  <EtsyOutfitCard
+    title="Fuchsia Banarasi Nehru Jacket Set"
+    image="/images/fuchsia-nehru-jacket.webp"
+    link="https://www.etsy.com/listing/4458262050/fuchsia-banarasi-nehru-jacket-set"
+  />
 
-  </div>
+</div>
 </section>
       <RelatedLinks
   heading="Related Outfit Guides"
