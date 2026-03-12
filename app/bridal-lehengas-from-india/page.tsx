@@ -114,7 +114,7 @@ export default function BridalLehengasFromIndiaPage() {
     Bridal Lehenga Inspiration
   </h2>
 
-  <p className="mt-3 text-charcoal/70 max-w-2xl">
+  <p className="mt-3 text-charcoal/90 max-w-2xl">
     Explore popular bridal lehenga styles often chosen for Indian weddings.
   </p>
 
