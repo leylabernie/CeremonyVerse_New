@@ -194,7 +194,8 @@ export default function SherwaniPage() {
   href: "/shop-from-india",
   description: "How US couples source wedding outfits directly from India.",
 },
-      title: "When to Order Indian Wedding Outfits",
+      {
+  title: "When to Order Indian Wedding Outfits",,
       href: "/when-to-order-indian-wedding-outfits",
       description: "Production and shipping timeline planning.",
     },
