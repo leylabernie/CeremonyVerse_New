@@ -11,10 +11,10 @@ export default function EtsyOutfitCard({ title, image, link }: Props) {
     <div className="border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition bg-white">
       <Link href={link} target="_blank">
         <img
-          src={image}
-          alt={title}
-          className="w-full h-[420px] object-cover"
-        />
+  src={image}
+  alt={title}
+  className="w-full h-[520px] object-contain bg-white"
+/>
       </Link>
 
       <div className="p-4">
