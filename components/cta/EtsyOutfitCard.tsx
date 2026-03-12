@@ -8,7 +8,7 @@ type Props = {
 
 export default function EtsyOutfitCard({ title, image, link }: Props) {
   return (
-    <div className="border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition bg-white">
+    <div className="border rounded-xl shadow-sm hover:shadow-md transition bg-white">
       <Link href={link} target="_blank">
         <img
   src={image}
