@@ -1,0 +1,15 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1200" fill="none"/>
+  <text
+    x="50%"
+    y="55%"
+    text-anchor="middle"
+    font-family="Cormorant Garamond, serif"
+    font-size="420"
+    fill="#C9B79C"
+    opacity="0.25"
+    letter-spacing="10"
+  >
+    CV
+  </text>
+</svg>
