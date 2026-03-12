@@ -2,6 +2,12 @@ import Link from "next/link";
 import RelatedLinks from "@/components/content/RelatedLinks";
 import EtsyShopCta from "@/components/cta/EtsyShopCta";
 
+export const metadata = {
+  title: "Bridal Lehengas From India for US Brides | CeremonyVerse",
+  description:
+    "Guide for US-based brides sourcing bridal lehengas from India. Learn how to choose styles, measure correctly, and order wedding outfits internationally.",
+};
+
 export default function BridalLehengasFromIndiaPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
