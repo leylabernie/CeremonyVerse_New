@@ -13,7 +13,7 @@ export default function EtsyOutfitCard({ title, image, link }: Props) {
         <img
   src={image}
   alt={title}
-  className="w-full object-contain md:h-[520px]"
+  className="w-full h-[520px] object-contain"
 />
       </Link>
 
