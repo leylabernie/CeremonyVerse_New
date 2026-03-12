@@ -1,47 +1,44 @@
 import Link from "next/link"
 
-const nav = [
-  { href: "/shop-from-india", label: "Shop From India" },
-  { href: "/resources", label: "Resources" },
-  { href: "/blog", label: "Blog" },
-  { href: "/pricing", label: "Services" },
-  { href: "/our-story", label: "About" },
-]
-
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-40 bg-cvBg/95 backdrop-blur border-b border-cvBorder">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-4 flex items-center justify-between">
+    <header className="w-full border-b border-neutral-200 bg-white">
+      <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
 
-        {/* Logo */}
-        <Link
-          href="/"
-          className="font-serif text-lg text-charcoal tracking-tight"
-        >
-          CeremonyVerse
+        {/* Brand */}
+        <Link href="/" className="flex flex-col leading-tight">
+          <span className="text-xl font-semibold tracking-tight">
+            CeremonyVerse
+          </span>
+          <span className="text-xs text-neutral-500">
+            Wedding Planning + Cultural Sourcing
+          </span>
         </Link>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-6 text-sm md:text-base">
-          {nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-charcoal/80 hover:text-charcoal transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
+        <nav className="flex items-center gap-8 text-base text-neutral-700">
+
+          <Link href="/shop-from-india" className="hover:text-black">
+            Shop From India
+          </Link>
+
+          <Link href="/resources" className="hover:text-black">
+            Resources
+          </Link>
+
+          <Link href="/blog" className="hover:text-black">
+            Blog
+          </Link>
+
+          <Link href="/services" className="hover:text-black">
+            Services
+          </Link>
+
+          <Link href="/about" className="hover:text-black">
+            About
+          </Link>
+
         </nav>
-
-        {/* CTA */}
-        <Link
-          href="/shop-from-india"
-          className="hidden md:inline-block bg-primary text-white px-4 py-2 rounded-md text-sm hover:opacity-90 transition"
-        >
-          Start Sourcing
-        </Link>
-
       </div>
     </header>
   )
