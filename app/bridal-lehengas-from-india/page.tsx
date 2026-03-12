@@ -109,6 +109,38 @@ export default function BridalLehengasFromIndiaPage() {
         ]}
       />
 
+<section className="mt-16">
+  <h2 className="text-2xl font-semibold text-charcoal">
+    Bridal Lehenga Inspiration
+  </h2>
+
+  <p className="mt-3 text-charcoal/70 max-w-2xl">
+    Explore popular bridal lehenga styles often chosen for Indian weddings.
+  </p>
+
+  <div className="grid gap-6 md:grid-cols-3 mt-8">
+
+    <EtsyOutfitCard
+      title="Classic Red Bridal Lehenga"
+      image="/images/lehenga1.jpg"
+      link="https://desiweddingstudious.etsy.com"
+    />
+
+    <EtsyOutfitCard
+      title="Gold Embroidered Lehenga"
+      image="/images/lehenga2.jpg"
+      link="https://desiweddingstudious.etsy.com"
+    />
+
+    <EtsyOutfitCard
+      title="Modern Pastel Bridal Lehenga"
+      image="/images/lehenga3.jpg"
+      link="https://desiweddingstudious.etsy.com"
+    />
+
+  </div>
+</section>
+      
 <RelatedLinks
   heading="Related Outfit Guides"
   items={[
