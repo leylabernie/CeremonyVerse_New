@@ -139,6 +139,37 @@ export default function SherwaniPage() {
     </li>
   </ul>
 </Section>
+      <section className="mt-16">
+  <h2 className="text-2xl font-semibold text-charcoal">
+    Sherwani & Groom Outfit Inspiration
+  </h2>
+
+  <p className="mt-3 text-charcoal/70 max-w-2xl">
+    Explore groom sherwani and Indo-Western styles commonly worn for Indian weddings.
+  </p>
+
+  <div className="grid gap-6 md:grid-cols-3 mt-8">
+
+    <EtsyOutfitCard
+      title="Burnt Orange Banarasi Brocade Sherwani"
+      image="/images/Indo-Western Sherwani.jpg"
+      link="https://www.etsy.com/listing/4464235614/burnt-orange-banarasi-brocade-sherwani"
+    />
+
+    <EtsyOutfitCard
+      title="Mauve Banarasi Indo-Western Set"
+      image="/images/Groomsmen.PNG"
+      link="https://www.etsy.com/listing/4459607351/mens-indo-western-set-mauve-banarasi"
+    />
+
+    <EtsyOutfitCard
+      title="Lavender Kurta Pajama Set"
+      image="/images/Groomsmen (2).jpg"
+      link="https://www.etsy.com/listing/4458258716/lavender-kurta-pajama-for-men-with"
+    />
+
+  </div>
+</section>
       <RelatedLinks
   heading="Related Outfit Guides"
   items={[
