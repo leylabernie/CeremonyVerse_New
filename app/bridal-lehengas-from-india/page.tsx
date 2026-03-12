@@ -1,6 +1,7 @@
 import Link from "next/link";
 import RelatedLinks from "@/components/content/RelatedLinks";
 import EtsyShopCta from "@/components/cta/EtsyShopCta";
+import EtsyOutfitCard from "@/components/etsy/EtsyOutfitCard";
 
 export const metadata = {
   title: "Bridal Lehengas From India for US Brides | CeremonyVerse",
