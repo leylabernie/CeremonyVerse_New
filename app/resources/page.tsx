@@ -62,7 +62,9 @@ export default function ResourcesPage() {
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
       <section className="max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.2em] text-charcoal/60">
+        <p className="text-base uppercase tracking-[0.2em] font-semibold text-charcoal">
+  Resources
+</p>
           Resources
         </p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight text-charcoal">
