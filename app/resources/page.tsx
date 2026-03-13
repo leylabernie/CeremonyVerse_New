@@ -88,7 +88,7 @@ export default function ResourcesPage() {
               href={page.href}
               className="rounded-2xl border border-charcoal/10 bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md"
             >
-              <h3 className="text-xl font-semibold text-charcoal">{page.title}</h3>
+              <h3 className="text-2xl font-semibold text-charcoal">{page.title}</h3>
               <p className="mt-3 text-sm leading-7 text-charcoal/70">
                 {page.description}
               </p>
