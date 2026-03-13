@@ -7,19 +7,22 @@ export function Navbar() {
 
         {/* Brand */}
         <Link href="/" className="flex items-center gap-2 leading-tight">
-  
-  {/* decorative icon */}
-  <span className="text-2xl">✦</span>
+
+  {/* decorative leaf */}
+  <span className="text-xl text-[#7A2E8E]">❦</span>
 
   <div className="flex flex-col">
     <span className="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-[#7A2E8E]">
       CeremonyVerse
     </span>
 
-    <span className="text-xs tracking-wide text-neutral-500">
-      Outfit Sourcing + Cultural Guidance
+    <span className="text-xs tracking-wide text-neutral-500 flex items-center gap-1">
+      ❁ Outfit Sourcing + Cultural Guidance ❁
     </span>
   </div>
+
+  {/* decorative flower */}
+  <span className="text-xl text-[#7A2E8E]">✿</span>
 
 </Link>
 
