@@ -127,7 +127,7 @@ export default function BridalLehengasFromIndiaPage() {
 />
 
 <EtsyOutfitCard
-  title="Deep Purple Banarasi Brocade Lehenga"
+  title: "Dusty Rose Brocade Lehenga",
   image="/images/dusty-rose-lehenga.webp"
   link="https://www.etsy.com/listing/4464100282/dusty-rose-banarasi-bridal-lehenga?ls=r&ref=related-4&content_source=219e194f792529603fc0f7810c3ddd29%253ALTf6b39b73977744ec888d6bccd26a53d98c81c038&logging_key=219e194f792529603fc0f7810c3ddd29%3ALTf6b39b73977744ec888d6bccd26a53d98c81c038"
 />
