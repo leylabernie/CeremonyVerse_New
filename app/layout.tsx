@@ -42,7 +42,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${cormorantGaramond.variable}`}
     >
-      <body className="min-h-screen antialiased text-[#1F2933] font-sans bg-[#F7F3ED]">
+      <body className="min-h-screen antialiased text-[#1F2933] font-sans bg-[#F7F3ED] text-[17px] md:text-[18px]">
 
         {/* watermark */}
         <div
