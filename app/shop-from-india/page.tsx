@@ -28,9 +28,10 @@ export default function ShopFromIndiaPage() {
         </p>
 
         <p className="mt-4 max-w-3xl text-lg leading-8 text-charcoal">
-          CeremonyVerse helps couples identify trusted boutiques,
-          coordinate bridal party outfits, and navigate sizing,
-          customization, and shipping timelines.
+          CeremonyVerse helps couples source bridal lehengas, sherwanis,
+bridesmaid outfits, family outfits, and guest attire from trusted
+boutiques in India. We support clients with boutique selection,
+design coordination, measurements, customization, and shipping timelines.
         </p>
 
         <div className="mt-8">
