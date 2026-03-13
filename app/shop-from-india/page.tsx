@@ -34,6 +34,13 @@ export default function ShopFromIndiaPage() {
           timelines.
         </p>
 
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-charcoal">
+  Most clients are not choosing a single pre-listed product. CeremonyVerse
+  helps couples identify boutiques, coordinate bridal party outfits, and
+  source styles from India based on their wedding events, preferences,
+  measurements, and timeline.
+</p>
+
         <div className="mt-8">
           <Link
             href="https://desiweddingstudious.etsy.com"
