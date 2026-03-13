@@ -39,7 +39,7 @@ design coordination, measurements, customization, and shipping timelines.
             href="https://desiweddingstudious.etsy.com"
             className="inline-block rounded-full bg-charcoal px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
           >
-            View Outfit Options
+            Explore Sourcing Options
           </Link>
         </div>
       </section>
