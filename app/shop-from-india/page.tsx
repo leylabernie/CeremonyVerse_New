@@ -20,14 +20,14 @@ export default function ShopFromIndiaPage() {
           Shop Indian Wedding Outfits From India
         </h1>
 
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-charcoal/75">
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-charcoal">
           Many couples planning Indian weddings in the United States
           choose to source bridal lehengas, sherwanis, and wedding
           outfits directly from India. However, buying internationally
           can be confusing without guidance.
         </p>
 
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-charcoal/75">
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-charcoal">
           CeremonyVerse helps couples identify trusted boutiques,
           coordinate bridal party outfits, and navigate sizing,
           customization, and shipping timelines.
@@ -71,7 +71,7 @@ export default function ShopFromIndiaPage() {
           How CeremonyVerse helps
         </h2>
 
-        <ul className="mt-6 space-y-3 text-charcoal/70">
+        <ul className="mt-6 space-y-3 text-charcoal">
           <li>• Guidance selecting trusted boutiques in India</li>
           <li>• Coordination for bridal party outfits</li>
           <li>• Advice on measurements and customization</li>
@@ -86,7 +86,7 @@ export default function ShopFromIndiaPage() {
           Outfits couples commonly source
         </h2>
 
-        <ul className="mt-6 space-y-3 text-charcoal/70">
+        <ul className="mt-6 space-y-3 text-charcoal">
           <li>• Bridal lehengas</li>
           <li>• Sherwanis for grooms</li>
           <li>• Bridesmaid lehengas and sarees</li>
@@ -102,7 +102,7 @@ export default function ShopFromIndiaPage() {
           Typical sourcing process
         </h2>
 
-        <ol className="mt-6 space-y-4 text-charcoal/70">
+        <ol className="mt-6 space-y-4 text-charcoal">
           <li>1. Identify the wedding events and outfit requirements</li>
           <li>2. Review boutique options and design styles</li>
           <li>3. Coordinate sizing and customization</li>
@@ -118,7 +118,7 @@ export default function ShopFromIndiaPage() {
             Ready to explore outfit options?
           </h2>
 
-          <p className="mt-4 max-w-2xl mx-auto text-charcoal/75">
+          <p className="mt-4 max-w-2xl mx-auto text-charcoal">
             Browse outfit inspiration and available designs
             through our curated collections.
           </p>
