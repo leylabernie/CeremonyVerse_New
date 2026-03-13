@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ShopFromIndiaPage() {
   return (
-    <main className="bg-[#efe8df] text-charcoal">
+    <main className="bg-[#f6f1e8] text-charcoal">
 
       {/* Hero */}
       <section className="mx-auto max-w-5xl px-6 py-20 md:px-8">
