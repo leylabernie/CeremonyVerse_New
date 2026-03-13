@@ -16,7 +16,7 @@ export function Navbar() {
       CeremonyVerse
     </span>
 
-    <span className="text-xs tracking-wide text-neutral-500 flex items-center gap-1">
+    <span className="text-sm tracking-wide text-[#374151] flex items-center gap-1">
       ❁ Outfit Sourcing + Cultural Guidance ❁
     </span>
   </div>
