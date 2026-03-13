@@ -120,8 +120,8 @@ design coordination, measurements, customization, and shipping timelines.
           </h2>
 
           <p className="mt-4 max-w-2xl mx-auto text-charcoal">
-            Browse outfit inspiration and available designs
-            through our curated collections.
+            Explore outfit inspiration and examples of styles we can help
+source and coordinate for weddings, bridal parties, and family events.
           </p>
 
           <div className="mt-6">
