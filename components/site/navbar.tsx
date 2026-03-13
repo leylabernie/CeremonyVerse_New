@@ -6,46 +6,61 @@ export function Navbar() {
       <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
 
         {/* Brand */}
-        <Link href="/" className="flex items-center gap-2 leading-tight">
+        <Link href="/" className="flex items-center gap-3 leading-tight">
 
-  {/* decorative leaf */}
-  <span className="text-xl text-[#7A2E8E]">❦</span>
+          {/* decorative leaf */}
+          <span className="text-xl text-[#7A2E8E]">❦</span>
 
-  <div className="flex flex-col">
-    <span className="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-[#7A2E8E]">
-      CeremonyVerse
-    </span>
+          <div className="flex flex-col">
+            <span className="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-[#7A2E8E]">
+              CeremonyVerse
+            </span>
 
-    <span className="text-sm tracking-wide text-[#374151] flex items-center gap-1">
-      ❁ Outfit Sourcing + Cultural Guidance ❁
-    </span>
-  </div>
+            <span className="text-sm md:text-base tracking-wide text-[#374151] flex items-center gap-1">
+              ❁ Outfit Sourcing + Cultural Guidance ❁
+            </span>
+          </div>
 
-  {/* decorative flower */}
-  <span className="text-xl text-[#7A2E8E]">✿</span>
+          {/* decorative flower */}
+          <span className="text-xl text-[#7A2E8E]">✿</span>
 
-</Link>
+        </Link>
 
         {/* Navigation */}
-        <nav className="flex items-center gap-8 text-base text-neutral-700">
+        <nav className="flex items-center gap-8 text-base font-medium text-[#374151]">
 
-          <Link href="/shop-from-india" className="hover:text-black">
+          <Link
+            href="/shop-from-india"
+            className="transition hover:text-[#7A2E8E]"
+          >
             Shop From India
           </Link>
 
-          <Link href="/resources" className="hover:text-black">
+          <Link
+            href="/resources"
+            className="transition hover:text-[#7A2E8E]"
+          >
             Resources
           </Link>
 
-          <Link href="/blog" className="hover:text-black">
+          <Link
+            href="/blog"
+            className="transition hover:text-[#7A2E8E]"
+          >
             Blog
           </Link>
 
-          <Link href="/services" className="hover:text-black">
+          <Link
+            href="/services"
+            className="transition hover:text-[#7A2E8E]"
+          >
             Services
           </Link>
 
-          <Link href="/about" className="hover:text-black">
+          <Link
+            href="/about"
+            className="transition hover:text-[#7A2E8E]"
+          >
             About
           </Link>
 
