@@ -98,6 +98,50 @@ design coordination, measurements, customization, and shipping timelines.
 
 
       {/* Process */}
+            {/* What Working With CeremonyVerse Looks Like */}
+      <section className="mx-auto max-w-5xl border-t px-6 py-14 md:px-8">
+        <h2 className="font-serif text-2xl md:text-3xl">
+          What working with CeremonyVerse looks like
+        </h2>
+
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="rounded-2xl border border-charcoal/10 bg-white/40 p-6">
+            <h3 className="font-serif text-xl">1. Share your wedding events and style goals</h3>
+            <p className="mt-3 leading-7 text-charcoal">
+              Tell us which events you are shopping for, who needs outfits,
+              your preferred colors or silhouettes, and whether you already
+              have inspiration images, boutique names, or budget targets.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-charcoal/10 bg-white/40 p-6">
+            <h3 className="font-serif text-xl">2. Receive curated sourcing direction</h3>
+            <p className="mt-3 leading-7 text-charcoal">
+              We help narrow down boutiques, outfit styles, and practical
+              options based on your timeline, level of customization,
+              wedding events, and coordination needs.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-charcoal/10 bg-white/40 p-6">
+            <h3 className="font-serif text-xl">3. Coordinate details with more confidence</h3>
+            <p className="mt-3 leading-7 text-charcoal">
+              We help you think through measurements, matching across bridal
+              party or family members, customization choices, and timing for
+              production and shipping from India.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-charcoal/10 bg-white/40 p-6">
+            <h3 className="font-serif text-xl">4. Move forward with a clearer plan</h3>
+            <p className="mt-3 leading-7 text-charcoal">
+              Instead of searching blindly, you leave with a more organized
+              vision of what to buy, where to source it, and how to keep the
+              outfit process aligned with your wedding schedule.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="mx-auto max-w-5xl px-6 py-14 md:px-8 border-t">
         <h2 className="font-serif text-2xl md:text-3xl">
           Typical sourcing process
