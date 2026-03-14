@@ -27,7 +27,7 @@ export function Navbar() {
         </Link>
 
         {/* Navigation */}
-        <nav className="flex items-center gap-8 text-base font-medium text-[#374151]">
+        <nav className="flex items-center gap-8 text-lg font-medium text-[#374151]">
 
           <Link
             href="/shop-from-india"
