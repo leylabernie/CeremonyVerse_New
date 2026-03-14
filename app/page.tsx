@@ -83,7 +83,7 @@ export default function HomePage() {
     <img
       src="/images/jewelry-bridal.png"
       alt="Indian bridal jewelry"
-      className="h-56 w-full object-cover"
+      className="h-56 w-full object-cover object-top"
     />
     <div className="p-6">
       <h3 className="text-xl font-semibold text-charcoal">
@@ -100,7 +100,7 @@ export default function HomePage() {
     <img
       src="/images/ceremony-items.png"
       alt="Indian wedding ceremony items"
-      className="h-56 w-full object-cover"
+      className="h-56 w-full object-cover object-center"
     />
     <div className="p-6">
       <h3 className="text-xl font-semibold text-charcoal">
