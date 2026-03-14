@@ -81,7 +81,7 @@ export default function HomePage() {
 
   <div className="border rounded-2xl overflow-hidden bg-white">
     <img
-      src="/images/home-hero-lehenga.png"
+      src="/images/jewelry-bridal.png"
       alt="Indian bridal jewelry"
       className="h-56 w-full object-cover"
     />
@@ -98,7 +98,7 @@ export default function HomePage() {
 
   <div className="border rounded-2xl overflow-hidden bg-white">
     <img
-      src="/images/home-hero-lehenga.png"
+      src="/images/ceremony-items.png"
       alt="Indian wedding ceremony items"
       className="h-56 w-full object-cover"
     />
