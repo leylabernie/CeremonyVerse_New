@@ -135,6 +135,43 @@ export default function ShopFromIndiaPage() {
           </div>
         </div>
       </section>
+      <section className="mx-auto max-w-5xl px-6 py-16 border-t">
+
+<h2 className="font-serif text-3xl md:text-4xl text-charcoal">
+What couples often source from India
+</h2>
+
+<p className="mt-4 text-lg leading-8 text-charcoal">
+Many couples planning Indian weddings abroad travel to India for shopping.
+But not everyone has family or trusted contacts there. Language barriers,
+limited travel time, and unfamiliar boutiques can make the process stressful.
+</p>
+
+<p className="mt-4 text-lg leading-8 text-charcoal">
+CeremonyVerse helps couples identify reliable boutiques and coordinate
+orders from India without needing to travel.
+</p>
+
+<div className="mt-8 grid gap-6 md:grid-cols-2 text-lg text-charcoal">
+
+<ul className="space-y-2">
+<li>Bridal lehengas and dupattas</li>
+<li>Groom sherwanis and bandhgalas</li>
+<li>Bridesmaid outfits and sarees</li>
+<li>Family wedding outfits</li>
+</ul>
+
+<ul className="space-y-2">
+<li>Bridal jewelry and accessories</li>
+<li>Wedding favors and welcome bags</li>
+<li>Ceremony items and decorations</li>
+<li>Mithai and wedding sweets</li>
+</ul>
+
+</div>
+
+</section>
+
     </main>
   )
 }
