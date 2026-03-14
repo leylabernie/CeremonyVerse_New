@@ -5,37 +5,54 @@ export default function HomePage() {
   return (
     <main>
 
-      <section className="mx-auto max-w-6xl px-6 pt-24 pb-16">
-        <h1 className="text-4xl md:text-5xl font-serif font-medium tracking-tight text-stone-900 leading-tight">
-          Indian Wedding Outfits Sourced From India — Without the Stress
+<section className="mx-auto max-w-6xl px-6 pt-12 pb-16">
+
+  <div className="relative overflow-hidden rounded-3xl">
+
+    <img
+      src="/images/home-hero-lehenga.png"
+      alt="Indian bridal lehenga sourced from India"
+      className="h-[520px] w-full object-cover"
+    />
+
+    <div className="absolute inset-0 bg-black/30"></div>
+
+    <div className="absolute inset-0 flex items-end">
+      <div className="p-8 md:p-12 text-white max-w-2xl">
+
+        <h1 className="font-serif text-4xl md:text-6xl leading-tight">
+          Source Indian Wedding Outfits Directly From India
         </h1>
 
-        <p className="mt-6 text-xl text-muted-foreground max-w-3xl">
-          CeremonyVerse helps couples source authentic Indian wedding outfits
-          including bridal lehengas, sherwanis, bridesmaid attire, and wedding
-          party clothing from trusted boutiques in India.
+        <p className="mt-4 text-lg md:text-xl text-white/90">
+          CeremonyVerse helps couples source bridal outfits, jewelry,
+          ceremony items, favors, and wedding essentials from trusted
+          boutiques in India without needing to travel.
         </p>
 
-        <p className="mt-4 text-lg text-charcoal/70 max-w-3xl">
-          Avoid the confusion of international shopping, sizing uncertainty,
-          and unreliable vendors. We guide your sourcing process from
-          selection to delivery.
-        </p>
+        <div className="mt-6 flex gap-4">
+          <a
+            href="/shop-from-india"
+            className="bg-white text-black px-6 py-3 rounded-full font-semibold"
+          >
+            Shop From India
+          </a>
 
-        <div className="mt-8 flex flex-wrap gap-4">
-          <Button asChild>
-            <Link href="/shop-from-india">
-              How Outfit Sourcing Works
-            </Link>
-          </Button>
-
-          <Button asChild variant="secondary">
-            <Link href="/resources">
-              Wedding Outfit Guides
-            </Link>
-          </Button>
+          <a
+            href="/resources"
+            className="border border-white px-6 py-3 rounded-full font-semibold"
+          >
+            View Guides
+          </a>
         </div>
-      </section>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
 
 
       <section className="mx-auto max-w-6xl px-6 py-16 border-t">
