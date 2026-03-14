@@ -60,27 +60,61 @@ export default function HomePage() {
           Outfits We Help Source
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-muted-foreground">
-          <div>
-            <h3 className="font-medium text-stone-900 mb-2">Bridal Lehengas</h3>
-            <p>Custom bridal outfits sourced from boutiques across India.</p>
-          </div>
+       <div className="grid md:grid-cols-3 gap-8 mt-10">
 
-          <div>
-            <h3 className="font-medium text-stone-900 mb-2">Sherwanis</h3>
-            <p>Traditional and modern groom attire tailored for wedding ceremonies.</p>
-          </div>
+  <div className="border rounded-2xl overflow-hidden bg-white">
+    <img
+      src="/images/home-hero-lehenga.png"
+      alt="Indian bridal outfits"
+      className="h-56 w-full object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-xl font-semibold text-charcoal">
+        Bridal & Wedding Outfits
+      </h3>
+      <p className="mt-2 text-charcoal/70">
+        Lehengas, sherwanis, bridesmaid outfits, and family wedding attire
+        sourced directly from trusted boutiques in India.
+      </p>
+    </div>
+  </div>
 
-          <div>
-            <h3 className="font-medium text-stone-900 mb-2">Bridesmaid Outfits</h3>
-            <p>Coordinated bridesmaid lehengas and sarees for the wedding party.</p>
-          </div>
+  <div className="border rounded-2xl overflow-hidden bg-white">
+    <img
+      src="/images/home-hero-lehenga.png"
+      alt="Indian bridal jewelry"
+      className="h-56 w-full object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-xl font-semibold text-charcoal">
+        Bridal Jewelry
+      </h3>
+      <p className="mt-2 text-charcoal/70">
+        Traditional bridal jewelry sets, bangles, and accessories that
+        complement Indian wedding outfits.
+      </p>
+    </div>
+  </div>
 
-          <div>
-            <h3 className="font-medium text-stone-900 mb-2">Wedding Guest Attire</h3>
-            <p>Elegant outfits for family members and wedding guests.</p>
-          </div>
-        </div>
+  <div className="border rounded-2xl overflow-hidden bg-white">
+    <img
+      src="/images/home-hero-lehenga.png"
+      alt="Indian wedding ceremony items"
+      className="h-56 w-full object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-xl font-semibold text-charcoal">
+        Ceremony Items & Wedding Details
+      </h3>
+      <p className="mt-2 text-charcoal/70">
+        Wedding favors, ceremony items, welcome bags, sweets, and
+        decorations sourced directly from India.
+      </p>
+    </div>
+  </div>
+
+</div>
+
       </section>
 
 
