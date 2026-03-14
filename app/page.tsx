@@ -12,7 +12,7 @@ export default function HomePage() {
     <img
       src="/images/home-hero-lehenga.png"
       alt="Indian bridal lehenga sourced from India"
-      className="h-[620px] w-full object-cover object-top"
+      className="h-[720px] w-full object-cover object-top"
     />
 
     <div className="absolute inset-0 bg-black/30"></div>
