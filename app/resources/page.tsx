@@ -51,8 +51,7 @@ const guideTopics = [
   {
   title: "Indian Wedding Outfit Timeline",
   href: "/indian-wedding-outfit-timeline",
-  description:
-    "Learn when to start sourcing bridal lehengas, sherwanis, and wedding party outfits when ordering from India."
+  description: "Learn when to order bridal lehengas, sherwanis, and wedding party outfits when sourcing from India."
 },
 ];
 
