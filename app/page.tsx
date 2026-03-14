@@ -17,7 +17,7 @@ export default function HomePage() {
 
     <div className="absolute inset-0 bg-black/30"></div>
 
-    <div className="absolute inset-0 flex items-end">
+    <div className="absolute inset-0 flex items-end pb-12">
       <div className="p-8 md:p-12 text-white max-w-2xl">
 
         <h1 className="font-serif text-4xl md:text-6xl leading-tight">
