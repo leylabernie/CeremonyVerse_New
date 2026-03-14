@@ -97,7 +97,7 @@ export default function ResourcesPage() {
               <p className="mt-3 text-lg leading-8 text-charcoal">
                 {page.description}
               </p>
-              <span className="mt-4 inline-block text-base font-medium text-charcoal">
+              <span className="mt-4 inline-block text-lg font-semibold text-charcoal">
                 Visit page →
               </span>
             </Link>
