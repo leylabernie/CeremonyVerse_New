@@ -57,8 +57,8 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-6xl px-6 py-16 border-t">
         <h2 className="text-3xl font-serif text-stone-900 mb-8">
-          Outfits We Help Source
-        </h2>
+Wedding Items We Help Source From India
+</h2>
 
        <div className="grid md:grid-cols-3 gap-8 mt-10">
 
