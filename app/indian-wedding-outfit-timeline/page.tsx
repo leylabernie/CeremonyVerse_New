@@ -1,130 +1,125 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Section } from "@/components/site/section"
 
 export const metadata: Metadata = {
-  title: "Indian Wedding Outfit Timeline",
+  title: "Indian Wedding Outfit Timeline | When to Order Lehengas and Sherwanis",
   description:
-    "Timeline for ordering bridal lehengas, sherwanis, and bridesmaid outfits from India for weddings in the United States.",
+    "Learn the ideal timeline for sourcing Indian wedding outfits including bridal lehengas, sherwanis, bridesmaid outfits, and guest attire.",
 }
 
-export default function Page() {
+export default function IndianWeddingOutfitTimeline() {
   return (
-    <main>
+    <main className="bg-[#efe8df] text-charcoal">
 
-      <Section className="pt-16 pb-10">
-        <h1 className="text-4xl font-serif">
+      <section className="mx-auto max-w-5xl px-6 py-20 md:px-8">
+
+        <h1 className="font-serif text-4xl md:text-5xl leading-tight">
           Indian Wedding Outfit Timeline
         </h1>
 
-        <p className="mt-6 text-lg text-muted-foreground max-w-3xl">
-          Planning Indian wedding outfits requires careful timing. Bridal
-          lehengas, groom sherwanis, and bridesmaid outfits are often produced
-          with detailed embroidery and custom tailoring, which means orders
-          must be placed well before the wedding date.
+        <p className="mt-6 text-lg leading-8">
+          Many couples planning Indian weddings outside India are unsure
+          when they should begin sourcing outfits. Bridal lehengas,
+          sherwanis, bridesmaid attire, and family outfits often require
+          several months of preparation when ordered from boutiques in
+          India.
         </p>
-      </Section>
 
-      <Section className="py-12">
-        <h2 className="text-2xl font-serif">
-          6–8 Months Before the Wedding
+        <p className="mt-4 text-lg leading-8">
+          The timeline below reflects the typical process when sourcing
+          outfits internationally while allowing time for tailoring,
+          shipping, and final adjustments.
+        </p>
+
+      </section>
+
+
+      <section className="mx-auto max-w-5xl px-6 py-12 md:px-8 border-t">
+
+        <h2 className="font-serif text-2xl md:text-3xl">
+          Recommended timeline
         </h2>
 
-        <p className="mt-4 text-muted-foreground max-w-3xl">
-          Begin researching bridal designers and outfit styles. This is the
-          ideal time to explore fabrics, embroidery styles, and color
-          palettes for your wedding events.
-        </p>
-      </Section>
-
-      <Section className="py-12">
-        <h2 className="text-2xl font-serif">
-          4–6 Months Before the Wedding
-        </h2>
-
-        <p className="mt-4 text-muted-foreground max-w-3xl">
-          Place orders for bridal lehengas and groom sherwanis. Production
-          and embroidery often require several weeks depending on the
-          complexity of the design.
-        </p>
-      </Section>
-
-      <Section className="py-12">
-        <h2 className="text-2xl font-serif">
-          3–4 Months Before the Wedding
-        </h2>
-
-        <p className="mt-4 text-muted-foreground max-w-3xl">
-          Finalize bridesmaid outfits and family attire. Coordinating fabrics
-          and colors early helps ensure consistent designs across the wedding
-          party.
-        </p>
-      </Section>
-
-      <Section className="py-12">
-        <h2 className="text-2xl font-serif">
-          1–2 Months Before the Wedding
-        </h2>
-
-        <p className="mt-4 text-muted-foreground max-w-3xl">
-          Outfits are completed and shipped internationally. This stage
-          allows time for minor alterations after delivery if needed.
-        </p>
-      </Section>
-
-      <Section className="py-12">
-        <h2 className="text-2xl font-serif">
-          Related Guides
-        </h2>
-
-        <ul className="mt-4 space-y-2 text-muted-foreground">
+        <ul className="mt-6 space-y-4 text-lg">
           <li>
-            <Link href="/buy-lehenga-from-india" className="underline">
-              Buying a bridal lehenga from India →
-            </Link>
+            <strong>6 months before wedding</strong> – Begin researching
+            boutiques and deciding which outfits will be needed for each
+            event.
           </li>
 
           <li>
-            <Link href="/buy-sherwani-from-india-usa" className="underline">
-              Buying a sherwani from India →
-            </Link>
+            <strong>5 months before wedding</strong> – Select bridal
+            lehenga, groom sherwani, and important ceremony outfits.
           </li>
 
           <li>
-            <Link href="/indian-bridesmaid-outfits" className="underline">
-              Coordinating bridesmaid outfits →
-            </Link>
+            <strong>4 months before wedding</strong> – Finalize designs,
+            fabrics, and embroidery styles with boutiques.
           </li>
 
           <li>
-            <Link href="/indian-wedding-outfits-from-india" className="underline">
-              Complete outfit sourcing guide →
-            </Link>
+            <strong>3 months before wedding</strong> – Confirm measurements
+            and begin tailoring.
+          </li>
+
+          <li>
+            <strong>2 months before wedding</strong> – Production updates
+            and progress checks from boutiques.
+          </li>
+
+          <li>
+            <strong>1 month before wedding</strong> – Outfits ship
+            internationally and arrive for final fitting.
           </li>
         </ul>
-      </Section>
 
-      <Section className="py-12">
-  <h2 className="text-2xl font-serif">
-    Planning Your Wedding Outfits?
-  </h2>
+      </section>
 
-  <p className="mt-4 text-muted-foreground max-w-3xl">
-    CeremonyVerse helps couples in the United States source authentic
-    Indian wedding outfits directly from India while coordinating
-    measurements, customization, and delivery timelines.
-  </p>
 
-  <div className="mt-6 space-y-2">
-    <Link href="/shop-from-india" className="underline block">
-      Learn how sourcing from India works →
-    </Link>
+      <section className="mx-auto max-w-5xl px-6 py-12 md:px-8 border-t">
 
-    <Link href="/buy-lehenga-from-india" className="underline block">
-      Guide to buying a bridal lehenga →
-    </Link>
-  </div>
-</Section>
+        <h2 className="font-serif text-2xl md:text-3xl">
+          Outfits typically sourced from India
+        </h2>
+
+        <ul className="mt-6 space-y-3 text-lg">
+          <li>Bridal lehengas and dupattas</li>
+          <li>Groom sherwanis and bandhgalas</li>
+          <li>Bridesmaid lehengas and sarees</li>
+          <li>Family wedding outfits</li>
+          <li>Jewelry and ceremony accessories</li>
+        </ul>
+
+      </section>
+
+
+      <section className="mx-auto max-w-5xl px-6 py-16 md:px-8 border-t">
+
+        <div className="rounded-2xl border border-charcoal/10 bg-[#f8f6f2] p-8 text-center">
+
+          <h2 className="font-serif text-2xl md:text-3xl">
+            Need help sourcing outfits from India?
+          </h2>
+
+          <p className="mt-4 text-lg">
+            CeremonyVerse helps couples identify trusted boutiques,
+            coordinate wedding party outfits, and manage international
+            ordering timelines.
+          </p>
+
+          <div className="mt-6">
+            <Link
+              href="/shop-from-india"
+              className="inline-block rounded-full bg-charcoal px-6 py-3 text-white"
+            >
+              Learn about outfit sourcing
+            </Link>
+          </div>
+
+        </div>
+
+      </section>
+
     </main>
   )
 }
